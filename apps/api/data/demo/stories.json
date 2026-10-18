@@ -445,5 +445,741 @@
       "j4gin"
     ],
     "contextIds": []
+  },
+  "wilimczyk-wolska-19": {
+    "placeId": "wilimczyk-wolska-19",
+    "text": "Mijamy teren dawnej kamienicy Wilimczyka. W czasie I wojny światowej działała tu tania kuchnia prowadzona przez komitet obywatelski. Z kolei w 1939 roku w oficynie założono Drukarnię Krakowską. W czasie wojny drukarnia wykonywała nie tylko zlecenia oficjalne, ale też drukowała fałszywe przepustki i karty pracy. Budynek został zniszczony w czasie II wojny światowej, a frontowa kamienica i oficyny zostały rozebrane około 1970 roku.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "warszawa1939.pl – obiekt Wolska 19 (dom Wilimczyka)",
+        "url": "https://www.warszawa1939.pl/obiekt/wolska-19"
+      }
+    ],
+    "factIds": [
+      "1kadyq8",
+      "13a1icj",
+      "1fga463",
+      "1fcyqcy",
+      "nkekbj"
+    ],
+    "contextIds": []
+  },
+  "zniszczenie-okopowa-towarowa-1944": {
+    "placeId": "zniszczenie-okopowa-towarowa-1944",
+    "text": "W rejonie ulic Okopowej, Towarowej i Walicowa w sierpniu 1944 roku w czasie Rzezi Woli całkowitemu zniszczeniu uległa cała tutejsza zabudowa. 6 sierpnia 1944 roku toczyły się tu ciężkie walki o barykadę na Chłodnej, gdy ulicą nacierały główne siły niemieckie, przebijające się w kierunku Ogrodu Saskiego i pałacu Brühla. Po wojnie, na miejscu dawnego Kercelaka, budowa drugich jezdni ulic Okopowej i Towarowej całkowicie zatarła topografię dawnego placu.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Ulica Chłodna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ch%C5%82odna_w_Warszawie"
+      },
+      {
+        "id": "s2",
+        "title": "Wikipedia: Kercelak",
+        "url": "https://pl.wikipedia.org/wiki/Kercelak"
+      }
+    ],
+    "factIds": [
+      "oqxdof",
+      "mx94qz",
+      "nscet0"
+    ],
+    "contextIds": []
+  },
+  "ogrod-rembaczewskiego": {
+    "placeId": "ogrod-rembaczewskiego",
+    "text": "Tam, gdzie dziś przez środek idzie wschodnia nitka ulicy Okopowej, był kiedyś Ogród Rembaczewskiego. W latach 30. i 40. XIX wieku na tych zachodnich peryferiach Warszawy restaurator Feliks Rembaczewski prowadził popularny ogród rozrywkowy. Za wstęp trzeba było zapłacić, a na miejscu działała mała kolejka szynowa i grały kilkudziesięcioosobowe orkiestry. Po Powstaniu Warszawskim Niemcy zniszczyli cały kwartał, a w latach 80. XX wieku poprowadzono tędy ulicę.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Ogród Rembaczewskiego",
+        "url": "https://pl.wikipedia.org/wiki/Og%C3%B3d_Rembaczewskiego"
+      }
+    ],
+    "factIds": [
+      "p7rsts",
+      "1y9vojn",
+      "1gv93ur"
+    ],
+    "contextIds": []
+  },
+  "wolska-17-henneberg": {
+    "placeId": "wolska-17-henneberg",
+    "text": "Tam, gdzie dziś stoi budynek przy ulicy Wolskiej 17, była kiedyś fabryka Braci Henneberg. Działała od 1862 roku i produkowała wyroby platerowane. Budynek zniszczono w czasie II wojny światowej. Po 1948 roku zakład znów ruszył jako Warszawska Fabryka Platerów i działał do 1964 roku. Potem połączono go z dawną fabryką Fraget, tworząc nową markę Hefra.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "warszawa1939.pl – obiekt Wolska 17",
+        "url": "https://www.warszawa1939.pl/obiekt/wolska-17"
+      }
+    ],
+    "factIds": [
+      "1dj997a",
+      "1rmahd1",
+      "19ylmmp",
+      "lo9dmu"
+    ],
+    "contextIds": []
+  },
+  "tablica-tchorka-osm-4210588540": {
+    "placeId": "tablica-tchorka-osm-4210588540",
+    "text": "Tablica Tchorka",
+    "sources": [],
+    "factIds": [],
+    "contextIds": []
+  },
+  "elektrownia-tramwajowa-muzeum-powstania": {
+    "placeId": "elektrownia-tramwajowa-muzeum-powstania",
+    "text": "Tam, gdzie dzisiaj działa Muzeum Powstania Warszawskiego, była kiedyś Elektrownia Tramwajów Miejskich zbudowana w latach od 1905 do 1909 roku. Przez lata siedemdziesiąte ubiegłego wieku gmach pokrywał szary tynk zwany barankiem, ale podczas przebudowy odsłonięto dawną klinkierową cegłę. Spójrz na elewację, bo widać tam syrenkę nad uskrzydlonym kołem, czyli stary znak warszawskich tramwajów.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Elektrownia Tramwajowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Elektrownia_Tramwajowa_w_Warszawie"
+      },
+      {
+        "id": "s2",
+        "title": "Wikipedia: Muzeum Powstania Warszawskiego",
+        "url": "https://pl.wikipedia.org/wiki/Muzeum_Powstania_Warszawskiego"
+      },
+      {
+        "id": "s3",
+        "title": "dzieje.pl: artykuł PAP o muzeum i elektrowni (02.12.2023)",
+        "url": "https://dzieje.pl/node/153671"
+      },
+      {
+        "id": "s4",
+        "title": "Wikidata: Q9252514 (Elektrownia Tramwajów Miejskich)",
+        "url": "https://www.wikidata.org/wiki/Q9252514"
+      }
+    ],
+    "factIds": [
+      "flngqt",
+      "1f0clh0",
+      "1d0cc62"
+    ],
+    "contextIds": []
+  },
+  "osm-tablica-miejsce-uswiecone-krwia-polakow-poleglych-za-wolnosc-ojczyzn-1774816928": {
+    "placeId": "osm-tablica-miejsce-uswiecone-krwia-polakow-poleglych-za-wolnosc-ojczyzn-1774816928",
+    "text": "Mijamy tablicę upamiętniającą ofiary masowej egzekucji w trakcie rzezi Woli, zaprojektowaną przez Karola Tchorka. Widnieje na niej napis: „Miejsce uświęcone krwią Polaków poległych za wolność ojczyzny. Tu 6 sierpnia 1944 roku w masowej egzekucji hitlerowcy rozstrzelali wielu Polaków”.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "OpenStreetMap",
+        "url": "https://www.openstreetmap.org/node/1774816928"
+      },
+      {
+        "id": "s2",
+        "title": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "1shavnh",
+      "4fr0n5",
+      "13q89xf"
+    ],
+    "contextIds": []
+  },
+  "ogrodowa": {
+    "placeId": "ogrodowa",
+    "text": "Mijamy ulicę Ogrodową, która wzięła swoją nazwę od licznych ogrodów, jakie rosły tu po wytyczeniu drogi w 1770 roku. Kiedyś zaczynała się przy ulicy Solnej, czyli dzisiejszej alei Jana Pawła II, i ciągnęła do wału miejskiego. W sierpniu 1944 roku okolica została niemal całkowicie zniszczona przez Niemców, którzy podpalili budynki i wymordowali część mieszkańców, a po wojnie tę zrujnowaną dzielnicę nazywano Dzikim Zachodem. Do dzisiaj przed budynkiem numer 56 zachował się oryginalny bruk z kamieni polnych. Przy ulicy stał też gmach Sądu Grodzkiego, który w czasie getta pełnił niezwykłą rolę enklawy. Budynek miał dwa osobne wejścia: od strony ulicy Leszno wchodzili Żydzi, a od strony Ogrodowej mieszkańcy aryjskiej części miasta.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Ulica Ogrodowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ogrodowa_w_Warszawie"
+      },
+      {
+        "id": "s3",
+        "title": "Wikipedia: Ogrodowa Street",
+        "url": "https://en.wikipedia.org/wiki/Ogrodowa_Street"
+      }
+    ],
+    "factIds": [
+      "lwm8pb",
+      "1r410eo",
+      "1um6dbl",
+      "1gctwpc",
+      "vbxbhk",
+      "11p73kx"
+    ],
+    "contextIds": []
+  },
+  "wolska-27-29-palacyk-biernackich": {
+    "placeId": "wolska-27-29-palacyk-biernackich",
+    "text": "Mijamy pałacyk Biernackich. W sierpniu 1944 roku przy ulicy Wolskiej pod numerem 29 oraz pod numerem 4/6/8 hitlerowcy wymordowali około 3200 osób, o czym przypomina umieszczona na ścianie budynku tablica Tchorka. Według sprzecznych relacji świadków, w ogrodzie pałacyku znaleziono ciała redemptorystów ojca Henryka Kotyńskiego i ojca Tadeusza Dolińskiego albo zostały one tam spalone.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie (wiersz Wolska 27/29)",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      },
+      {
+        "id": "s3",
+        "title": "Wikipedia: 30 redemptorystów zamordowanych w powstaniu warszawskim",
+        "url": "https://pl.wikipedia.org/wiki/30_redemptorystów_zamordowanych_w_powstaniu_warszawskim"
+      }
+    ],
+    "factIds": [
+      "1gxyxyp",
+      "17xbxe7"
+    ],
+    "contextIds": []
+  },
+  "rondo-daszynskiego-stacja-metra": {
+    "placeId": "rondo-daszynskiego-stacja-metra",
+    "text": "Mijamy stację metra Rondo Daszyńskiego, która ma 133 metry długości, a jej kolorem przewodnim jest czerwony. W trakcie jej budowy natrafiono na niezwykłe znalezisko. W ziemi odkryto wydanie Kurjera Warszawskiego z 30 marca 1912 roku oraz kamień węgielny pod dawną fabrykę drożdży. Z kolei za wystrój stacji odpowiada Wojciech Fangor, znany artysta Polskiej Szkoły Plakatu, który przygotował tutejsze murale.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Rondo Daszyńskiego metro station",
+        "url": "https://en.wikipedia.org/wiki/Rondo_Daszy%C5%84skiego_metro_station"
+      },
+      {
+        "id": "s2",
+        "title": "Wikipedia: Rondo Daszyńskiego (stacja metra)",
+        "url": "https://pl.wikipedia.org/wiki/Rondo_Daszy%C5%84skiego_(stacja_metra)"
+      }
+    ],
+    "factIds": [
+      "1ep8if5",
+      "1e462pa",
+      "1o0h665"
+    ],
+    "contextIds": []
+  },
+  "akcja-fruhwirth": {
+    "placeId": "akcja-fruhwirth",
+    "text": "Na ulicy Leszno przy rogu ulicy Rymarskiej, dokładnie w bramiе o numerze 1, 25 października 1943 roku przeprowadzono zamach na Engelberta Frühwirtha, funkcjonariusza personelu Pawiaka znanego z wyjątkowego okrucieństwa. Wyrok śmierci wydał Sąd KWP, a zadanie powierzono oddziałowi „Agat”. Dowódcą akcji i głównym wykonawcą był podchorąży Krystyn Strzelecki o pseudonimie „Zawał”. Całe wydarzenie było częścią szeroko zakrojonej akcji eliminacji przedstawicieli niemieckiego aparatu terroru, tak zwanej akcji „Główki”. Pierwsze podejście podjęto 19 października, ale po dwóch godzinach odwołano je, bo cel się nie pojawił, a 21 października Frühwirth znów nie odwiedził swojego ulubionego baru „Centralnego”. W końcu 25 października esesman przyjechał obstawionym wozem konnym i skręcił w tę bramę. Po prawie półtoragodzinnym oczekiwaniu z budynku wyszedł Niemiec przypominający cel. Tylko czy na pewno był to właściwy człowiek? Okazało się, że zamachowcy pomylili osoby i zastrzelili innego Niemca, gestapowca Stephana Kleina, który zresztą też figurował na liście wyroków Armii Krajowej. Cała akcja trwała zaledwie 75 sekund.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Akcja Fruhwirth",
+        "url": "https://pl.wikipedia.org/wiki/Akcja_Fruhwirth"
+      }
+    ],
+    "factIds": [
+      "m6fzo9",
+      "115eysk",
+      "2m1avg",
+      "tbuzij",
+      "121mjrn",
+      "1wo8c5x",
+      "1wn9wnb",
+      "xx7gmo"
+    ],
+    "contextIds": []
+  },
+  "w1939-leszno-22": {
+    "placeId": "w1939-leszno-22",
+    "text": "Tam, gdzie dzisiaj stoi budynek przy ulicy Leszno 22, kiedyś znajdowało się miejsce, które rozebrano po drugiej wojnie światowej.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "warszawa1939.pl: Leszno 22",
+        "url": "https://www.warszawa1939.pl/obiekt/leszno-22"
+      }
+    ],
+    "factIds": [
+      "qwyura"
+    ],
+    "contextIds": []
+  },
+  "karolkowa": {
+    "placeId": "karolkowa",
+    "text": "Mijamy ulicę Karolkową. Powstała w XVIII wieku jako trakt do Szczęśliwic i Rakowca, czyli droga wyznaczająca dawniej granicę między miastem a wsią Wola Wielka. Nazwa wzięła się od bankiera Karola Schultza, który po 1780 roku kupił tutejsze grunty.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Ulica Karolkowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "1v4a059",
+      "1iob603"
+    ],
+    "contextIds": []
+  },
+  "krochmalna": {
+    "placeId": "krochmalna",
+    "text": "Mijamy ulicę Krochmalną, która kiedyś była tylko drogą narolną, nazywaną Lawendową od licznych ogrodów. W 1908 roku wprowadził się tu z rodziną pisarz Isaac Bashevis Singer, mieszkający najpierw pod numerem 10, a potem pod numerem 12, i do tej ulicy wracał w swoich utworach, na przykład w Szosze. Krochmalna zapisała się też w literaturze kryminalnej. W powieści Kariera Nikodema Dyzmy Tadeusza Dołęgi-Mostowicza z 1932 roku dokonano tutaj zabójstwa Józefa Boczka, z kolei Leopold Tyrmand umieścił na tej ulicy akcję swojej powieści Zły z 1955 roku, z warsztatem inżyniera Alberta Wilgi i barem Słodycz na rogu z Żelazną.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Ulica Krochmalna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Krochmalna_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "j9qc9i",
+      "1n1ph1x",
+      "1xdo9yn",
+      "10nsaw8"
+    ],
+    "contextIds": []
+  },
+  "muzeum-nurkowania": {
+    "placeId": "muzeum-nurkowania",
+    "text": "Mijamy Muzeum Nurkowania, które mieści się w piwnicy przedwojennego budynku dawnego Laboratorium chemiczno-farmaceutycznego Asmidar, wzniesionego w latach 1930 do 1931. To jedyna taka placówka w Polsce i jedna z nielicznych w Europie. W jej zbiorach można zobaczyć niezwykłe eksponaty, na przykład kuszę należącą do Leonida Teligi, którą żeglarz zabrał w swój samotny rejs dookoła świata na jachcie Opty, a także polski skafander Foka z bezprzewodową łącznością podwodną z lat siedemdziesiątych dwudziestego wieku i ząb megalodona.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Muzeum Nurkowania",
+        "url": "https://pl.wikipedia.org/wiki/Muzeum_Nurkowania"
+      },
+      {
+        "id": "s4",
+        "title": "Wikipedia: Museum of Diving, Warsaw",
+        "url": "https://en.wikipedia.org/wiki/Museum_of_Diving,_Warsaw"
+      }
+    ],
+    "factIds": [
+      "1cx04l7",
+      "92vvck",
+      "n0f0mq",
+      "1skvr1f"
+    ],
+    "contextIds": []
+  },
+  "osm-way-1099436567": {
+    "placeId": "osm-way-1099436567",
+    "text": "Park Wolności",
+    "sources": [],
+    "factIds": [],
+    "contextIds": []
+  },
+  "kino-roxy-wolska-14": {
+    "placeId": "kino-roxy-wolska-14",
+    "text": "Mijamy nieistniejące już kino Roxy przy ulicy Wolskiej 14, które Przewodnik Fundacji Hereditas wymienia wśród dawnych wolskich kin.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Fundacja Hereditas, Krótkie opisy spacerów (2023), PDF",
+        "url": "https://fundacja-hereditas.pl/wp-content/uploads/2023/03/Krotkie-opisy-spacerow.pdf"
+      }
+    ],
+    "factIds": [
+      "1f7qnbb"
+    ],
+    "contextIds": []
+  },
+  "ogrodowa-56-bruk": {
+    "placeId": "ogrodowa-56-bruk",
+    "text": "Mijamy budynek przy ulicy Ogrodowej 56, przed którym zachował się fragment oryginalnego bruku z kamieni polnych. Ulica była brukowana już pod koniec XVIII wieku. W 1784 roku stało przy niej 57 domów i dworków drewnianych, 5 murowanych oraz 2 browary.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Ulica Ogrodowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ogrodowa_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "vgzyai",
+      "nb8atq"
+    ],
+    "contextIds": []
+  },
+  "kamienica-sieraczka-solidarnosci-zelazna": {
+    "placeId": "kamienica-sieraczka-solidarnosci-zelazna",
+    "text": "Tam, gdzie dziś stoi skrzyżowanie alei Solidarności z ulicą Żelazną, stała kiedyś kamienica Hermana Sieraczka. Pod przedwojennym adresem ulica Leszno 81 kryła się nie tylko sama budowla z początku XX wieku, ale i ukryta na tyłach fabryka kapeluszy Eleganto, którą prowadził właściciel. Budynek przetrwał wojnę, w czasie której znalazł się w granicach getta warszawskiego, przeżył powstanie i cudem uniknął zburzenia przy poszerzaniu dawnej trasy. Przez lata losy nieruchomości były zablokowane przez roszczenia dawnych właścicieli, aż w styczniu 2013 roku w opuszczonych murach wybuchł pożar. Kiedy w czerwcu 2014 roku ruszyła w końcu rozbiórka, 21 czerwca około godziny 9 rano boczna ściana nagle zawaliła się prosto na stojący obok samochód z wysięgnikiem. Na szczęście żaden z robotników nie ucierpiał.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Kamienica Hermana Sieraczka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Kamienica_Hermana_Sieraczka_w_Warszawie"
+      },
+      {
+        "id": "s2",
+        "title": "warszawa1939.pl: Kamienica H. Sieraczka (cytowane w artykule)",
+        "url": "https://www.warszawa1939.pl"
+      }
+    ],
+    "factIds": [
+      "1uric1h",
+      "1yiv5or",
+      "1lapaeb",
+      "1mni4yi",
+      "ks7dx7",
+      "1l90wuy",
+      "14csejd"
+    ],
+    "contextIds": []
+  },
+  "tablica-tchorka-towarowa-kotlarska": {
+    "placeId": "tablica-tchorka-towarowa-kotlarska",
+    "text": "Mijamy tablicę pamiątkową przy ulicy Towarowej 30. Na tablicy widnieje napis: „W dniach 5 do 6 sierpnia 1944 roku hitlerowcy rozstrzelali w tym miejscu 120 osób”.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie (wiersz Towarowa 30 róg Kotlarskiej)",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      },
+      {
+        "id": "s2",
+        "title": "OpenStreetMap: węzeł 8725627998 (tablica, napis w tagu inscription)",
+        "url": "https://www.openstreetmap.org/node/8725627998"
+      }
+    ],
+    "factIds": [
+      "r3yt5y"
+    ],
+    "contextIds": []
+  },
+  "kolmex-biurowiec": {
+    "placeId": "kolmex-biurowiec",
+    "text": "Mijamy biurowiec Kolmex na rogu ulicy Grzybowskiej i Towarowej, wzniesiony w latach 1990 do 1992 na planie kwadratu, z dziedzińcem przykrytym szklanym dachem. Budynek ma 8 pięter, a jego boczne ściany od strony wschodniej i północnej pozostawiono ślepe, bo spodziewano się wtedy zabudowy sąsiednich działek.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Kolmex (biurowiec)",
+        "url": "https://pl.wikipedia.org/wiki/Kolmex_(biurowiec)"
+      }
+    ],
+    "factIds": [
+      "1fr3l09",
+      "18zkuvi"
+    ],
+    "contextIds": []
+  },
+  "klasztor-karmelitanek-bosych-wolska-27-29": {
+    "placeId": "klasztor-karmelitanek-bosych-wolska-27-29",
+    "text": "Mijamy dawny klasztor karmelitanek bosych przy ulicy Wolskiej, w którym w 1944 roku rozegrały się dramatyczne wydarzenia. Wieczorem 5 sierpnia, podczas rzezi Woli, Niemcy zdobyli budynek. Siostry wcześniej nie wpuściły na teren klasztoru powstańców. Tylko jak udało im się przeżyć? Życie zakonnic oraz ukrywających się w środku kobiet i dzieci ocaliła znajomość języka niemieckiego przez jedną z sióstr i interwencja niemieckiego oficera. Niestety, w tym samym czasie i w następnych dniach na terenie klasztornego ogrodu rozstrzelano nawet do 600 mężczyzn, kobiet i dzieci.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Rzeź Woli",
+        "url": "https://pl.wikipedia.org/wiki/Rzeź_Woli"
+      },
+      {
+        "id": "s3",
+        "title": "Wikipedia: Rzeź Woli",
+        "url": "https://pl.wikipedia.org/wiki/Rze%C5%BA_Woli"
+      }
+    ],
+    "factIds": [
+      "1gwdv3i",
+      "1mt48eo",
+      "pau6un",
+      "1h2bsuf"
+    ],
+    "contextIds": []
+  },
+  "srebrna-16": {
+    "placeId": "srebrna-16",
+    "text": "Mijamy biurowiec przy ulicy Srebrnej 16. Pełnomocnictwo upoważniało austriackiego biznesmena do rozbiórki stojącego tam budynku oraz do przeprowadzenia robót naprawczych i konserwacyjnych.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Srebrna (przedsiębiorstwo)",
+        "url": "https://pl.wikipedia.org/wiki/Srebrna_(przedsiębiorstwo)"
+      }
+    ],
+    "factIds": [
+      "d0tqq7"
+    ],
+    "contextIds": []
+  },
+  "kino-helios-wolska-8": {
+    "placeId": "kino-helios-wolska-8",
+    "text": "Tam, gdzie dziś stoi współczesny budynek przy ulicy Wolskiej 8, działało przed wojną kino Helios. Po kinie nie został żaden ślad, ale zachowało się jego zdjęcie z 1938 roku.",
+    "sources": [
+      {
+        "id": "s2",
+        "title": "warszawa1939.pl: Kino Helios",
+        "url": "https://www.warszawa1939.pl/obiekt/wolska-8"
+      }
+    ],
+    "factIds": [
+      "1kjv7zw"
+    ],
+    "contextIds": []
+  },
+  "rondo-daszynskiego": {
+    "placeId": "rondo-daszynskiego",
+    "text": "Mijamy rondo Ignacego Daszyńskiego, gdzie krzyżują się ulice Towarowa i Prosta. Zanim w 1963 roku powstało tu nowe skrzyżowanie, teren wzdłuż ulicy Towarowej zajmował kompleks bocznic kolejowych i magazynów. Miejscowi nazywali go Syberią, a do lat 50. XX wieku ulica Prosta nawet nie łączyła się z ulicą Kasprzaka. W październiku 1986 roku temu miejscu nadano dzisiejszego patrona.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Rondo Ignacego Daszyńskiego w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Rondo_Ignacego_Daszy%C5%84skiego_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "1uf5aoh",
+      "147xw4p",
+      "1f1w0tq"
+    ],
+    "contextIds": []
+  },
+  "dom-sierot-jaktorowska-6": {
+    "placeId": "dom-sierot-jaktorowska-6",
+    "text": "Mijamy dawny Dom Sierot, który wzniesiono w latach 1911 do 1912 przy ulicy Krochmalnej 92, a dziś stoi pod adresem Jaktorowska 6. Sierociniec działał pod kierunkiem Janusza Korczaka i Stefanii Wilczyńskiej do wywózki w 1942 roku.",
+    "sources": [
+      {
+        "id": "s2",
+        "title": "Wikipedia PL: Ulica Jaktorowska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Jaktorowska_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "1np33zh",
+      "1a4uk72",
+      "1has0h"
+    ],
+    "contextIds": []
+  },
+  "wronia": {
+    "placeId": "wronia",
+    "text": "Mijamy ulicę Wronia, której nazwę nadano w 1770 roku jako jedną z przyrodniczych nazw warszawskich ulic. W XVIII wieku biegła wśród pól, glinianek i ogrodów, a pierwsze murowane budynki powstały na początku XIX wieku. Po wojnie ten fragment miasta nazywano Dzikim Zachodem, bo na początku lat 90. XX wieku stało tu jeszcze kilka zrujnowanych kamienic i puste place.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Ulica Wronia w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Wronia_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "17yxkmk",
+      "x9k2b4",
+      "ujv1y1"
+    ],
+    "contextIds": []
+  },
+  "osiedle-mirow": {
+    "placeId": "osiedle-mirow",
+    "text": "Mijamy osiedle Mirów. Nazwa tego miejsca pochodzi od Wilhelma Miera, osiemnastowiecznego dowódcy, który kazał tu zbudować koszary. Przed wojną ten obszar w dużym stopniu zamieszkiwała ludność żydowska, a później, od listopada 1940 do sierpnia 1942 roku, w większości znalazł się w granicach getta. Większość tutejszej zabudowy została zniszczona w czasie drugiej wojny światowej, a w latach pięćdziesiątych przez ten teren przebito aleję Juliana Marchlewskiego, czyli dzisiejszą aleję Jana Pawła II. W latach od 1949 do 1960 roku wzniesiono tu nowe osiedle.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Mirów (Warszawa)",
+        "url": "https://pl.wikipedia.org/wiki/Mir%C3%B3w_(Warszawa)"
+      },
+      {
+        "id": "s2",
+        "title": "Wikipedia: Mirów, Warsaw",
+        "url": "https://en.wikipedia.org/wiki/Mir%C3%B3w,_Warsaw"
+      }
+    ],
+    "factIds": [
+      "dmo4oa",
+      "w786bi",
+      "190t1o9",
+      "1hyrydj"
+    ],
+    "contextIds": []
+  },
+  "przyokopowa": {
+    "placeId": "przyokopowa",
+    "text": "Mijamy ulicę Przyokopową. Nazwa wzięła się stąd, że w XVIII wieku droga biegła po zachodniej stronie okopów Lubomirskiego, czyli dawnych wałów celnych otaczających miasto. W 1844 roku ulicę przecięły tory Kolei Warszawsko-Wiedeńskiej, a około 1885 roku powstała tam stacja towarowa. W końcu XIX wieku znajdowały się tu liczne składy i magazyny, a mieszkali głównie kolejarze i robotnicy. Do dziś ulica jest przerwana na całej długości przez teren dawnej fabryki Polfy, więc jej dwa odcinki nie łączą się ze sobą.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Ulica Przyokopowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Przyokopowa_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "e1v9l3",
+      "kukahx",
+      "xg3h6n",
+      "vxytru"
+    ],
+    "contextIds": []
+  },
+  "wolska-31-35-hoser": {
+    "placeId": "wolska-31-35-hoser",
+    "text": "Tam, gdzie dziś po południowej stronie rozciąga się ogród klasztoru karmelitanek, stała kiedyś kamienica Hoserów zbudowana w okolicach 1903 roku na dawnej działce ogrodniczej znanej rodziny. Przed 1939 rokiem mieszkał tu Paweł Hoser, syn założyciela ogrodniczej firmy Piotra Hosera. Budynek został zniszczony w sierpniu 1944 roku podczas Rzezi Woli, kiedy to w czasie egzekucji w pobliskiej fabryce zamordowano przebywających w domu Janusza i Henryka Hoserów. Po 1945 roku część dawnej działki włączono do zajezdni tramwajowej, a do dziś zachowała się jedynie brama od ulicy Wolskiej, w której mieściła się dawna kwiaciarnia.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "warszawa1939.pl – obiekt Wolska 31/33/35 róg Młynarska 4/6",
+        "url": "https://www.warszawa1939.pl/obiekt/wolska-31"
+      }
+    ],
+    "factIds": [
+      "y2hjvj",
+      "16qcpwm",
+      "13uc4qb",
+      "1quavin",
+      "y20o5p"
+    ],
+    "contextIds": []
+  },
+  "warsaw-trade-tower": {
+    "placeId": "warsaw-trade-tower",
+    "text": "Mijamy Warsaw Trade Tower. Tam, gdzie dziś stoi ten wielki wieżowiec, działał kiedyś browar Fryderyka Brzezińskiego. Budowę obecnego gmachu zaczęto w czerwcu 1997 roku, a zakończono w listopadzie 1999 roku z inicjatywy koreańskiego koncernu Daewoo. W środku kryje się jedna z najszybszych wind w Europie, która porusza się z prędkością 7 metrów na sekundę.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia pl: Warsaw Trade Tower",
+        "url": "https://pl.wikipedia.org/wiki/Warsaw_Trade_Tower"
+      },
+      {
+        "id": "s2",
+        "title": "Wikipedia pl: Ulica Chłodna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Chłodna_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "1xelckl",
+      "rlgww7",
+      "wrdlv8"
+    ],
+    "contextIds": []
+  },
+  "torca-tower": {
+    "placeId": "torca-tower",
+    "text": "Mijamy teren przy ulicy Towarowej 22, gdzie w miejscu dawnego Domu Słowa Polskiego planowano postawić kompleks pod nazwą Torca Tower. W 2019 roku pojawiły się informacje, że znana pracownia BIG pod okiem architekta Bjarke Ingelsa zajmie się zaprojektowaniem tego miejsca, które miało pełnić funkcje biurowe i mieszkalne. W 2022 roku rozpoczęła się rozbiórka starych obiektów, jednak ostatecznie nie zdecydowano się na realizację projektu Ingelsa.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Warszawikia: Torca Tower",
+        "url": "https://warszawa.fandom.com/pl/wiki/Torca_Tower"
+      },
+      {
+        "id": "s2",
+        "title": "Wikipedia: Bjarke Ingels",
+        "url": "https://pl.wikipedia.org/wiki/Bjarke_Ingels"
+      }
+    ],
+    "factIds": [
+      "km9zdz",
+      "11e0cr4",
+      "1qfvo0i",
+      "1bsiof8"
+    ],
+    "contextIds": []
+  },
+  "the-bridge-towarowa-grzybowska": {
+    "placeId": "the-bridge-towarowa-grzybowska",
+    "text": "Mijamy The Bridge, czyli powstający przy placu Europejskim wieżowiec o wysokości 174 metrów, który połączy się z dawną siedzibą wydawnictwa Bellona z 1958 roku. Tylko jak połączyć nowoczesną wieżę z historyczną architekturą? Otóż na szczycie zabytkowego budynku zaplanowano restaurację z tarasem, a całość połączy wysoki na 18 metrów hol z betonowymi kolumnami.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: The Bridge (wieżowiec)",
+        "url": "https://pl.wikipedia.org/wiki/The_Bridge_(wie%C5%BCowiec)"
+      },
+      {
+        "id": "s2",
+        "title": "Wikipedia: The Bridge (Warsaw)",
+        "url": "https://en.wikipedia.org/wiki/The_Bridge_(Warsaw)"
+      }
+    ],
+    "factIds": [
+      "sbc06s",
+      "1c2ptn1",
+      "1l41iv0",
+      "265zq6",
+      "18nci0q"
+    ],
+    "contextIds": []
+  },
+  "dom-kereta": {
+    "placeId": "dom-kereta",
+    "text": "Mijamy Dom Kereta, czyli niezwykłą instalację artystyczną, którą otwarto 20 października 2012 roku. Stoi w szczelinie szerokiej na 152 centymetry między powojennym blokiem przy ulicy Chłodnej 22 a przedwojenną kamienicą przy ulicy Żelaznej 74. W najszerszym miejscu ten budynek ma 122 centymetry, a w najwęższym zaledwie 70 centymetrów, przez co opisuje się go jako jeden z najwęższych domów na świecie. Schody wejściowe do niego są składane i po zamknięciu stają się podłogą salonu. Pierwszym mieszkańcem był izraelski pisarz Etgar Keret. Lokalizacja w pobliżu kładki, która w czasie okupacji łączyła dwie części getta, wiąże się z losami jego rodziny, bo ojciec Etgara ukrywał się wtedy przez wiele miesięcy w tak ciasnym pomieszczeniu, że nie mógł ani wstać, ani leżeć.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Dom Kereta",
+        "url": "https://pl.wikipedia.org/wiki/Dom_Kereta"
+      },
+      {
+        "id": "s2",
+        "title": "Wikipedia: Keret House",
+        "url": "https://en.wikipedia.org/wiki/Keret_House"
+      }
+    ],
+    "factIds": [
+      "13232rf",
+      "13lmo13",
+      "1czthpl",
+      "zbl8f",
+      "1gehqm9",
+      "1n9an7v",
+      "1qklvaa",
+      "os8t1u"
+    ],
+    "contextIds": []
+  },
+  "g-rogatka-przejazdowa-obrosnieta-drzewem": {
+    "placeId": "g-rogatka-przejazdowa-obrosnieta-drzewem",
+    "text": "Rogatka przejazdowa obrośnięta drzewem",
+    "sources": [],
+    "factIds": [],
+    "contextIds": []
+  },
+  "osm-way-35071406": {
+    "placeId": "osm-way-35071406",
+    "text": "Skwer Gwary Warszawskiej",
+    "sources": [],
+    "factIds": [],
+    "contextIds": []
+  },
+  "w1939-okopowa-19": {
+    "placeId": "w1939-okopowa-19",
+    "text": "Tam, gdzie kiedyś stał budynek fabryczny pod adresem Okopowa 19, dziś nie ma po nim śladu. Co ciekawe, przetrwał II wojnę światową, ale ostatecznie rozebrano go po 1947 roku.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "warszawa1939.pl: Okopowa 19",
+        "url": "https://www.warszawa1939.pl/obiekt/okopowa-19"
+      }
+    ],
+    "factIds": [
+      "18640et"
+    ],
+    "contextIds": []
+  },
+  "g-pomnik-polakow-poleglych-za-wolnosc-ojczyzny-1944": {
+    "placeId": "g-pomnik-polakow-poleglych-za-wolnosc-ojczyzny-1944",
+    "text": "Pomnik Polaków Poległych za Wolność Ojczyzny 1944",
+    "sources": [],
+    "factIds": [],
+    "contextIds": []
+  },
+  "jaktorowska": {
+    "placeId": "jaktorowska",
+    "text": "Mijamy ulicę Jaktorowską, którą wytyczono po 1768 roku w miejscu dawnej drogi narolnej. Znamy ją dzisiaj pod tym wejrzeniem, ale przez lata była częścią dawnej ulicy Krochmalnej, nazwanej tak od małej fabryczki krochmalu. Przy rogu z ulicą Karolkową rośnie niezwykły pomnik przyrody, czyli dąb węgierski nazywany Dębem doktora Korczaka, który ma pień o obwodzie 440 centymetrów i wysokość 22 metrów. Z kolei w dawnym budynku sierocińca, prowadzonym kiedyś przez Janusza Korczaka i Stefanię Wilczyńską, mieści się dzisiaj Ośrodek Dokumentacji i Badań Korczakianum będący oddziałem Muzeum Warszawy.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Ulica Jaktorowska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Jaktorowska_w_Warszawie"
+      },
+      {
+        "id": "s2",
+        "title": "Wikipedia: Ulica Krochmalna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Krochmalna_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "nuexwh",
+      "67sxf0",
+      "5lyw8k"
+    ],
+    "contextIds": []
+  },
+  "rogatki-jerozolimskie": {
+    "placeId": "rogatki-jerozolimskie",
+    "text": "Tam, gdzie dziś jest plac Zawiszy, stały kiedyś Nowe Rogatki Jerozolimskie. Wzniesiono je w 1818 roku na planie koła według projektu Jakuba Kubickiego. W czasie obrony Warszawy we wrześniu 1831 roku te budynki były miejscem zaciętych walk z nacierającymi wojskami rosyjskimi. Niewiele później, w 1833 roku, na placu przy rogatkach stracono Artura Zawiszę. Dawne pawilony przetrwały do czasów okupacji, kiedy to na polecenie Niemców rozebrano je wiosną 1942 roku.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Rogatki Jerozolimskie",
+        "url": "https://pl.wikipedia.org/wiki/Rogatki_Jerozolimskie"
+      }
+    ],
+    "factIds": [
+      "4nhfud",
+      "j375b2",
+      "1mv64f2",
+      "1ubrxgm",
+      "qbxa44"
+    ],
+    "contextIds": []
   }
 }
