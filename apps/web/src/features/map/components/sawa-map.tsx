@@ -18,6 +18,7 @@ import { useBasemapOverrides } from "../hooks/use-basemap-overrides";
 import { useLiveVehicles } from "../hooks/use-live-vehicles";
 import { usePlaces } from "../hooks/use-places";
 import { useSelectedPlace } from "../hooks/use-selected-place";
+import { registerBoardingTimers } from "../lib/boarding-timers";
 import type { LngLatBounds } from "../lib/bounds";
 import {
   cameraMoveKey,
@@ -234,6 +235,7 @@ export function SawaMap({
           // Place markers are drawn on demand; the map lives as long as this listener.
           registerPlaceStickers(event.target);
           registerClusterBadges(event.target);
+          registerBoardingTimers(event.target);
           loadMapIcons(event.target).then((isOk) => setIcons(isOk ? "ready" : "failed"));
         }}
         onMoveEnd={(event) => setView(viewOf(event.target))}
@@ -263,7 +265,7 @@ export function SawaMap({
             route={route}
             selectedId={selectedId}
             activeId={activeStopId}
-            hasIcons={icons === "ready"}
+            theme={theme}
             palette={palette}
           />
         )}

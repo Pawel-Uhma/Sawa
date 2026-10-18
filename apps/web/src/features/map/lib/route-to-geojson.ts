@@ -27,6 +27,12 @@ export type RouteBoardingFeature = {
     stopName: string;
     /** When the line is boarded, Warsaw time: "14:05", or "ok. 14:05" when estimated. */
     boardAt: string;
+    /** Same, Warsaw time without "ok.", for the ring when it shows no countdown. */
+    clock: string;
+    /** Departure in ms since the epoch, for the countdown. */
+    departAtMs: number;
+    /** Minutes of walking right before boarding (to the first stop or across a transfer). */
+    walkMin: number;
     isTransfer: boolean;
   };
 };
@@ -99,6 +105,15 @@ export function routeLegsToGeoJson(route: Route): FeatureCollection<RouteLegFeat
   };
 }
 
+/** Minutes of the walk legs right before `legIndex`. */
+function walkBefore(legs: readonly Leg[], legIndex: number): number {
+  let minutes = 0;
+  for (let i = legIndex - 1; i >= 0 && legs[i].mode === "walk"; i -= 1) {
+    minutes += legs[i].durationMin;
+  }
+  return minutes;
+}
+
 /** Boarding points: the first stop of the ride and every stop where the line changes. */
 export function routeBoardingsToGeoJson(route: Route): FeatureCollection<RouteBoardingFeature> {
   const lines = lineIndexes(route);
@@ -119,6 +134,9 @@ export function routeBoardingsToGeoJson(route: Route): FeatureCollection<RouteBo
           color: lineColor(lines[legIndex]),
           stopName: [leg.fromStop.name, stopPost(leg.fromStop.id)].filter(Boolean).join(" "),
           boardAt: `${leg.realDeparture ? "" : "ok. "}${CLOCK.format(new Date(leg.departAt))}`,
+          clock: CLOCK.format(new Date(leg.departAt)),
+          departAtMs: Date.parse(leg.departAt),
+          walkMin: walkBefore(route.legs, legIndex),
           isTransfer: lines[legIndex] > 0,
         },
       })),
