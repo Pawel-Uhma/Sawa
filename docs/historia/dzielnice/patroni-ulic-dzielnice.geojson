@@ -10581,6 +10581,5361 @@
      }
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.945874,
+     52.273055
+    ]
+   },
+   "properties": {
+    "id": "patron-adama-jarzebskiego-bielany",
+    "nazwa": "Ulica Adama Jarzębskiego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Adama Jarzębskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Adam Jarzębski (1590–1649), polski kompozytor.",
+     "Adam Jarzębski, Jarzembski, Harzebski, Harzebsky – polski kompozytor wczesnego baroku."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Adam Jarzębski",
+      "url": "https://pl.wikipedia.org/wiki/Adam_Jarzębski"
+     },
+     {
+      "tytul": "Wikidata: Adam Jarzębski",
+      "url": "https://www.wikidata.org/wiki/Q349847"
+     },
+     {
+      "tytul": "OpenStreetMap: Adama Jarzębskiego",
+      "url": "https://www.openstreetmap.org/search?query=Adama%20Jarz%C4%99bskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Adam Jarzębski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Adam_Jarzębski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.927214,
+     52.273036
+    ]
+   },
+   "properties": {
+    "id": "patron-aleja-boleslawa-chomicza-bielany",
+    "nazwa": "Aleja Bolesława Chomicza",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Aleja Bolesława Chomicza",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Bolesław Chomicz (1878–1959), polski działacz społeczny, organizator straży pożarnej.",
+     "Bolesław Chomicz – polski działacz społeczny, jeden z organizatorów polskiej straży pożarnej, adwokat i przedsiębiorca."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Bolesław Chomicz",
+      "url": "https://pl.wikipedia.org/wiki/Bolesław_Chomicz"
+     },
+     {
+      "tytul": "Wikidata: Bolesław Chomicz",
+      "url": "https://www.wikidata.org/wiki/Q8860773"
+     },
+     {
+      "tytul": "OpenStreetMap: Aleja Bolesława Chomicza",
+      "url": "https://www.openstreetmap.org/search?query=Aleja%20Boles%C5%82awa%20Chomicza%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Bolesław Chomicz",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Bolesław_Chomicz"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.930553,
+     52.291102
+    ]
+   },
+   "properties": {
+    "id": "patron-aleja-general-marii-wittek-bielany",
+    "nazwa": "Aleja Generał Marii Wittek",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Aleja Generał Marii Wittek",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Maria Wittek (1899–1997), pierwsza polska kobieta generał.",
+     "Maria Stanisława Wittek, w opracowaniach również Wittekówna, ps."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Maria Wittek",
+      "url": "https://pl.wikipedia.org/wiki/Maria_Wittek"
+     },
+     {
+      "tytul": "Wikidata: Maria Wittek",
+      "url": "https://www.wikidata.org/wiki/Q6761660"
+     },
+     {
+      "tytul": "OpenStreetMap: Aleja Generał Marii Wittek",
+      "url": "https://www.openstreetmap.org/search?query=Aleja%20Genera%C5%82%20Marii%20Wittek%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Maria Wittek",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Maria_Wittek"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.933169,
+     52.269363
+    ]
+   },
+   "properties": {
+    "id": "patron-aleja-wladyslawa-reymonta-bielany",
+    "nazwa": "Aleja Władysława Reymonta",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Aleja Władysława Reymonta",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Władysław Reymont (1867–1925), polski pisarz epoki Młodej Polski, noblista literacki (1867–1925).",
+     "Władysław Stanisław Reymont, właśc. Stanisław Władysław Rejment – polski pisarz, prozaik i nowelista."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Władysław Reymont",
+      "url": "https://pl.wikipedia.org/wiki/Władysław_Reymont"
+     },
+     {
+      "tytul": "Wikidata: Władysław Reymont",
+      "url": "https://www.wikidata.org/wiki/Q121180"
+     },
+     {
+      "tytul": "OpenStreetMap: Aleja Władysława Reymonta",
+      "url": "https://www.openstreetmap.org/search?query=Aleja%20W%C5%82adys%C5%82awa%20Reymonta%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Władysław Reymont",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Władysław_Reymont"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.961326,
+     52.277909
+    ]
+   },
+   "properties": {
+    "id": "patron-andrieja-sacharowa-bielany",
+    "nazwa": "Ulica Andrieja Sacharowa",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Andrieja Sacharowa",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Andriej Sacharow (1921–1989), radziecki fizyk, noblista pokojowy.",
+     "Andriej Dmitrijewicz Sacharow – rosyjski fizyk jądrowy, ojciec radzieckiej bomby wodorowej, twórca m.in."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Andriej Sacharow",
+      "url": "https://pl.wikipedia.org/wiki/Andriej_Sacharow"
+     },
+     {
+      "tytul": "Wikidata: Andriej Sacharow",
+      "url": "https://www.wikidata.org/wiki/Q997"
+     },
+     {
+      "tytul": "OpenStreetMap: Andrieja Sacharowa",
+      "url": "https://www.openstreetmap.org/search?query=Andrieja%20Sacharowa%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Andriej Sacharow",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Andriej_Sacharow"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.91993,
+     52.307857
+    ]
+   },
+   "properties": {
+    "id": "patron-anny-jagiellonki-bielany",
+    "nazwa": "Ulica Anny Jagiellonki",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Anny Jagiellonki",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Anna Jagiellonka (1523–1596), Król Polski i Wielka Księżna Litwy.",
+     "Anna Jagiellonka – córka Zygmunta I Starego i Bony Sforzy, od 1575 królowa Polski, w 1576 poślubiła Stefana Batorego, który został iure uxoris królem Polski i sprawował faktyczną władzę; ostatnia polska monarchini z dynastii Jagiellonów, bezdzietna, po śmierci męża (1586) doprowadziła do wyboru na króla Polski Zygmunta III Wazy, swojego siostrzeńca."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Anna Jagiellonka",
+      "url": "https://pl.wikipedia.org/wiki/Anna_Jagiellonka"
+     },
+     {
+      "tytul": "Wikidata: Anna Jagiellonka",
+      "url": "https://www.wikidata.org/wiki/Q233989"
+     },
+     {
+      "tytul": "OpenStreetMap: Anny Jagiellonki",
+      "url": "https://www.openstreetmap.org/search?query=Anny%20Jagiellonki%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Anna Jagiellonka",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Anna_Jagiellonka"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.968481,
+     52.280671
+    ]
+   },
+   "properties": {
+    "id": "patron-antoniego-bohdziewicza-bielany",
+    "nazwa": "Ulica Antoniego Bohdziewicza",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Antoniego Bohdziewicza",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Antoni Bohdziewicz (1906–1970), polski reżyser i scenarzysta filmowy.",
+     "Antoni Bohdziewicz, ps. „Wiktor” – polski reżyser i scenarzysta filmowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Antoni Bohdziewicz",
+      "url": "https://pl.wikipedia.org/wiki/Antoni_Bohdziewicz"
+     },
+     {
+      "tytul": "Wikidata: Antoni Bohdziewicz",
+      "url": "https://www.wikidata.org/wiki/Q4776149"
+     },
+     {
+      "tytul": "OpenStreetMap: Antoniego Bohdziewicza",
+      "url": "https://www.openstreetmap.org/search?query=Antoniego%20Bohdziewicza%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Antoni Bohdziewicz",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Antoni_Bohdziewicz"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.945345,
+     52.273351
+    ]
+   },
+   "properties": {
+    "id": "patron-antoniego-magiera-bielany",
+    "nazwa": "Ulica Antoniego Magiera",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Antoniego Magiera",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Antoni Magier (1762–1837), polski pisarz, pamiętnikarz, fizyk, meteorolog.",
+     "Antoni Magier herbu Szeliga, kryptonim „A. M.” – pisarz, pamiętnikarz, leksykograf, fizyk i meteorolog, dyrektor Inspekcji Biletów Skarbowych i asesor Dyrekcji Biletów Skarbowych w czasie powstania kościuszkowskiego (1794)."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Antoni Magier",
+      "url": "https://pl.wikipedia.org/wiki/Antoni_Magier"
+     },
+     {
+      "tytul": "Wikidata: Antoni Magier",
+      "url": "https://www.wikidata.org/wiki/Q9157060"
+     },
+     {
+      "tytul": "OpenStreetMap: Antoniego Magiera",
+      "url": "https://www.openstreetmap.org/search?query=Antoniego%20Magiera%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Antoni Magier",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Antoni_Magier"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.937874,
+     52.295538
+    ]
+   },
+   "properties": {
+    "id": "patron-antoniego-parola-bielany",
+    "nazwa": "Ulica Antoniego Parola",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Antoniego Parola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Antoni Parol (1902–1944).",
+     "Antoni Parol, ps. „Zielony” (ur. 3 czerwca 1902 w Żabieńcu, zm."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Antoni Parol",
+      "url": "https://pl.wikipedia.org/wiki/Antoni_Parol"
+     },
+     {
+      "tytul": "Wikidata: Antoni Parol",
+      "url": "https://www.wikidata.org/wiki/Q9157228"
+     },
+     {
+      "tytul": "OpenStreetMap: Antoniego Parola",
+      "url": "https://www.openstreetmap.org/search?query=Antoniego%20Parola%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Antoni Parol",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Antoni_Parol"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.941813,
+     52.27964
+    ]
+   },
+   "properties": {
+    "id": "patron-augusta-wilkonskiego-bielany",
+    "nazwa": "Ulica Augusta Wilkońskiego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Augusta Wilkońskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: August Wilkoński (1805–1852).",
+     "August Wilkoński ps. Au-Wi – prozaik, satyryk, krytyk literacki, uczestnik powstania listopadowego."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: August Wilkoński",
+      "url": "https://pl.wikipedia.org/wiki/August_Wilkoński"
+     },
+     {
+      "tytul": "Wikidata: August Wilkoński",
+      "url": "https://www.wikidata.org/wiki/Q9162058"
+     },
+     {
+      "tytul": "OpenStreetMap: Augusta Wilkońskiego",
+      "url": "https://www.openstreetmap.org/search?query=Augusta%20Wilko%C5%84skiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "August Wilkoński",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/August_Wilkoński"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.916112,
+     52.273327
+    ]
+   },
+   "properties": {
+    "id": "patron-bartosza-glowackiego-bielany",
+    "nazwa": "Ulica Bartosza Głowackiego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Bartosza Głowackiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Wojciech Bartos Głowacki (1758–1794), kosynier, uczestnik insurekcji kościuszkowskiej.",
+     "Wojciech Bartos, od 1794 z nazwiskiem Głowacki (ur. ok. 1758 w Zakrzowie niedaleko Skalbmierza albo w Rzędowicach, zm."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Wojciech Bartos Głowacki",
+      "url": "https://pl.wikipedia.org/wiki/Wojciech_Bartos_Głowacki"
+     },
+     {
+      "tytul": "Wikidata: Wojciech Bartos Głowacki",
+      "url": "https://www.wikidata.org/wiki/Q2576810"
+     },
+     {
+      "tytul": "OpenStreetMap: Bartosza Głowackiego",
+      "url": "https://www.openstreetmap.org/search?query=Bartosza%20G%C5%82owackiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Wojciech Bartos Głowacki",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Wojciech_Bartos_Głowacki"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.954724,
+     52.281064
+    ]
+   },
+   "properties": {
+    "id": "patron-bogumila-zuga-bielany",
+    "nazwa": "Ulica Bogumiła Zuga",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Bogumiła Zuga",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Szymon Bogumił Zug (1733–1807), architekt pochodzenia saskiego działający w Polsce.",
+     "Szymon Bogumił Zug – pochodzący z Saksonii architekt działający w Polsce, przedstawiciel klasycyzmu."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Szymon Bogumił Zug",
+      "url": "https://pl.wikipedia.org/wiki/Szymon_Bogumił_Zug"
+     },
+     {
+      "tytul": "Wikidata: Szymon Bogumił Zug",
+      "url": "https://www.wikidata.org/wiki/Q86122"
+     },
+     {
+      "tytul": "OpenStreetMap: Bogumiła Zuga",
+      "url": "https://www.openstreetmap.org/search?query=Bogumi%C5%82a%20Zuga%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Szymon Bogumił Zug",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Szymon_Bogumił_Zug"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.957902,
+     52.27863
+    ]
+   },
+   "properties": {
+    "id": "patron-boleslawa-lesmiana-bielany",
+    "nazwa": "Ulica Bolesława Leśmiana",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Bolesława Leśmiana",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Bolesław Leśmian (1877–1937), polski poeta i prozaik.",
+     "Bolesław Leśmian, pierwotnie Lesman – polski poeta i prozaik, czołowy przedstawiciel literatury dwudziestolecia międzywojennego, krytyk literacki."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Bolesław Leśmian",
+      "url": "https://pl.wikipedia.org/wiki/Bolesław_Leśmian"
+     },
+     {
+      "tytul": "Wikidata: Bolesław Leśmian",
+      "url": "https://www.wikidata.org/wiki/Q891324"
+     },
+     {
+      "tytul": "OpenStreetMap: Bolesława Leśmiana",
+      "url": "https://www.openstreetmap.org/search?query=Boles%C5%82awa%20Le%C5%9Bmiana%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Bolesław Leśmian",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Bolesław_Leśmian"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.954557,
+     52.277559
+    ]
+   },
+   "properties": {
+    "id": "patron-boleslawa-podczaszynskiego-bielany",
+    "nazwa": "Ulica Bolesława Podczaszyńskiego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Bolesława Podczaszyńskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Bolesław Podczaszyński (1822–1876), polski architekt.",
+     "Bolesław Paweł Podczaszyński – polski architekt."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Bolesław Podczaszyński",
+      "url": "https://pl.wikipedia.org/wiki/Bolesław_Podczaszyński"
+     },
+     {
+      "tytul": "Wikidata: Bolesław Podczaszyński",
+      "url": "https://www.wikidata.org/wiki/Q9176879"
+     },
+     {
+      "tytul": "OpenStreetMap: Bolesława Podczaszyńskiego",
+      "url": "https://www.openstreetmap.org/search?query=Boles%C5%82awa%20Podczaszy%C5%84skiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Bolesław Podczaszyński",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Bolesław_Podczaszyński"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.935821,
+     52.285184
+    ]
+   },
+   "properties": {
+    "id": "patron-carla-goldoniego-bielany",
+    "nazwa": "Ulica Carla Goldoniego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Carla Goldoniego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Carlo Goldoni (1707–1794), włoski komediopisarz.",
+     "Carlo Goldoni – włoski komediopisarz związany z Wenecją, z zawodu prawnik."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Carlo Goldoni",
+      "url": "https://pl.wikipedia.org/wiki/Carlo_Goldoni"
+     },
+     {
+      "tytul": "Wikidata: Carlo Goldoni",
+      "url": "https://www.wikidata.org/wiki/Q165534"
+     },
+     {
+      "tytul": "OpenStreetMap: Carla Goldoniego",
+      "url": "https://www.openstreetmap.org/search?query=Carla%20Goldoniego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Carlo Goldoni",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Carlo_Goldoni"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.953835,
+     52.277709
+    ]
+   },
+   "properties": {
+    "id": "patron-efraima-schroegera-bielany",
+    "nazwa": "Ulica Efraima Schroegera",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Efraima Schroegera",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Efraim Szreger (1727–1783).",
+     "Kościół św. Ducha w ToruniuPałac Szustra w WarszawiePałac Prymasowski w Skierniewicach"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Efraim Szreger",
+      "url": "https://pl.wikipedia.org/wiki/Efraim_Szreger"
+     },
+     {
+      "tytul": "Wikidata: Efraim Szreger",
+      "url": "https://www.wikidata.org/wiki/Q78032"
+     },
+     {
+      "tytul": "OpenStreetMap: Efraima Schroegera",
+      "url": "https://www.openstreetmap.org/search?query=Efraima%20Schroegera%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Efraim Szreger",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Efraim_Szreger"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.943558,
+     52.270435
+    ]
+   },
+   "properties": {
+    "id": "patron-galla-anonima-bielany",
+    "nazwa": "Ulica Galla Anonima",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Galla Anonima",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Gall Anonim (1066–1145), pierwszy kronikarz historii Polski.",
+     "Gall Anonim lub Anonim, tak zwany Gall (ur. w XI w., zm. po 1116) – anonimowy autor Kroniki polskiej."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Gall Anonim",
+      "url": "https://pl.wikipedia.org/wiki/Gall_Anonim"
+     },
+     {
+      "tytul": "Wikidata: Gall Anonim",
+      "url": "https://www.wikidata.org/wiki/Q511158"
+     },
+     {
+      "tytul": "OpenStreetMap: Galla Anonima",
+      "url": "https://www.openstreetmap.org/search?query=Galla%20Anonima%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Gall Anonim",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Gall_Anonim"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.94854,
+     52.26899
+    ]
+   },
+   "properties": {
+    "id": "patron-generala-klemensa-stanislawa-rudnickiego-bielany",
+    "nazwa": "Ulica Generała Klemensa Stanisława Rudnickiego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Generała Klemensa Stanisława Rudnickiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Klemens Rudnicki (1897–1992), wojskowy polski, generał brygady.",
+     "c.-k. 15 Pułk Piechoty2 Pułk Szwoleżerów RokitniańskichSzwadron Kawalerii KOP „Podświle”7 Pułk Strzelców Konnych Wielkopolskich9 Pułk Ułanów Małopolskich6 Lwowska Dywizja Piechoty1 Dywizja Pancerna"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Klemens Rudnicki",
+      "url": "https://pl.wikipedia.org/wiki/Klemens_Rudnicki"
+     },
+     {
+      "tytul": "Wikidata: Klemens Rudnicki",
+      "url": "https://www.wikidata.org/wiki/Q11739986"
+     },
+     {
+      "tytul": "OpenStreetMap: Generała Klemensa Stanisława Rudnickiego",
+      "url": "https://www.openstreetmap.org/search?query=Genera%C5%82a%20Klemensa%20Stanis%C5%82awa%20Rudnickiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Klemens Rudnicki",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Klemens_Rudnicki"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.932505,
+     52.268513
+    ]
+   },
+   "properties": {
+    "id": "patron-generala-stanislawa-maczka-bielany",
+    "nazwa": "Ulica Generała Stanisława Maczka",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Generała Stanisława Maczka",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Stanisław Maczek (1892–1994), polski generał (1892–1994).",
+     "Stanisław Maczek, ps. Baca – generał dywizji Wojska Polskiego, prekursor polskiej broni pancernej, kawaler Orderu Orła Białego i Orderu Virtuti Militari III, IV i V klasy, honorowy obywatel Holandii, 11 listopada 1990 awansowany przez prezydenta RP na uchodźstwie do stopnia generała broni."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Stanisław Maczek",
+      "url": "https://pl.wikipedia.org/wiki/Stanisław_Maczek"
+     },
+     {
+      "tytul": "Wikidata: Stanisław Maczek",
+      "url": "https://www.wikidata.org/wiki/Q512764"
+     },
+     {
+      "tytul": "OpenStreetMap: Generała Stanisława Maczka",
+      "url": "https://www.openstreetmap.org/search?query=Genera%C5%82a%20Stanis%C5%82awa%20Maczka%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Stanisław Maczek",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Maczek"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.945182,
+     52.275064
+    ]
+   },
+   "properties": {
+    "id": "patron-gustawa-danilowskiego-bielany",
+    "nazwa": "Ulica Gustawa Daniłowskiego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Gustawa Daniłowskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Gustaw Daniłowski (1871–1927), polski pisarz i publicysta, działacz socjalistyczny.",
+     "Gustaw Daniłowski ps. Władysław Orwid – polski pisarz, publicysta, działacz socjalistyczny i niepodległościowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Gustaw Daniłowski",
+      "url": "https://pl.wikipedia.org/wiki/Gustaw_Daniłowski"
+     },
+     {
+      "tytul": "Wikidata: Gustaw Daniłowski",
+      "url": "https://www.wikidata.org/wiki/Q5849782"
+     },
+     {
+      "tytul": "OpenStreetMap: Gustawa Daniłowskiego",
+      "url": "https://www.openstreetmap.org/search?query=Gustawa%20Dani%C5%82owskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Gustaw Daniłowski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Gustaw_Daniłowski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.936843,
+     52.279413
+    ]
+   },
+   "properties": {
+    "id": "patron-hansa-christiana-andersena-bielany",
+    "nazwa": "Ulica Hansa Christiana Andersena",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Hansa Christiana Andersena",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Hans Christian Andersen (1805–1875), duński pisarz i poeta (1805–1875).",
+     "Urodził się w najbiedniejszej dzielnicy Odense jako syn szewca  Hansa Andersena i niepiśmiennej praczki Anne Marie z domu Andersdatter."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Hans Christian Andersen",
+      "url": "https://pl.wikipedia.org/wiki/Hans_Christian_Andersen"
+     },
+     {
+      "tytul": "Wikidata: Hans Christian Andersen",
+      "url": "https://www.wikidata.org/wiki/Q5673"
+     },
+     {
+      "tytul": "OpenStreetMap: Hansa Christiana Andersena",
+      "url": "https://www.openstreetmap.org/search?query=Hansa%20Christiana%20Andersena%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Hans Christian Andersen",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Hans_Christian_Andersen"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.929889,
+     52.283751
+    ]
+   },
+   "properties": {
+    "id": "patron-honoriusza-balzaka-bielany",
+    "nazwa": "Ulica Honoriusza Balzaka",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Honoriusza Balzaka",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Honoré de Balzac (1799–1850), francuski powieściopisarz i dramaturg (1799–1850).",
+     "Honoré de Balzac, Honoriusz Balzak – francuski powieściopisarz, obok Dickensa i Tołstoja jeden z najważniejszych twórców współczesnej powieści europejskiej, autor monumentalnego cyklu powieściowego Komedia ludzka (La comédie humaine)."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Honoré de Balzac",
+      "url": "https://pl.wikipedia.org/wiki/Honoré_de_Balzac"
+     },
+     {
+      "tytul": "Wikidata: Honoré de Balzac",
+      "url": "https://www.wikidata.org/wiki/Q9711"
+     },
+     {
+      "tytul": "OpenStreetMap: Honoriusza Balzaka",
+      "url": "https://www.openstreetmap.org/search?query=Honoriusza%20Balzaka%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Honoré de Balzac",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Honoré_de_Balzac"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.919499,
+     52.323729
+    ]
+   },
+   "properties": {
+    "id": "patron-jana-iii-sobieskiego-bielany",
+    "nazwa": "Ulica Jana III Sobieskiego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Jana III Sobieskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Jan III Sobieski (1629–1696), elekcyjny król Polski (1674–1696), wcześniej dowódca wojskowy.",
+     "Jakub LudwikTeresa TeofilaAdelajda LudwikaMaria TeresaTeresa KunegundaAleksander BenedyktKonstanty WładysławJan"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Jan III Sobieski",
+      "url": "https://pl.wikipedia.org/wiki/Jan_III_Sobieski"
+     },
+     {
+      "tytul": "Wikidata: Jan III Sobieski",
+      "url": "https://www.wikidata.org/wiki/Q53454"
+     },
+     {
+      "tytul": "OpenStreetMap: Jana III Sobieskiego",
+      "url": "https://www.openstreetmap.org/search?query=Jana%20III%20Sobieskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Jan III Sobieski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Jan_III_Sobieski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.933229,
+     52.274794
+    ]
+   },
+   "properties": {
+    "id": "patron-jerzego-bajana-bielany",
+    "nazwa": "Ulica Jerzego Bajana",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Jerzego Bajana",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Jerzy Bajan (1901–1967), polski lotnik wojskowy i sportowy.",
+     "Jerzy Bajan – pułkownik pilot Wojska Polskiego."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Jerzy Bajan",
+      "url": "https://pl.wikipedia.org/wiki/Jerzy_Bajan"
+     },
+     {
+      "tytul": "Wikidata: Jerzy Bajan",
+      "url": "https://www.wikidata.org/wiki/Q5949565"
+     },
+     {
+      "tytul": "OpenStreetMap: Jerzego Bajana",
+      "url": "https://www.openstreetmap.org/search?query=Jerzego%20Bajana%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Jerzy Bajan",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Bajan"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.951077,
+     52.262265
+    ]
+   },
+   "properties": {
+    "id": "patron-jerzego-waldorffa-bielany",
+    "nazwa": "Ulica Jerzego Waldorffa",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Jerzego Waldorffa",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Jerzy Waldorff (1910–1999), polski pisarz, publicysta, krytyk muzyczny.",
+     "Jerzy Kazimierz Waldorff-Preyss – polski pisarz, publicysta, krytyk muzyczny i działacz społeczny, w dwudziestoleciu międzywojennym luźno związany z obozem „młodokonserwatystów”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Jerzy Waldorff",
+      "url": "https://pl.wikipedia.org/wiki/Jerzy_Waldorff"
+     },
+     {
+      "tytul": "Wikidata: Jerzy Waldorff",
+      "url": "https://www.wikidata.org/wiki/Q8865669"
+     },
+     {
+      "tytul": "OpenStreetMap: Jerzego Waldorffa",
+      "url": "https://www.openstreetmap.org/search?query=Jerzego%20Waldorffa%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Jerzy Waldorff",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Waldorff"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.934427,
+     52.292851
+    ]
+   },
+   "properties": {
+    "id": "patron-jozefa-balcerzaka-bielany",
+    "nazwa": "Ulica Józefa Balcerzaka",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Józefa Balcerzaka",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Józef Balcerzak (1903–1942), polski działacz robotniczy.",
+     "Józef Balcerzak, ps. Noblesiak – polski działacz robotniczy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Józef Balcerzak (działacz robotniczy)",
+      "url": "https://pl.wikipedia.org/wiki/Józef_Balcerzak_(działacz_robotniczy)"
+     },
+     {
+      "tytul": "Wikidata: Józef Balcerzak",
+      "url": "https://www.wikidata.org/wiki/Q11729894"
+     },
+     {
+      "tytul": "OpenStreetMap: Józefa Balcerzaka",
+      "url": "https://www.openstreetmap.org/search?query=J%C3%B3zefa%20Balcerzaka%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Józef Balcerzak",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Józef_Balcerzak_(działacz_robotniczy)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.966687,
+     52.280043
+    ]
+   },
+   "properties": {
+    "id": "patron-kazimierza-wierzynskiego-bielany",
+    "nazwa": "Ulica Kazimierza Wierzyńskiego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Kazimierza Wierzyńskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Kazimierz Wierzyński (1894–1969), polski poeta, prozaik, eseista.",
+     "Kazimierz Wierzyński – polski poeta, prozaik, eseista. Zdobywca złotego medalu w konkursie literackim IX Letnich Igrzysk Olimpijskich w Amsterdamie w 1928."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kazimierz Wierzyński",
+      "url": "https://pl.wikipedia.org/wiki/Kazimierz_Wierzyński"
+     },
+     {
+      "tytul": "Wikidata: Kazimierz Wierzyński",
+      "url": "https://www.wikidata.org/wiki/Q2370712"
+     },
+     {
+      "tytul": "OpenStreetMap: Kazimierza Wierzyńskiego",
+      "url": "https://www.openstreetmap.org/search?query=Kazimierza%20Wierzy%C5%84skiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Kazimierz Wierzyński",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Kazimierz_Wierzyński"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.903236,
+     52.299239
+    ]
+   },
+   "properties": {
+    "id": "patron-kazimierza-woycickiego-bielany",
+    "nazwa": "Ulica Kazimierza Wóycickiego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Kazimierza Wóycickiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Kazimierz Wóycicki (1876–1938), polski literaturoznawca i pedagog.",
+     "inspektor warszawskich szkół średnich, nauczyciel gimnazjalny i wykładowca uniwersytecki"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kazimierz Wóycicki (literat)",
+      "url": "https://pl.wikipedia.org/wiki/Kazimierz_Wóycicki_(literat)"
+     },
+     {
+      "tytul": "Wikidata: Kazimierz Wóycicki",
+      "url": "https://www.wikidata.org/wiki/Q8865996"
+     },
+     {
+      "tytul": "OpenStreetMap: Kazimierza Wóycickiego",
+      "url": "https://www.openstreetmap.org/search?query=Kazimierza%20W%C3%B3ycickiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Kazimierz Wóycicki",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Kazimierz_Wóycicki_(literat)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.907718,
+     52.284269
+    ]
+   },
+   "properties": {
+    "id": "patron-krzysztofa-klenczona-bielany",
+    "nazwa": "Ulica Krzysztofa Klenczona",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Krzysztofa Klenczona",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Krzysztof Klenczon (1942–1981), polski kompozytor, wokalista i muzyk (1942–1981).",
+     "Krzysztof Antoni Klenczon pseudonim Niuniek – polski kompozytor, wokalista, gitarzysta i akordeonista muzyki rockowej (bigbit, pop rock, blues rock)."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Krzysztof Klenczon",
+      "url": "https://pl.wikipedia.org/wiki/Krzysztof_Klenczon"
+     },
+     {
+      "tytul": "Wikidata: Krzysztof Klenczon",
+      "url": "https://www.wikidata.org/wiki/Q4223352"
+     },
+     {
+      "tytul": "OpenStreetMap: Krzysztofa Klenczona",
+      "url": "https://www.openstreetmap.org/search?query=Krzysztofa%20Klenczona%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Krzysztof Klenczon",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Krzysztof_Klenczon"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.929795,
+     52.305109
+    ]
+   },
+   "properties": {
+    "id": "patron-krolowej-jadwigi-bielany",
+    "nazwa": "Ulica Królowej Jadwigi",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Królowej Jadwigi",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Jadwiga Andegaweńska (1374–1399), Król Polski, święta Kościoła katolickiego.",
+     "bazylika archikatedralna św. Stanisława i św. Wacława w Krakowie"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Jadwiga Andegaweńska",
+      "url": "https://pl.wikipedia.org/wiki/Jadwiga_Andegaweńska"
+     },
+     {
+      "tytul": "Wikidata: Jadwiga Andegaweńska",
+      "url": "https://www.wikidata.org/wiki/Q53449"
+     },
+     {
+      "tytul": "OpenStreetMap: Królowej Jadwigi",
+      "url": "https://www.openstreetmap.org/search?query=Kr%C3%B3lowej%20Jadwigi%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Jadwiga Andegaweńska",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Jadwiga_Andegaweńska"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.959537,
+     52.27401
+    ]
+   },
+   "properties": {
+    "id": "patron-leopolda-staffa-bielany",
+    "nazwa": "Ulica Leopolda Staffa",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Leopolda Staffa",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Leopold Staff (1878–1957), polski poeta i tłumacz.",
+     "Leopold Henryk Staff – polski poeta, tłumacz i eseista. Jeden z najwybitniejszych twórców literatury polskiej XX wieku, kojarzony głównie jako przedstawiciel współczesnego klasycyzmu; prekursor poezji codzienności, związany także z franciszkanizmem i parnasizmem."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Leopold Staff",
+      "url": "https://pl.wikipedia.org/wiki/Leopold_Staff"
+     },
+     {
+      "tytul": "Wikidata: Leopold Staff",
+      "url": "https://www.wikidata.org/wiki/Q223230"
+     },
+     {
+      "tytul": "OpenStreetMap: Leopolda Staffa",
+      "url": "https://www.openstreetmap.org/search?query=Leopolda%20Staffa%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Leopold Staff",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Leopold_Staff"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.943402,
+     52.27526
+    ]
+   },
+   "properties": {
+    "id": "patron-lucjana-rydla-bielany",
+    "nazwa": "Ulica Lucjana Rydla",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Lucjana Rydla",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Lucjan Rydel (1870–1918), polski poeta.",
+     "Lucjan Antoni Feliks Rydel – polski poeta, prozaik i dramatopisarz okresu Młodej Polski."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Lucjan Rydel (poeta)",
+      "url": "https://pl.wikipedia.org/wiki/Lucjan_Rydel_(poeta)"
+     },
+     {
+      "tytul": "Wikidata: Lucjan Rydel",
+      "url": "https://www.wikidata.org/wiki/Q582704"
+     },
+     {
+      "tytul": "OpenStreetMap: Lucjana Rydla",
+      "url": "https://www.openstreetmap.org/search?query=Lucjana%20Rydla%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Lucjan Rydel",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Lucjan_Rydel_(poeta)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.931747,
+     52.284472
+    ]
+   },
+   "properties": {
+    "id": "patron-lwa-tolstoja-bielany",
+    "nazwa": "Ulica Lwa Tołstoja",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Lwa Tołstoja",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Lew Tołstoj (1828–1910), rosyjski powieściopisarz, dramaturg i krytyk literacki (1828–1910).",
+     "Lew Nikołajewicz Tołstoj, hrabia – rosyjski powieściopisarz, dramaturg, krytyk literacki, filozof, pedagog."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Lew Tołstoj",
+      "url": "https://pl.wikipedia.org/wiki/Lew_Tołstoj"
+     },
+     {
+      "tytul": "Wikidata: Lew Tołstoj",
+      "url": "https://www.wikidata.org/wiki/Q7243"
+     },
+     {
+      "tytul": "OpenStreetMap: Lwa Tołstoja",
+      "url": "https://www.openstreetmap.org/search?query=Lwa%20To%C5%82stoja%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Lew Tołstoj",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Lew_Tołstoj"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.93265,
+     52.272743
+    ]
+   },
+   "properties": {
+    "id": "patron-marii-dabrowskiej-bielany",
+    "nazwa": "Ulica Marii Dąbrowskiej",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Marii Dąbrowskiej",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Maria Dąbrowska (1889–1965), pisarka polska, autorka \"Nocy i dni\".",
+     "Maria Dąbrowska z domu Szumska – polska powieściopisarka, eseistka, dramatopisarka, tłumaczka dzieł literatury duńskiej, angielskiej i rosyjskiej; jedna z najważniejszych polskich powieściopisarek XX wieku, autorka tetralogii powieściowej Noce i dnie (1931–1934), za którą była nominowana do Nagrody Nobla w dziedzinie literatury w 1939, 1957, 1959, 1960 i 1965."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Maria Dąbrowska",
+      "url": "https://pl.wikipedia.org/wiki/Maria_Dąbrowska"
+     },
+     {
+      "tytul": "Wikidata: Maria Dąbrowska",
+      "url": "https://www.wikidata.org/wiki/Q242423"
+     },
+     {
+      "tytul": "OpenStreetMap: Marii Dąbrowskiej",
+      "url": "https://www.openstreetmap.org/search?query=Marii%20D%C4%85browskiej%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Maria Dąbrowska",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Maria_Dąbrowska"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.921789,
+     52.309208
+    ]
+   },
+   "properties": {
+    "id": "patron-marii-ludwiki-gonzagi-bielany",
+    "nazwa": "Ulica Marii Ludwiki Gonzagi",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Marii Ludwiki Gonzagi",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Ludwika Maria Gonzaga (1611–1667), królowa Polski.",
+     "Ludwika Maria Gonzaga de Nevers – królowa Polski, żona dwóch polskich królów: Władysława IV i Jana II Kazimierza, posiadaczka starostwa grudziądzkiego w latach 1660–1667, posiadaczka starostwa lubomelskiego, posiadaczka starostwa wiślickiego, posiadaczka i starościna tucholska."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ludwika Maria Gonzaga",
+      "url": "https://pl.wikipedia.org/wiki/Ludwika_Maria_Gonzaga"
+     },
+     {
+      "tytul": "Wikidata: Ludwika Maria Gonzaga",
+      "url": "https://www.wikidata.org/wiki/Q232793"
+     },
+     {
+      "tytul": "OpenStreetMap: Marii Ludwiki Gonzagi",
+      "url": "https://www.openstreetmap.org/search?query=Marii%20Ludwiki%20Gonzagi%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Ludwika Maria Gonzaga",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Ludwika_Maria_Gonzaga"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.955863,
+     52.277336
+    ]
+   },
+   "properties": {
+    "id": "patron-marii-pawlikowskiej-jasnorzewskiej-bielany",
+    "nazwa": "Ulica Marii Pawlikowskiej-Jasnorzewskiej",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Marii Pawlikowskiej-Jasnorzewskiej",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Maria Pawlikowska-Jasnorzewska (1891–1945), polska poetka.",
+     "Maria Teresa Pawlikowska-Jasnorzewska z d. Kossak, primo voto Bzowska, secundo voto Pawlikowska, tertio voto Jasnorzewska – polska poetka i dramatopisarka dwudziestolecia międzywojennego."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Maria Pawlikowska-Jasnorzewska",
+      "url": "https://pl.wikipedia.org/wiki/Maria_Pawlikowska-Jasnorzewska"
+     },
+     {
+      "tytul": "Wikidata: Maria Pawlikowska-Jasnorzewska",
+      "url": "https://www.wikidata.org/wiki/Q3649395"
+     },
+     {
+      "tytul": "OpenStreetMap: Marii Pawlikowskiej-Jasnorzewskiej",
+      "url": "https://www.openstreetmap.org/search?query=Marii%20Pawlikowskiej-Jasnorzewskiej%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Maria Pawlikowska-Jasnorzewska",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Maria_Pawlikowska-Jasnorzewska"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.970017,
+     52.277399
+    ]
+   },
+   "properties": {
+    "id": "patron-marka-hlaski-bielany",
+    "nazwa": "Ulica Marka Hłaski",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Marka Hłaski",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Marek Hłasko (1934–1969), polski pisarz (1934–1969).",
+     "Marek Hłasko – polski pisarz i scenarzysta filmowy. Należał do Pokolenia „Współczesności”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Marek Hłasko",
+      "url": "https://pl.wikipedia.org/wiki/Marek_Hłasko"
+     },
+     {
+      "tytul": "Wikidata: Marek Hłasko",
+      "url": "https://www.wikidata.org/wiki/Q704005"
+     },
+     {
+      "tytul": "OpenStreetMap: Marka Hłaski",
+      "url": "https://www.openstreetmap.org/search?query=Marka%20H%C5%82aski%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Marek Hłasko",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Marek_Hłasko"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.943665,
+     52.284395
+    ]
+   },
+   "properties": {
+    "id": "patron-michala-oczapowskiego-bielany",
+    "nazwa": "Ulica Michała Oczapowskiego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Michała Oczapowskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Michał Oczapowski (1788–1854), polski agronom.",
+     "Michał Oczapowski – polski agronom, profesor Cesarskiego Uniwersytetu Wileńskiego, pionier doświadczalnictwa rolniczego, teoretyk rolnictwa."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Michał Oczapowski",
+      "url": "https://pl.wikipedia.org/wiki/Michał_Oczapowski"
+     },
+     {
+      "tytul": "Wikidata: Michał Oczapowski",
+      "url": "https://www.wikidata.org/wiki/Q11779063"
+     },
+     {
+      "tytul": "OpenStreetMap: Michała Oczapowskiego",
+      "url": "https://www.openstreetmap.org/search?query=Micha%C5%82a%20Oczapowskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Michał Oczapowski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Michał_Oczapowski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.92512,
+     52.27671
+    ]
+   },
+   "properties": {
+    "id": "patron-pabla-nerudy-bielany",
+    "nazwa": "Ulica Pabla Nerudy",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Pabla Nerudy",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Pablo Neruda (1904–1973), poeta chilijski, noblista.",
+     "Pablo Neruda, właściwie Ricardo Eliecer Neftalí Reyes Basoalto – chilijski poeta, laureat Nagrody Nobla w dziedzinie literatury w 1971."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Pablo Neruda",
+      "url": "https://pl.wikipedia.org/wiki/Pablo_Neruda"
+     },
+     {
+      "tytul": "Wikidata: Pablo Neruda",
+      "url": "https://www.wikidata.org/wiki/Q34189"
+     },
+     {
+      "tytul": "OpenStreetMap: Pabla Nerudy",
+      "url": "https://www.openstreetmap.org/search?query=Pabla%20Nerudy%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Pablo Neruda",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Pablo_Neruda"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.941331,
+     52.268395
+    ]
+   },
+   "properties": {
+    "id": "patron-pulkownika-mieczyslawa-niedzielskiego-zywiciela-bielany",
+    "nazwa": "Ulica Pułkownika Mieczysława Niedzielskiego „Żywiciela”",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Pułkownika Mieczysława Niedzielskiego „Żywiciela”",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Mieczysław Niedzielski (1897–1980).",
+     "Mieczysław Roman Niedzielski, ps. „Żywiciel”, „Wojciechowski”, „Boruta”, „Papuga”, „Sadownik” – pułkownik saperów Wojska Polskiego, działacz niepodległościowy, od 1940 dowódca Obwodu II Żoliborz Armii Krajowej, dowódca obrony Żoliborza w powstaniu warszawskim, od września 1944 dowódca 8 Dywizji Piechoty AK im."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Mieczysław Niedzielski",
+      "url": "https://pl.wikipedia.org/wiki/Mieczysław_Niedzielski"
+     },
+     {
+      "tytul": "Wikidata: Mieczysław Niedzielski",
+      "url": "https://www.wikidata.org/wiki/Q11779899"
+     },
+     {
+      "tytul": "OpenStreetMap: Pułkownika Mieczysława Niedzielskiego „Żywiciela”",
+      "url": "https://www.openstreetmap.org/search?query=Pu%C5%82kownika%20Mieczys%C5%82awa%20Niedzielskiego%20%E2%80%9E%C5%BBywiciela%E2%80%9D%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Mieczysław Niedzielski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Mieczysław_Niedzielski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.958991,
+     52.275657
+    ]
+   },
+   "properties": {
+    "id": "patron-rondo-haliny-szwarc-bielany",
+    "nazwa": "Rondo Haliny Szwarc",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Rondo Haliny Szwarc",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Halina Szwarc (1923–2002), polska lekarka,  zajmująca się gerontologią i medycyną sportu.",
+     "Halina Maria Szwarc de domo Kłąb, ps. „Halina”, „Ryszard”, „Jacek II” – polska działaczka niepodległościowa i gerontolog, agentka wywiadu Armii Krajowej (podporucznik, pseudonim Ryszard, następnie Jacek II); po wojnie profesor doktor medycyny, w latach 1970–1971 prorektor Akademii Wychowania Fizycznego w Warszawie, inicjatorka uniwersytetu trzeciego wieku w Polsce."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Halina Szwarc",
+      "url": "https://pl.wikipedia.org/wiki/Halina_Szwarc"
+     },
+     {
+      "tytul": "Wikidata: Halina Szwarc",
+      "url": "https://www.wikidata.org/wiki/Q5642381"
+     },
+     {
+      "tytul": "OpenStreetMap: Rondo Haliny Szwarc",
+      "url": "https://www.openstreetmap.org/search?query=Rondo%20Haliny%20Szwarc%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Halina Szwarc",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Halina_Szwarc"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.914349,
+     52.283414
+    ]
+   },
+   "properties": {
+    "id": "patron-rondo-ksiedza-zdzislawa-peszkowskiego-bielany",
+    "nazwa": "Rondo Księdza Zdzisława Peszkowskiego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Rondo Księdza Zdzisława Peszkowskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Zdzisław Peszkowski (1918–2007), polski duchowny katolicki, kapelan rodzin katyńskich.",
+     "20 Pułk Ułanów im. Króla Jana III Sobieskiego,1 Pułk Ułanów Krechowieckich,2 Korpus Polski"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Zdzisław Peszkowski",
+      "url": "https://pl.wikipedia.org/wiki/Zdzisław_Peszkowski"
+     },
+     {
+      "tytul": "Wikidata: Zdzisław Peszkowski",
+      "url": "https://www.wikidata.org/wiki/Q2595420"
+     },
+     {
+      "tytul": "OpenStreetMap: Rondo Księdza Zdzisława Peszkowskiego",
+      "url": "https://www.openstreetmap.org/search?query=Rondo%20Ksi%C4%99dza%20Zdzis%C5%82awa%20Peszkowskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Zdzisław Peszkowski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Zdzisław_Peszkowski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.948227,
+     52.289189
+    ]
+   },
+   "properties": {
+    "id": "patron-samuela-bogumila-lindego-bielany",
+    "nazwa": "Ulica Samuela Bogumiła Lindego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Samuela Bogumiła Lindego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Samuel Linde (1771–1847), polski leksykograf, językoznawca i bibliotekarz.",
+     "Ludwika Dominika Eleonora, Anna Zofia Leona, Ludwika Emilia Izabela, Aleksandra Józefa Tekla"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Samuel Linde",
+      "url": "https://pl.wikipedia.org/wiki/Samuel_Linde"
+     },
+     {
+      "tytul": "Wikidata: Samuel Linde",
+      "url": "https://www.wikidata.org/wiki/Q1349910"
+     },
+     {
+      "tytul": "OpenStreetMap: Samuela Bogumiła Lindego",
+      "url": "https://www.openstreetmap.org/search?query=Samuela%20Bogumi%C5%82a%20Lindego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Samuel Linde",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Samuel_Linde"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.933034,
+     52.288482
+    ]
+   },
+   "properties": {
+    "id": "patron-sokratesa-bielany",
+    "nazwa": "Ulica Sokratesa",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Sokratesa",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Sokrates (470–399), filozof grecki.",
+     "Sokrates, stgr. Σωκράτης – grecki filozof starożytny, nauczyciel Platona, jedna z najważniejszych postaci filozofii zachodniej."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Sokrates",
+      "url": "https://pl.wikipedia.org/wiki/Sokrates"
+     },
+     {
+      "tytul": "Wikidata: Sokrates",
+      "url": "https://www.wikidata.org/wiki/Q913"
+     },
+     {
+      "tytul": "OpenStreetMap: Sokratesa",
+      "url": "https://www.openstreetmap.org/search?query=Sokratesa%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Sokrates",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Sokrates"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.967301,
+     52.282596
+    ]
+   },
+   "properties": {
+    "id": "patron-stanislawa-grochowiaka-bielany",
+    "nazwa": "Ulica Stanisława Grochowiaka",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Stanisława Grochowiaka",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Stanisław Grochowiak (1934–1976), polski poeta, dramatopisarz i publicysta.",
+     "Stanisław Antoni Grochowiak, ps. Kain – polski poeta, dramatopisarz, publicysta, prozaik i scenarzysta filmowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Stanisław Grochowiak",
+      "url": "https://pl.wikipedia.org/wiki/Stanisław_Grochowiak"
+     },
+     {
+      "tytul": "Wikidata: Stanisław Grochowiak",
+      "url": "https://www.wikidata.org/wiki/Q2022605"
+     },
+     {
+      "tytul": "OpenStreetMap: Stanisława Grochowiaka",
+      "url": "https://www.openstreetmap.org/search?query=Stanis%C5%82awa%20Grochowiaka%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Stanisław Grochowiak",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Grochowiak"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.944444,
+     52.281951
+    ]
+   },
+   "properties": {
+    "id": "patron-stanislawa-przybyszewskiego-bielany",
+    "nazwa": "Ulica Stanisława Przybyszewskiego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Stanisława Przybyszewskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Stanisław Przybyszewski (1868–1927), polski pisarz, dramaturg i publicysta.",
+     "Stanisław Feliks Przybyszewski – polski pisarz, poeta, dramaturg, nowelista okresu Młodej Polski, skandalista, przedstawiciel cyganerii krakowskiej i nurtu polskiego dekadentyzmu."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Stanisław Przybyszewski",
+      "url": "https://pl.wikipedia.org/wiki/Stanisław_Przybyszewski"
+     },
+     {
+      "tytul": "Wikidata: Stanisław Przybyszewski",
+      "url": "https://www.wikidata.org/wiki/Q921405"
+     },
+     {
+      "tytul": "OpenStreetMap: Stanisława Przybyszewskiego",
+      "url": "https://www.openstreetmap.org/search?query=Stanis%C5%82awa%20Przybyszewskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Stanisław Przybyszewski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Przybyszewski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.939122,
+     52.277949
+    ]
+   },
+   "properties": {
+    "id": "patron-stefana-zeromskiego-bielany",
+    "nazwa": "Ulica Stefana Żeromskiego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Stefana Żeromskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Stefan Żeromski (1864–1925), polski prozaik, publicysta i dramaturg; pierwszy prezes polskiego PEN Clubu.",
+     "Stefan Żeromski – polski prozaik, publicysta, dramaturg; pierwszy prezes polskiego PEN Clubu, prezydent Rzeczypospolitej Zakopiańskiej."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Stefan Żeromski",
+      "url": "https://pl.wikipedia.org/wiki/Stefan_Żeromski"
+     },
+     {
+      "tytul": "Wikidata: Stefan Żeromski",
+      "url": "https://www.wikidata.org/wiki/Q366040"
+     },
+     {
+      "tytul": "OpenStreetMap: Stefana Żeromskiego",
+      "url": "https://www.openstreetmap.org/search?query=Stefana%20%C5%BBeromskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Stefan Żeromski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Stefan_Żeromski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.930565,
+     52.282674
+    ]
+   },
+   "properties": {
+    "id": "patron-sandora-petofiego-bielany",
+    "nazwa": "Ulica Sándora Petöfiego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Sándora Petöfiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Sándor Petőfi (1823–1849), węgierski poeta.",
+     "Sándor Petőfi – poeta węgierski, ideowy przywódca młodzieży budapeszteńskiej, uczestnik powstania węgierskiego."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Sándor Petőfi",
+      "url": "https://pl.wikipedia.org/wiki/Sándor_Petőfi"
+     },
+     {
+      "tytul": "Wikidata: Sándor Petőfi",
+      "url": "https://www.wikidata.org/wiki/Q81219"
+     },
+     {
+      "tytul": "OpenStreetMap: Sándora Petöfiego",
+      "url": "https://www.openstreetmap.org/search?query=S%C3%A1ndora%20Pet%C3%B6fiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Sándor Petőfi",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Sándor_Petőfi"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.934221,
+     52.291064
+    ]
+   },
+   "properties": {
+    "id": "patron-tadeusza-gajcego-bielany",
+    "nazwa": "Ulica Tadeusza Gajcego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Tadeusza Gajcego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Tadeusz Gajcy (1922–1944), polski poeta (1922–1944).",
+     "Tadeusz Stefan Gajcy, ps. Karol Topornicki, Roman Oścień, Topór – polski poeta czasu wojny, przedstawiciel pokolenia Kolumbów, żołnierz Armii Krajowej, powstaniec warszawski."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Tadeusz Gajcy",
+      "url": "https://pl.wikipedia.org/wiki/Tadeusz_Gajcy"
+     },
+     {
+      "tytul": "Wikidata: Tadeusz Gajcy",
+      "url": "https://www.wikidata.org/wiki/Q2529964"
+     },
+     {
+      "tytul": "OpenStreetMap: Tadeusza Gajcego",
+      "url": "https://www.openstreetmap.org/search?query=Tadeusza%20Gajcego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Tadeusz Gajcy",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Tadeusz_Gajcy"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.915979,
+     52.323712
+    ]
+   },
+   "properties": {
+    "id": "patron-tadeusza-kosciuszki-bielany",
+    "nazwa": "Ulica Tadeusza Kościuszki",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Tadeusza Kościuszki",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Tadeusz Kościuszko (1746–1817), polski i amerykański generał, bohater narodowy (1746–1817).",
+     "wojna o niepodległość Stanów Zjednoczonych,wojna polsko-rosyjska,insurekcja kościuszkowska"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Tadeusz Kościuszko",
+      "url": "https://pl.wikipedia.org/wiki/Tadeusz_Kościuszko"
+     },
+     {
+      "tytul": "Wikidata: Tadeusz Kościuszko",
+      "url": "https://www.wikidata.org/wiki/Q191479"
+     },
+     {
+      "tytul": "OpenStreetMap: Tadeusza Kościuszki",
+      "url": "https://www.openstreetmap.org/search?query=Tadeusza%20Ko%C5%9Bciuszki%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Tadeusz Kościuszko",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Tadeusz_Kościuszko"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.969504,
+     52.280991
+    ]
+   },
+   "properties": {
+    "id": "patron-waclawa-berenta-bielany",
+    "nazwa": "Ulica Wacława Berenta",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Wacława Berenta",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Wacław Berent (1873–1940), polski powieściopisarz i tłumacz okresu modernizmu; obok Władysława Reymonta główny przedstawiciel realizmu w literaturze Młodej Polski.",
+     "Wacław Berent ps. Władysław Rawicz, używał także kryptonimów S.A.M. oraz W.B. – polski powieściopisarz i tłumacz okresu modernizmu, główny (obok Władysława Reymonta) przedstawiciel realizmu w literaturze Młodej Polski."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Wacław Berent",
+      "url": "https://pl.wikipedia.org/wiki/Wacław_Berent"
+     },
+     {
+      "tytul": "Wikidata: Wacław Berent",
+      "url": "https://www.wikidata.org/wiki/Q2441886"
+     },
+     {
+      "tytul": "OpenStreetMap: Wacława Berenta",
+      "url": "https://www.openstreetmap.org/search?query=Wac%C5%82awa%20Berenta%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Wacław Berent",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Wacław_Berent"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.938072,
+     52.28665
+    ]
+   },
+   "properties": {
+    "id": "patron-wergiliusza-bielany",
+    "nazwa": "Ulica Wergiliusza",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Wergiliusza",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Wergiliusz (70–19), poeta rzymski.",
+     "Wergiliusz, właśc. Publiusz Wergiliusz Maro, niekiedy Publiusz Wergiliusz Maron, dawniej także Wirgiliusz (ur."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Wergiliusz",
+      "url": "https://pl.wikipedia.org/wiki/Wergiliusz"
+     },
+     {
+      "tytul": "Wikidata: Wergiliusz",
+      "url": "https://www.wikidata.org/wiki/Q1398"
+     },
+     {
+      "tytul": "OpenStreetMap: Wergiliusza",
+      "url": "https://www.openstreetmap.org/search?query=Wergiliusza%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Wergiliusz",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Wergiliusz"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.934279,
+     52.284133
+    ]
+   },
+   "properties": {
+    "id": "patron-wiliama-szekspira-bielany",
+    "nazwa": "Ulica Wiliama Szekspira",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Wiliama Szekspira",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: William Shakespeare (1564–1616), angielski poeta i dramatopisarz.",
+     "William Shakespeare – angielski poeta, dramaturg, aktor. Powszechnie uważany za jednego z najwybitniejszych pisarzy literatury angielskiej oraz reformatorów teatru."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: William Shakespeare",
+      "url": "https://pl.wikipedia.org/wiki/William_Shakespeare"
+     },
+     {
+      "tytul": "Wikidata: William Shakespeare",
+      "url": "https://www.wikidata.org/wiki/Q692"
+     },
+     {
+      "tytul": "OpenStreetMap: Wiliama Szekspira",
+      "url": "https://www.openstreetmap.org/search?query=Wiliama%20Szekspira%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "William Shakespeare",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/William_Shakespeare"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.970646,
+     52.284312
+    ]
+   },
+   "properties": {
+    "id": "patron-witolda-gombrowicza-bielany",
+    "nazwa": "Ulica Witolda Gombrowicza",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Witolda Gombrowicza",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Witold Gombrowicz (1904–1969), polski pisarz (1904–1969).",
+     "Witold Marian Gombrowicz – polski powieściopisarz, nowelista, dramaturg i filozof."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Witold Gombrowicz",
+      "url": "https://pl.wikipedia.org/wiki/Witold_Gombrowicz"
+     },
+     {
+      "tytul": "Wikidata: Witold Gombrowicz",
+      "url": "https://www.wikidata.org/wiki/Q275175"
+     },
+     {
+      "tytul": "OpenStreetMap: Witolda Gombrowicza",
+      "url": "https://www.openstreetmap.org/search?query=Witolda%20Gombrowicza%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Witold Gombrowicz",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Witold_Gombrowicz"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.916372,
+     52.275127
+    ]
+   },
+   "properties": {
+    "id": "patron-wojciecha-boguslawskiego-bielany",
+    "nazwa": "Ulica Wojciecha Bogusławskiego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Wojciecha Bogusławskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Wojciech Bogusławski (1757–1829), polski aktor, śpiewak operowy, reżyser, pisarz, dramatopisarz, tłumacz.",
+     "Wojciech Romuald Bogusławski herbu Świnka, ps. i krypt.: Autor „Fraskatanki”, Autor „Mieszczek modnych”, Autor „Ślubu modnego”, R. W..."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Wojciech Bogusławski",
+      "url": "https://pl.wikipedia.org/wiki/Wojciech_Bogusławski"
+     },
+     {
+      "tytul": "Wikidata: Wojciech Bogusławski",
+      "url": "https://www.wikidata.org/wiki/Q290902"
+     },
+     {
+      "tytul": "OpenStreetMap: Wojciecha Bogusławskiego",
+      "url": "https://www.openstreetmap.org/search?query=Wojciecha%20Bogus%C5%82awskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Wojciech Bogusławski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Wojciech_Bogusławski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.969183,
+     52.279829
+    ]
+   },
+   "properties": {
+    "id": "patron-wladyslawa-sebyly-bielany",
+    "nazwa": "Ulica Władysława Sebyły",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Władysława Sebyły",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Władysław Stefan Sebyła (1902–1940), polski poeta i oficer, ofiara zbrodni katyńskiej.",
+     "Władysław Stefan Sebyła – polski poeta, podporucznik rezerwy piechoty Wojska Polskiego, ofiara zbrodni katyńskiej."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Władysław Sebyła",
+      "url": "https://pl.wikipedia.org/wiki/Władysław_Sebyła"
+     },
+     {
+      "tytul": "Wikidata: Władysław Stefan Sebyła",
+      "url": "https://www.wikidata.org/wiki/Q4411863"
+     },
+     {
+      "tytul": "OpenStreetMap: Władysława Sebyły",
+      "url": "https://www.openstreetmap.org/search?query=W%C5%82adys%C5%82awa%20Seby%C5%82y%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Władysław Stefan Sebyła",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Władysław_Sebyła"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.963554,
+     52.280458
+    ]
+   },
+   "properties": {
+    "id": "patron-wladyslawa-smolenskiego-bielany",
+    "nazwa": "Ulica Władysława Smoleńskiego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Władysława Smoleńskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Władysław Smoleński (1851–1926), polski historyk.",
+     "Władysław Smoleński, pseud. m.in. Władysław Grabieński – polski historyk, przedstawiciel tzw."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Władysław Smoleński",
+      "url": "https://pl.wikipedia.org/wiki/Władysław_Smoleński"
+     },
+     {
+      "tytul": "Wikidata: Władysław Smoleński",
+      "url": "https://www.wikidata.org/wiki/Q9382290"
+     },
+     {
+      "tytul": "OpenStreetMap: Władysława Smoleńskiego",
+      "url": "https://www.openstreetmap.org/search?query=W%C5%82adys%C5%82awa%20Smole%C5%84skiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Władysław Smoleński",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Władysław_Smoleński"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.951768,
+     52.273384
+    ]
+   },
+   "properties": {
+    "id": "patron-wlodzimierza-perzynskiego-bielany",
+    "nazwa": "Ulica Włodzimierza Perzyńskiego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Włodzimierza Perzyńskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Włodzimierz Perzyński (1877–1930), polski dramatopisarz.",
+     "Włodzimierz Perzyński – polski dramatopisarz, poeta, powieściopisarz i nowelista okresu Młodej Polski."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Włodzimierz Perzyński",
+      "url": "https://pl.wikipedia.org/wiki/Włodzimierz_Perzyński"
+     },
+     {
+      "tytul": "Wikidata: Włodzimierz Perzyński",
+      "url": "https://www.wikidata.org/wiki/Q8028923"
+     },
+     {
+      "tytul": "OpenStreetMap: Włodzimierza Perzyńskiego",
+      "url": "https://www.openstreetmap.org/search?query=W%C5%82odzimierza%20Perzy%C5%84skiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Włodzimierz Perzyński",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Włodzimierz_Perzyński"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.958913,
+     52.27544
+    ]
+   },
+   "properties": {
+    "id": "patron-zbigniewa-romaszewskiego-bielany",
+    "nazwa": "Ulica Zbigniewa Romaszewskiego",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Zbigniewa Romaszewskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Zbigniew Romaszewski (1940–2014), polski polityk, działacz praw człowieka.",
+     "Zbigniew Jan Romaszewski – polski polityk i fizyk, uczestnik opozycji w okresie PRL, działacz na rzecz praw człowieka, doktor nauk fizycznych."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Zbigniew Romaszewski",
+      "url": "https://pl.wikipedia.org/wiki/Zbigniew_Romaszewski"
+     },
+     {
+      "tytul": "Wikidata: Zbigniew Romaszewski",
+      "url": "https://www.wikidata.org/wiki/Q3845564"
+     },
+     {
+      "tytul": "OpenStreetMap: Zbigniewa Romaszewskiego",
+      "url": "https://www.openstreetmap.org/search?query=Zbigniewa%20Romaszewskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Zbigniew Romaszewski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Zbigniew_Romaszewski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.956815,
+     52.275133
+    ]
+   },
+   "properties": {
+    "id": "patron-zofii-nalkowskiej-bielany",
+    "nazwa": "Ulica Zofii Nałkowskiej",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Zofii Nałkowskiej",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Zofia Nałkowska (1884–1954), pisarka polska, publicystka i dramatopisarka.",
+     "Zofia Nałkowska – polska pisarka, publicystka i dramatopisarka, posłanka do Krajowej Rady Narodowej oraz na Sejm Ustawodawczy i Sejm PRL I kadencji, członkini Polskiego Komitetu Obrońców Pokoju w 1949 roku."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Zofia Nałkowska",
+      "url": "https://pl.wikipedia.org/wiki/Zofia_Nałkowska"
+     },
+     {
+      "tytul": "Wikidata: Zofia Nałkowska",
+      "url": "https://www.wikidata.org/wiki/Q218319"
+     },
+     {
+      "tytul": "OpenStreetMap: Zofii Nałkowskiej",
+      "url": "https://www.openstreetmap.org/search?query=Zofii%20Na%C5%82kowskiej%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Zofia Nałkowska",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Zofia_Nałkowska"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.89907,
+     52.235606
+    ]
+   },
+   "properties": {
+    "id": "patron-aleksandra-swietochowskiego-bemowo",
+    "nazwa": "Ulica Aleksandra Świętochowskiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Aleksandra Świętochowskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Aleksander Świętochowski (1849–1938), polski pisarz, publicysta, filozof i historyk.",
+     "Aleksander Świętochowski, ps. Władysław Okoński, Poseł Prawdy, O.Remus, Oremus, Liber, Gezyasz, Nauczyciel i in."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Aleksander Świętochowski",
+      "url": "https://pl.wikipedia.org/wiki/Aleksander_Świętochowski"
+     },
+     {
+      "tytul": "Wikidata: Aleksander Świętochowski",
+      "url": "https://www.wikidata.org/wiki/Q723324"
+     },
+     {
+      "tytul": "OpenStreetMap: Aleksandra Świętochowskiego",
+      "url": "https://www.openstreetmap.org/search?query=Aleksandra%20%C5%9Awi%C4%99tochowskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Aleksander Świętochowski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Aleksander_Świętochowski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.917524,
+     52.229166
+    ]
+   },
+   "properties": {
+    "id": "patron-anieli-krzywon-bemowo",
+    "nazwa": "Ulica Anieli Krzywoń",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Anieli Krzywoń",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Aniela Krzywoń (1925–1943), żołnierz ludowego Wojska Polskiego, pierwsza Polka, która otrzymała tytuł Bohatera Związku Radzieckiego.",
+     "Anna Aniela Krzywoń – żołnierz 1 Dywizji Piechoty im. Tadeusza Kościuszki, jedyna Polka odznaczona tytułem Bohatera Związku Radzieckiego."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Aniela Krzywoń",
+      "url": "https://pl.wikipedia.org/wiki/Aniela_Krzywoń"
+     },
+     {
+      "tytul": "Wikidata: Aniela Krzywoń",
+      "url": "https://www.wikidata.org/wiki/Q4219924"
+     },
+     {
+      "tytul": "OpenStreetMap: Anieli Krzywoń",
+      "url": "https://www.openstreetmap.org/search?query=Anieli%20Krzywo%C5%84%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Aniela Krzywoń",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Aniela_Krzywoń"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.891559,
+     52.258449
+    ]
+   },
+   "properties": {
+    "id": "patron-antoniego-boleslawa-dobrowolskiego-bemowo",
+    "nazwa": "Ulica Antoniego Bolesława Dobrowolskiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Antoniego Bolesława Dobrowolskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Antoni Bolesław Dobrowolski (1872–1954), geograf i pedagog polski, badacz Antarktydy.",
+     "Antoni Bolesław Dobrowolski – polski geofizyk, meteorolog i podróżnik."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Antoni Bolesław Dobrowolski",
+      "url": "https://pl.wikipedia.org/wiki/Antoni_Bolesław_Dobrowolski"
+     },
+     {
+      "tytul": "Wikidata: Antoni Bolesław Dobrowolski",
+      "url": "https://www.wikidata.org/wiki/Q3360202"
+     },
+     {
+      "tytul": "OpenStreetMap: Antoniego Bolesława Dobrowolskiego",
+      "url": "https://www.openstreetmap.org/search?query=Antoniego%20Boles%C5%82awa%20Dobrowolskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Antoni Bolesław Dobrowolski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Antoni_Bolesław_Dobrowolski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.8894,
+     52.250561
+    ]
+   },
+   "properties": {
+    "id": "patron-antoniego-kocjana-bemowo",
+    "nazwa": "Ulica Antoniego Kocjana",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Antoniego Kocjana",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Antoni Kocjan (1902–1944), polski konstruktor szybowcowy, żołnierz podziemia.",
+     "Antoni Kocjan – polski inżynier, konstruktor lotniczy szybowców, współpracownik wywiadu AK, kawaler Orderu Virtuti Militari."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Antoni Kocjan",
+      "url": "https://pl.wikipedia.org/wiki/Antoni_Kocjan"
+     },
+     {
+      "tytul": "Wikidata: Antoni Kocjan",
+      "url": "https://www.wikidata.org/wiki/Q4776172"
+     },
+     {
+      "tytul": "OpenStreetMap: Antoniego Kocjana",
+      "url": "https://www.openstreetmap.org/search?query=Antoniego%20Kocjana%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Antoni Kocjan",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Antoni_Kocjan"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.918971,
+     52.25172
+    ]
+   },
+   "properties": {
+    "id": "patron-apoloniusza-kedzierskiego-bemowo",
+    "nazwa": "Ulica Apoloniusza Kędzierskiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Apoloniusza Kędzierskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Apoloniusz Kędzierski (1861–1939), polski malarz.",
+     "Apoloniusz Kędzierski – polski malarz akwarelista, rysownik, ilustrator, dekorator."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Apoloniusz Kędzierski",
+      "url": "https://pl.wikipedia.org/wiki/Apoloniusz_Kędzierski"
+     },
+     {
+      "tytul": "Wikidata: Apoloniusz Kędzierski",
+      "url": "https://www.wikidata.org/wiki/Q4780440"
+     },
+     {
+      "tytul": "OpenStreetMap: Apoloniusza Kędzierskiego",
+      "url": "https://www.openstreetmap.org/search?query=Apoloniusza%20K%C4%99dzierskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Apoloniusz Kędzierski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Apoloniusz_Kędzierski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.916283,
+     52.243345
+    ]
+   },
+   "properties": {
+    "id": "patron-arki-bozka-bemowo",
+    "nazwa": "Ulica Arki Bożka",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Arki Bożka",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Arka Bożek (1899–1954), polski działacz ludowy i narodowy na Śląsku (1899–1954).",
+     "Polskie Stronnictwo Ludowe „Nowe Wyzwolenie” / Stronnictwo Ludowe / Zjednoczone Stronnictwo Ludowe"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Arka Bożek",
+      "url": "https://pl.wikipedia.org/wiki/Arka_Bożek"
+     },
+     {
+      "tytul": "Wikidata: Arka Bożek",
+      "url": "https://www.wikidata.org/wiki/Q9159652"
+     },
+     {
+      "tytul": "OpenStreetMap: Arki Bożka",
+      "url": "https://www.openstreetmap.org/search?query=Arki%20Bo%C5%BCka%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Arka Bożek",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Arka_Bożek"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.865102,
+     52.246775
+    ]
+   },
+   "properties": {
+    "id": "patron-boleslawa-prusa-bemowo",
+    "nazwa": "Ulica Bolesława Prusa",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Bolesława Prusa",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Bolesław Prus (1847–1912), polski pisarz i publicysta (1847–1912).",
+     "Bolesław Prus, właśc. Aleksander Głowacki – polski pisarz, prozaik, publicysta okresu pozytywizmu, współtwórca polskiego realizmu, kronikarz Warszawy, myśliciel i popularyzator wiedzy, działacz społeczny, propagator turystyki pieszej i rowerowej."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Bolesław Prus",
+      "url": "https://pl.wikipedia.org/wiki/Bolesław_Prus"
+     },
+     {
+      "tytul": "Wikidata: Bolesław Prus",
+      "url": "https://www.wikidata.org/wiki/Q144439"
+     },
+     {
+      "tytul": "OpenStreetMap: Bolesława Prusa",
+      "url": "https://www.openstreetmap.org/search?query=Boles%C5%82awa%20Prusa%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Bolesław Prus",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Bolesław_Prus"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.891849,
+     52.257204
+    ]
+   },
+   "properties": {
+    "id": "patron-dymitra-mendelejewa-bemowo",
+    "nazwa": "Ulica Dymitra Mendelejewa",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Dymitra Mendelejewa",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Dmitrij Mendelejew (1834–1907), chemik rosyjski.",
+     "Dmitrij Iwanowicz Mendelejew – rosyjski chemik, odkrywca (w 1869) prawa okresowości pierwiastków chemicznych, laureat Medalu Copleya."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Dmitrij Mendelejew",
+      "url": "https://pl.wikipedia.org/wiki/Dmitrij_Mendelejew"
+     },
+     {
+      "tytul": "Wikidata: Dmitrij Mendelejew",
+      "url": "https://www.wikidata.org/wiki/Q9106"
+     },
+     {
+      "tytul": "OpenStreetMap: Dymitra Mendelejewa",
+      "url": "https://www.openstreetmap.org/search?query=Dymitra%20Mendelejewa%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Dmitrij Mendelejew",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Dmitrij_Mendelejew"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.931206,
+     52.260665
+    ]
+   },
+   "properties": {
+    "id": "patron-edmunda-jana-osmanczyka-bemowo",
+    "nazwa": "Ulica Edmunda Jana Osmańczyka",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Edmunda Jana Osmańczyka",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Edmund Osmańczyk (1913–1989), polski publicysta i politolog.",
+     "poseł na Sejm PRL I, II, V, VI, VII i VIII kadencji, członek Rady Państwa (1979–1980), senator I kadencji (1989)"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Edmund Osmańczyk",
+      "url": "https://pl.wikipedia.org/wiki/Edmund_Osmańczyk"
+     },
+     {
+      "tytul": "Wikidata: Edmund Osmańczyk",
+      "url": "https://www.wikidata.org/wiki/Q3848159"
+     },
+     {
+      "tytul": "OpenStreetMap: Edmunda Jana Osmańczyka",
+      "url": "https://www.openstreetmap.org/search?query=Edmunda%20Jana%20Osma%C5%84czyka%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Edmund Osmańczyk",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Edmund_Osmańczyk"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.876778,
+     52.248033
+    ]
+   },
+   "properties": {
+    "id": "patron-elizy-orzeszkowej-bemowo",
+    "nazwa": "Ulica Elizy Orzeszkowej",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Elizy Orzeszkowej",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Eliza Orzeszkowa (1841–1910), polska pisarka epoki pozytywizmu (1841–1910).",
+     "Urodziła się jako Elżbieta Pawłowska, młodsza córka adwokata Benedykta Pawłowskiego i jego drugiej żony – Franciszki z Kamieńskich."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Eliza Orzeszkowa",
+      "url": "https://pl.wikipedia.org/wiki/Eliza_Orzeszkowa"
+     },
+     {
+      "tytul": "Wikidata: Eliza Orzeszkowa",
+      "url": "https://www.wikidata.org/wiki/Q240174"
+     },
+     {
+      "tytul": "OpenStreetMap: Elizy Orzeszkowej",
+      "url": "https://www.openstreetmap.org/search?query=Elizy%20Orzeszkowej%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Eliza Orzeszkowa",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Eliza_Orzeszkowa"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.899578,
+     52.233733
+    ]
+   },
+   "properties": {
+    "id": "patron-eugeniusza-szwankowskiego-bemowo",
+    "nazwa": "Ulica Eugeniusza Szwankowskiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Eugeniusza Szwankowskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Eugeniusz Szwankowski (1906–1973), polski historyk.",
+     "Eugeniusz Szwankowski – polski historyk, teatrolog, profesor Uniwersytetu Warszawskiego, varsavianista."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Eugeniusz Szwankowski",
+      "url": "https://pl.wikipedia.org/wiki/Eugeniusz_Szwankowski"
+     },
+     {
+      "tytul": "Wikidata: Eugeniusz Szwankowski",
+      "url": "https://www.wikidata.org/wiki/Q59532188"
+     },
+     {
+      "tytul": "OpenStreetMap: Eugeniusza Szwankowskiego",
+      "url": "https://www.openstreetmap.org/search?query=Eugeniusza%20Szwankowskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Eugeniusz Szwankowski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Eugeniusz_Szwankowski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.921666,
+     52.261856
+    ]
+   },
+   "properties": {
+    "id": "patron-franciszka-kawy-bemowo",
+    "nazwa": "Ulica Franciszka Kawy",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Franciszka Kawy",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Franciszek Kawa (1901–1985), polski lekkoatleta i narciarz.",
+     "Franciszek Józef Remigiusz Kawa – polski sportowiec (biegacz narciarski i lekkoatleta), olimpijczyk."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Franciszek Kawa",
+      "url": "https://pl.wikipedia.org/wiki/Franciszek_Kawa"
+     },
+     {
+      "tytul": "Wikidata: Franciszek Kawa",
+      "url": "https://www.wikidata.org/wiki/Q9262538"
+     },
+     {
+      "tytul": "OpenStreetMap: Franciszka Kawy",
+      "url": "https://www.openstreetmap.org/search?query=Franciszka%20Kawy%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Franciszek Kawa",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Franciszek_Kawa"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.922534,
+     52.253305
+    ]
+   },
+   "properties": {
+    "id": "patron-generala-boleslawa-szareckiego-bemowo",
+    "nazwa": "Ulica Generała Bolesława Szareckiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Generała Bolesława Szareckiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Bolesław Szarecki (1874–1960), polski wojskowy lekarz-chirurg, generał, profesor nauk medycznych.",
+     "Bolesław Szarecki – polski wojskowy lekarz-chirurg, generał dywizji Wojska Polskiego, szef Departamentu Służby Zdrowia MON, Naczelny Chirurg WP (1949–1957), profesor nauk medycznych, prezes Polskiego Związku Łowieckiego (1946–1953), kawaler Orderu Virtuti Militari."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Bolesław Szarecki",
+      "url": "https://pl.wikipedia.org/wiki/Bolesław_Szarecki"
+     },
+     {
+      "tytul": "Wikidata: Bolesław Szarecki",
+      "url": "https://www.wikidata.org/wiki/Q9176949"
+     },
+     {
+      "tytul": "OpenStreetMap: Generała Bolesława Szareckiego",
+      "url": "https://www.openstreetmap.org/search?query=Genera%C5%82a%20Boles%C5%82awa%20Szareckiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Bolesław Szarecki",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Bolesław_Szarecki"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.901876,
+     52.266252
+    ]
+   },
+   "properties": {
+    "id": "patron-generala-franciszka-kleeberga-bemowo",
+    "nazwa": "Ulica Generała Franciszka Kleeberga",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Generała Franciszka Kleeberga",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Franciszek Kleeberg (1888–1941), polski generał.",
+     "29 Dywizja PiechotyDowództwo Okręgu Korpusu Nr IIIDowództwo Okręgu Korpusu Nr IXSGO „Polesie”"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Franciszek Kleeberg",
+      "url": "https://pl.wikipedia.org/wiki/Franciszek_Kleeberg"
+     },
+     {
+      "tytul": "Wikidata: Franciszek Kleeberg",
+      "url": "https://www.wikidata.org/wiki/Q2354908"
+     },
+     {
+      "tytul": "OpenStreetMap: Generała Franciszka Kleeberga",
+      "url": "https://www.openstreetmap.org/search?query=Genera%C5%82a%20Franciszka%20Kleeberga%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Franciszek Kleeberg",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Franciszek_Kleeberg"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.89083,
+     52.2303
+    ]
+   },
+   "properties": {
+    "id": "patron-generala-ludomila-rayskiego-bemowo",
+    "nazwa": "Ulica Generała Ludomiła Rayskiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Generała Ludomiła Rayskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Ludomił Rayski (1892–1977), generał brygady WP.",
+     "Ludomił Antoni Korab Rayski – generał brygady pilot inżynier Wojska Polskiego, dowódca lotnictwa wojskowego II RP w latach 1926–1939, kawaler Orderu Virtuti Militari."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ludomił Rayski",
+      "url": "https://pl.wikipedia.org/wiki/Ludomił_Rayski"
+     },
+     {
+      "tytul": "Wikidata: Ludomił Rayski",
+      "url": "https://www.wikidata.org/wiki/Q2024365"
+     },
+     {
+      "tytul": "OpenStreetMap: Generała Ludomiła Rayskiego",
+      "url": "https://www.openstreetmap.org/search?query=Genera%C5%82a%20Ludomi%C5%82a%20Rayskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Ludomił Rayski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Ludomił_Rayski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.893902,
+     52.237389
+    ]
+   },
+   "properties": {
+    "id": "patron-generala-meriana-caldwella-coopera-bemowo",
+    "nazwa": "Ulica Generała Meriana Caldwella Coopera",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Generała Meriana Caldwella Coopera",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Merian Cooper (1893–1973), reżyser amerykański, producent filmowy, lotnik.",
+     "United States Army Air Service Gwardia Narodowa Stanów Zjednoczonych Wojsko Polskie"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Merian C. Cooper",
+      "url": "https://pl.wikipedia.org/wiki/Merian_C._Cooper"
+     },
+     {
+      "tytul": "Wikidata: Merian Cooper",
+      "url": "https://www.wikidata.org/wiki/Q446427"
+     },
+     {
+      "tytul": "OpenStreetMap: Generała Meriana Caldwella Coopera",
+      "url": "https://www.openstreetmap.org/search?query=Genera%C5%82a%20Meriana%20Caldwella%20Coopera%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Merian Cooper",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Merian_C._Cooper"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.921848,
+     52.251525
+    ]
+   },
+   "properties": {
+    "id": "patron-generala-mikolaja-boltucia-bemowo",
+    "nazwa": "Ulica Generała Mikołaja Bołtucia",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Generała Mikołaja Bołtucia",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Mikołaj Bołtuć (1893–1939), oficer Wojska Polskiego.",
+     "Mikołaj Bołtuć – generał brygady Wojska Polskiego, dwukrotny kawaler Orderu Virtuti Militari."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Mikołaj Bołtuć",
+      "url": "https://pl.wikipedia.org/wiki/Mikołaj_Bołtuć"
+     },
+     {
+      "tytul": "Wikidata: Mikołaj Bołtuć",
+      "url": "https://www.wikidata.org/wiki/Q4385902"
+     },
+     {
+      "tytul": "OpenStreetMap: Generała Mikołaja Bołtucia",
+      "url": "https://www.openstreetmap.org/search?query=Genera%C5%82a%20Miko%C5%82aja%20Bo%C5%82tucia%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Mikołaj Bołtuć",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Mikołaj_Bołtuć"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.923732,
+     52.262372
+    ]
+   },
+   "properties": {
+    "id": "patron-generala-stanislawa-rostworowskiego-bemowo",
+    "nazwa": "Ulica Generała Stanisława Rostworowskiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Generała Stanisława Rostworowskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Stanisław Rostworowski (1888–1944), polski generał, pisarz.",
+     "Sztab 5 ArmiiSztab 3 Armii14 Dywizja Piechoty2 Pułk Strzelców Konnych27 Pułk Ułanów22 Pułk Ułanów"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Stanisław Rostworowski (generał)",
+      "url": "https://pl.wikipedia.org/wiki/Stanisław_Rostworowski_(generał)"
+     },
+     {
+      "tytul": "Wikidata: Stanisław Rostworowski",
+      "url": "https://www.wikidata.org/wiki/Q9342954"
+     },
+     {
+      "tytul": "OpenStreetMap: Generała Stanisława Rostworowskiego",
+      "url": "https://www.openstreetmap.org/search?query=Genera%C5%82a%20Stanis%C5%82awa%20Rostworowskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Stanisław Rostworowski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Rostworowski_(generał)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.898378,
+     52.262767
+    ]
+   },
+   "properties": {
+    "id": "patron-generala-tadeusza-kutrzeby-bemowo",
+    "nazwa": "Ulica Generała Tadeusza Kutrzeby",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Generała Tadeusza Kutrzeby",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Tadeusz Kutrzeba (1886–1947), polski generał.",
+     "3 ArmiaFront Południowo-WschodniFront Środkowy2 ArmiaWyższa Szkoła WojennaArmia „Poznań”"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Tadeusz Kutrzeba",
+      "url": "https://pl.wikipedia.org/wiki/Tadeusz_Kutrzeba"
+     },
+     {
+      "tytul": "Wikidata: Tadeusz Kutrzeba",
+      "url": "https://www.wikidata.org/wiki/Q531148"
+     },
+     {
+      "tytul": "OpenStreetMap: Generała Tadeusza Kutrzeby",
+      "url": "https://www.openstreetmap.org/search?query=Genera%C5%82a%20Tadeusza%20Kutrzeby%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Tadeusz Kutrzeba",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Tadeusz_Kutrzeba"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.899129,
+     52.242355
+    ]
+   },
+   "properties": {
+    "id": "patron-generala-tadeusza-pelczynskiego-bemowo",
+    "nazwa": "Ulica Generała Tadeusza Pełczyńskiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Generała Tadeusza Pełczyńskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Tadeusz Pełczyński (1892–1985), oficer dyplomowany Wojska Polskiego.",
+     "6 Pułk Piechoty LP6 Pułk Piechoty Legionów5 Pułk Piechoty LegionówOddziału II SG19 Dywizja Piechoty"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Tadeusz Pełczyński (generał)",
+      "url": "https://pl.wikipedia.org/wiki/Tadeusz_Pełczyński_(generał)"
+     },
+     {
+      "tytul": "Wikidata: Tadeusz Pełczyński",
+      "url": "https://www.wikidata.org/wiki/Q2333688"
+     },
+     {
+      "tytul": "OpenStreetMap: Generała Tadeusza Pełczyńskiego",
+      "url": "https://www.openstreetmap.org/search?query=Genera%C5%82a%20Tadeusza%20Pe%C5%82czy%C5%84skiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Tadeusz Pełczyński",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Tadeusz_Pełczyński_(generał)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.905405,
+     52.236232
+    ]
+   },
+   "properties": {
+    "id": "patron-generala-waleriana-czumy-bemowo",
+    "nazwa": "Ulica Generała Waleriana Czumy",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Generała Waleriana Czumy",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Walerian Czuma (1890–1962), polski generał.",
+     "Walerian Adam Czuma – generał brygady Wojska Polskiego, komendant Straży Granicznej, działacz niepodległościowy i społeczny, dowódca obrony Warszawy we wrześniu 1939 roku, trzykrotny kawaler Orderu Virtuti Militari."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Walerian Czuma",
+      "url": "https://pl.wikipedia.org/wiki/Walerian_Czuma"
+     },
+     {
+      "tytul": "Wikidata: Walerian Czuma",
+      "url": "https://www.wikidata.org/wiki/Q2348744"
+     },
+     {
+      "tytul": "OpenStreetMap: Generała Waleriana Czumy",
+      "url": "https://www.openstreetmap.org/search?query=Genera%C5%82a%20Waleriana%20Czumy%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Walerian Czuma",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Walerian_Czuma"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.890192,
+     52.254872
+    ]
+   },
+   "properties": {
+    "id": "patron-gottfrieda-leibniza-bemowo",
+    "nazwa": "Ulica Gottfrieda Leibniza",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Gottfrieda Leibniza",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Gottfried Wilhelm Leibniz (1646–1716), niemiecki polihistor z XVII i XVIII wieku, dworzanin Księstwa Hanoweru.",
+     "prawnik, dyplomata, bibliotekarz i uczony: filozof, matematyk, fizyk, inżynier, historyk"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Gottfried Wilhelm Leibniz",
+      "url": "https://pl.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz"
+     },
+     {
+      "tytul": "Wikidata: Gottfried Wilhelm Leibniz",
+      "url": "https://www.wikidata.org/wiki/Q9047"
+     },
+     {
+      "tytul": "OpenStreetMap: Gottfrieda Leibniza",
+      "url": "https://www.openstreetmap.org/search?query=Gottfrieda%20Leibniza%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Gottfried Wilhelm Leibniz",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.920257,
+     52.259893
+    ]
+   },
+   "properties": {
+    "id": "patron-gustawa-morcinka-bemowo",
+    "nazwa": "Ulica Gustawa Morcinka",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Gustawa Morcinka",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Gustaw Morcinek (1891–1963), polski pisarz.",
+     "Gustaw Morcinek, właśc. Augustyn Morcinek – polski pisarz związany ze Śląskiem, nauczyciel, działacz publicystyczny i poseł na Sejm PRL I kadencji (1952–1956), członek Ogólnopolskiego Komitetu Frontu Jedności Narodu w 1958 roku."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Gustaw Morcinek",
+      "url": "https://pl.wikipedia.org/wiki/Gustaw_Morcinek"
+     },
+     {
+      "tytul": "Wikidata: Gustaw Morcinek",
+      "url": "https://www.wikidata.org/wiki/Q876756"
+     },
+     {
+      "tytul": "OpenStreetMap: Gustawa Morcinka",
+      "url": "https://www.openstreetmap.org/search?query=Gustawa%20Morcinka%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Gustaw Morcinek",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Gustaw_Morcinek"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.891921,
+     52.256559
+    ]
+   },
+   "properties": {
+    "id": "patron-isaaca-newtona-bemowo",
+    "nazwa": "Ulica Isaaca Newtona",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Isaaca Newtona",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Isaac Newton (1642–1727), angielski uczony: fizyk, astronom, matematyk, filozof, alchemik, biblista i historyk oraz urzędnik państwowy.",
+     "uczony: fizyk, astronom, matematyk, filozof, historyk, biblista i alchemik; urzędnik państwowy"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Isaac Newton",
+      "url": "https://pl.wikipedia.org/wiki/Isaac_Newton"
+     },
+     {
+      "tytul": "Wikidata: Isaac Newton",
+      "url": "https://www.wikidata.org/wiki/Q935"
+     },
+     {
+      "tytul": "OpenStreetMap: Isaaca Newtona",
+      "url": "https://www.openstreetmap.org/search?query=Isaaca%20Newtona%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Isaac Newton",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Isaac_Newton"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.921132,
+     52.230683
+    ]
+   },
+   "properties": {
+    "id": "patron-jamesa-joyce-a-bemowo",
+    "nazwa": "Ulica Jamesa Joyce'a",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Jamesa Joyce'a",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: James Joyce (1882–1941), irlandzki pisarz (1882–1941).",
+     "James Augustine Aloysius Joyce – irlandzki pisarz tworzący w języku angielskim, uznawany za jednego z najwybitniejszych pisarzy XX wieku."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: James Joyce",
+      "url": "https://pl.wikipedia.org/wiki/James_Joyce"
+     },
+     {
+      "tytul": "Wikidata: James Joyce",
+      "url": "https://www.wikidata.org/wiki/Q6882"
+     },
+     {
+      "tytul": "OpenStreetMap: Jamesa Joyce'a",
+      "url": "https://www.openstreetmap.org/search?query=Jamesa%20Joyce%27a%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "James Joyce",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/James_Joyce"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.923848,
+     52.256333
+    ]
+   },
+   "properties": {
+    "id": "patron-jana-blatona-bemowo",
+    "nazwa": "Ulica Jana Blatona",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Jana Blatona",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Jan Blaton (1907–1948), polski fizyk.",
+     "Jan Antoni Blaton – polski fizyk."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Jan Blaton",
+      "url": "https://pl.wikipedia.org/wiki/Jan_Blaton"
+     },
+     {
+      "tytul": "Wikidata: Jan Blaton",
+      "url": "https://www.wikidata.org/wiki/Q11717065"
+     },
+     {
+      "tytul": "OpenStreetMap: Jana Blatona",
+      "url": "https://www.openstreetmap.org/search?query=Jana%20Blatona%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Jan Blaton",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Jan_Blaton"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.873496,
+     52.251978
+    ]
+   },
+   "properties": {
+    "id": "patron-jana-bulhaka-bemowo",
+    "nazwa": "Ulica Jana Bułhaka",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Jana Bułhaka",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Jan Bułhak (1876–1950), polski fotografik.",
+     "Jan Brunon Bułhak – polski filozof i teoretyk fotografii, nestor polskiej fotografii."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Jan Bułhak",
+      "url": "https://pl.wikipedia.org/wiki/Jan_Bułhak"
+     },
+     {
+      "tytul": "Wikidata: Jan Bułhak",
+      "url": "https://www.wikidata.org/wiki/Q941506"
+     },
+     {
+      "tytul": "OpenStreetMap: Jana Bułhaka",
+      "url": "https://www.openstreetmap.org/search?query=Jana%20Bu%C5%82haka%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Jan Bułhak",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Jan_Bułhak"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.947386,
+     52.259907
+    ]
+   },
+   "properties": {
+    "id": "patron-jerzego-waldorffa-bemowo",
+    "nazwa": "Ulica Jerzego Waldorffa",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Jerzego Waldorffa",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Jerzy Waldorff (1910–1999), polski pisarz, publicysta, krytyk muzyczny.",
+     "Jerzy Kazimierz Waldorff-Preyss – polski pisarz, publicysta, krytyk muzyczny i działacz społeczny, w dwudziestoleciu międzywojennym luźno związany z obozem „młodokonserwatystów”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Jerzy Waldorff",
+      "url": "https://pl.wikipedia.org/wiki/Jerzy_Waldorff"
+     },
+     {
+      "tytul": "Wikidata: Jerzy Waldorff",
+      "url": "https://www.wikidata.org/wiki/Q8865669"
+     },
+     {
+      "tytul": "OpenStreetMap: Jerzego Waldorffa",
+      "url": "https://www.openstreetmap.org/search?query=Jerzego%20Waldorffa%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Jerzy Waldorff",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Waldorff"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.92371,
+     52.249796
+    ]
+   },
+   "properties": {
+    "id": "patron-juliusza-kaden-bandrowskiego-bemowo",
+    "nazwa": "Ulica Juliusza Kaden-Bandrowskiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Juliusza Kaden-Bandrowskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Juliusz Kaden-Bandrowski (1885–1944), polski pisarz i publicysta (1885–1944).",
+     "Juliusz Kaden-Bandrowski – polski pisarz, prozaik i publicysta, wolnomularz, kapitan piechoty Wojska Polskiego."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Juliusz Kaden-Bandrowski",
+      "url": "https://pl.wikipedia.org/wiki/Juliusz_Kaden-Bandrowski"
+     },
+     {
+      "tytul": "Wikidata: Juliusz Kaden-Bandrowski",
+      "url": "https://www.wikidata.org/wiki/Q724811"
+     },
+     {
+      "tytul": "OpenStreetMap: Juliusza Kaden-Bandrowskiego",
+      "url": "https://www.openstreetmap.org/search?query=Juliusza%20Kaden-Bandrowskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Juliusz Kaden-Bandrowski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Juliusz_Kaden-Bandrowski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.876457,
+     52.251692
+    ]
+   },
+   "properties": {
+    "id": "patron-jozefa-brandta-bemowo",
+    "nazwa": "Ulica Józefa Brandta",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Józefa Brandta",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Józef Brandt (1841–1915), polski malarz.",
+     "Józef Brandt herbu Przysługa – polski malarz, batalista, przedstawiciel szkoły monachijskiej."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Józef Brandt",
+      "url": "https://pl.wikipedia.org/wiki/Józef_Brandt"
+     },
+     {
+      "tytul": "Wikidata: Józef Brandt",
+      "url": "https://www.wikidata.org/wiki/Q558489"
+     },
+     {
+      "tytul": "OpenStreetMap: Józefa Brandta",
+      "url": "https://www.openstreetmap.org/search?query=J%C3%B3zefa%20Brandta%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Józef Brandt",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Józef_Brandt"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.906443,
+     52.23128
+    ]
+   },
+   "properties": {
+    "id": "patron-kapitana-wladyslawa-raginisa-bemowo",
+    "nazwa": "Ulica Kapitana Władysława Raginisa",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Kapitana Władysława Raginisa",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Władysław Raginis (1908–1939), polski kapitan piechoty, dowódca obrony Wizny.",
+     "3 lipca 1908 Zariny w parafii Nejborn, gubernia kurlandzka, Imperium Rosyjskie"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Władysław Raginis",
+      "url": "https://pl.wikipedia.org/wiki/Władysław_Raginis"
+     },
+     {
+      "tytul": "Wikidata: Władysław Raginis",
+      "url": "https://www.wikidata.org/wiki/Q952107"
+     },
+     {
+      "tytul": "OpenStreetMap: Kapitana Władysława Raginisa",
+      "url": "https://www.openstreetmap.org/search?query=Kapitana%20W%C5%82adys%C5%82awa%20Raginisa%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Władysław Raginis",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Władysław_Raginis"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.904865,
+     52.22981
+    ]
+   },
+   "properties": {
+    "id": "patron-karola-irzykowskiego-bemowo",
+    "nazwa": "Ulica Karola Irzykowskiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Karola Irzykowskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Karol Irzykowski (1873–1944), polski prozaik, dramaturg i krytyk literacki.",
+     "Karol Franciszek Irzykowski h. Ostoja – polski krytyk literacki, filmowy i teatralny, poeta, prozaik, dramaturg, teoretyk filmu, tłumacz, szachista."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Karol Irzykowski",
+      "url": "https://pl.wikipedia.org/wiki/Karol_Irzykowski"
+     },
+     {
+      "tytul": "Wikidata: Karol Irzykowski",
+      "url": "https://www.wikidata.org/wiki/Q277620"
+     },
+     {
+      "tytul": "OpenStreetMap: Karola Irzykowskiego",
+      "url": "https://www.openstreetmap.org/search?query=Karola%20Irzykowskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Karol Irzykowski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Karol_Irzykowski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.900938,
+     52.241737
+    ]
+   },
+   "properties": {
+    "id": "patron-kazimierza-deyny-bemowo",
+    "nazwa": "Ulica Kazimierza Deyny",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Kazimierza Deyny",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Kazimierz Deyna (1947–1989), polski piłkarz (1947–1989).",
+     "Kazimierz Deyna wymowa – polski piłkarz, oficer Ludowego Wojska Polskiego w stopniu porucznika."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kazimierz Deyna",
+      "url": "https://pl.wikipedia.org/wiki/Kazimierz_Deyna"
+     },
+     {
+      "tytul": "Wikidata: Kazimierz Deyna",
+      "url": "https://www.wikidata.org/wiki/Q345702"
+     },
+     {
+      "tytul": "OpenStreetMap: Kazimierza Deyny",
+      "url": "https://www.openstreetmap.org/search?query=Kazimierza%20Deyny%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Kazimierz Deyna",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Kazimierz_Deyna"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.891923,
+     52.255515
+    ]
+   },
+   "properties": {
+    "id": "patron-kazimierza-siemienowicza-bemowo",
+    "nazwa": "Ulica Kazimierza Siemienowicza",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Kazimierza Siemienowicza",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Kazimierz Siemienowicz (1600–1651), inżynier wojskowy i artylerzysta.",
+     "Kazimierz Siemienowicz herbu Ostoja – inżynier wojskowy, teoretyk artylerii."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kazimierz Siemienowicz",
+      "url": "https://pl.wikipedia.org/wiki/Kazimierz_Siemienowicz"
+     },
+     {
+      "tytul": "Wikidata: Kazimierz Siemienowicz",
+      "url": "https://www.wikidata.org/wiki/Q976045"
+     },
+     {
+      "tytul": "OpenStreetMap: Kazimierza Siemienowicza",
+      "url": "https://www.openstreetmap.org/search?query=Kazimierza%20Siemienowicza%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Kazimierz Siemienowicz",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Kazimierz_Siemienowicz"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.897243,
+     52.230068
+    ]
+   },
+   "properties": {
+    "id": "patron-kazimierza-wyki-bemowo",
+    "nazwa": "Ulica Kazimierza Wyki",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Kazimierza Wyki",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Kazimierz Wyka (1910–1975), polski historyk literatury.",
+     "Kazimierz Wyka – polski historyk i krytyk literatury, eseista, profesor Uniwersytetu Jagiellońskiego, poseł na Sejm PRL I kadencji, członek prezydium Zarządu Głównego Towarzystwa Przyjaźni Polsko-Radzieckiej w 1952."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kazimierz Wyka",
+      "url": "https://pl.wikipedia.org/wiki/Kazimierz_Wyka"
+     },
+     {
+      "tytul": "Wikidata: Kazimierz Wyka",
+      "url": "https://www.wikidata.org/wiki/Q4704499"
+     },
+     {
+      "tytul": "OpenStreetMap: Kazimierza Wyki",
+      "url": "https://www.openstreetmap.org/search?query=Kazimierza%20Wyki%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Kazimierz Wyka",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Kazimierz_Wyka"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.892009,
+     52.254839
+    ]
+   },
+   "properties": {
+    "id": "patron-konstantego-ciolkowskiego-bemowo",
+    "nazwa": "Ulica Konstantego Ciołkowskiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Konstantego Ciołkowskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Konstantin Ciołkowski (1857–1935), rosyjski uczony i wynalazca, twórca podstaw astronautyki.",
+     "Konstantin Eduardowicz Ciołkowski herbu Jastrzębiec – rosyjski uczony polskiego pochodzenia, jeden z pionierów kosmonautyki, twórca modelu teorii ruchu i budowy rakiety kosmicznej, przedstawiciel naukowego nurtu kosmizmu rosyjskiego."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Konstantin Ciołkowski",
+      "url": "https://pl.wikipedia.org/wiki/Konstantin_Ciołkowski"
+     },
+     {
+      "tytul": "Wikidata: Konstantin Ciołkowski",
+      "url": "https://www.wikidata.org/wiki/Q41239"
+     },
+     {
+      "tytul": "OpenStreetMap: Konstantego Ciołkowskiego",
+      "url": "https://www.openstreetmap.org/search?query=Konstantego%20Cio%C5%82kowskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Konstantin Ciołkowski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Konstantin_Ciołkowski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.891524,
+     52.255873
+    ]
+   },
+   "properties": {
+    "id": "patron-krzysztofa-arciszewskiego-bemowo",
+    "nazwa": "Ulica Krzysztofa Arciszewskiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Krzysztofa Arciszewskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Krzysztof Arciszewski (1592–1656), generał artylerii Holandii, Brazylii i Polski oraz admirał floty Brazylii.",
+     "Krzysztof Arciszewski herbu Prawdzic – generał artylerii wojsk holenderskich i wojsk Rzeczypospolitej, poeta i pisarz."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Krzysztof Arciszewski",
+      "url": "https://pl.wikipedia.org/wiki/Krzysztof_Arciszewski"
+     },
+     {
+      "tytul": "Wikidata: Krzysztof Arciszewski",
+      "url": "https://www.wikidata.org/wiki/Q1354558"
+     },
+     {
+      "tytul": "OpenStreetMap: Krzysztofa Arciszewskiego",
+      "url": "https://www.openstreetmap.org/search?query=Krzysztofa%20Arciszewskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Krzysztof Arciszewski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Krzysztof_Arciszewski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.92193,
+     52.255103
+    ]
+   },
+   "properties": {
+    "id": "patron-ksiedza-bronislawa-markiewicza-bemowo",
+    "nazwa": "Ulica Księdza Bronisława Markiewicza",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Księdza Bronisława Markiewicza",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Bronisław Markiewicz (1842–1912), polski duchowny katolicki, błogosławiony.",
+     "Sanktuarium św. Michała Archanioła i bł. Bronisława Markiewicza w Miejscu Piastowym"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Bronisław Markiewicz",
+      "url": "https://pl.wikipedia.org/wiki/Bronisław_Markiewicz"
+     },
+     {
+      "tytul": "Wikidata: Bronisław Markiewicz",
+      "url": "https://www.wikidata.org/wiki/Q323769"
+     },
+     {
+      "tytul": "OpenStreetMap: Księdza Bronisława Markiewicza",
+      "url": "https://www.openstreetmap.org/search?query=Ksi%C4%99dza%20Bronis%C5%82awa%20Markiewicza%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Bronisław Markiewicz",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Bronisław_Markiewicz"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.912371,
+     52.237191
+    ]
+   },
+   "properties": {
+    "id": "patron-lajosa-kossutha-bemowo",
+    "nazwa": "Ulica Lajosa Kossutha",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Lajosa Kossutha",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Lajos Kossuth (1802–1894), węgierski bohater narodowy.",
+     "Lajos Kossuth – węgierski polityk, szlachcic, prawnik, dziennikarz, przewodniczący Krajowego Komitetu Obrony Ojczyzny, gubernator Węgier; przywódca rewolucji węgierskiej uważany za węgierskiego bohatera narodowego."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Lajos Kossuth",
+      "url": "https://pl.wikipedia.org/wiki/Lajos_Kossuth"
+     },
+     {
+      "tytul": "Wikidata: Lajos Kossuth",
+      "url": "https://www.wikidata.org/wiki/Q157040"
+     },
+     {
+      "tytul": "OpenStreetMap: Lajosa Kossutha",
+      "url": "https://www.openstreetmap.org/search?query=Lajosa%20Kossutha%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Lajos Kossuth",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Lajos_Kossuth"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.865127,
+     52.249795
+    ]
+   },
+   "properties": {
+    "id": "patron-majora-henryka-dobrzanskiego-hubala-bemowo",
+    "nazwa": "Ulica Majora Henryka Dobrzańskiego „Hubala”",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Majora Henryka Dobrzańskiego „Hubala”",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Henryk Dobrzański (1897–1940), dowódca partyzantów.",
+     "I wojna światowa,wojna polsko-ukraińska,wojna polsko-bolszewicka,II wojna światowa,kampania wrześniowa"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Henryk Dobrzański",
+      "url": "https://pl.wikipedia.org/wiki/Henryk_Dobrzański"
+     },
+     {
+      "tytul": "Wikidata: Henryk Dobrzański",
+      "url": "https://www.wikidata.org/wiki/Q574303"
+     },
+     {
+      "tytul": "OpenStreetMap: Majora Henryka Dobrzańskiego „Hubala”",
+      "url": "https://www.openstreetmap.org/search?query=Majora%20Henryka%20Dobrza%C5%84skiego%20%E2%80%9EHubala%E2%80%9D%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Henryk Dobrzański",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Henryk_Dobrzański"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.912056,
+     52.227171
+    ]
+   },
+   "properties": {
+    "id": "patron-majora-henryka-sucharskiego-bemowo",
+    "nazwa": "Ulica Majora Henryka Sucharskiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Majora Henryka Sucharskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Henryk Sucharski (1898–1946), wojskowy, major, dowódca obrony Westerplatte w 1939 r..",
+     "Henryk Sucharski – major piechoty Wojska Polskiego, komendant Wojskowej Składnicy Tranzytowej na Westerplatte w czasie obrony placówki w wojnie obronnej 1939, trzykrotny kawaler Orderu Virtuti Militari."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Henryk Sucharski",
+      "url": "https://pl.wikipedia.org/wiki/Henryk_Sucharski"
+     },
+     {
+      "tytul": "Wikidata: Henryk Sucharski",
+      "url": "https://www.wikidata.org/wiki/Q939926"
+     },
+     {
+      "tytul": "OpenStreetMap: Majora Henryka Sucharskiego",
+      "url": "https://www.openstreetmap.org/search?query=Majora%20Henryka%20Sucharskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Henryk Sucharski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Henryk_Sucharski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.927565,
+     52.252907
+    ]
+   },
+   "properties": {
+    "id": "patron-michala-elwira-andriollego-bemowo",
+    "nazwa": "Ulica Michała Elwira Andriollego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Michała Elwira Andriollego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Michał Elwiro Andriolli (1836–1893), polski rysownik, ilustrator i malarz.",
+     "Michał Elwiro Andriolli – polski rysownik, ilustrator i malarz, przedstawiciel romantyzmu."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Michał Elwiro Andriolli",
+      "url": "https://pl.wikipedia.org/wiki/Michał_Elwiro_Andriolli"
+     },
+     {
+      "tytul": "Wikidata: Michał Elwiro Andriolli",
+      "url": "https://www.wikidata.org/wiki/Q941468"
+     },
+     {
+      "tytul": "OpenStreetMap: Michała Elwira Andriollego",
+      "url": "https://www.openstreetmap.org/search?query=Micha%C5%82a%20Elwira%20Andriollego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Michał Elwiro Andriolli",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Michał_Elwiro_Andriolli"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.924201,
+     52.257951
+    ]
+   },
+   "properties": {
+    "id": "patron-mieczyslawa-wolfkego-bemowo",
+    "nazwa": "Ulica Mieczysława Wolfkego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Mieczysława Wolfkego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Mieczysław Wolfke (1883–1947), polski fizyk.",
+     "Mieczysław Wolfke – polski fizyk i działacz masoński, profesor Politechniki Warszawskiej, Wielki Mistrz Wielkiej Loży Narodowej Polski w latach 1931–1934."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Mieczysław Wolfke",
+      "url": "https://pl.wikipedia.org/wiki/Mieczysław_Wolfke"
+     },
+     {
+      "tytul": "Wikidata: Mieczysław Wolfke",
+      "url": "https://www.wikidata.org/wiki/Q11181565"
+     },
+     {
+      "tytul": "OpenStreetMap: Mieczysława Wolfkego",
+      "url": "https://www.openstreetmap.org/search?query=Mieczys%C5%82awa%20Wolfkego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Mieczysław Wolfke",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Mieczysław_Wolfke"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.913477,
+     52.264725
+    ]
+   },
+   "properties": {
+    "id": "patron-pawla-stellera-bemowo",
+    "nazwa": "Ulica Pawła Stellera",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Pawła Stellera",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Paweł Steller (1895–1974), polski grafik, rysownik i rzeźbiarz, twórca ekslibrisów.",
+     "Paweł Steller – artysta plastyk, uczeń Władysława Skoczylasa."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Paweł Steller",
+      "url": "https://pl.wikipedia.org/wiki/Paweł_Steller"
+     },
+     {
+      "tytul": "Wikidata: Paweł Steller",
+      "url": "https://www.wikidata.org/wiki/Q11814430"
+     },
+     {
+      "tytul": "OpenStreetMap: Pawła Stellera",
+      "url": "https://www.openstreetmap.org/search?query=Paw%C5%82a%20Stellera%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Paweł Steller",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Paweł_Steller"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.881087,
+     52.265299
+    ]
+   },
+   "properties": {
+    "id": "patron-pulkownika-kazimierza-leskiego-bemowo",
+    "nazwa": "Ulica Pułkownika Kazimierza Leskiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Pułkownika Kazimierza Leskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Kazimierz Leski (1912–2000), polski inżynier, żołnierz AK, uczestnik powstania warszawskiego.",
+     "Wojsko Polskie Związek Walki Zbrojnej Armia Krajowa Delegatura Sił Zbrojnych na Kraj"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kazimierz Leski",
+      "url": "https://pl.wikipedia.org/wiki/Kazimierz_Leski"
+     },
+     {
+      "tytul": "Wikidata: Kazimierz Leski",
+      "url": "https://www.wikidata.org/wiki/Q6381205"
+     },
+     {
+      "tytul": "OpenStreetMap: Pułkownika Kazimierza Leskiego",
+      "url": "https://www.openstreetmap.org/search?query=Pu%C5%82kownika%20Kazimierza%20Leskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Kazimierz Leski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Kazimierz_Leski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.898848,
+     52.245733
+    ]
+   },
+   "properties": {
+    "id": "patron-pulkownika-witolda-lokuciewskiego-bemowo",
+    "nazwa": "Ulica Pułkownika Witolda Łokuciewskiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Pułkownika Witolda Łokuciewskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Witold Łokuciewski (1917–1990), As myśliwski, oficer i pilot Wojska Polskiego.",
+     "Witold Łokuciewski, ps. Tolo – pułkownik pilot Wojska Polskiego, major (ang."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Witold Łokuciewski",
+      "url": "https://pl.wikipedia.org/wiki/Witold_Łokuciewski"
+     },
+     {
+      "tytul": "Wikidata: Witold Łokuciewski",
+      "url": "https://www.wikidata.org/wiki/Q7942890"
+     },
+     {
+      "tytul": "OpenStreetMap: Pułkownika Witolda Łokuciewskiego",
+      "url": "https://www.openstreetmap.org/search?query=Pu%C5%82kownika%20Witolda%20%C5%81okuciewskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Witold Łokuciewski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Witold_Łokuciewski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.897906,
+     52.259121
+    ]
+   },
+   "properties": {
+    "id": "patron-rondo-pulkownika-bernarda-adameckiego-bemowo",
+    "nazwa": "Rondo Pułkownika Bernarda Adameckiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Rondo Pułkownika Bernarda Adameckiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Bernard Adamecki (1897–1952), oficer Wojska Polskiego.",
+     "Bernard Antoni Adamecki, ps. Bocian, Dyrektor Gozdawa, Doktor, Grabiec, Parasol – oficer pilot obserwator Wojska Polskiego II Rzeczypospolitej i ludowego Wojska Polskiego, dwukrotny kawaler Orderu Virtuti Militari."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Bernard Adamecki",
+      "url": "https://pl.wikipedia.org/wiki/Bernard_Adamecki"
+     },
+     {
+      "tytul": "Wikidata: Bernard Adamecki",
+      "url": "https://www.wikidata.org/wiki/Q7940902"
+     },
+     {
+      "tytul": "OpenStreetMap: Rondo Pułkownika Bernarda Adameckiego",
+      "url": "https://www.openstreetmap.org/search?query=Rondo%20Pu%C5%82kownika%20Bernarda%20Adameckiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Bernard Adamecki",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Bernard_Adamecki"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.93024,
+     52.256519
+    ]
+   },
+   "properties": {
+    "id": "patron-rondo-stanislawa-saksa-bemowo",
+    "nazwa": "Rondo Stanisława Saksa",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Rondo Stanisława Saksa",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Stanisław Saks (1897–1942), matematyk polski.",
+     "Stanisław Saks – polski matematyk z warszawskiej szkoły matematycznej, docent Uniwersytetu Warszawskiego, autor prac z teorii funkcji i analizy funkcjonalnej."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Stanisław Saks",
+      "url": "https://pl.wikipedia.org/wiki/Stanisław_Saks"
+     },
+     {
+      "tytul": "Wikidata: Stanisław Saks",
+      "url": "https://www.wikidata.org/wiki/Q94014"
+     },
+     {
+      "tytul": "OpenStreetMap: Rondo Stanisława Saksa",
+      "url": "https://www.openstreetmap.org/search?query=Rondo%20Stanis%C5%82awa%20Saksa%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Stanisław Saks",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Saks"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.897574,
+     52.25928
+    ]
+   },
+   "properties": {
+    "id": "patron-rondo-pulkownika-bernarda-adameckiego-bemowo",
+    "nazwa": "Rondo pułkownika Bernarda Adameckiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Rondo pułkownika Bernarda Adameckiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Bernard Adamecki (1897–1952), oficer Wojska Polskiego.",
+     "Bernard Antoni Adamecki, ps. Bocian, Dyrektor Gozdawa, Doktor, Grabiec, Parasol – oficer pilot obserwator Wojska Polskiego II Rzeczypospolitej i ludowego Wojska Polskiego, dwukrotny kawaler Orderu Virtuti Militari."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Bernard Adamecki",
+      "url": "https://pl.wikipedia.org/wiki/Bernard_Adamecki"
+     },
+     {
+      "tytul": "Wikidata: Bernard Adamecki",
+      "url": "https://www.wikidata.org/wiki/Q7940902"
+     },
+     {
+      "tytul": "OpenStreetMap: Rondo pułkownika Bernarda Adameckiego",
+      "url": "https://www.openstreetmap.org/search?query=Rondo%20pu%C5%82kownika%20Bernarda%20Adameckiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Bernard Adamecki",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Bernard_Adamecki"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.926465,
+     52.250979
+    ]
+   },
+   "properties": {
+    "id": "patron-rosy-bailly-bemowo",
+    "nazwa": "Ulica Rosy Bailly",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Rosy Bailly",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Rosa Bailly (1890–1976), francuska poetka, tłumaczka literatury polskiej.",
+     "Rosa Bailly, ps. „Rosa Dufour-Bailly”, „Aimée Dufour” – francuska pisarka, dziennikarka, poetka, tłumaczka, propagatorka kultury i literatury polskiej we Francji."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Rosa Bailly",
+      "url": "https://pl.wikipedia.org/wiki/Rosa_Bailly"
+     },
+     {
+      "tytul": "Wikidata: Rosa Bailly",
+      "url": "https://www.wikidata.org/wiki/Q5307942"
+     },
+     {
+      "tytul": "OpenStreetMap: Rosy Bailly",
+      "url": "https://www.openstreetmap.org/search?query=Rosy%20Bailly%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Rosa Bailly",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Rosa_Bailly"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.89909,
+     52.260225
+    ]
+   },
+   "properties": {
+    "id": "patron-stanislawa-kunickiego-bemowo",
+    "nazwa": "Ulica Stanisława Kunickiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Stanisława Kunickiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Stanisław Kunicki (1861–1886), działacz socjalistyczny.",
+     "Stanisław Kunicki ps. Grzegorz, Abram Bendin, Antonowicz, Czarny, Małpa, Rudy – polski działacz socjalistyczny i rewolucyjny."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Stanisław Kunicki (działacz robotniczy)",
+      "url": "https://pl.wikipedia.org/wiki/Stanisław_Kunicki_(działacz_robotniczy)"
+     },
+     {
+      "tytul": "Wikidata: Stanisław Kunicki",
+      "url": "https://www.wikidata.org/wiki/Q4247245"
+     },
+     {
+      "tytul": "OpenStreetMap: Stanisława Kunickiego",
+      "url": "https://www.openstreetmap.org/search?query=Stanis%C5%82awa%20Kunickiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Stanisław Kunicki",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Kunicki_(działacz_robotniczy)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.918532,
+     52.254642
+    ]
+   },
+   "properties": {
+    "id": "patron-stanislawa-lencewicza-bemowo",
+    "nazwa": "Ulica Stanisława Lencewicza",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Stanisława Lencewicza",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Stanisław Lencewicz (1889–1944), geograf polski.",
+     "Stanisław Lencewicz – polski geograf."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Stanisław Lencewicz",
+      "url": "https://pl.wikipedia.org/wiki/Stanisław_Lencewicz"
+     },
+     {
+      "tytul": "Wikidata: Stanisław Lencewicz",
+      "url": "https://www.wikidata.org/wiki/Q9342456"
+     },
+     {
+      "tytul": "OpenStreetMap: Stanisława Lencewicza",
+      "url": "https://www.openstreetmap.org/search?query=Stanis%C5%82awa%20Lencewicza%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Stanisław Lencewicz",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Lencewicz"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.913903,
+     52.263065
+    ]
+   },
+   "properties": {
+    "id": "patron-stanislawa-ligonia-bemowo",
+    "nazwa": "Ulica Stanisława Ligonia",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Stanisława Ligonia",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Stanisław Szober (1879–1938), polski językoznawca i pedagog, leksykograf.",
+     "Stanisław Józef Leonard Szober – polski językoznawca i pedagog, gramatyk,  leksykograf."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Stanisław Szober",
+      "url": "https://pl.wikipedia.org/wiki/Stanisław_Szober"
+     },
+     {
+      "tytul": "Wikidata: Stanisław Szober",
+      "url": "https://www.wikidata.org/wiki/Q9343183"
+     },
+     {
+      "tytul": "OpenStreetMap: Stanisława Ligonia",
+      "url": "https://www.openstreetmap.org/search?query=Stanis%C5%82awa%20Ligonia%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Stanisław Szober",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Szober"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.896566,
+     52.23643
+    ]
+   },
+   "properties": {
+    "id": "patron-stanislawa-szobera-bemowo",
+    "nazwa": "Ulica Stanisława Szobera",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Stanisława Szobera",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Stanisław Szober (1879–1938), polski językoznawca i pedagog, leksykograf.",
+     "Stanisław Józef Leonard Szober – polski językoznawca i pedagog, gramatyk,  leksykograf."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Stanisław Szober",
+      "url": "https://pl.wikipedia.org/wiki/Stanisław_Szober"
+     },
+     {
+      "tytul": "Wikidata: Stanisław Szober",
+      "url": "https://www.wikidata.org/wiki/Q9343183"
+     },
+     {
+      "tytul": "OpenStreetMap: Stanisława Szobera",
+      "url": "https://www.openstreetmap.org/search?query=Stanis%C5%82awa%20Szobera%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Stanisław Szober",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Szober"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.910468,
+     52.229984
+    ]
+   },
+   "properties": {
+    "id": "patron-waclawa-borowego-bemowo",
+    "nazwa": "Ulica Wacława Borowego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Wacława Borowego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Wacław Borowy (1890–1950), polski historyk literatury i krytyk.",
+     "Wacław Borowy, ps. Piotr Szary, Titwillow – polski historyk literatury, krytyk literacki, profesor Uniwersytetu Warszawskiego."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Wacław Borowy",
+      "url": "https://pl.wikipedia.org/wiki/Wacław_Borowy"
+     },
+     {
+      "tytul": "Wikidata: Wacław Borowy",
+      "url": "https://www.wikidata.org/wiki/Q9369632"
+     },
+     {
+      "tytul": "OpenStreetMap: Wacława Borowego",
+      "url": "https://www.openstreetmap.org/search?query=Wac%C5%82awa%20Borowego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Wacław Borowy",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Wacław_Borowy"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.895583,
+     52.258044
+    ]
+   },
+   "properties": {
+    "id": "patron-waclawa-gasiorowskiego-bemowo",
+    "nazwa": "Ulica Wacława Gąsiorowskiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Wacława Gąsiorowskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Wacław Gąsiorowski (1869–1939), polski powieściopisarz, dziennikarz, publicysta.",
+     "Wacław Gąsiorowski, ps. Wiesław Sclavus, Jan Mieroszewicz – polski powieściopisarz, dziennikarz, publicysta, a także scenarzysta, działacz polonijny i niepodległościowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Wacław Gąsiorowski",
+      "url": "https://pl.wikipedia.org/wiki/Wacław_Gąsiorowski"
+     },
+     {
+      "tytul": "Wikidata: Wacław Gąsiorowski",
+      "url": "https://www.wikidata.org/wiki/Q4143141"
+     },
+     {
+      "tytul": "OpenStreetMap: Wacława Gąsiorowskiego",
+      "url": "https://www.openstreetmap.org/search?query=Wac%C5%82awa%20G%C4%85siorowskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Wacław Gąsiorowski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Wacław_Gąsiorowski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.8973,
+     52.237975
+    ]
+   },
+   "properties": {
+    "id": "patron-witolda-doroszewskiego-bemowo",
+    "nazwa": "Ulica Witolda Doroszewskiego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Witolda Doroszewskiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Witold Doroszewski (1899–1976), polski językoznawca.",
+     "Witold Jan Doroszewski – polski językoznawca, polonista, teoretyk języka, od 1930 profesor Uniwersytetu Warszawskiego, od 1930 członek Towarzystwa Naukowego Warszawskiego, od 1947 członek Polskiej Akademii Umiejętności, następnie Polskiej Akademii Nauk; redaktor naczelny Słownika języka polskiego (1"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Witold Doroszewski",
+      "url": "https://pl.wikipedia.org/wiki/Witold_Doroszewski"
+     },
+     {
+      "tytul": "Wikidata: Witold Doroszewski",
+      "url": "https://www.wikidata.org/wiki/Q3742469"
+     },
+     {
+      "tytul": "OpenStreetMap: Witolda Doroszewskiego",
+      "url": "https://www.openstreetmap.org/search?query=Witolda%20Doroszewskiego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Witold Doroszewski",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Witold_Doroszewski"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.916845,
+     52.262933
+    ]
+   },
+   "properties": {
+    "id": "patron-wojciecha-korfantego-bemowo",
+    "nazwa": "Ulica Wojciecha Korfantego",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Wojciecha Korfantego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Wojciech Korfanty (1873–1939), polityk polski, działacz narodowy na Górnym Śląsku (1873–1939).",
+     "Wojciech Korfanty – polski przywódca narodowy Górnego Śląska, chrześcijański demokrata, katolicki mąż stanu."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Wojciech Korfanty",
+      "url": "https://pl.wikipedia.org/wiki/Wojciech_Korfanty"
+     },
+     {
+      "tytul": "Wikidata: Wojciech Korfanty",
+      "url": "https://www.wikidata.org/wiki/Q62006"
+     },
+     {
+      "tytul": "OpenStreetMap: Wojciecha Korfantego",
+      "url": "https://www.openstreetmap.org/search?query=Wojciecha%20Korfantego%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Wojciech Korfanty",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Wojciech_Korfanty"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.90688,
+     52.236913
+    ]
+   },
+   "properties": {
+    "id": "patron-zenona-klemensiewicza-bemowo",
+    "nazwa": "Ulica Zenona Klemensiewicza",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Zenona Klemensiewicza",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Patron ulicy: Zenon Klemensiewicz (1891–1969), polski językoznawca.",
+     "Zenon Ludwik Klemensiewicz – polski językoznawca, profesor Uniwersytetu Jagiellońskiego, członek Polskiej Akademii Umiejętności i Polskiej Akademii Nauk."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Zenon Klemensiewicz",
+      "url": "https://pl.wikipedia.org/wiki/Zenon_Klemensiewicz"
+     },
+     {
+      "tytul": "Wikidata: Zenon Klemensiewicz",
+      "url": "https://www.wikidata.org/wiki/Q3846091"
+     },
+     {
+      "tytul": "OpenStreetMap: Zenona Klemensiewicza",
+      "url": "https://www.openstreetmap.org/search?query=Zenona%20Klemensiewicza%2C%20Warszawa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "patroni-ulic",
+    "ludzie": [
+     {
+      "kto": "Zenon Klemensiewicz",
+      "rola": "patron ulicy",
+      "wiki": "https://pl.wikipedia.org/wiki/Zenon_Klemensiewicz"
+     }
+    ]
+   }
   }
  ]
 }
