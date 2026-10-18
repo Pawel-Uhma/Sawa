@@ -33,6 +33,8 @@ export const SOURCE_FILES = [
   new URL("../../docs/historia/dzielnice/wikipedia-adresy-pozostale-dzielnice.geojson", import.meta.url),
   // Osiedla: kto tu mieszkał i co się działo, ze zdań Wikipedii (punkt w środku osiedla).
   new URL("../../docs/historia/dzielnice/wikipedia-osiedla-dzielnice.geojson", import.meta.url),
+  // Ulice z patronem (OSM name:etymology:wikidata): kim był patron, z Wikidaty i Wikipedii.
+  new URL("../../docs/historia/dzielnice/patroni-ulic-dzielnice.geojson", import.meta.url),
 ];
 
 export async function readSourceFeatures(): Promise<unknown[]> {
