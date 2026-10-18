@@ -21,5 +21,7 @@ export const HealthSchema = z.object({
   transitDate: z.string().optional(),
   /** False when the graph is for another day than today in Warsaw: rebuild it (T-18). */
   transitIsToday: z.boolean().optional(),
+  /** Pitch mode: `replay` serves saved stories and voice, `record` saves them (apps/api DEMO_MODE). */
+  demoMode: z.enum(["record", "replay"]).optional(),
 });
 export type Health = z.infer<typeof HealthSchema>;

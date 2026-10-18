@@ -44,11 +44,19 @@ export interface WalkPathSource {
   path(points: LatLng[]): Promise<[number, number][] | undefined>;
 }
 
-/** Tram and bus network for one service day (apps/api/data/transit-graph.json.gz). */
+/** Tram and bus network for one service day (apps/api/data/transit/YYYY-MM-DD.json.gz). */
 export type TransitData = {
   network: Network;
   serviceDate: string;
   attribution: string[];
+};
+
+/** Graphs for several service days, so the API switches at midnight without a rebuild (T-18). */
+export type TransitCalendar = {
+  /** Service days available, ascending. */
+  dates: string[];
+  /** The graph for `date`; without it the closest earlier day, before the first the first one. */
+  forDate(date: string): TransitData;
 };
 
 export type LlmRequest = { system: string; user: string; maxTokens: number };

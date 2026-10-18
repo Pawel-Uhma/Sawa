@@ -204,11 +204,6 @@ export function splitName(name: string): { title: string; aside: string | null }
   return match ? { title: match[1], aside: match[2] } : { title: name, aside: null };
 }
 
-/** Fakty z bazy mają na końcu źródło w nawiasie („(Wikipedia pl: Kercelak)”); w karcie źródła są osobno. */
-export function cleanFact(fact: string): string {
-  return fact.replace(/\s*\([^()]*\)\s*$/, "");
-}
-
 export function Sources({ place }: { place: Place }) {
   const t = useT();
   if (place.sources.length === 0) return null;

@@ -30,7 +30,10 @@ export const SOURCE_FILES = [
   // Pomniki przyrody, rezerwaty i nazwane obiekty z OSM w dzielnicach poniżej 15 miejsc na km².
   new URL("../../docs/historia/dzielnice/osm-przyroda-dzielnice.geojson", import.meta.url),
   // Zdania adresowe z Wikipedii ("tu mieszkał") dla dzielnic o małej gęstości.
-  new URL("../../docs/historia/dzielnice/wikipedia-adresy-pozostale-dzielnice.geojson", import.meta.url),
+  new URL(
+    "../../docs/historia/dzielnice/wikipedia-adresy-pozostale-dzielnice.geojson",
+    import.meta.url,
+  ),
   // Osiedla: kto tu mieszkał i co się działo, ze zdań Wikipedii (punkt w środku osiedla).
   new URL("../../docs/historia/dzielnice/wikipedia-osiedla-dzielnice.geojson", import.meta.url),
   // Ulice z patronem (OSM name:etymology:wikidata): kim był patron, z Wikidaty i Wikipedii.
