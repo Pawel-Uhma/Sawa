@@ -6,11 +6,13 @@ import { type ReactNode, type RefObject, useCallback, useEffect, useRef, useStat
 import { useT } from "@/features/i18n";
 import type { Listener } from "../lib/api-data";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
+import { formatDuration } from "../lib/format";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { MockStop } from "../lib/mock-data";
 import { backTarget } from "../lib/podcast";
 import { type RideClock, storyStartSec } from "../lib/ride-clock";
 import type { StoryPlayer } from "../lib/story-player";
+import { Itinerary } from "./departures";
 import { RoutesIcon } from "./icons";
 import { PodcastDock, PodcastHeader, usePodcast } from "./podcast-controls";
 import { RouteLive } from "./route-live";
@@ -122,6 +124,7 @@ export function RouteSheet(props: RouteSheetProps) {
         )
       }
       storyState={player.loading ? "loading" : player.failed ? "failed" : "ready"}
+      showItinerary={!props.isDesktop}
       header={
         <div ref={headerRef}>
           <PodcastHeader podcast={podcast} onLeave={props.onBack} />
@@ -144,9 +147,12 @@ export function RouteSheet(props: RouteSheetProps) {
   );
 
   return props.isDesktop ? (
-    <DesktopPanel headerRef={headerRef} dockRef={dockRef} dock={dock}>
-      {content}
-    </DesktopPanel>
+    <>
+      <DesktopPanel headerRef={headerRef} dockRef={dockRef} dock={dock}>
+        {content}
+      </DesktopPanel>
+      <DesktopItinerary legs={props.legs} durationMin={props.durationMin} />
+    </>
   ) : (
     <MobileSheet
       onCoverChange={props.onCoverChange}
@@ -184,6 +190,25 @@ function useChrome(
     return () => observer.disconnect();
   }, [headerRef, dockRef]);
   return chrome;
+}
+
+/**
+ * Dojazd na desktopie: osobna karta nad mapą, pod przyciskami powiększania. W panelu leżał pod
+ * zapisem opowieści, który wypełnia panel, więc linie, do których wsiąść, były poza widokiem.
+ */
+function DesktopItinerary({ legs, durationMin }: { legs: Leg[]; durationMin: number }) {
+  if (legs.length === 0) return null;
+  return (
+    <motion.div
+      initial={{ opacity: 0, x: 32 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 32 }}
+      transition={SPRING}
+      className="karta absolute right-6 top-40 z-20 max-h-[calc(100dvh-14rem)] w-[300px] overflow-y-auto overscroll-contain rounded-[22px] p-2"
+    >
+      <Itinerary legs={legs} duration={formatDuration(durationMin)} />
+    </motion.div>
+  );
 }
 
 function DesktopPanel({
