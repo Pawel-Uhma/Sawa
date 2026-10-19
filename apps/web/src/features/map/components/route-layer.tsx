@@ -16,6 +16,7 @@ import {
   placeStickerExpression,
 } from "../lib/map-style";
 import {
+  boardingTouchesLegs,
   type PlaceMarkers,
   routeBoardingsToGeoJson,
   routeLegsToGeoJson,
@@ -43,6 +44,11 @@ type RouteLayerProps = {
   activeId?: string;
   /** Legs picked in the "Dojazd" list (`highlightedLegs`): they stay, the rest of the route fades. */
   highlightLegs?: readonly number[] | null;
+  /**
+   * The user picked `highlightLegs` by hand (not the current line during the ride): transfers
+   * and route places away from them fade too.
+   */
+  isPicked?: boolean;
   /** Icons registered in the style; route places are drawn as subkind stickers. */
   hasIcons: boolean;
   /** Loaded place summaries: route places among them get their subkind sticker, the rest a pin. */
@@ -61,6 +67,9 @@ export const ROUTE_BOARDING_LAYER_IDS = ["route-boarding-timer", "route-boarding
 
 /** Opacity of the lines not picked in the "Dojazd" list. */
 export const FADED_OPACITY = 0.25;
+
+/** Route places on the picked legs, a step behind the lines; the active place stays at 1. */
+const PICKED_PLACE_OPACITY = 0.75;
 
 /**
  * `picked` for a feature whose `legIndex` is among the legs chosen in the list, `other` for the
@@ -81,6 +90,7 @@ export function RouteLayer({
   selectedId,
   activeId,
   highlightLegs = null,
+  isPicked = false,
   hasIcons,
   knownPlaces,
   theme,
@@ -89,6 +99,13 @@ export function RouteLayer({
 }: RouteLayerProps) {
   const lang = useLang();
   const isActive: ExpressionSpecification = ["==", ["get", "id"], activeId ?? ""];
+  const picked = isPicked ? highlightLegs : null;
+  const placeOpacity: number | ExpressionSpecification =
+    picked === null
+      ? 1
+      : ["case", isActive, 1, legValue(picked, PICKED_PLACE_OPACITY, FADED_OPACITY)];
+  const boardingOpacity: number | ExpressionSpecification =
+    picked === null ? 1 : ["case", ["get", "isPicked"], 1, FADED_OPACITY];
   const legs = useMemo(() => routeLegsToGeoJson(route), [route]);
   const markers = useMemo<PlaceMarkers>(
     () =>
@@ -118,11 +135,12 @@ export function RouteLayer({
             chip: lineChipId(theme, [...left, ...boarded]),
             timer: boardingTimerId(theme, color, countdown, clock, lang),
             time: countdown.kind === "clock" ? "" : boardAt,
+            isPicked: picked === null || boardingTouchesLegs(feature.properties, picked),
           },
         };
       }),
     };
-  }, [route, now, theme, lang]);
+  }, [route, now, theme, lang, picked]);
   const walks = useMemo(() => routeWalksToGeoJson(route), [route]);
   const passed = useMemo(() => routePassedStopsToGeoJson(route), [route]);
 
@@ -185,10 +203,16 @@ export function RouteLayer({
             theme={stickerLook}
             palette={palette}
             isActive={isActive}
+            opacity={placeOpacity}
             selectedId={selectedId}
           />
         ) : (
-          <NumberedStops palette={palette} isActive={isActive} selectedId={selectedId} />
+          <NumberedStops
+            palette={palette}
+            isActive={isActive}
+            opacity={placeOpacity}
+            selectedId={selectedId}
+          />
         )}
       </Source>
       {/* Start and transfers: a countdown ring in the colour of the line boarded there, its number above;
@@ -202,6 +226,7 @@ export function RouteLayer({
             "icon-allow-overlap": true,
             "icon-ignore-placement": true,
           }}
+          paint={{ "icon-opacity": boardingOpacity }}
         />
         {/* Over the ring: the line with its vehicle icon, at a transfer "122 → 180" (lib/line-chips.ts) */}
         <Layer
@@ -214,6 +239,7 @@ export function RouteLayer({
             "icon-allow-overlap": true,
             "icon-ignore-placement": true,
           }}
+          paint={{ "icon-opacity": boardingOpacity }}
         />
         {/* Below the ring: where the line is boarded and, while it counts down, the clock time. */}
         <Layer
@@ -236,6 +262,7 @@ export function RouteLayer({
             "text-color": palette.label,
             "text-halo-color": palette.labelHalo,
             "text-halo-width": 1.5,
+            "text-opacity": boardingOpacity,
           }}
         />
       </Source>
@@ -246,6 +273,8 @@ export function RouteLayer({
 type StopsProps = {
   palette: MapPalette;
   isActive: ExpressionSpecification;
+  /** 1, or while legs are picked by hand: faded away from them (`placeOpacity`). */
+  opacity: number | ExpressionSpecification;
   selectedId: string | null;
 };
 
@@ -253,7 +282,13 @@ type StopsProps = {
  * Route places as the sticker of their subkind (as regular places, but larger) with the order
  * number in a badge of the group colour. The place the story is about gets a halo and its name.
  */
-function StickerStops({ theme, palette, isActive, selectedId }: StopsProps & { theme: MapLook }) {
+function StickerStops({
+  theme,
+  palette,
+  isActive,
+  opacity,
+  selectedId,
+}: StopsProps & { theme: MapLook }) {
   const inactive: FilterSpecification = ["!", isActive];
   return (
     <>
@@ -283,6 +318,7 @@ function StickerStops({ theme, palette, isActive, selectedId }: StopsProps & { t
           // The active sticker is drawn last, over its neighbours.
           "symbol-sort-key": ["case", isActive, 1, 0],
         }}
+        paint={{ "icon-opacity": opacity }}
       />
       <Layer
         source={ROUTE_PLACES_SOURCE_ID}
@@ -301,14 +337,14 @@ function StickerStops({ theme, palette, isActive, selectedId }: StopsProps & { t
         id="route-places-badge"
         type="circle"
         filter={inactive}
-        paint={{ ...BADGE_PAINT, "circle-translate": BADGE_OFFSET }}
+        paint={{ ...badgePaint(opacity), "circle-translate": BADGE_OFFSET }}
       />
       <Layer
         source={ROUTE_PLACES_SOURCE_ID}
         id="route-places-badge-active"
         type="circle"
         filter={isActive}
-        paint={{ ...BADGE_PAINT, "circle-translate": ACTIVE_BADGE_OFFSET }}
+        paint={{ ...badgePaint(opacity), "circle-translate": ACTIVE_BADGE_OFFSET }}
       />
       <Layer
         source={ROUTE_PLACES_SOURCE_ID}
@@ -327,7 +363,7 @@ function StickerStops({ theme, palette, isActive, selectedId }: StopsProps & { t
           "text-allow-overlap": true,
           "text-ignore-placement": true,
         }}
-        paint={{ "text-color": "#ffffff" }}
+        paint={{ "text-color": "#ffffff", "text-opacity": opacity }}
       />
       <Layer
         source={ROUTE_PLACES_SOURCE_ID}
@@ -352,17 +388,21 @@ function StickerStops({ theme, palette, isActive, selectedId }: StopsProps & { t
   );
 }
 
-const BADGE_PAINT = {
-  "circle-radius": 8,
-  "circle-color": placeKindColorExpression(),
-  "circle-stroke-color": "#ffffff",
-  "circle-stroke-width": 2,
-  // Offset on screen like the sticker and the number; "map" turned the badge away when rotated.
-  "circle-translate-anchor": "viewport",
-} as const;
+function badgePaint(opacity: number | ExpressionSpecification) {
+  return {
+    "circle-radius": 8,
+    "circle-color": placeKindColorExpression(),
+    "circle-opacity": opacity,
+    "circle-stroke-color": "#ffffff",
+    "circle-stroke-width": 2,
+    "circle-stroke-opacity": opacity,
+    // Offset on screen like the sticker and the number; "map" turned the badge away when rotated.
+    "circle-translate-anchor": "viewport",
+  } as const;
+}
 
 /** Without icons: numbered circles, the active one in the accent colour. */
-function NumberedStops({ palette, isActive, selectedId }: StopsProps) {
+function NumberedStops({ palette, isActive, opacity, selectedId }: StopsProps) {
   return (
     <>
       <Layer
@@ -372,8 +412,10 @@ function NumberedStops({ palette, isActive, selectedId }: StopsProps) {
         paint={{
           "circle-radius": ["case", isActive, 14, 11],
           "circle-color": ["case", isActive, ACTIVE_STOP_COLOR, palette.stopFill],
+          "circle-opacity": opacity,
           "circle-stroke-color": palette.ring,
           "circle-stroke-width": 2,
+          "circle-stroke-opacity": opacity,
         }}
       />
       <Layer
@@ -399,7 +441,10 @@ function NumberedStops({ palette, isActive, selectedId }: StopsProps) {
           "text-allow-overlap": true,
           "text-ignore-placement": true,
         }}
-        paint={{ "text-color": ["case", isActive, "#ffffff", palette.stopText] }}
+        paint={{
+          "text-color": ["case", isActive, "#ffffff", palette.stopText],
+          "text-opacity": opacity,
+        }}
       />
     </>
   );
