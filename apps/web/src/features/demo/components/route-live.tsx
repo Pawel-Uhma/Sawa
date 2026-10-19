@@ -58,6 +58,9 @@ export type RouteLiveProps = {
   storyFooter?: ReactNode;
   /** Dojazd pod zapisem; na desktopie jest osobną kartą nad mapą (`RouteSheet`). */
   showItinerary?: boolean;
+  /** Odcinki podświetlone na mapie (`RouteSheet`). */
+  highlightLegs: readonly number[] | null;
+  onHighlightLeg: (legIndex: number | null) => void;
 };
 
 /* ------------------------------------------------------------------ */
@@ -238,6 +241,8 @@ export function RouteLive({
   header,
   storyFooter,
   showItinerary = true,
+  highlightLegs,
+  onHighlightLeg,
 }: RouteLiveProps) {
   const t = useT();
   const waiting = waitSec !== null;
@@ -372,7 +377,14 @@ export function RouteLive({
 
       {activeIndex === stops.length - 1 && <EndPill end={end} />}
 
-      {showItinerary && <Itinerary legs={legs} duration={formatDuration(durationMin)} />}
+      {showItinerary && (
+        <Itinerary
+          legs={legs}
+          duration={formatDuration(durationMin)}
+          selectedLegs={highlightLegs}
+          onSelectLeg={onHighlightLeg}
+        />
+      )}
 
       <Attribution lines={attribution} />
     </div>

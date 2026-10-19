@@ -6,7 +6,12 @@ import dynamic from "next/dynamic";
 import { type SetStateAction, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { LoadingCover } from "@/components/waiting";
 import { type Lang, pick, useLang, useT } from "@/features/i18n";
-import type { LocateStatus, MapCamera, MapPadding } from "@/features/map";
+import {
+  highlightedLegs,
+  type LocateStatus,
+  type MapCamera,
+  type MapPadding,
+} from "@/features/map";
 import { listenerOf, planRoute, routeStops } from "../lib/api-data";
 import { useDemoDrive } from "../lib/demo-drive";
 import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
@@ -34,7 +39,7 @@ import { OnboardingFlow } from "./onboarding-flow";
 import type { PlaceSelection } from "./place-card-host";
 import { ProfileModal, type ProfileStep } from "./profile-modal";
 import { RidesPanel } from "./rides-panel";
-import { RouteSheet } from "./route-sheet";
+import { DESKTOP_ITINERARY_PX, RouteSheet } from "./route-sheet";
 import { type SawaMenuActions, SawaMenuProvider } from "./sawa-menu";
 import { SawaSpeaking } from "./sawa-speaking";
 import { SawaTab } from "./sawa-tab";
@@ -111,6 +116,8 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const [planning, setPlanning] = useState(false);
   const [planError, setPlanError] = useState<string | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  // Odcinek stuknięty w „Dojeździe” (linia albo spacer): podświetlony na mapie
+  const [pickedLeg, setPickedLeg] = useState<number | null>(null);
   const [sheetCoverPx, setSheetCoverPx] = useState(360);
   const [panelCollapsed, setPanelCollapsed] = useState(false);
   const [selectedPlace, setSelectedPlace] = useState<PlaceSelection | null>(null);
@@ -142,6 +149,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     setPlanned(next);
     setRoute(routeStops(next));
     setActiveIndex(0);
+    setPickedLeg(null);
     setStage("route");
   }, []);
 
@@ -272,7 +280,8 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     if (isDesktop) {
       return {
         top: 96,
-        right: DESKTOP_GAP_PX,
+        // Na trasie po prawej stoi karta z dojazdem: trasa nie chowa się pod nią
+        right: isRoute ? DESKTOP_ITINERARY_PX + DESKTOP_GAP_PX : DESKTOP_GAP_PX,
         bottom: DESKTOP_GAP_PX,
         left: (isWide ? PANEL_PX.laptop : PANEL_PX.tablet) + DESKTOP_GAP_PX * 2,
       };
@@ -360,6 +369,15 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   // Sawa nie zaczyna zaraz po wyznaczeniu trasy: czeka, aż dojedziesz do pierwszego miejsca
   // (zegar jazdy albo GPS). Po wyjściu z trasy pauza, a po wejściu wznowienie.
   const waiting = clock.waitSec !== null;
+  // Po starcie jazdy najjaśniejszy jest odcinek, którym jedziesz teraz (z miejsca, o którym mówi
+  // Sawa: cała linia albo spacer); stuknięty w „Dojeździe” ma pierwszeństwo, aż stukniesz go znowu
+  const currentLeg =
+    planned && isRoute && !waiting ? (planned.places[activeIndex]?.legIndex ?? null) : null;
+  const litLeg = pickedLeg ?? currentLeg;
+  const mapHighlight = useMemo(
+    () => (planned && litLeg !== null ? highlightedLegs(planned.legs, litLeg) : null),
+    [planned, litLeg],
+  );
   // Muzyka w tle przez całą jazdę, także w oczekiwaniu na pierwsze miejsce; pauza Sawy zatrzymuje też ją.
   useRideMusic(
     musicOn && musicPlays({ onRoute: isRoute, held, waiting, isPlaying: player.isPlaying }),
@@ -510,6 +528,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                   : undefined
               }
               activeStopId={isRoute ? activeStop?.id : undefined}
+              highlightLegs={isRoute ? mapHighlight : null}
               interests={profile.interests}
               onStopClick={(id) => {
                 const index = route.findIndex((stop) => stop.id === id);
@@ -619,6 +638,8 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                 player={ridePlayer}
                 activeIndex={activeIndex}
                 onPlayStop={playStop}
+                highlightLegs={mapHighlight}
+                onHighlightLeg={setPickedLeg}
                 clock={clock}
                 totalSec={(planned?.totalMin ?? 0) * 60}
                 onBack={() => setStage("map")}

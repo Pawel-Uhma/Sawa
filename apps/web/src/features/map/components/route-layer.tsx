@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Layer, Source } from "react-map-gl/maplibre";
 import { useLang } from "@/features/i18n";
 import { BOARDING_TIMER_IMAGE, boardingTimerId, countdownOf } from "../lib/boarding-timers";
+import { LINE_CHIP_IMAGE, lineChipId } from "../lib/line-chips";
 import {
   ACTIVE_STOP_COLOR,
   LABEL_FONT,
@@ -39,6 +40,8 @@ type RouteLayerProps = {
   selectedId: string | null;
   /** Place the story is about right now; drawn larger and in the accent colour. */
   activeId?: string;
+  /** Legs picked in the "Dojazd" list (`highlightedLegs`): they stay, the rest of the route fades. */
+  highlightLegs?: readonly number[] | null;
   /** Icons registered in the style; route places are drawn as subkind stickers. */
   hasIcons: boolean;
   /** Loaded place summaries: route places among them get their subkind sticker, the rest a pin. */
@@ -52,10 +55,28 @@ type RouteLayerProps = {
 /** How often the countdown at boarding stops is redrawn. */
 const COUNTDOWN_TICK_MS = 15_000;
 
+/** Opacity of the lines not picked in the "Dojazd" list. */
+export const FADED_OPACITY = 0.25;
+
+/**
+ * `picked` for a feature whose `legIndex` is among the legs chosen in the list, `other` for the
+ * rest; without a choice simply `normal`.
+ */
+export function legValue(
+  legs: readonly number[] | null,
+  picked: number,
+  other: number,
+  normal = picked,
+): number | ExpressionSpecification {
+  if (legs === null) return normal;
+  return ["case", ["in", ["get", "legIndex"], ["literal", [...legs]]], picked, other];
+}
+
 export function RouteLayer({
   route,
   selectedId,
   activeId,
+  highlightLegs = null,
   hasIcons,
   knownPlaces,
   theme,
@@ -78,12 +99,19 @@ export function RouteLayer({
     return {
       ...collection,
       features: collection.features.map((feature) => {
-        const { color, clock, departAtMs, walkMin, boardAt } = feature.properties;
+        const { color, clock, departAtMs, walkMin, boardAt, line, mode } = feature.properties;
+        const { fromLine, fromMode, fromColor } = feature.properties;
         const countdown = countdownOf(departAtMs, now, walkMin);
+        const boarded = mode === "walk" ? [] : [{ line, mode, color }];
+        const left =
+          fromMode && fromMode !== "walk"
+            ? [{ line: fromLine, mode: fromMode, color: fromColor }]
+            : [];
         return {
           ...feature,
           properties: {
             ...feature.properties,
+            chip: lineChipId(theme, [...left, ...boarded]),
             timer: boardingTimerId(theme, color, countdown, clock, lang),
             time: countdown.kind === "clock" ? "" : boardAt,
           },
@@ -100,7 +128,12 @@ export function RouteLayer({
           id="route-walk"
           type="line"
           layout={{ "line-cap": "round", "line-join": "round" }}
-          paint={{ "line-color": palette.walk, "line-width": 3, "line-dasharray": [0.1, 2] }}
+          paint={{
+            "line-color": palette.walk,
+            "line-width": legValue(highlightLegs, 5, 3, 3),
+            "line-opacity": legValue(highlightLegs, 1, FADED_OPACITY),
+            "line-dasharray": [0.1, 2],
+          }}
         />
       </Source>
       <Source id="route-legs" type="geojson" data={legs}>
@@ -108,7 +141,11 @@ export function RouteLayer({
           id="route-casing"
           type="line"
           layout={{ "line-cap": "round", "line-join": "round" }}
-          paint={{ "line-color": palette.casing, "line-width": 9 }}
+          paint={{
+            "line-color": palette.casing,
+            "line-width": legValue(highlightLegs, 11, 9, 9),
+            "line-opacity": legValue(highlightLegs, 1, FADED_OPACITY),
+          }}
         />
         <Layer
           id="route-line"
@@ -116,7 +153,8 @@ export function RouteLayer({
           layout={{ "line-cap": "round", "line-join": "round" }}
           paint={{
             "line-color": ["get", "color"],
-            "line-width": 5,
+            "line-width": legValue(highlightLegs, 7, 5, 5),
+            "line-opacity": legValue(highlightLegs, 1, FADED_OPACITY),
           }}
         />
       </Source>
@@ -144,21 +182,16 @@ export function RouteLayer({
             "icon-ignore-placement": true,
           }}
         />
+        {/* Over the ring: the line with its vehicle icon, at a transfer "122 → 180" (lib/line-chips.ts) */}
         <Layer
           id="route-boarding-line"
           type="symbol"
           layout={{
-            "text-field": ["get", "line"],
-            "text-font": LABEL_FONT,
-            "text-size": 12,
-            "text-anchor": "bottom",
-            "text-offset": [0, -1.75],
-            "text-allow-overlap": true,
-          }}
-          paint={{
-            "text-color": "#ffffff",
-            "text-halo-color": ["get", "color"],
-            "text-halo-width": 4,
+            "icon-image": LINE_CHIP_IMAGE,
+            "icon-anchor": "bottom",
+            "icon-offset": [0, -16],
+            "icon-allow-overlap": true,
+            "icon-ignore-placement": true,
           }}
         />
         {/* Below the ring: where the line is boarded and, while it counts down, the clock time. */}

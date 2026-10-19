@@ -34,6 +34,9 @@ type RouteSheetProps = {
   activeIndex: number;
   /** Przejście do miejsca z przycisków: zegar jazdy staje przy nim, opowieść gra od początku. */
   onPlayStop: (index: number) => void;
+  /** Odcinki podświetlone na mapie (linia albo spacer stuknięty w „Dojeździe”, inaczej bieżący). */
+  highlightLegs: readonly number[] | null;
+  onHighlightLeg: (legIndex: number | null) => void;
   /** Zegar jazdy: który punkt już powinien mieć opowieść i ile trwa jazda. */
   clock: Pick<RideClock, "waitSec" | "rideSec" | "held">;
   /** Długość przejażdżki z planera (s): z niej godzina dojazdu. */
@@ -151,7 +154,12 @@ export function RouteSheet(props: RouteSheetProps) {
       <DesktopPanel headerRef={headerRef} dockRef={dockRef} dock={dock}>
         {content}
       </DesktopPanel>
-      <DesktopItinerary legs={props.legs} durationMin={props.durationMin} />
+      <DesktopItinerary
+        legs={props.legs}
+        durationMin={props.durationMin}
+        selectedLegs={props.highlightLegs}
+        onSelectLeg={props.onHighlightLeg}
+      />
     </>
   ) : (
     <MobileSheet
@@ -192,11 +200,24 @@ function useChrome(
   return chrome;
 }
 
+/** Szerokość karty z dojazdem na desktopie i jej odstęp od prawej krawędzi (px): mapa zostawia na nią miejsce. */
+export const DESKTOP_ITINERARY_PX = 320 + 24;
+
 /**
  * Dojazd na desktopie: osobna karta nad mapą, pod przyciskami powiększania. W panelu leżał pod
  * zapisem opowieści, który wypełnia panel, więc linie, do których wsiąść, były poza widokiem.
  */
-function DesktopItinerary({ legs, durationMin }: { legs: Leg[]; durationMin: number }) {
+function DesktopItinerary({
+  legs,
+  durationMin,
+  selectedLegs,
+  onSelectLeg,
+}: {
+  legs: Leg[];
+  durationMin: number;
+  selectedLegs: readonly number[] | null;
+  onSelectLeg: (legIndex: number | null) => void;
+}) {
   if (legs.length === 0) return null;
   return (
     <motion.div
@@ -204,9 +225,14 @@ function DesktopItinerary({ legs, durationMin }: { legs: Leg[]; durationMin: num
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: 32 }}
       transition={SPRING}
-      className="karta absolute right-6 top-40 z-20 max-h-[calc(100dvh-14rem)] w-[300px] overflow-y-auto overscroll-contain rounded-[22px] p-2"
+      className="karta absolute right-6 top-40 z-20 max-h-[calc(100dvh-14rem)] w-[320px] overflow-y-auto overscroll-contain rounded-[22px] p-2"
     >
-      <Itinerary legs={legs} duration={formatDuration(durationMin)} />
+      <Itinerary
+        legs={legs}
+        duration={formatDuration(durationMin)}
+        selectedLegs={selectedLegs}
+        onSelectLeg={onSelectLeg}
+      />
     </motion.div>
   );
 }

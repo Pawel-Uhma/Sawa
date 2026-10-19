@@ -29,6 +29,7 @@ import {
   resolveCamera,
 } from "../lib/camera";
 import { registerClusterBadges } from "../lib/cluster-badges";
+import { registerLineChips } from "../lib/line-chips";
 import { loadMapIcons } from "../lib/map-icons";
 import {
   BASEMAP_STYLE_URLS,
@@ -82,6 +83,8 @@ export type SawaMapProps = {
   destination?: LatLng;
   /** Route place the story is about right now. */
   activeStopId?: string;
+  /** Legs picked in the "Dojazd" list (`highlightedLegs`): drawn on top, the rest faded. */
+  highlightLegs?: readonly number[] | null;
   /** Click on a route place. When set, it replaces the built-in place card for route places. */
   onStopClick?: (placeId: string) => void;
   /** Built-in card after clicking a place; turn off when the screen shows its own. */
@@ -105,6 +108,7 @@ export function SawaMap({
   user,
   destination,
   activeStopId,
+  highlightLegs = null,
   onStopClick,
   hasPlaceSheet = true,
   hasZoomControls = true,
@@ -308,6 +312,7 @@ export function SawaMap({
           registerPlaceStickers(event.target);
           registerClusterBadges(event.target);
           registerBoardingTimers(event.target);
+          registerLineChips(event.target);
           loadMapIcons(event.target).then((isOk) => setIcons(isOk ? "ready" : "failed"));
         }}
         onMoveEnd={(event) => setView(viewOf(event.target))}
@@ -333,12 +338,15 @@ export function SawaMap({
             palette={palette}
           />
         )}
-        {icons !== "loading" && route && <LineShapesLayer route={route} data={vehicles.data} />}
+        {icons !== "loading" && route && (
+          <LineShapesLayer route={route} data={vehicles.data} highlightLegs={highlightLegs} />
+        )}
         {icons !== "loading" && route && (
           <RouteLayer
             route={route}
             selectedId={selectedId}
             activeId={activeStopId}
+            highlightLegs={highlightLegs}
             hasIcons={icons === "ready"}
             knownPlaces={places.data}
             theme={theme}

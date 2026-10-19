@@ -21,6 +21,12 @@ export type RouteBoardingFeature = {
   geometry: { type: "Point"; coordinates: LngLat };
   properties: {
     line: string;
+    /** Label over the ring: the line, at a transfer the change, e.g. "122 → 180". */
+    label: string;
+    /** At a transfer, the line left (its number, mode and colour); empty at the start. */
+    fromLine: string;
+    fromMode: Leg["mode"] | "";
+    fromColor: string;
     mode: Leg["mode"];
     color: string;
     /** Name with the ZTM post number, as on the stop sign: "Plac Zawiszy 05". */
@@ -80,9 +86,14 @@ export type FeatureCollection<F> = { type: "FeatureCollection"; features: F[] };
  * Walk legs belong to no line (-1) and don't break a line that continues after them.
  */
 export function lineIndexes(route: Route): number[] {
+  return legLineIndexes(route.legs);
+}
+
+/** `lineIndexes` for a bare list of legs (the "Dojazd" list in the route sheet). */
+export function legLineIndexes(legs: readonly Leg[]): number[] {
   let index = -1;
   let previous: Leg | undefined;
-  return route.legs.map((leg) => {
+  return legs.map((leg) => {
     if (leg.mode === "walk") return -1;
     if (leg.line !== previous?.line || leg.fromStop.id !== previous.toStop.id) index += 1;
     previous = leg;
@@ -94,7 +105,7 @@ export function lineIndexes(route: Route): number[] {
 export type LineShapeFeature = {
   type: "Feature";
   geometry: { type: "LineString"; coordinates: LngLat[] };
-  properties: { legIndex: number; line: string; color: string };
+  properties: { legIndex: number; lineIndex: number; line: string; color: string };
 };
 
 /**
@@ -115,7 +126,12 @@ export function lineShapesToGeoJson(
     features.push({
       type: "Feature",
       geometry: { type: "LineString", coordinates: leg.shape },
-      properties: { legIndex: leg.legIndex, line: leg.line, color: lineColor(lineIndex) },
+      properties: {
+        legIndex: leg.legIndex,
+        lineIndex,
+        line: leg.line,
+        color: lineColor(lineIndex),
+      },
     });
   }
   return { type: "FeatureCollection", features };
@@ -142,6 +158,18 @@ export function routeLegsToGeoJson(route: Route): FeatureCollection<RouteLegFeat
   };
 }
 
+/**
+ * Legs lit up when leg `legIndex` is picked in the "Dojazd" list: a walk alone, a ride with
+ * every leg of its line (`legLineIndexes`). Empty for a leg that is not on the route.
+ */
+export function highlightedLegs(legs: readonly Leg[], legIndex: number): number[] {
+  const leg = legs[legIndex];
+  if (!leg) return [];
+  if (leg.mode === "walk") return [legIndex];
+  const lines = legLineIndexes(legs);
+  return lines.flatMap((line, i) => (line === lines[legIndex] ? [i] : []));
+}
+
 /** Minutes of the walk legs right before `legIndex`. */
 function walkBefore(legs: readonly Leg[], legIndex: number): number {
   let minutes = 0;
@@ -149,6 +177,25 @@ function walkBefore(legs: readonly Leg[], legIndex: number): number {
     minutes += legs[i].durationMin;
   }
   return minutes;
+}
+
+/** The ride leg before `legIndex` on another line: the line left at this transfer. */
+function legLeft(legs: readonly Leg[], lines: readonly number[], legIndex: number): number | null {
+  for (let i = legIndex - 1; i >= 0; i -= 1) {
+    if (lines[i] >= 0 && lines[i] !== lines[legIndex]) return i;
+  }
+  return null;
+}
+
+function transferOf(legs: readonly Leg[], lines: readonly number[], legIndex: number) {
+  const left = legLeft(legs, lines, legIndex);
+  const from = left === null ? undefined : legs[left];
+  return {
+    label: from ? `${from.line} → ${legs[legIndex].line}` : legs[legIndex].line,
+    fromLine: from?.line ?? "",
+    fromMode: from?.mode ?? "",
+    fromColor: left === null ? "" : lineColor(lines[left]),
+  } as const;
 }
 
 /** Boarding points: the first stop of the ride and every stop where the line changes. */
@@ -167,6 +214,7 @@ export function routeBoardingsToGeoJson(route: Route): FeatureCollection<RouteBo
         geometry: { type: "Point", coordinates: toLngLat(leg.fromStop.position) },
         properties: {
           line: leg.line,
+          ...transferOf(route.legs, lines, legIndex),
           mode: leg.mode,
           color: lineColor(lines[legIndex]),
           stopName: [leg.fromStop.name, stopPost(leg.fromStop.id)].filter(Boolean).join(" "),
