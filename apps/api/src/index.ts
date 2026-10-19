@@ -5,6 +5,7 @@ import { createGoogleDestinationSearch } from "./adapters/google-places/destinat
 import { loadTransitCalendar } from "./adapters/gtfs/load-transit";
 import { createOpenRouterProvider } from "./adapters/llm/openrouter";
 import { createOsrmWalkPathSource, firstWalkPath } from "./adapters/osrm/walk-paths";
+import { createPiperSynthesizer } from "./adapters/piper/speech-synthesizer";
 import { createFilePlacesRepository } from "./adapters/places-file/file-places-repository";
 import { createCachedPlacesRepository } from "./adapters/supabase/cached-places-repository";
 import {
@@ -32,6 +33,7 @@ import { createRoutePlanner } from "./services/plan-route";
 import { createPlaceResearch } from "./services/research-place";
 import { createDestinationService } from "./services/search-destinations";
 import { createSpeechService } from "./services/speak";
+import { createFallbackSynthesizer } from "./services/speech-fallback";
 import type { StoryService } from "./services/tell-story";
 import { createVehicleTracker } from "./services/track-vehicles";
 
@@ -142,11 +144,26 @@ const elevenLabs = env.ELEVENLABS_KEY
       fallbackApiKey: env.ELEVENLABS_KEY_2,
     })
   : undefined;
+// Local Polish voice for when ElevenLabs is out of reach (no key, no credits, timeout).
+const localVoice =
+  demo === "off" && env.LOCAL_TTS
+    ? createPiperSynthesizer({ modelDir: env.PIPER_MODEL_DIR })
+    : undefined;
+localVoice
+  ?.warm()
+  .then(() => logger.info("local voice ready"))
+  .catch((err) => logger.warn({ err }, "local voice failed to load, retried on first story"));
+const voice =
+  elevenLabs && localVoice
+    ? createFallbackSynthesizer(elevenLabs, localVoice, {
+        onFallback: (err) => logger.warn({ err }, "ElevenLabs failed, local voice reads"),
+      })
+    : (elevenLabs ?? localVoice);
 const speech = fixtures
   ? createSpeechService(
       createFixtureSynthesizer(fixtures, demo === "record" ? elevenLabs : undefined),
     )
-  : elevenLabs && createSpeechService(elevenLabs);
+  : voice && createSpeechService(voice);
 
 const destinations = fixtures
   ? createDestinationService(createFixedDestinationSearch())
@@ -201,6 +218,7 @@ serve({ fetch: app.fetch, port: env.PORT }, ({ port }) => {
       llm: llm?.model ?? null,
       research: Boolean(research),
       speech: Boolean(speech),
+      localVoice: Boolean(localVoice),
       destinations: Boolean(destinations),
       demo,
     },

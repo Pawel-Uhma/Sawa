@@ -13,12 +13,14 @@
     "demo:record": "node --import tsx src/scripts/demo-record.ts"
   },
   "dependencies": {
+    "@breezystack/lamejs": "1.2.7",
     "@hono/node-server": "^1",
     "@hono/zod-validator": "^0.9.1",
     "@sawa/shared": "workspace:*",
     "@supabase/supabase-js": "^2.118.0",
     "hono": "^4.13.13",
     "pino": "^10",
+    "sherpa-onnx-node": "1.13.8",
     "tsx": "^4.23.15",
     "zod": "^4.6.7"
   }

@@ -62,6 +62,19 @@ const EnvSchema = z.object({
     .string()
     .optional()
     .transform((v) => v || undefined),
+  /**
+   * "0" turns off the local Polish voice (Piper via sherpa-onnx) that reads when ElevenLabs is
+   * missing or fails (no credits, timeout).
+   */
+  LOCAL_TTS: z
+    .enum(["0", "1"])
+    .default("1")
+    .transform((v) => v === "1"),
+  /** Unpacked Piper model; empty = a temp folder, downloaded there at start (about 70 MB). */
+  PIPER_MODEL_DIR: z
+    .string()
+    .optional()
+    .transform((v) => v || undefined),
   /** Google Places API (New) key for finding a ride destination by name; without it GET /v1/destinations answers 502. */
   GOOGLE_PLACES_API_KEY: z
     .string()

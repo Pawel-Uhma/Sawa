@@ -197,7 +197,7 @@ export function createSpeechService(synthesizer: SpeechSynthesizer): SpeechServi
   };
 }
 
-/** Used when ELEVENLABS_KEY is missing, so the rest of the API still runs. */
+/** Used when neither ELEVENLABS_KEY nor the local voice (LOCAL_TTS) is there, so the rest of the API still runs. */
 export function createDisabledSpeechService(): SpeechService {
   return {
     speak: async () => {
