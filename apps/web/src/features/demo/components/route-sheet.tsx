@@ -30,11 +30,10 @@ type RouteSheetProps = {
   /** Kto słucha: do opowieści o miejscu obok, które Sawa poleca. */
   listener: Listener;
   activeIndex: number;
-  onActiveChange: (index: number) => void;
   /** Przejście do miejsca z przycisków: zegar jazdy staje przy nim, opowieść gra od początku. */
   onPlayStop: (index: number) => void;
   /** Zegar jazdy: który punkt już powinien mieć opowieść i ile trwa jazda. */
-  clock: Pick<RideClock, "dueIndex" | "waitSec" | "rideSec" | "held">;
+  clock: Pick<RideClock, "waitSec" | "rideSec" | "held">;
   /** Długość przejażdżki z planera (s): z niej godzina dojazdu. */
   totalSec: number;
   onBack: () => void;
@@ -45,25 +44,10 @@ type RouteSheetProps = {
 
 /** Trasa: arkusz z punktami zatrzymania na telefonie, pływający panel na desktopie. */
 export function RouteSheet(props: RouteSheetProps) {
-  const { stops, activeIndex, onActiveChange, onPlayStop, player, clock } = props;
-  const { setIsPlaying, rewind, restart, more, skip } = player;
+  const { stops, activeIndex, onPlayStop, player, clock } = props;
+  const { restart, more, skip } = player;
   const hasNext = activeIndex < stops.length - 1;
   const { progress, toggle: togglePlay } = player;
-
-  // Po końcu opowieści Sawa czeka, aż zbliżysz się do następnego punktu (zegar jazdy, do czasu
-  // lokalizacji). Gdy opowieść się przeciągnęła, od razu bierze punkt, przy którym już jesteś.
-  const { dueIndex } = clock;
-  useEffect(() => {
-    if (progress < 100) return;
-    if (!hasNext) {
-      setIsPlaying(false);
-      return;
-    }
-    if (dueIndex <= activeIndex) return;
-    rewind();
-    setIsPlaying(true);
-    onActiveChange(dueIndex);
-  }, [progress, hasNext, activeIndex, dueIndex, onActiveChange, setIsPlaying, rewind]);
 
   // Wszystko, co Sawa powiedziała w tej jeździe, jako jeden ciągły tekst z podziałem na tematy.
   // Docelowo (T-106) to jeden strumień z pomostami od Sawy; dziś składamy go z kolejnych opowieści.

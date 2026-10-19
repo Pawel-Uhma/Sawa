@@ -35,6 +35,7 @@ import {
 } from "../lib/onboarding";
 import { setMusicOn, useMusicOn } from "../lib/ride-music-player";
 import type { StartMode } from "../lib/start-point";
+import { setAutoAdvance, useAutoAdvance } from "../lib/story-advance";
 import { topicStyle } from "../lib/topic-style";
 import {
   BubbleIcon,
@@ -48,6 +49,7 @@ import {
   RestartIcon,
   RoutesIcon,
   ShareIcon,
+  SkipNextIcon,
   SparkIcon,
 } from "./icons";
 import { Logo, SawaHead } from "./logo";
@@ -374,6 +376,7 @@ function MenuContent({ actions, run }: MenuContentProps) {
   useEffect(() => () => window.clearTimeout(copiedTimer.current), []);
 
   const musicOn = useMusicOn();
+  const autoAdvance = useAutoAdvance();
   const familiarity = labelOf(FAMILIARITY, profile.familiarity, lang);
   const style = labelOf(STORY_STYLES, profile.storyStyle, lang);
   const audience = labelOf(AUDIENCES, profile.audience, lang);
@@ -473,6 +476,20 @@ function MenuContent({ actions, run }: MenuContentProps) {
           label={t("Kto słucha", "Who's listening")}
           value={audience ?? t("Dorośli", "Adults")}
           onClick={() => run(() => actions.onEditProfile("audience"))}
+        />
+        <Row
+          Icon={SkipNextIcon}
+          label={t("Następne miejsce", "Next place")}
+          value={
+            autoAdvance
+              ? t("Samo, gdy dojedziesz · stuknij: ręcznie", "As you arrive · tap: by hand")
+              : t("Tylko ręcznie · stuknij: samo", "Only by hand · tap: automatic")
+          }
+          onClick={() => {
+            haptic();
+            setAutoAdvance(!autoAdvance);
+          }}
+          chevron={false}
         />
         <Row
           Icon={PinIcon}

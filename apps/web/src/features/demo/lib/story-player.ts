@@ -36,9 +36,23 @@ const PAUSE_CHECK_MS = 300;
 /** Pauza tak blisko końca głosu to koniec opowieści, a nie przerwanie. */
 const END_SLACK_SEC = 0.3;
 
+/** Krok płynnej zmiany głośności (ok. 60 razy na sekundę). */
+const FADE_STEP_MS = 16;
+
+/**
+ * Ile przejścia głośności już minęło (0–1). Przy ukrytej stronie (zgaszony ekran, telefon
+ * w kieszeni) od razu koniec: przeglądarka wtedy rzadko budzi timery, a głos ma grać od razu.
+ */
+export function fadeAt(elapsedMs: number, ms: number, hidden: boolean): number {
+  if (hidden || ms <= 0) return 1;
+  return Math.min(1, Math.max(0, elapsedMs / ms));
+}
+
 /**
  * Płynnie zmienia głośność. Na iOS `volume` jest tylko do odczytu, więc tam zostaje
  * sama pauza o tej długości, bez wyciszenia. Nowe przejście przerywa poprzednie (`token`).
+ * Na timerze, nie na klatkach animacji: przy zgaszonym ekranie klatki stają i głos zostawał
+ * wyciszony na całą opowieść, a następny temat nie wchodził wcale.
  */
 function fadeVolume(
   audio: HTMLAudioElement,
@@ -50,14 +64,14 @@ function fadeVolume(
   const from = audio.volume;
   const startedAt = performance.now();
   return new Promise((resolve) => {
-    const tick = (now: number) => {
+    const step = () => {
       if (token.current !== id) return resolve();
-      const t = Math.min(1, (now - startedAt) / ms);
+      const t = fadeAt(performance.now() - startedAt, ms, document.hidden);
       audio.volume = from + (to - from) * t;
-      if (t < 1) requestAnimationFrame(tick);
+      if (t < 1) setTimeout(step, FADE_STEP_MS);
       else resolve();
     };
-    requestAnimationFrame(tick);
+    setTimeout(step, FADE_STEP_MS);
   });
 }
 
@@ -575,6 +589,10 @@ export function useStoryPlayer(
     const audio = audioRef.current;
     // Przed wczytaniem klipu gra nim efekt przejścia wyżej.
     if (!audio || !hasVoice || !isLoaded(audio, clip)) return;
+    // Wybór innego miejsca (Następne, Wstecz, punkt z listy) włącza odtwarzanie w tym samym
+    // renderze, w którym jeszcze jest stary klip. Nie wznawiamy go: zakończony zagrałby od
+    // początku, zanim przejście go wyciszy. Nowy temat startuje efekt przejścia.
+    if (speaking && clip?.placeId !== activeId.current) return;
     if (!speaking) {
       // Dygresja wchodzi na wyciszaną trasę, pauza użytkownika zatrzymuje od razu.
       if (!aside || audio.paused) audio.pause();

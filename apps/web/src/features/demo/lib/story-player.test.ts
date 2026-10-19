@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import type { MockStop } from "./mock-data";
 import {
   clipKey,
+  fadeAt,
   knownContextsWith,
   pausedFromOutside,
   playFailed,
@@ -151,5 +152,17 @@ describe("seekTarget", () => {
 
   it("w trakcie pisania nie cofa, gdy bufor jest tuż za głosem", () => {
     expect(seekTarget(19.5, 15, streaming)).toBe(19.5);
+  });
+});
+
+describe("fadeAt", () => {
+  it("idzie z czasem i kończy się na 1", () => {
+    expect(fadeAt(0, 500, false)).toBe(0);
+    expect(fadeAt(250, 500, false)).toBe(0.5);
+    expect(fadeAt(900, 500, false)).toBe(1);
+  });
+
+  it("przy ukrytej stronie od razu kończy, żeby głos nie został wyciszony", () => {
+    expect(fadeAt(0, 500, true)).toBe(1);
   });
 });
