@@ -23,8 +23,10 @@ import type { LngLatBounds } from "../lib/bounds";
 import {
   cameraMoveKey,
   DEFAULT_MAP_PADDING,
+  fitPadding,
   type MapCamera,
   type MapPadding,
+  paddingOnTop,
   paddingWithSheet,
   resolveCamera,
 } from "../lib/camera";
@@ -90,6 +92,8 @@ export type SawaMapProps = {
   activeStopId?: string;
   /** Legs picked in the "Dojazd" list (`highlightedLegs`): drawn on top, the rest faded. */
   highlightLegs?: readonly number[] | null;
+  /** The user picked a line: regular place icons fade further, so the line reads clearly. */
+  fadePlaces?: boolean;
   /** Click on a route place. When set, it replaces the built-in place card for route places. */
   onStopClick?: (placeId: string) => void;
   /** Click on a boarding ring or its line label: the leg boarded there and, at a transfer, the leg left (-1 at the start). */
@@ -116,6 +120,7 @@ export function SawaMap({
   destination,
   activeStopId,
   highlightLegs = null,
+  fadePlaces = false,
   onStopClick,
   onBoardingClick,
   hasPlaceSheet = true,
@@ -193,12 +198,8 @@ export function SawaMap({
 
   function cameraPaddingOf(map: MapRef): MapPadding {
     const container = map.getContainer();
-    return isSheetOpen
-      ? paddingWithSheet(fullPadding, {
-          width: container.clientWidth,
-          height: container.clientHeight,
-        })
-      : fullPadding;
+    const size = { width: container.clientWidth, height: container.clientHeight };
+    return fitPadding(isSheetOpen ? paddingWithSheet(fullPadding, size) : fullPadding, size);
   }
 
   function easeToUser(zoomAtLeast?: number) {
@@ -252,9 +253,10 @@ export function SawaMap({
     // so optional options are only passed when set.
     const options = { padding: cameraPaddingOf(map), duration: CAMERA_DURATION_MS };
     if (move.type === "fit") {
+      const fit = { ...options, padding: paddingOnTop(options.padding, map.getPadding()) };
       map.fitBounds(
         move.bounds,
-        move.maxZoom === undefined ? options : { ...options, maxZoom: move.maxZoom },
+        move.maxZoom === undefined ? fit : { ...fit, maxZoom: move.maxZoom },
       );
     } else {
       map.easeTo(
@@ -349,6 +351,7 @@ export function SawaMap({
             theme={isHighContrast ? "contrast" : theme}
             selectedId={selectedId}
             isDimmed={Boolean(route)}
+            isFaint={Boolean(route) && fadePlaces}
             hasIcons={icons === "ready"}
             palette={palette}
           />

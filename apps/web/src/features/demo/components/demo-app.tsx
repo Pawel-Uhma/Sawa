@@ -562,6 +562,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
               }
               activeStopId={isRoute ? activeStop?.id : undefined}
               highlightLegs={isRoute ? mapHighlight : null}
+              fadePlaces={isRoute && pickedLegs !== null}
               interests={profile.interests}
               onBoardingClick={isRoute ? pickBoarding : undefined}
               onStopClick={(id) => {
