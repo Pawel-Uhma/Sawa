@@ -56,6 +56,8 @@ export type RouteLiveProps = {
   header: ReactNode;
   /** Pod tekstem bieżącej opowieści, np. miejsce obok, które Sawa poleca (`StorySuggestion`). */
   storyFooter?: ReactNode;
+  /** Dojazd pod zapisem; na desktopie jest osobną kartą nad mapą (`RouteSheet`). */
+  showItinerary?: boolean;
 };
 
 /* ------------------------------------------------------------------ */
@@ -235,6 +237,7 @@ export function RouteLive({
   transcript,
   header,
   storyFooter,
+  showItinerary = true,
 }: RouteLiveProps) {
   const t = useT();
   const waiting = waitSec !== null;
@@ -369,7 +372,7 @@ export function RouteLive({
 
       {activeIndex === stops.length - 1 && <EndPill end={end} />}
 
-      <Itinerary legs={legs} duration={formatDuration(durationMin)} />
+      {showItinerary && <Itinerary legs={legs} duration={formatDuration(durationMin)} />}
 
       <Attribution lines={attribution} />
     </div>
