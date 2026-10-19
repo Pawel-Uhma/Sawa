@@ -2,6 +2,7 @@ import type { Route, TrackVehiclesResponse } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { lineColor } from "./map-style";
 import {
+  highlightedLegs,
   lineIndexes,
   lineShapesToGeoJson,
   routeBoardingsToGeoJson,
@@ -157,6 +158,20 @@ describe("lines and transfers", () => {
       ["10", true],
     ]);
     expect(features[1].geometry.coordinates).toEqual([20.98, 52.24]);
+  });
+
+  it("lights up a walk alone and a ride with every leg of its line", () => {
+    const walk = { ...ROUTE.legs[0], mode: "walk" as const, line: "" };
+    const legs = [walk, ...route.legs];
+    expect(highlightedLegs(legs, 0)).toEqual([0]);
+    expect(highlightedLegs(legs, 1)).toEqual([1, 2]);
+    expect(highlightedLegs(legs, 3)).toEqual([3]);
+    expect(highlightedLegs(legs, 9)).toEqual([]);
+  });
+
+  it("labels a transfer with the line left and the line boarded", () => {
+    const { features } = routeBoardingsToGeoJson(route);
+    expect(features.map((f) => f.properties.label)).toEqual(["10", "10 → 520", "520 → 10"]);
   });
 
   it("labels each boarding with its stop and Warsaw time, marking estimates", () => {

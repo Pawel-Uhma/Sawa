@@ -212,8 +212,18 @@ export function SkipPrevIcon(props: IconProps) {
 export function TramIcon(props: IconProps) {
   return (
     <svg aria-hidden="true" {...base} {...props}>
-      <rect x="5" y="6" width="14" height="12" rx="3" />
-      <path d="M9 3h6M12 3v3M5 13h14M8 21l1.5-3M16 21l-1.5-3" />
+      {/* Wąski i wysoki jak wagon, żeby łatwo odróżnić go od szerokiego autobusu */}
+      <rect x="7" y="5" width="10" height="14" rx="2.5" />
+      <path d="M9.5 2h5M12 2v3M7 12h10M10 22l.8-3M14 22l-.8-3" />
+    </svg>
+  );
+}
+
+export function BusIcon(props: IconProps) {
+  return (
+    <svg aria-hidden="true" {...base} {...props}>
+      <rect x="4" y="4" width="16" height="14" rx="3" />
+      <path d="M4 11h16M8 18v2M16 18v2M8 14.5h.01M16 14.5h.01" />
     </svg>
   );
 }
