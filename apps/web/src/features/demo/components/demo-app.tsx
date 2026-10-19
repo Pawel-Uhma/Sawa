@@ -26,6 +26,7 @@ import { useMusicOn, useRideMusic } from "../lib/ride-music-player";
 import { useGpsClockSync } from "../lib/ride-sync";
 import { screenCamera } from "../lib/screen-camera";
 import { type StartStatus, startLabel, useStartPoint } from "../lib/start-point";
+import { afterStory, useAutoAdvance } from "../lib/story-advance";
 import { useStoryPlayer } from "../lib/story-player";
 import { claimVoice, isAside, ROUTE_VOICE, useVoiceOwner } from "../lib/voice";
 import { HomePanel } from "./home-panel";
@@ -318,17 +319,26 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   // Odtwarzacz jest tu, a nie w arkuszu trasy: zakładka Sawa steruje tą samą opowieścią.
   const player = useStoryPlayer(route, activeIndex, listener);
   const { setIsPlaying, rewind } = player;
+  // Prowadzenie (menu Sawy): automatycznie z zegarem jazdy i GPS albo tylko ręcznie
+  const autoAdvance = useAutoAdvance();
+  const autoAdvanceRef = useRef(autoAdvance);
+  autoAdvanceRef.current = autoAdvance;
   // Kolejne opowieści ruszają z zegarem jazdy; wybór punktu ręcznie znaczy „jestem tutaj”.
   // Pauza i stop Sawy zatrzymują też zegar (suwak i odliczanie), także przed pierwszym miejscem.
   // Z GPS przy trasie zegar sam nie wychodzi poza bieżący punkt: dalej prowadzi lokalizacja.
-  const clock = useRideClock(route, player.isPlaying, isNearRoute(route, start.position));
+  const clock = useRideClock(
+    route,
+    player.isPlaying,
+    autoAdvance && isNearRoute(route, start.position),
+  );
   const { syncTo, held, setHeld } = clock;
   const heldRef = useRef(held);
   heldRef.current = held;
   const musicOn = useMusicOn();
   const voiceOwner = useVoiceOwner();
   // Z lokalizacją zegar staje przy punkcie, do którego naprawdę dojechaliśmy.
-  useGpsClockSync(route, start.position, clock);
+  // Ręcznie lokalizacja nie zmienia miejsca.
+  useGpsClockSync(route, autoAdvance ? start.position : null, clock);
   const pickStop = useCallback(
     (index: number) => {
       syncTo(index);
@@ -345,10 +355,6 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     },
     [pickStop],
   );
-  const userSetActive = useCallback((index: number) => {
-    setStopPicks((n) => n + 1);
-    setActiveIndex(index);
-  }, []);
   // Na scenie autobus jedzie sam: aktywny punkt idzie po trasie w ok. 1,5 min (T-36)
   useDemoDrive(isStage && isRoute, route, pickStop);
   // Sawa nie zaczyna zaraz po wyznaczeniu trasy: czeka, aż dojedziesz do pierwszego miejsca
@@ -365,8 +371,9 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     wasWaiting.current = waiting;
     // Start z zakładki Sawa (poza ekranem trasy) zostaje, nie pauzujemy go od razu
     if (arrived && !isRoute) return;
-    // Zatrzymana przez użytkownika Sawa nie rusza sama po powrocie na trasę
-    setIsPlaying(isRoute && !waiting && !heldRef.current);
+    // Zatrzymana przez użytkownika Sawa nie rusza sama po powrocie na trasę. Ręcznie nie rusza
+    // też po dojeździe do pierwszego miejsca, tylko na stuknięcie (zmiana trybu w trakcie nie pauzuje).
+    setIsPlaying(isRoute && !waiting && !heldRef.current && autoAdvanceRef.current);
   }, [isRoute, waiting, setIsPlaying]);
   const firstStop = route[0];
   useEffect(() => {
@@ -401,6 +408,33 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     };
     return { ...player, toggle, restart, setIsPlaying: setPlaying };
   }, [waiting, held, player, syncTo, setHeld]);
+  // Po końcu opowieści: automatycznie Sawa czeka, aż zbliżysz się do następnego punktu (zegar
+  // jazdy, GPS), a gdy opowieść się przeciągnęła, od razu bierze punkt, przy którym już jesteś.
+  // Ręcznie czeka na Następne (muzyka gra dalej). Po ostatnim miejscu Sawa staje. Tu, a nie
+  // w arkuszu trasy, żeby działało też z zakładki Sawa.
+  const { progress } = player;
+  const { dueIndex } = clock;
+  useEffect(() => {
+    if (progress < 100) return;
+    const next = afterStory({
+      activeIndex,
+      dueIndex,
+      stopCount: route.length,
+      auto: autoAdvance,
+    });
+    if (next === "wait") return;
+    // Koniec trasy jak stop użytkownika: zegar jazdy i muzyka stają
+    if (next === "stop") {
+      setHeld(true);
+      setIsPlaying(false);
+      return;
+    }
+    rewind();
+    setHeld(false);
+    setIsPlaying(true);
+    // Z zegara jazdy, nie wybór użytkownika: kropka dalej jest śledzona
+    setActiveIndex(next);
+  }, [progress, activeIndex, dueIndex, route.length, autoAdvance, setHeld, setIsPlaying, rewind]);
   const playStop = useCallback(
     (index: number) => {
       if (index < 0 || index >= route.length) return;
@@ -584,7 +618,6 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                 stops={route}
                 player={ridePlayer}
                 activeIndex={activeIndex}
-                onActiveChange={userSetActive}
                 onPlayStop={playStop}
                 clock={clock}
                 totalSec={(planned?.totalMin ?? 0) * 60}

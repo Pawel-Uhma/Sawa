@@ -385,7 +385,17 @@ function readMusicOn(): boolean {
 
 function subscribe(onChange: () => void) {
   listeners.add(onChange);
-  return () => listeners.delete(onChange);
+  // Wybór z innej karty: inaczej muzyka grała dalej w karcie otwartej wcześniej
+  const onStorage = (event: StorageEvent) => {
+    if (event.key !== MUSIC_STORAGE_KEY && event.key !== null) return;
+    chosen = null;
+    onChange();
+  };
+  window.addEventListener("storage", onStorage);
+  return () => {
+    listeners.delete(onChange);
+    window.removeEventListener("storage", onStorage);
+  };
 }
 
 export function setMusicOn(on: boolean) {

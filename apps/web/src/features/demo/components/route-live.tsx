@@ -9,6 +9,7 @@ import { usePlace } from "@/features/map";
 import { SPRING } from "../lib/device";
 import { formatDuration } from "../lib/format";
 import type { MockStop } from "../lib/mock-data";
+import { useAutoAdvance } from "../lib/story-advance";
 import { spokenCut } from "../lib/story-player";
 import { useStoryWaitMessage } from "../lib/story-wait";
 import { FOLLOW_INITIAL, followReducer, SCROLL_KEYS } from "../lib/transcript-follow";
@@ -139,12 +140,18 @@ const PREVIEW_FACTS = 3;
 function PlacePreview({ placeId }: { placeId: string }) {
   const t = useT();
   const detail = usePlace(placeId);
+  const autoAdvance = useAutoAdvance();
   const hint = (
     <p className="text-[15px] leading-relaxed text-tekst-3">
-      {t(
-        "Sawa opowie więcej na miejscu. Nie chcesz czekać? Stuknij odtwarzanie.",
-        "Sawa will tell you more when you get there. Don't want to wait? Tap play.",
-      )}
+      {autoAdvance
+        ? t(
+            "Sawa opowie więcej na miejscu. Nie chcesz czekać? Stuknij odtwarzanie.",
+            "Sawa will tell you more when you get there. Don't want to wait? Tap play.",
+          )
+        : t(
+            "Sawa opowie, gdy stukniesz odtwarzanie.",
+            "Sawa will tell you more when you tap play.",
+          )}
     </p>
   );
   if (detail.isPending) {
