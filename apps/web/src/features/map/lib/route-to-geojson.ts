@@ -170,6 +170,32 @@ export function highlightedLegs(legs: readonly Leg[], legIndex: number): number[
   return lines.flatMap((line, i) => (line === lines[legIndex] ? [i] : []));
 }
 
+export type RoutePassedStopFeature = {
+  type: "Feature";
+  geometry: { type: "Point"; coordinates: LngLat };
+  properties: { legIndex: number; color: string; name: string };
+};
+
+/**
+ * Stops a ride passes without anyone getting off (`Leg.stops`): small dots along the line, so
+ * the user can count how many stops are left to the one where they get off.
+ */
+export function routePassedStopsToGeoJson(route: Route): FeatureCollection<RoutePassedStopFeature> {
+  const lines = lineIndexes(route);
+  return {
+    type: "FeatureCollection",
+    features: route.legs.flatMap((leg, legIndex) =>
+      leg.mode === "walk"
+        ? []
+        : (leg.stops ?? []).map((stop) => ({
+            type: "Feature" as const,
+            geometry: { type: "Point" as const, coordinates: toLngLat(stop.position) },
+            properties: { legIndex, color: lineColor(lines[legIndex]), name: stop.name },
+          })),
+    ),
+  };
+}
+
 /** Minutes of the walk legs right before `legIndex`. */
 function walkBefore(legs: readonly Leg[], legIndex: number): number {
   let minutes = 0;

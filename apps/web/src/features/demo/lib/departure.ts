@@ -8,6 +8,43 @@ const CLOCK = new Intl.DateTimeFormat("pl-PL", {
   timeZone: "Europe/Warsaw",
 });
 
+/** Godzina „16:02” w czasie warszawskim. */
+export function clockOf(iso: string): string {
+  return CLOCK.format(new Date(iso));
+}
+
+export type RideStop = { id: string; name: string; at: string; isLast: boolean };
+
+/**
+ * Przystanki przejazdu linią wsiadaną na odcinku `legIndex`, po kolei, bez przystanku wsiadania:
+ * mijane (`Leg.stops`) i końce odcinków tej samej linii (planer dzieli przejazd między miejscami);
+ * ostatni to ten, na którym wysiąść.
+ */
+export function rideStops(legs: readonly Leg[], legIndex: number): RideStop[] {
+  const out: RideStop[] = [];
+  for (let i = legIndex; legs[i]; i += 1) {
+    const leg = legs[i];
+    const prev = legs[i - 1];
+    if (
+      i > legIndex &&
+      (!prev ||
+        leg.mode !== prev.mode ||
+        leg.line !== prev.line ||
+        leg.fromStop.id !== prev.toStop.id)
+    ) {
+      break;
+    }
+    for (const stop of leg.stops ?? []) {
+      out.push({ id: stop.id, name: stop.name, at: stop.at, isLast: false });
+    }
+    const arrive = new Date(new Date(leg.departAt).getTime() + leg.durationMin * 60_000);
+    out.push({ id: leg.toStop.id, name: leg.toStop.name, at: arrive.toISOString(), isLast: false });
+  }
+  const last = out[out.length - 1];
+  if (last) last.isLast = true;
+  return out;
+}
+
 export type DepartureLabel = {
   /** „16:02” z rozkładu albo „ok. 16:05”, gdy planer szacował (połowa częstotliwości). */
   time: string;

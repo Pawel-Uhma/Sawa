@@ -301,6 +301,13 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   ]);
 
   const camera: MapCamera = useMemo(() => {
+    // Linia albo spacer stuknięty w „Dojeździe”: mapa pokazuje go w całości
+    if (isRoute && planned && pickedLeg !== null && !isPlaceOpen) {
+      const points = highlightedLegs(planned.legs, pickedLeg).flatMap((i) =>
+        (planned.legs[i]?.lngLats ?? []).map(([lng, lat]) => ({ lat, lng })),
+      );
+      if (points.length > 0) return { type: "fit", points };
+    }
     const stop =
       isRoute && activeStop ? { lat: activeStop.coord[1], lng: activeStop.coord[0] } : null;
     return screenCamera({
@@ -313,6 +320,8 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     });
   }, [
     isRoute,
+    planned,
+    pickedLeg,
     activeStop,
     isDesktop,
     isHome,

@@ -19,6 +19,7 @@ import {
   type PlaceMarkers,
   routeBoardingsToGeoJson,
   routeLegsToGeoJson,
+  routePassedStopsToGeoJson,
   routePlacesToGeoJson,
   routeWalksToGeoJson,
 } from "../lib/route-to-geojson";
@@ -120,6 +121,7 @@ export function RouteLayer({
     };
   }, [route, now, theme, lang]);
   const walks = useMemo(() => routeWalksToGeoJson(route), [route]);
+  const passed = useMemo(() => routePassedStopsToGeoJson(route), [route]);
 
   return (
     <>
@@ -155,6 +157,22 @@ export function RouteLayer({
             "line-color": ["get", "color"],
             "line-width": legValue(highlightLegs, 7, 5, 5),
             "line-opacity": legValue(highlightLegs, 1, FADED_OPACITY),
+          }}
+        />
+      </Source>
+      {/* Stops passed on the way: dimmed white dots, to count the stops left to getting off */}
+      <Source id="route-passed-stops" type="geojson" data={passed}>
+        <Layer
+          id="route-passed-stop"
+          type="circle"
+          minzoom={12}
+          paint={{
+            "circle-radius": ["interpolate", ["linear"], ["zoom"], 12, 2, 16, 3.5],
+            "circle-color": "#ffffff",
+            "circle-opacity": legValue(highlightLegs, 0.75, 0.75 * FADED_OPACITY, 0.6),
+            "circle-stroke-color": ["get", "color"],
+            "circle-stroke-width": 1,
+            "circle-stroke-opacity": legValue(highlightLegs, 0.9, FADED_OPACITY, 0.6),
           }}
         />
       </Source>

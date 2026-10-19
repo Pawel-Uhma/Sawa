@@ -138,6 +138,11 @@ export function buildRoute({
       ...(leg.realDeparture ? { realDeparture: true } : {}),
       ...(leg.delaySec === undefined ? {} : { delaySec: leg.delaySec }),
       durationMin: Math.round((leg.alightElapsedSec - leg.boardElapsedSec) / 6) / 10,
+      // Timetable times along the pattern, from the boarding (which carries live shifts)
+      stops: pattern.stops.slice(leg.boardIndex + 1, leg.alightIndex).map((stop) => ({
+        ...toStop(network, stop.stopId),
+        at: at(now, leg.boardElapsedSec + stop.atSec - board.atSec),
+      })),
       lngLats: slicePolyline(pattern.lngLats, cumDistM, board.alongM, alight.alongM),
     };
   });

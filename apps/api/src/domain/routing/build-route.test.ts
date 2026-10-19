@@ -47,6 +47,26 @@ describe("buildRoute", () => {
     expect(leg?.lngLats[0]?.[0]).toBeCloseTo(leg?.fromStop.position.lng ?? Number.NaN, 6);
     expect(new Date(leg?.departAt ?? "").getTime()).toBeGreaterThan(NOW.getTime());
   });
+
+  it("lists the stops passed on each ride in order, timed between boarding and alighting", () => {
+    const { route } = routeFor(["war_uprising"], 30);
+    const rides = route.legs.filter((leg) => leg.mode !== "walk");
+    expect(rides.length).toBeGreaterThan(0);
+    expect(rides.some((leg) => (leg.stops?.length ?? 0) > 0)).toBe(true);
+    for (const leg of rides) {
+      const start = new Date(leg.departAt).getTime();
+      const end = start + leg.durationMin * 60_000 + 6_000;
+      const times = (leg.stops ?? []).map((stop) => new Date(stop.at).getTime());
+      expect(times).toEqual([...times].sort((a, b) => a - b));
+      for (const t of times) {
+        expect(t).toBeGreaterThanOrEqual(start);
+        expect(t).toBeLessThanOrEqual(end);
+      }
+      const ids = (leg.stops ?? []).map((stop) => stop.id);
+      expect(ids).not.toContain(leg.fromStop.id);
+      expect(ids).not.toContain(leg.toStop.id);
+    }
+  });
 });
 
 describe("alongWalkPaths", () => {

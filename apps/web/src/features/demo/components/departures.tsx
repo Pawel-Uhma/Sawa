@@ -1,6 +1,9 @@
 import type { Leg } from "@sawa/shared";
+import { AnimatePresence, motion } from "motion/react";
+import { useState } from "react";
 import { useLang, useT } from "@/features/i18n";
-import { departureLabel } from "../lib/departure";
+import { clockOf, departureLabel, rideStops } from "../lib/departure";
+import { SPRING } from "../lib/device";
 import { journeyLegs, LineBadge, legColors, rideEnd } from "./line-badge";
 
 /**
@@ -17,11 +20,16 @@ export function Itinerary({
   duration: string;
   /** Odcinki podświetlone na mapie (`highlightedLegs`). */
   selectedLegs?: readonly number[] | null;
-  /** Stuknięcie odcinka (linii albo spaceru) podświetla go na mapie, drugie stuknięcie gasi. */
+  /**
+   * Stuknięcie odcinka (linii albo spaceru) podświetla go na mapie, linia rozwija też swoje
+   * przystanki; drugie stuknięcie zwija i gasi.
+   */
   onSelectLeg?: (legIndex: number | null) => void;
 }) {
   const lang = useLang();
   const t = useT();
+  // Rozwinięta linia: przystanki po kolei, ostatni to ten, na którym wysiąść
+  const [expanded, setExpanded] = useState<number | null>(null);
   const steps = journeyLegs(legs);
   const colors = legColors(legs);
   if (steps.length === 0) return null;
@@ -41,6 +49,7 @@ export function Itinerary({
           const end = rideEnd(legs, legIndex);
           const isSelected = selectedLegs?.includes(legIndex) ?? false;
           const accent = line?.color ?? "var(--color-tekst-3)";
+          const isOpen = !walk && expanded === legIndex;
           const row = (
             <>
               <LineBadge line={leg.line} mode={leg.mode} color={line?.color} />
@@ -61,13 +70,16 @@ export function Itinerary({
                 </span>
               )}
               {!walk && (
-                <span className="shrink-0 font-semibold tabular-nums text-tekst">{time}</span>
-              )}
-              {!walk && delay && (
-                <span
-                  className={`shrink-0 font-semibold tabular-nums ${isLate ? "text-koral" : "text-glebia"}`}
-                >
-                  {delay}
+                // Opóźnienie pod godziną, żeby nie ściskało nazwy przystanku
+                <span className="flex shrink-0 flex-col items-end tabular-nums">
+                  <span className="font-semibold text-tekst">{time}</span>
+                  {delay && (
+                    <span
+                      className={`text-[11.5px] font-semibold ${isLate ? "text-koral" : "text-glebia"}`}
+                    >
+                      {delay}
+                    </span>
+                  )}
                 </span>
               )}
             </>
@@ -78,7 +90,12 @@ export function Itinerary({
                 <button
                   type="button"
                   aria-pressed={isSelected}
-                  onClick={() => onSelectLeg(isSelected ? null : legIndex)}
+                  aria-expanded={walk ? undefined : isOpen}
+                  onClick={() => {
+                    const isPicked = walk ? isSelected : isOpen;
+                    setExpanded(isPicked || walk ? null : legIndex);
+                    onSelectLeg(isPicked ? null : legIndex);
+                  }}
                   className={`flex w-full min-w-0 items-center gap-2 rounded-lg px-1.5 py-1 transition-colors hover:bg-tekst/[0.05] ${
                     isSelected ? "bg-tekst/[0.08]" : ""
                   }`}
@@ -89,11 +106,72 @@ export function Itinerary({
               ) : (
                 <div className="flex min-w-0 items-center gap-2 px-1.5 py-1">{row}</div>
               )}
+              <AnimatePresence initial={false}>
+                {isOpen && (
+                  <motion.div
+                    key="stops"
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={SPRING}
+                    className="overflow-hidden"
+                  >
+                    <RideStops legs={legs} legIndex={legIndex} color={accent} />
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </li>
           );
         })}
       </ol>
     </section>
+  );
+}
+
+/** Przystanki rozwiniętej linii: kreska w jej kolorze, kropki, godziny; wysiadka wyróżniona. */
+function RideStops({
+  legs,
+  legIndex,
+  color,
+}: {
+  legs: readonly Leg[];
+  legIndex: number;
+  color: string;
+}) {
+  const t = useT();
+  const stops = rideStops(legs, legIndex);
+  return (
+    <ol
+      aria-label={t("Przystanki po drodze", "Stops on the way")}
+      className="relative ml-[22px] mt-0.5 mb-1.5 border-l-2 pl-3"
+      style={{ borderColor: color }}
+    >
+      {stops.map((stop) => (
+        <li
+          key={`${stop.id}-${stop.at}`}
+          className="relative flex items-baseline gap-2 py-[3px] text-[12.5px]"
+        >
+          <span
+            aria-hidden
+            className={`absolute top-1/2 -translate-y-1/2 rounded-full ${
+              stop.isLast ? "-left-[19px] size-3 ring-2 ring-tlo-2" : "-left-[16.5px] size-[7px]"
+            }`}
+            style={{ backgroundColor: color }}
+          />
+          <span
+            className={`min-w-0 flex-1 truncate ${stop.isLast ? "font-bold text-tekst" : "text-tekst-2"}`}
+          >
+            {stop.name}
+            {stop.isLast && (
+              <span className="ml-1.5 text-[11px] font-semibold text-tekst-3">
+                {t("wysiądź", "get off")}
+              </span>
+            )}
+          </span>
+          <span className="shrink-0 tabular-nums text-tekst-3">{clockOf(stop.at)}</span>
+        </li>
+      ))}
+    </ol>
   );
 }
 
