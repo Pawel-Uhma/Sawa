@@ -365,6 +365,7 @@ export function SawaMap({
             selectedId={selectedId}
             activeId={activeStopId}
             highlightLegs={highlightLegs}
+            isPicked={fadePlaces}
             hasIcons={icons === "ready"}
             knownPlaces={places.data}
             theme={theme}
