@@ -56,6 +56,9 @@ type RouteLayerProps = {
 /** How often the countdown at boarding stops is redrawn. */
 const COUNTDOWN_TICK_MS = 15_000;
 
+/** Boarding rings and their line labels: a click picks the line, at a transfer both lines. */
+export const ROUTE_BOARDING_LAYER_IDS = ["route-boarding-timer", "route-boarding-line"];
+
 /** Opacity of the lines not picked in the "Dojazd" list. */
 export const FADED_OPACITY = 0.25;
 

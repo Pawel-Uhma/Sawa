@@ -2,7 +2,7 @@ import type { Leg } from "@sawa/shared";
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
 import { useLang, useT } from "@/features/i18n";
-import { clockOf, departureLabel, rideStops } from "../lib/departure";
+import { clockOf, departureLabel, rideProgress, rideStops, stepSpan } from "../lib/departure";
 import { SPRING } from "../lib/device";
 import { journeyLegs, LineBadge, legColors, rideEnd } from "./line-badge";
 
@@ -15,6 +15,7 @@ export function Itinerary({
   duration,
   selectedLegs = null,
   onSelectLeg,
+  nowMs = null,
 }: {
   legs: readonly Leg[];
   duration: string;
@@ -25,6 +26,8 @@ export function Itinerary({
    * przystanki; drugie stuknięcie zwija i gasi.
    */
   onSelectLeg?: (legIndex: number | null) => void;
+  /** Teraz na zegarze jazdy (ms): bieżący krok z kropką, przejechane wyszarzone. Null przed jazdą. */
+  nowMs?: number | null;
 }) {
   const lang = useLang();
   const t = useT();
@@ -33,6 +36,9 @@ export function Itinerary({
   const steps = journeyLegs(legs);
   const colors = legColors(legs);
   if (steps.length === 0) return null;
+  // Bieżący krok: pierwszy, który jeszcze się nie skończył (także czekanie na przystanku)
+  const spans = steps.map((leg) => stepSpan(legs, legs.indexOf(leg)));
+  const current = nowMs === null ? -1 : spans.findIndex((span) => span.endMs > nowMs);
 
   return (
     <section aria-label={t("Dojazd", "Getting there")} className="rounded-2xl bg-tlo-2 px-3.5 py-3">
@@ -41,8 +47,10 @@ export function Itinerary({
         <span className="text-[13px] font-bold tabular-nums text-tekst">{duration}</span>
       </div>
       <ol className="-mx-1.5 flex flex-col gap-0.5 text-[13px]">
-        {steps.map((leg) => {
+        {steps.map((leg, step) => {
           const walk = leg.mode === "walk";
+          const isPast = nowMs !== null && (current === -1 || step < current);
+          const isNow = step === current;
           const { time, delay, isLate } = departureLabel(leg, lang);
           const line = colors.get(leg);
           const legIndex = legs.indexOf(leg);
@@ -52,6 +60,18 @@ export function Itinerary({
           const isOpen = !walk && expanded === legIndex;
           const row = (
             <>
+              {/* Kropka przy kroku, na którym jesteś teraz */}
+              {nowMs !== null && (
+                <span aria-hidden className="flex w-2 shrink-0 justify-center">
+                  {isNow && (
+                    <span
+                      className="kropka-oddech size-2 rounded-full"
+                      style={{ backgroundColor: accent }}
+                    />
+                  )}
+                </span>
+              )}
+              {isNow && <span className="sr-only">{t("Teraz", "Now")}</span>}
               <LineBadge line={leg.line} mode={leg.mode} color={line?.color} />
               {walk ? (
                 <span className="min-w-0 flex-1 truncate text-left text-tekst-2">
@@ -85,7 +105,10 @@ export function Itinerary({
             </>
           );
           return (
-            <li key={`${leg.mode}-${leg.line}-${leg.departAt}`}>
+            <li
+              key={`${leg.mode}-${leg.line}-${leg.departAt}`}
+              className={`transition-opacity ${isPast ? "opacity-45" : ""}`}
+            >
               {onSelectLeg ? (
                 <button
                   type="button"
@@ -116,7 +139,7 @@ export function Itinerary({
                     transition={SPRING}
                     className="overflow-hidden"
                   >
-                    <RideStops legs={legs} legIndex={legIndex} color={accent} />
+                    <RideStops legs={legs} legIndex={legIndex} color={accent} nowMs={nowMs} />
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -133,23 +156,45 @@ function RideStops({
   legs,
   legIndex,
   color,
+  nowMs,
 }: {
   legs: readonly Leg[];
   legIndex: number;
   color: string;
+  nowMs: number | null;
 }) {
   const t = useT();
   const stops = rideStops(legs, legIndex);
+  const progress = nowMs === null ? null : rideProgress(legs, legIndex, nowMs);
+  // Kropka „tu jesteś” między przystankami: punkt `from` (0 = wsiadanie nad listą) plus ułamek
+  // drogi do następnego; wiersze mają równą wysokość, więc wystarczy procent wysokości listy
+  const dotTop = progress?.dot
+    ? Math.max(0, ((progress.dot.from - 0.5 + progress.dot.frac) / stops.length) * 100)
+    : null;
   return (
     <ol
       aria-label={t("Przystanki po drodze", "Stops on the way")}
       className="relative ml-[22px] mt-0.5 mb-1.5 border-l-2 pl-3"
       style={{ borderColor: color }}
     >
-      {stops.map((stop) => (
+      {dotTop !== null && (
+        <span
+          aria-hidden
+          className="absolute -left-[7px] z-10 size-3 -translate-y-1/2 rounded-full ring-2 ring-tlo-2 transition-[top] duration-1000 ease-linear motion-reduce:transition-none"
+          style={{ top: `${dotTop}%`, backgroundColor: color }}
+        >
+          <span
+            className="kropka-oddech absolute inset-0 rounded-full"
+            style={{ backgroundColor: color }}
+          />
+        </span>
+      )}
+      {stops.map((stop, i) => (
         <li
           key={`${stop.id}-${stop.at}`}
-          className="relative flex items-baseline gap-2 py-[3px] text-[12.5px]"
+          className={`relative flex items-baseline gap-2 py-[3px] text-[12.5px] ${
+            progress && i < progress.passed ? "opacity-45" : ""
+          }`}
         >
           <span
             aria-hidden

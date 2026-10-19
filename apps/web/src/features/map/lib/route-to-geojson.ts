@@ -23,6 +23,9 @@ export type RouteBoardingFeature = {
     line: string;
     /** Label over the ring: the line, at a transfer the change, e.g. "122 → 180". */
     label: string;
+    /** The leg boarded here and, at a transfer, the ride leg left (-1 at the start). */
+    legIndex: number;
+    fromLegIndex: number;
     /** At a transfer, the line left (its number, mode and colour); empty at the start. */
     fromLine: string;
     fromMode: Leg["mode"] | "";
@@ -217,6 +220,8 @@ function transferOf(legs: readonly Leg[], lines: readonly number[], legIndex: nu
   const left = legLeft(legs, lines, legIndex);
   const from = left === null ? undefined : legs[left];
   return {
+    legIndex,
+    fromLegIndex: left ?? -1,
     label: from ? `${from.line} → ${legs[legIndex].line}` : legs[legIndex].line,
     fromLine: from?.line ?? "",
     fromMode: from?.mode ?? "",

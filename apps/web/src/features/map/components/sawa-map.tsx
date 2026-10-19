@@ -60,11 +60,16 @@ import {
   PLACES_SOURCE_ID,
   PlacesLayer,
 } from "./places-layer";
-import { ROUTE_PLACES_LAYER_ID, RouteLayer } from "./route-layer";
+import { ROUTE_BOARDING_LAYER_IDS, ROUTE_PLACES_LAYER_ID, RouteLayer } from "./route-layer";
 import { StreetLayer } from "./street-layer";
 import { UserLayer } from "./user-layer";
 
-const INTERACTIVE_LAYERS = [ROUTE_PLACES_LAYER_ID, PLACES_LAYER_ID, PLACES_CLUSTER_LAYER_ID];
+const INTERACTIVE_LAYERS = [
+  ROUTE_PLACES_LAYER_ID,
+  PLACES_LAYER_ID,
+  PLACES_CLUSTER_LAYER_ID,
+  ...ROUTE_BOARDING_LAYER_IDS,
+];
 
 const CAMERA_DURATION_MS = 800;
 
@@ -87,6 +92,8 @@ export type SawaMapProps = {
   highlightLegs?: readonly number[] | null;
   /** Click on a route place. When set, it replaces the built-in place card for route places. */
   onStopClick?: (placeId: string) => void;
+  /** Click on a boarding ring or its line label: the leg boarded there and, at a transfer, the leg left (-1 at the start). */
+  onBoardingClick?: (legIndex: number, fromLegIndex: number) => void;
   /** Built-in card after clicking a place; turn off when the screen shows its own. */
   hasPlaceSheet?: boolean;
   hasZoomControls?: boolean;
@@ -110,6 +117,7 @@ export function SawaMap({
   activeStopId,
   highlightLegs = null,
   onStopClick,
+  onBoardingClick,
   hasPlaceSheet = true,
   hasZoomControls = true,
   onMapClick,
@@ -268,6 +276,13 @@ export function SawaMap({
     if (feature?.layer.id === PLACES_CLUSTER_LAYER_ID) {
       const center = feature.geometry.type === "Point" ? feature.geometry.coordinates : null;
       expandCluster(event.target, feature.properties?.cluster_id, center ?? event.lngLat.toArray());
+      return;
+    }
+    if (feature && ROUTE_BOARDING_LAYER_IDS.includes(feature.layer.id) && onBoardingClick) {
+      onBoardingClick(
+        Number(feature.properties?.legIndex),
+        Number(feature.properties?.fromLegIndex),
+      );
       return;
     }
     const id = feature?.properties?.id;

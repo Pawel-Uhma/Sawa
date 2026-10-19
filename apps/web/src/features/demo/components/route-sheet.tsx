@@ -2,9 +2,18 @@
 
 import type { Leg } from "@sawa/shared";
 import { animate, motion, useMotionValue, useReducedMotion, useTransform } from "motion/react";
-import { type ReactNode, type RefObject, useCallback, useEffect, useRef, useState } from "react";
+import {
+  type ReactNode,
+  type RefObject,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { useT } from "@/features/i18n";
 import type { Listener } from "../lib/api-data";
+import { rideStartMs } from "../lib/departure";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
 import { formatDuration } from "../lib/format";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
@@ -95,6 +104,12 @@ export function RouteSheet(props: RouteSheetProps) {
   // Jazda trwa co najmniej do startu ostatniej opowieści
   const last = stops[stops.length - 1];
   const totalSec = Math.max(props.totalSec, last ? storyStartSec(last) + 60 : 0);
+  // Teraz na zegarze jazdy, dla postępu w „Dojeździe” (idzie też przy pauzie i przewijaniu jazdy)
+  const startMs = useMemo(
+    () => rideStartMs(props.legs, props.totalSec / 60),
+    [props.legs, props.totalSec],
+  );
+  const nowMs = startMs + clock.rideSec * 1000;
   const headerRef = useRef<HTMLDivElement>(null);
   const dockRef = useRef<HTMLDivElement>(null);
   const podcast = usePodcast({
@@ -128,6 +143,7 @@ export function RouteSheet(props: RouteSheetProps) {
       }
       storyState={player.loading ? "loading" : player.failed ? "failed" : "ready"}
       showItinerary={!props.isDesktop}
+      nowMs={nowMs}
       header={
         <div ref={headerRef}>
           <PodcastHeader podcast={podcast} onLeave={props.onBack} />
@@ -159,6 +175,7 @@ export function RouteSheet(props: RouteSheetProps) {
         durationMin={props.durationMin}
         selectedLegs={props.highlightLegs}
         onSelectLeg={props.onHighlightLeg}
+        nowMs={nowMs}
       />
     </>
   ) : (
@@ -212,11 +229,13 @@ function DesktopItinerary({
   durationMin,
   selectedLegs,
   onSelectLeg,
+  nowMs,
 }: {
   legs: Leg[];
   durationMin: number;
   selectedLegs: readonly number[] | null;
   onSelectLeg: (legIndex: number | null) => void;
+  nowMs: number;
 }) {
   if (legs.length === 0) return null;
   return (
@@ -232,6 +251,7 @@ function DesktopItinerary({
         duration={formatDuration(durationMin)}
         selectedLegs={selectedLegs}
         onSelectLeg={onSelectLeg}
+        nowMs={nowMs}
       />
     </motion.div>
   );
