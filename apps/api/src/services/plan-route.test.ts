@@ -163,8 +163,11 @@ describe("route planner on real data", () => {
   });
 
   it("starts telling stories on the walk to the first stop", async () => {
+    // North of the venue: the closest stop is a ~2.5 min walk past a place (at the venue
+    // itself the closest stop is under a minute away).
+    const origin = { lat: 52.2399, lng: 20.9819 };
     const route = await planner.plan(
-      { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical", "cultural"] },
+      { origin, durationMin: 60, interests: ["historical", "cultural"] },
       NOW,
     );
     expect(route.places[0]?.legIndex).toBe(0);
