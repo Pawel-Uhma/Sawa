@@ -129,6 +129,8 @@ type Context = {
   nearbyGroups: (groupId: string) => NearbyGroup[];
   /** Fixed end: seconds to the end point per stop group (see return-times.ts). */
   endTimes: Map<string, number>;
+  /** First leg: the only stops to board each variant at (see originBoardings), null for any. */
+  originBoard: ReadonlySet<string> | null;
 };
 
 const transfersOf = (s: State) => Math.max(0, s.legs.length - 1);
@@ -177,6 +179,31 @@ function originStates(input: SearchInput, opts: SearchOptions): State[] {
       retracedSec: 0,
     };
   });
+}
+
+/**
+ * First-leg boardings as `patternId:index`: each variant at its stop closest on foot to the
+ * origin. Walking to another stop of the same variant (on to board it later, or back to ride
+ * past the origin) only fills the budget with a walk.
+ */
+function originBoardings(network: Network, origins: State[]): Set<string> {
+  const walkByGroup = new Map<string, number>();
+  for (const s of origins) {
+    const group = network.stops.get(s.stopId)?.groupId ?? s.stopId;
+    walkByGroup.set(group, Math.min(walkByGroup.get(group) ?? Infinity, s.walkSec));
+  }
+  const best = new Map<string, { index: number; walkSec: number }>();
+  for (const [group, walkSec] of walkByGroup) {
+    for (const { patternId, index } of network.visitsByGroup.get(group) ?? []) {
+      const pattern = network.patterns.get(patternId);
+      if (!pattern || index === pattern.stops.length - 1) continue; // terminus
+      const b = best.get(patternId);
+      if (!b || walkSec < b.walkSec || (walkSec === b.walkSec && index < b.index)) {
+        best.set(patternId, { index, walkSec });
+      }
+    }
+  }
+  return new Set([...best].map(([patternId, { index }]) => `${patternId}:${index}`));
 }
 
 /**
@@ -298,6 +325,27 @@ function timeToEnd(ctx: Context, stopId: string): number {
   return sec ?? Number.POSITIVE_INFINITY; // unknown group or no way to the end
 }
 
+/**
+ * A later stop of `pattern` near the end, closer to it on foot than stop `j` and still in time:
+ * getting off at `j` and walking the rest only fills the budget with a walk.
+ */
+function closerLaterStop(
+  ctx: Context,
+  pattern: Pattern,
+  j: number,
+  offsetSec: number,
+  walkSec: number,
+): boolean {
+  for (let k = j + 1; k < pattern.stops.length; k++) {
+    const stop = pattern.stops[k] as PatternStop;
+    if (offsetSec + stop.atSec > ctx.maxSec) return false;
+    if (!ctx.nearEnd(stop.stopId)) continue;
+    const walk = ctx.walkToEnd(stop.stopId);
+    if (walk < walkSec && offsetSec + stop.atSec + walk <= ctx.maxSec) return true;
+  }
+  return false;
+}
+
 /** Every ride that extends `state` by one leg and ends where it can finish or transfer. */
 function expand(state: State, input: SearchInput, ctx: Context): State[] {
   const { network } = input;
@@ -332,6 +380,8 @@ function expand(state: State, input: SearchInput, ctx: Context): State[] {
       ? sameLine.some((l) => !turnsBack(network, l, pattern, visit.index))
       : sameLine.length > 0;
     if (used || visit.index === pattern.stops.length - 1) continue;
+    const firstBoard = `${pattern.id}:${visit.index}`;
+    if (legIndex === 0 && ctx.originBoard && !ctx.originBoard.has(firstBoard)) continue;
 
     const waitSec = pattern.headwaySec / 2 + (legIndex > 0 ? opts.transferSec + visit.walkSec : 0);
     const boardElapsedSec = state.elapsedSec + waitSec;
@@ -393,7 +443,10 @@ function expand(state: State, input: SearchInput, ctx: Context): State[] {
       // and rides to a destination may need short legs to get there (or out and back).
       if (!ctx.fixedEnd && legIndex > 0 && stop.atSec - board.atSec < waitSec) continue;
 
-      const finishes = alightElapsedSec + backSec >= minSec && (!ctx.fixedEnd || near);
+      const finishes =
+        alightElapsedSec + backSec >= minSec &&
+        (!ctx.fixedEnd ||
+          (near && !closerLaterStop(ctx, pattern, j, boardElapsedSec - board.atSec, backSec)));
       const alightGroup = ctx.groupOf(stop.stopId);
       const transfers =
         !isLastLeg &&
@@ -497,8 +550,17 @@ function toRide(s: State, ctx: Context, input: SearchInput): Ride {
  * that point; `endsAtStart` / `endsAtDestination` on the result say whether that worked.
  * A destination farther than the budget allows stretches the budget to the fastest ride
  * there; one that no ride reaches is dropped. Returns null only when no stop is near the origin.
+ * Each line is boarded at its stop closest to the origin, unless that leaves no ride at all.
  */
 export function planRide(input: SearchInput, options: Partial<SearchOptions> = {}): Ride | null {
+  return search(input, options, true) ?? search(input, options, false);
+}
+
+function search(
+  input: SearchInput,
+  options: Partial<SearchOptions>,
+  strictOrigin: boolean,
+): Ride | null {
   const base = { ...DEFAULT_SEARCH_OPTIONS, ...options };
   const end = input.returnToStart ? input.origin : input.destination;
   const fixedEnd = end !== undefined;
@@ -561,6 +623,7 @@ export function planRide(input: SearchInput, options: Partial<SearchOptions> = {
       return end && stop ? haversineM(stop.position, end) / opts.walkSpeedMps : 0;
     },
     endTimes,
+    originBoard: strictOrigin ? originBoardings(network, beam) : null,
   };
 
   const finished: State[] = [];
