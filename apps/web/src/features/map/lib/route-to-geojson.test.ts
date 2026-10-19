@@ -2,6 +2,7 @@ import type { Route, TrackVehiclesResponse } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { lineColor } from "./map-style";
 import {
+  boardingTouchesLegs,
   highlightedLegs,
   lineIndexes,
   lineShapesToGeoJson,
@@ -161,6 +162,20 @@ describe("lines and transfers", () => {
     expect(features[1].geometry.coordinates).toEqual([20.98, 52.24]);
   });
 
+  it("ties each boarding to the leg boarded, the ride left and the walk to it", () => {
+    const walk = { ...ROUTE.legs[0], mode: "walk" as const, line: "" };
+    const [first, second] = routeBoardingsToGeoJson({
+      ...route,
+      legs: [walk, ...route.legs],
+    }).features;
+    expect(first.properties).toMatchObject({ legIndex: 1, fromLegIndex: -1, walkFromLegIndex: 0 });
+    expect(second.properties).toMatchObject({ legIndex: 3, fromLegIndex: 2, walkFromLegIndex: 3 });
+    expect(boardingTouchesLegs(first.properties, [0])).toBe(true);
+    expect(boardingTouchesLegs(second.properties, [1, 2])).toBe(true);
+    expect(boardingTouchesLegs(second.properties, [3])).toBe(true);
+    expect(boardingTouchesLegs(second.properties, [0])).toBe(false);
+  });
+
   it("lights up a walk alone and a ride with every leg of its line", () => {
     const walk = { ...ROUTE.legs[0], mode: "walk" as const, line: "" };
     const legs = [walk, ...route.legs];
@@ -268,6 +283,14 @@ describe("routePlacesToGeoJson", () => {
       ["late", 2],
     ]);
     expect(features[0].geometry.coordinates).toEqual([20.961, 52.231]);
+  });
+
+  it("keeps the leg each place is passed on", () => {
+    const { features } = routePlacesToGeoJson(ROUTE);
+    expect(features.map((f) => [f.properties.id, f.properties.legIndex])).toEqual([
+      ["early", 0],
+      ["late", 1],
+    ]);
   });
 
   it("adds kind and subkind of the places it knows", () => {

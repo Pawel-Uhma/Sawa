@@ -26,6 +26,8 @@ export type RouteBoardingFeature = {
     /** The leg boarded here and, at a transfer, the ride leg left (-1 at the start). */
     legIndex: number;
     fromLegIndex: number;
+    /** First of the walk legs right before boarding (the walk to this stop); `legIndex` without one. */
+    walkFromLegIndex: number;
     /** At a transfer, the line left (its number, mode and colour); empty at the start. */
     fromLine: string;
     fromMode: Leg["mode"] | "";
@@ -59,8 +61,16 @@ export type RoutePlaceFeature = {
   /**
    * `id` is the place id, so a click opens the same card as a regular place.
    * `kind` and `subkind` pick the sticker; absent when the place is not among the loaded places.
+   * `legIndex` is the leg the place is passed on.
    */
-  properties: { id: string; name: string; order: number; kind?: string; subkind?: string | null };
+  properties: {
+    id: string;
+    name: string;
+    order: number;
+    legIndex: number;
+    kind?: string;
+    subkind?: string | null;
+  };
 };
 
 /** What a route place looks like on the map, by place id (from the loaded place summaries). */
@@ -199,6 +209,31 @@ export function routePassedStopsToGeoJson(route: Route): FeatureCollection<Route
   };
 }
 
+/** First of the walk legs right before `legIndex`; `legIndex` when it follows no walk. */
+function walkStart(legs: readonly Leg[], legIndex: number): number {
+  let start = legIndex;
+  while (start > 0 && legs[start - 1].mode === "walk") start -= 1;
+  return start;
+}
+
+/**
+ * Whether a boarding belongs to the legs picked in the "Dojazd" list: the leg boarded there,
+ * the ride left at it, or the walk to it.
+ */
+export function boardingTouchesLegs(
+  boarding: Pick<
+    RouteBoardingFeature["properties"],
+    "legIndex" | "fromLegIndex" | "walkFromLegIndex"
+  >,
+  legs: readonly number[],
+): boolean {
+  return legs.some(
+    (leg) =>
+      leg === boarding.fromLegIndex ||
+      (leg >= boarding.walkFromLegIndex && leg <= boarding.legIndex),
+  );
+}
+
 /** Minutes of the walk legs right before `legIndex`. */
 function walkBefore(legs: readonly Leg[], legIndex: number): number {
   let minutes = 0;
@@ -253,6 +288,7 @@ export function routeBoardingsToGeoJson(route: Route): FeatureCollection<RouteBo
           clock: CLOCK.format(new Date(leg.departAt)),
           departAtMs: Date.parse(leg.departAt),
           walkMin: walkBefore(route.legs, legIndex),
+          walkFromLegIndex: walkStart(route.legs, legIndex),
           isTransfer: lines[legIndex] > 0,
         },
       })),
@@ -319,6 +355,7 @@ export function routePlacesToGeoJson(
         id: place.placeId,
         name: place.name,
         order: i + 1,
+        legIndex: place.legIndex,
         ...markers?.get(place.placeId),
       },
     })),

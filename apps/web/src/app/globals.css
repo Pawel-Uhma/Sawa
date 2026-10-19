@@ -263,6 +263,20 @@ button {
   background: color-mix(in srgb, var(--powierzchnia) 70%, transparent);
 }
 
+/* Na telefonie prawy dolny róg zajmuje przycisk „Pokaż trasę”, więc (i) atrybucji idzie w lewy */
+@media (max-width: 767px) {
+  .maplibregl-ctrl-bottom-right {
+    right: auto;
+    left: 0;
+  }
+
+  /* Rozwinięta nie wchodzi pod ten przycisk (16 + 56 px) razem ze swoim (i) po prawej */
+  .maplibregl-ctrl-bottom-right .maplibregl-ctrl-attrib.maplibregl-compact-show {
+    box-sizing: border-box;
+    max-width: calc(100vw - 92px);
+  }
+}
+
 /* Kontrolki MapLibre (zoom, atrybucja) w ciemnym motywie */
 :root[data-theme="dark"] {
   .maplibregl-ctrl-group,
