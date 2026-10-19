@@ -2,11 +2,11 @@
 
 import type { Leg, Place } from "@sawa/shared";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { type ReactNode, type Ref, useEffect, useReducer, useRef } from "react";
+import { type ReactNode, type Ref, useEffect, useReducer, useRef, useState } from "react";
 import { FadeImage, RollingText, SkeletonLines, Spinner } from "@/components/waiting";
 import { useLang, useT } from "@/features/i18n";
 import { usePlace } from "@/features/map";
-import { SPRING } from "../lib/device";
+import { haptic, SPRING } from "../lib/device";
 import { formatDuration } from "../lib/format";
 import type { MockStop } from "../lib/mock-data";
 import { useAutoAdvance } from "../lib/story-advance";
@@ -214,6 +214,61 @@ function PlaceFacts({ place }: { place: Place }) {
 /* Ekran: jeden ciągły zapis tego, co mówi Sawa, jak napisy w radiu   */
 /* ------------------------------------------------------------------ */
 
+/**
+ * Wysokość zapisu (i dojazdu na telefonie): miejsce między nagłówkiem a dokiem, które mierzy
+ * arkusz, minus przełącznik „Opowieść | Dojazd” (`--trasa-zakladki`, tylko na telefonie).
+ */
+const PANE_HEIGHT =
+  "h-[max(160px,calc(var(--trasa-widoczne,60dvh)-var(--trasa-glowa,150px)-var(--trasa-dok,190px)-var(--trasa-zakladki,0px)-16px))]";
+/** Przełącznik (h-9) z odstępem pod nim. */
+const TABS_PX = 36 + 16;
+
+type Pane = "story" | "route";
+
+/**
+ * Telefon: zapis Sawy i dojazd na zmianę w tym samym miejscu arkusza, jak przełącznik
+ * segmentowy w iOS. Dojazd pod zapisem chował się pod dokiem i nie dało się do niego dojść.
+ */
+function PaneSwitch({ value, onChange }: { value: Pane; onChange: (pane: Pane) => void }) {
+  const t = useT();
+  const options: { pane: Pane; label: string }[] = [
+    { pane: "story", label: t("Opowieść", "Story") },
+    { pane: "route", label: t("Dojazd", "Getting there") },
+  ];
+  return (
+    <div role="tablist" className="flex h-9 shrink-0 rounded-[12px] bg-tekst/[0.06] p-[3px]">
+      {options.map(({ pane, label }) => {
+        const isActive = pane === value;
+        return (
+          <button
+            key={pane}
+            type="button"
+            role="tab"
+            aria-selected={isActive}
+            onClick={() => {
+              if (isActive) return;
+              haptic(4);
+              onChange(pane);
+            }}
+            className={`relative flex min-w-0 flex-1 items-center justify-center rounded-[9px] text-[14px] font-bold transition-colors duration-200 active:scale-[0.97] ${
+              isActive ? "text-tekst" : "text-tekst-2"
+            }`}
+          >
+            {isActive && (
+              <motion.span
+                layoutId="trasa-zakladka"
+                transition={SPRING}
+                className="absolute inset-0 rounded-[inherit] bg-powierzchnia shadow-[0_1px_3px_rgba(16,43,42,0.14),0_0_0_0.5px_rgba(16,43,42,0.06)]"
+              />
+            )}
+            <span className="relative truncate">{label}</span>
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
 /** Wysokość zapisu (od góry), na której trzymamy granicę wypowiedzianych słów. */
 const FOLLOW_AT = 0.66;
 
@@ -256,6 +311,10 @@ export function RouteLive({
   const settleTimer = useRef<ReturnType<typeof setTimeout>>(undefined);
   const stop = stops[activeIndex];
   const past = transcript.filter((part) => part.stopIndex < activeIndex);
+  // Na telefonie (dojazd w arkuszu) zapis i dojazd są na zmianę; na desktopie dojazd to osobna karta
+  const hasTabs = showItinerary;
+  const [pane, setPane] = useState<Pane>("story");
+  const showRoute = hasTabs && pane === "route";
 
   // Zapis jedzie za głosem (granica wypowiedzianych słów na ok. 2/3 wysokości),
   // dopóki użytkownik sam nie przewinie (lib/transcript-follow.ts). Reduced motion: bez płynnego przewijania
@@ -310,11 +369,26 @@ export function RouteLive({
   }
 
   return (
-    <div className="flex flex-col gap-4">
+    <div
+      className="flex flex-col gap-4"
+      style={hasTabs ? { ["--trasa-zakladki" as string]: `${TABS_PX}px` } : undefined}
+    >
       {isDesktop && <SawaMenuButton variant="inline" />}
       {header}
+      {hasTabs && <PaneSwitch value={pane} onChange={setPane} />}
+      {showRoute && (
+        <div className={`${PANE_HEIGHT} touch-pan-y overflow-y-auto overscroll-contain pb-6`}>
+          <Itinerary
+            legs={legs}
+            duration={formatDuration(durationMin)}
+            selectedLegs={highlightLegs}
+            onSelectLeg={onHighlightLeg}
+            nowMs={nowMs}
+          />
+        </div>
+      )}
       {/* Zapis wypełnia miejsce między nagłówkiem a dokiem (wysokości mierzy arkusz) */}
-      <div className="relative">
+      <div className={showRoute ? "hidden" : "relative"}>
         {/* biome-ignore lint/a11y/noStaticElementInteractions: zdarzenia tylko rozpoznają przewijanie przez użytkownika */}
         <div
           ref={scrollRef}
@@ -329,7 +403,7 @@ export function RouteLive({
             if (SCROLL_KEYS.has(e.key)) dispatch({ type: "user-scroll" });
           }}
           onScroll={onScroll}
-          className="h-[max(160px,calc(var(--trasa-widoczne,60dvh)-var(--trasa-glowa,150px)-var(--trasa-dok,190px)-16px))] touch-pan-y overflow-y-auto overscroll-contain [mask-image:linear-gradient(to_bottom,transparent,black_28px,black_calc(100%-24px),transparent)]"
+          className={`${PANE_HEIGHT} touch-pan-y overflow-y-auto overscroll-contain [mask-image:linear-gradient(to_bottom,transparent,black_28px,black_calc(100%-24px),transparent)]`}
         >
           <div className="pb-[40%] pt-6">
             {past.map((part) => (
@@ -379,16 +453,6 @@ export function RouteLive({
       </div>
 
       {activeIndex === stops.length - 1 && <EndPill end={end} />}
-
-      {showItinerary && (
-        <Itinerary
-          legs={legs}
-          duration={formatDuration(durationMin)}
-          selectedLegs={highlightLegs}
-          onSelectLeg={onHighlightLeg}
-          nowMs={nowMs}
-        />
-      )}
 
       <Attribution lines={attribution} />
     </div>
