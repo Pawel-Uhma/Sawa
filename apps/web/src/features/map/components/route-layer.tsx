@@ -19,6 +19,7 @@ import {
   type PlaceMarkers,
   routeBoardingsToGeoJson,
   routeLegsToGeoJson,
+  routePassedStopsToGeoJson,
   routePlacesToGeoJson,
   routeWalksToGeoJson,
 } from "../lib/route-to-geojson";
@@ -54,6 +55,9 @@ type RouteLayerProps = {
 
 /** How often the countdown at boarding stops is redrawn. */
 const COUNTDOWN_TICK_MS = 15_000;
+
+/** Boarding rings and their line labels: a click picks the line, at a transfer both lines. */
+export const ROUTE_BOARDING_LAYER_IDS = ["route-boarding-timer", "route-boarding-line"];
 
 /** Opacity of the lines not picked in the "Dojazd" list. */
 export const FADED_OPACITY = 0.25;
@@ -120,6 +124,7 @@ export function RouteLayer({
     };
   }, [route, now, theme, lang]);
   const walks = useMemo(() => routeWalksToGeoJson(route), [route]);
+  const passed = useMemo(() => routePassedStopsToGeoJson(route), [route]);
 
   return (
     <>
@@ -155,6 +160,22 @@ export function RouteLayer({
             "line-color": ["get", "color"],
             "line-width": legValue(highlightLegs, 7, 5, 5),
             "line-opacity": legValue(highlightLegs, 1, FADED_OPACITY),
+          }}
+        />
+      </Source>
+      {/* Stops passed on the way: dimmed white dots, to count the stops left to getting off */}
+      <Source id="route-passed-stops" type="geojson" data={passed}>
+        <Layer
+          id="route-passed-stop"
+          type="circle"
+          minzoom={12}
+          paint={{
+            "circle-radius": ["interpolate", ["linear"], ["zoom"], 12, 2, 16, 3.5],
+            "circle-color": "#ffffff",
+            "circle-opacity": legValue(highlightLegs, 0.75, 0.75 * FADED_OPACITY, 0.6),
+            "circle-stroke-color": ["get", "color"],
+            "circle-stroke-width": 1,
+            "circle-stroke-opacity": legValue(highlightLegs, 0.9, FADED_OPACITY, 0.6),
           }}
         />
       </Source>

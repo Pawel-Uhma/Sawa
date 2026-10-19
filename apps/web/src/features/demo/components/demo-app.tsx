@@ -116,8 +116,9 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const [planning, setPlanning] = useState(false);
   const [planError, setPlanError] = useState<string | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  // Odcinek stuknięty w „Dojeździe” (linia albo spacer): podświetlony na mapie
-  const [pickedLeg, setPickedLeg] = useState<number | null>(null);
+  // Odcinki wybrane w „Dojeździe” (linia albo spacer) albo na mapie (przesiadka: obie linie):
+  // podświetlone i pokazane na mapie w całości
+  const [pickedLegs, setPickedLegs] = useState<number[] | null>(null);
   const [sheetCoverPx, setSheetCoverPx] = useState(360);
   const [panelCollapsed, setPanelCollapsed] = useState(false);
   const [selectedPlace, setSelectedPlace] = useState<PlaceSelection | null>(null);
@@ -149,7 +150,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     setPlanned(next);
     setRoute(routeStops(next));
     setActiveIndex(0);
-    setPickedLeg(null);
+    setPickedLegs(null);
     setStage("route");
   }, []);
 
@@ -301,6 +302,14 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   ]);
 
   const camera: MapCamera = useMemo(() => {
+    // Linia, spacer albo przesiadka wybrane przed chwilą: mapa pokazuje je w całości, także przy
+    // otwartej karcie miejsca (wybór miejsca kasuje ten wybór, efekt niżej)
+    if (isRoute && planned && pickedLegs) {
+      const points = pickedLegs.flatMap((i) =>
+        (planned.legs[i]?.lngLats ?? []).map(([lng, lat]) => ({ lat, lng })),
+      );
+      if (points.length > 0) return { type: "fit", points };
+    }
     const stop =
       isRoute && activeStop ? { lat: activeStop.coord[1], lng: activeStop.coord[0] } : null;
     return screenCamera({
@@ -313,6 +322,8 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     });
   }, [
     isRoute,
+    planned,
+    pickedLegs,
     activeStop,
     isDesktop,
     isHome,
@@ -373,11 +384,33 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   // Sawa: cała linia albo spacer); stuknięty w „Dojeździe” ma pierwszeństwo, aż stukniesz go znowu
   const currentLeg =
     planned && isRoute && !waiting ? (planned.places[activeIndex]?.legIndex ?? null) : null;
-  const litLeg = pickedLeg ?? currentLeg;
-  const mapHighlight = useMemo(
-    () => (planned && litLeg !== null ? highlightedLegs(planned.legs, litLeg) : null),
-    [planned, litLeg],
+  const currentLegs = useMemo(
+    () => (planned && currentLeg !== null ? highlightedLegs(planned.legs, currentLeg) : null),
+    [planned, currentLeg],
   );
+  const mapHighlight = pickedLegs ?? currentLegs;
+  // Wybór z listy: linia (z jej wszystkimi odcinkami) albo spacer; null gasi
+  const pickLeg = useCallback(
+    (legIndex: number | null) =>
+      setPickedLegs(legIndex === null || !planned ? null : highlightedLegs(planned.legs, legIndex)),
+    [planned],
+  );
+  // Przesiadka na mapie: obie linie, których dotyczy; drugie stuknięcie gasi
+  const pickBoarding = useCallback(
+    (legIndex: number, fromLegIndex: number) => {
+      if (!planned) return;
+      const legs = [
+        ...(fromLegIndex >= 0 ? highlightedLegs(planned.legs, fromLegIndex) : []),
+        ...highlightedLegs(planned.legs, legIndex),
+      ];
+      setPickedLegs((prev) => (prev && prev.join() === legs.join() ? null : legs));
+    },
+    [planned],
+  );
+  // Wybrane miejsce ma pierwszeństwo przed wybraną linią (kamera pokazuje miejsce)
+  useEffect(() => {
+    if (selectedPlace) setPickedLegs(null);
+  }, [selectedPlace]);
   // Muzyka w tle przez całą jazdę, także w oczekiwaniu na pierwsze miejsce; pauza Sawy zatrzymuje też ją.
   useRideMusic(
     musicOn && musicPlays({ onRoute: isRoute, held, waiting, isPlaying: player.isPlaying }),
@@ -529,7 +562,9 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
               }
               activeStopId={isRoute ? activeStop?.id : undefined}
               highlightLegs={isRoute ? mapHighlight : null}
+              fadePlaces={isRoute && pickedLegs !== null}
               interests={profile.interests}
+              onBoardingClick={isRoute ? pickBoarding : undefined}
               onStopClick={(id) => {
                 const index = route.findIndex((stop) => stop.id === id);
                 if (index >= 0) userPickStop(index);
@@ -550,7 +585,8 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                           : isRoute
                             ? sheetCoverPx
                             : panelCoverPx,
-                      followResetKey: `${stage}|${tab}|${selectedPlace?.id ?? ""}|${stopPicks}`,
+                      // Wybór na ekranie (miejsce, punkt, linia w „Dojeździe”) kończy śledzenie kropki
+                      followResetKey: `${stage}|${tab}|${selectedPlace?.id ?? ""}|${stopPicks}|${pickedLegs?.join() ?? ""}`,
                     }
               }
             />
@@ -639,7 +675,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                 activeIndex={activeIndex}
                 onPlayStop={playStop}
                 highlightLegs={mapHighlight}
-                onHighlightLeg={setPickedLeg}
+                onHighlightLeg={pickLeg}
                 clock={clock}
                 totalSec={(planned?.totalMin ?? 0) * 60}
                 onBack={() => setStage("map")}

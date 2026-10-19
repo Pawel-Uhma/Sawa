@@ -73,6 +73,10 @@ export const StopSchema = z.object({
 });
 export type Stop = z.infer<typeof StopSchema>;
 
+/** A stop passed on a ride, with when the vehicle is there (ISO 8601, same clock as `departAt`). */
+export const PassedStopSchema = StopSchema.extend({ at: z.string() });
+export type PassedStop = z.infer<typeof PassedStopSchema>;
+
 export const LegSchema = z.object({
   /** Empty for a walk. */
   line: z.string(),
@@ -98,6 +102,11 @@ export const LegSchema = z.object({
    */
   delaySec: z.number().int().optional(),
   durationMin: z.number().nonnegative(),
+  /**
+   * Stops the ride passes between `fromStop` and `toStop`, in order and without them, so the
+   * client can list the way and where to get off. Missing for a walk (and in older answers).
+   */
+  stops: z.array(PassedStopSchema).optional(),
   /** Shape of the ride or walk, [lng, lat] pairs for MapLibre. */
   lngLats: z.array(z.tuple([z.number(), z.number()])),
 });

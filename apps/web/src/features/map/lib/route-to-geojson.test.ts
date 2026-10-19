@@ -8,6 +8,7 @@ import {
   routeBoardingsToGeoJson,
   routeBounds,
   routeLegsToGeoJson,
+  routePassedStopsToGeoJson,
   routePlacesToGeoJson,
   routeWalksToGeoJson,
   stopPost,
@@ -167,6 +168,16 @@ describe("lines and transfers", () => {
     expect(highlightedLegs(legs, 1)).toEqual([1, 2]);
     expect(highlightedLegs(legs, 3)).toEqual([3]);
     expect(highlightedLegs(legs, 9)).toEqual([]);
+  });
+
+  it("dots the stops passed on rides in the line colour, none on walks", () => {
+    const passed = { id: "p", name: "Passed", position: { lat: 52.25, lng: 20.99 }, at: "x" };
+    const walk = { ...ROUTE.legs[0], mode: "walk" as const, line: "", stops: [passed] };
+    const ride = { ...ROUTE.legs[0], stops: [passed] };
+    const { features } = routePassedStopsToGeoJson({ ...ROUTE, legs: [walk, ride] });
+    expect(features).toHaveLength(1);
+    expect(features[0]?.geometry.coordinates).toEqual([20.99, 52.25]);
+    expect(features[0]?.properties).toMatchObject({ legIndex: 1, color: lineColor(0) });
   });
 
   it("labels a transfer with the line left and the line boarded", () => {

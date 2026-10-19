@@ -35,6 +35,47 @@ export function paddingWithSheet(
   };
 }
 
+/** At least this share of the map stays free of padding, so a camera move always has room. */
+export const MIN_FREE_SHARE = 0.35;
+
+/**
+ * Padding shrunk proportionally when the panels would cover nearly all of the map (a narrow
+ * desktop window: story panel on the left, "Dojazd" card on the right). MapLibre refuses to
+ * move at all when the padding does not leave room ("Map cannot fit").
+ */
+export function fitPadding(
+  padding: MapPadding,
+  container: { width: number; height: number },
+): MapPadding {
+  const scale = (a: number, b: number, size: number) => {
+    const max = size * (1 - MIN_FREE_SHARE);
+    return a + b > max && a + b > 0 ? max / (a + b) : 1;
+  };
+  const x = scale(padding.left, padding.right, container.width);
+  const y = scale(padding.top, padding.bottom, container.height);
+  return {
+    top: Math.floor(padding.top * y),
+    bottom: Math.floor(padding.bottom * y),
+    left: Math.floor(padding.left * x),
+    right: Math.floor(padding.right * x),
+  };
+}
+
+/**
+ * Padding to pass to `fitBounds` on top of the padding already set on the map. MapLibre adds
+ * the two (camera_helper `cameraForBoxAndBearing`), and every `easeTo` with padding leaves it
+ * set, so passing the whole padding again counted the panels twice and the fit failed
+ * ("Map cannot fit"), e.g. after the camera had followed the story.
+ */
+export function paddingOnTop(wanted: MapPadding, set: Partial<MapPadding>): MapPadding {
+  return {
+    top: Math.max(0, wanted.top - (set.top ?? 0)),
+    right: Math.max(0, wanted.right - (set.right ?? 0)),
+    bottom: Math.max(0, wanted.bottom - (set.bottom ?? 0)),
+    left: Math.max(0, wanted.left - (set.left ?? 0)),
+  };
+}
+
 export type CameraMove =
   | { type: "ease"; center: LngLat; zoom?: number }
   | { type: "fit"; bounds: LngLatBounds; maxZoom?: number };

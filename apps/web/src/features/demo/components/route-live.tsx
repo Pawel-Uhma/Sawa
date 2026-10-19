@@ -58,6 +58,8 @@ export type RouteLiveProps = {
   storyFooter?: ReactNode;
   /** Dojazd pod zapisem; na desktopie jest osobną kartą nad mapą (`RouteSheet`). */
   showItinerary?: boolean;
+  /** Teraz na zegarze jazdy (ms), dla postępu w „Dojeździe”. */
+  nowMs?: number | null;
   /** Odcinki podświetlone na mapie (`RouteSheet`). */
   highlightLegs: readonly number[] | null;
   onHighlightLeg: (legIndex: number | null) => void;
@@ -243,6 +245,7 @@ export function RouteLive({
   showItinerary = true,
   highlightLegs,
   onHighlightLeg,
+  nowMs = null,
 }: RouteLiveProps) {
   const t = useT();
   const waiting = waitSec !== null;
@@ -383,6 +386,7 @@ export function RouteLive({
           duration={formatDuration(durationMin)}
           selectedLegs={highlightLegs}
           onSelectLeg={onHighlightLeg}
+          nowMs={nowMs}
         />
       )}
 

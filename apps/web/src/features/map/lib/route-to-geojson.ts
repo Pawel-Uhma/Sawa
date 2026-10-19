@@ -23,6 +23,9 @@ export type RouteBoardingFeature = {
     line: string;
     /** Label over the ring: the line, at a transfer the change, e.g. "122 → 180". */
     label: string;
+    /** The leg boarded here and, at a transfer, the ride leg left (-1 at the start). */
+    legIndex: number;
+    fromLegIndex: number;
     /** At a transfer, the line left (its number, mode and colour); empty at the start. */
     fromLine: string;
     fromMode: Leg["mode"] | "";
@@ -170,6 +173,32 @@ export function highlightedLegs(legs: readonly Leg[], legIndex: number): number[
   return lines.flatMap((line, i) => (line === lines[legIndex] ? [i] : []));
 }
 
+export type RoutePassedStopFeature = {
+  type: "Feature";
+  geometry: { type: "Point"; coordinates: LngLat };
+  properties: { legIndex: number; color: string; name: string };
+};
+
+/**
+ * Stops a ride passes without anyone getting off (`Leg.stops`): small dots along the line, so
+ * the user can count how many stops are left to the one where they get off.
+ */
+export function routePassedStopsToGeoJson(route: Route): FeatureCollection<RoutePassedStopFeature> {
+  const lines = lineIndexes(route);
+  return {
+    type: "FeatureCollection",
+    features: route.legs.flatMap((leg, legIndex) =>
+      leg.mode === "walk"
+        ? []
+        : (leg.stops ?? []).map((stop) => ({
+            type: "Feature" as const,
+            geometry: { type: "Point" as const, coordinates: toLngLat(stop.position) },
+            properties: { legIndex, color: lineColor(lines[legIndex]), name: stop.name },
+          })),
+    ),
+  };
+}
+
 /** Minutes of the walk legs right before `legIndex`. */
 function walkBefore(legs: readonly Leg[], legIndex: number): number {
   let minutes = 0;
@@ -191,6 +220,8 @@ function transferOf(legs: readonly Leg[], lines: readonly number[], legIndex: nu
   const left = legLeft(legs, lines, legIndex);
   const from = left === null ? undefined : legs[left];
   return {
+    legIndex,
+    fromLegIndex: left ?? -1,
     label: from ? `${from.line} → ${legs[legIndex].line}` : legs[legIndex].line,
     fromLine: from?.line ?? "",
     fromMode: from?.mode ?? "",

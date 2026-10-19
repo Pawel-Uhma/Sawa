@@ -83,21 +83,31 @@ type PlacesLayerProps = {
   selectedId: string | null;
   /** Fade regular places while a route is shown, so its places stand out. */
   isDimmed: boolean;
+  /** A line is picked in the "Dojazd" list: places fade further, so the line reads clearly. */
+  isFaint?: boolean;
   /** Icons registered in the style; without them places are coloured dots. */
   hasIcons: boolean;
   palette: MapPalette;
 };
+
+/** How much of the route dimming stays while a line is picked. */
+const FAINT_SHARE = 0.4;
 
 export function PlacesLayer({
   places,
   theme,
   selectedId,
   isDimmed,
+  isFaint = false,
   hasIcons,
   palette,
 }: PlacesLayerProps) {
   const data = useMemo(() => ({ type: "FeatureCollection" as const, features: places }), [places]);
-  const opacity = isDimmed ? palette.dimmedOpacity : 0.9;
+  const opacity = isFaint
+    ? palette.dimmedOpacity * FAINT_SHARE
+    : isDimmed
+      ? palette.dimmedOpacity
+      : 0.9;
 
   return (
     <Source

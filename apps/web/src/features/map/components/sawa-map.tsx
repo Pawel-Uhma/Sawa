@@ -23,8 +23,10 @@ import type { LngLatBounds } from "../lib/bounds";
 import {
   cameraMoveKey,
   DEFAULT_MAP_PADDING,
+  fitPadding,
   type MapCamera,
   type MapPadding,
+  paddingOnTop,
   paddingWithSheet,
   resolveCamera,
 } from "../lib/camera";
@@ -60,11 +62,16 @@ import {
   PLACES_SOURCE_ID,
   PlacesLayer,
 } from "./places-layer";
-import { ROUTE_PLACES_LAYER_ID, RouteLayer } from "./route-layer";
+import { ROUTE_BOARDING_LAYER_IDS, ROUTE_PLACES_LAYER_ID, RouteLayer } from "./route-layer";
 import { StreetLayer } from "./street-layer";
 import { UserLayer } from "./user-layer";
 
-const INTERACTIVE_LAYERS = [ROUTE_PLACES_LAYER_ID, PLACES_LAYER_ID, PLACES_CLUSTER_LAYER_ID];
+const INTERACTIVE_LAYERS = [
+  ROUTE_PLACES_LAYER_ID,
+  PLACES_LAYER_ID,
+  PLACES_CLUSTER_LAYER_ID,
+  ...ROUTE_BOARDING_LAYER_IDS,
+];
 
 const CAMERA_DURATION_MS = 800;
 
@@ -85,8 +92,12 @@ export type SawaMapProps = {
   activeStopId?: string;
   /** Legs picked in the "Dojazd" list (`highlightedLegs`): drawn on top, the rest faded. */
   highlightLegs?: readonly number[] | null;
+  /** The user picked a line: regular place icons fade further, so the line reads clearly. */
+  fadePlaces?: boolean;
   /** Click on a route place. When set, it replaces the built-in place card for route places. */
   onStopClick?: (placeId: string) => void;
+  /** Click on a boarding ring or its line label: the leg boarded there and, at a transfer, the leg left (-1 at the start). */
+  onBoardingClick?: (legIndex: number, fromLegIndex: number) => void;
   /** Built-in card after clicking a place; turn off when the screen shows its own. */
   hasPlaceSheet?: boolean;
   hasZoomControls?: boolean;
@@ -109,7 +120,9 @@ export function SawaMap({
   destination,
   activeStopId,
   highlightLegs = null,
+  fadePlaces = false,
   onStopClick,
+  onBoardingClick,
   hasPlaceSheet = true,
   hasZoomControls = true,
   onMapClick,
@@ -185,12 +198,8 @@ export function SawaMap({
 
   function cameraPaddingOf(map: MapRef): MapPadding {
     const container = map.getContainer();
-    return isSheetOpen
-      ? paddingWithSheet(fullPadding, {
-          width: container.clientWidth,
-          height: container.clientHeight,
-        })
-      : fullPadding;
+    const size = { width: container.clientWidth, height: container.clientHeight };
+    return fitPadding(isSheetOpen ? paddingWithSheet(fullPadding, size) : fullPadding, size);
   }
 
   function easeToUser(zoomAtLeast?: number) {
@@ -244,9 +253,10 @@ export function SawaMap({
     // so optional options are only passed when set.
     const options = { padding: cameraPaddingOf(map), duration: CAMERA_DURATION_MS };
     if (move.type === "fit") {
+      const fit = { ...options, padding: paddingOnTop(options.padding, map.getPadding()) };
       map.fitBounds(
         move.bounds,
-        move.maxZoom === undefined ? options : { ...options, maxZoom: move.maxZoom },
+        move.maxZoom === undefined ? fit : { ...fit, maxZoom: move.maxZoom },
       );
     } else {
       map.easeTo(
@@ -268,6 +278,13 @@ export function SawaMap({
     if (feature?.layer.id === PLACES_CLUSTER_LAYER_ID) {
       const center = feature.geometry.type === "Point" ? feature.geometry.coordinates : null;
       expandCluster(event.target, feature.properties?.cluster_id, center ?? event.lngLat.toArray());
+      return;
+    }
+    if (feature && ROUTE_BOARDING_LAYER_IDS.includes(feature.layer.id) && onBoardingClick) {
+      onBoardingClick(
+        Number(feature.properties?.legIndex),
+        Number(feature.properties?.fromLegIndex),
+      );
       return;
     }
     const id = feature?.properties?.id;
@@ -334,6 +351,7 @@ export function SawaMap({
             theme={isHighContrast ? "contrast" : theme}
             selectedId={selectedId}
             isDimmed={Boolean(route)}
+            isFaint={Boolean(route) && fadePlaces}
             hasIcons={icons === "ready"}
             palette={palette}
           />

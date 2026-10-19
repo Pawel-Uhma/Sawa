@@ -3,6 +3,8 @@ import { describe, expect, it } from "vitest";
 import {
   cameraMoveKey,
   DEFAULT_MAP_PADDING,
+  fitPadding,
+  paddingOnTop,
   paddingWithSheet,
   resolveCamera,
   SINGLE_POINT_ZOOM,
@@ -117,5 +119,35 @@ describe("paddingWithSheet", () => {
   it("keeps a larger padding from the screen", () => {
     const padding = { ...DEFAULT_MAP_PADDING, bottom: 500 };
     expect(paddingWithSheet(padding, { width: 375, height: 812 })).toEqual(padding);
+  });
+});
+
+describe("fitPadding", () => {
+  it("leaves the padding when the map has room", () => {
+    const padding = { top: 96, right: 368, bottom: 24, left: 448 };
+    expect(fitPadding(padding, { width: 1440, height: 900 })).toEqual(padding);
+  });
+
+  it("shrinks side panels on a narrow desktop window so the camera can still move", () => {
+    const out = fitPadding(
+      { top: 96, right: 368, bottom: 24, left: 408 },
+      { width: 800, height: 700 },
+    );
+    expect(out.left + out.right).toBeLessThanOrEqual(800 * 0.65);
+    expect(out.left).toBeGreaterThan(out.right);
+    expect(out.top).toBe(96);
+  });
+});
+
+describe("paddingOnTop", () => {
+  it("passes only what the padding already set on the map lacks", () => {
+    const wanted = { top: 96, right: 368, bottom: 24, left: 448 };
+    expect(paddingOnTop(wanted, wanted)).toEqual({ top: 0, right: 0, bottom: 0, left: 0 });
+    expect(paddingOnTop(wanted, { top: 88, right: 0, bottom: 96, left: 0 })).toEqual({
+      top: 8,
+      right: 368,
+      bottom: 0,
+      left: 448,
+    });
   });
 });
