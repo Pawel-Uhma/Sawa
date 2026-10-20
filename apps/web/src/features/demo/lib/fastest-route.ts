@@ -1,6 +1,7 @@
 import type { LatLng, Route, Travel, Waypoint } from "@sawa/shared";
 import { useEffect, useState } from "react";
 import { planRoute } from "./api-data";
+import { useBike } from "./bike-choice";
 import { DURATION_STOPS_MIN } from "./mock-data";
 import type { Profile } from "./onboarding";
 import type { RideEnd } from "./ride-end";
@@ -32,7 +33,10 @@ export function useFastestRoute(
   waypoints: readonly Waypoint[] = NO_WAYPOINTS,
 ): FastestRoute {
   const [fastest, setFastest] = useState<FastestRoute>({ status: "none" });
+  // Własny rower i Veturilo to różne trasy (dojście do stacji)
+  const bike = useBike();
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: planRoute czyta wybór roweru sam, `bike` tylko przelicza po zmianie
   useEffect(() => {
     if (rideEnd.type !== "destination") {
       setFastest({ status: "none" });
@@ -46,7 +50,7 @@ export function useFastestRoute(
     return () => {
       cancelled = true;
     };
-  }, [origin, profile, rideEnd, travel, waypoints]);
+  }, [origin, profile, rideEnd, travel, waypoints, bike]);
 
   return fastest;
 }

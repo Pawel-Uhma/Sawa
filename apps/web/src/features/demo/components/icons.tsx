@@ -259,6 +259,19 @@ export function BikeIcon(props: IconProps) {
   );
 }
 
+/** Stacja roweru miejskiego: rower w stojaku pod daszkiem. */
+export function DockIcon(props: IconProps) {
+  return (
+    <svg aria-hidden="true" {...base} {...props}>
+      <path d="M3 7l9-4 9 4" />
+      <circle cx="7.5" cy="16" r="3" />
+      <circle cx="16.5" cy="16" r="3" />
+      <path d="M7.5 16 10 11h4.5l2 5M10 11l2 5 2.5-5" />
+      <path d="M3 21h18" />
+    </svg>
+  );
+}
+
 export function CarIcon(props: IconProps) {
   return (
     <svg aria-hidden="true" {...base} {...props}>

@@ -1,6 +1,6 @@
 "use client";
 
-import type { Destination, Travel } from "@sawa/shared";
+import type { Bike, Destination, Travel } from "@sawa/shared";
 import { AnimatePresence, motion, useAnimationControls, useReducedMotion } from "motion/react";
 import {
   type CSSProperties,
@@ -15,6 +15,7 @@ import {
 import { createPortal, flushSync } from "react-dom";
 import { RollingText, Spinner, useDelayed, useWaitMessage } from "@/components/waiting";
 import { useT } from "@/features/i18n";
+import { setBike, useBike } from "../lib/bike-choice";
 import { useDestinationSearch } from "../lib/destination-search";
 import { haptic, SPRING, useIsDesktop } from "../lib/device";
 import { formatDuration, sliderPercent } from "../lib/format";
@@ -26,6 +27,7 @@ import {
   BikeIcon,
   CarIcon,
   CloseIcon,
+  DockIcon,
   ForwardIcon,
   LoopIcon,
   PinIcon,
@@ -81,6 +83,11 @@ const TRAVEL_OPTIONS: ChoiceOption<Travel>[] = [
   { type: "car", label: "Autem", en: { label: "By car" }, icon: <CarIcon /> },
 ];
 
+const BIKE_OPTIONS: ChoiceOption<Bike>[] = [
+  { type: "own", label: "Własny", en: { label: "My own" }, icon: <BikeIcon /> },
+  { type: "veturilo", label: "Veturilo", en: { label: "Veturilo" }, icon: <DockIcon /> },
+];
+
 const END_OPTIONS: ChoiceOption<RideEndType>[] = [
   { type: "loop", label: "Wracam tu", en: { label: "Back here" }, icon: <LoopIcon /> },
   { type: "destination", label: "Do celu", en: { label: "To a place" }, icon: <ForwardIcon /> },
@@ -120,6 +127,7 @@ export function HomePanel({
   // Na najkrótszym kroku nagłówek pokazuje prawdziwy czas najszybszej drogi, nie zaokrąglony krok
   const shownMin =
     isFastest && fastestMin !== null ? Math.max(1, Math.round(fastestMin)) : durationMin;
+  const bike = useBike();
   // Planer potrafi liczyć kilkanaście sekund: przycisk mówi, co teraz robi, a potem, że to trwa
   const planningText = useWaitMessage(planning, [
     {
@@ -128,7 +136,9 @@ export function HomePanel({
         travel === "walk"
           ? t("Sprawdzam ulice w okolicy…", "Checking the streets nearby…")
           : travel === "bike"
-            ? t("Szukam stacji Veturilo…", "Looking for Veturilo stations…")
+            ? bike === "veturilo"
+              ? t("Szukam stacji Veturilo…", "Looking for Veturilo stations…")
+              : t("Sprawdzam drogi rowerowe…", "Checking the bike paths…")
             : travel === "car"
               ? t("Sprawdzam drogi w okolicy…", "Checking the roads nearby…")
               : t("Sprawdzam rozkład ZTM…", "Checking the ZTM timetable…"),
@@ -285,6 +295,29 @@ export function HomePanel({
         onChange={onTravelChange}
         className="mt-3"
       />
+
+      {/* Rowerem: własny czy Veturilo; wysuwa się pod wyborem „Rowerem” */}
+      <AnimatePresence initial={false}>
+        {travel === "bike" && (
+          <motion.div
+            key="rower"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={SPRING}
+            className="overflow-hidden"
+          >
+            <ChoiceGroup
+              label={t("Jaki rower", "Which bike")}
+              options={BIKE_OPTIONS}
+              value={bike}
+              layoutId="kafelek-rower"
+              onChange={setBike}
+              className="pt-3"
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <RideEndPicker
         rideEnd={rideEnd}
