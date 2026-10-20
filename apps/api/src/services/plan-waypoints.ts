@@ -34,8 +34,10 @@ export function withWaypoints(planner: RoutePlanner): RoutePlanner {
 
   return {
     async plan(request, now) {
-      const { waypoints = [], ...base } = request;
+      const { waypoints = [], ...rest } = request;
       if (waypoints.length === 0) return planner.plan(request, now);
+      // Parts are joined into one route: their alternatives (#197) would be thrown away.
+      const base: PlanRouteRequest = { ...rest, routeCount: 1 };
 
       const at = (sec: number) => new Date(now.getTime() + sec * 1000);
       const stops: WaypointStop[] = waypoints.map((w) => ({
@@ -89,7 +91,7 @@ export function withWaypoints(planner: RoutePlanner): RoutePlanner {
         // Every waypoint is at the start: plan as without them, if the request says how.
         if (base.durationMin === undefined && !base.destination)
           throw new AppError("VALIDATION", "Przystanek jest w miejscu startu");
-        return planner.plan(base, now);
+        return planner.plan(rest, now);
       }
 
       return joinRoutes({
