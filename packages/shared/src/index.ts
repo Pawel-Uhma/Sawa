@@ -2,6 +2,7 @@ export * from "./dry-facts";
 export * from "./geo";
 export * from "./interests";
 export * from "./memory";
+export * from "./schemas/bike-station";
 export * from "./schemas/common";
 export * from "./schemas/destination";
 export * from "./schemas/place";
