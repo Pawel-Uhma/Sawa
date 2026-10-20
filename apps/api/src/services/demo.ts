@@ -238,6 +238,10 @@ export function createCachedRoutePlanner(
       r.travel,
       r.heard,
       r.audience === "kids",
+      // "Losuj inną" (#197): another seed or other places to avoid is another plan.
+      r.routeCount,
+      r.seed,
+      r.excludePlaceIds && [...r.excludePlaceIds].sort(),
     ]);
 
   function evict() {

@@ -34,6 +34,14 @@ describe("POST /v1/routes/plan", () => {
     ],
     ["no duration and no destination", { origin: HACKATHON_VENUE, interests: ["historical"] }],
     [
+      "too many routes to propose",
+      { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical"], routeCount: 9 },
+    ],
+    [
+      "a negative seed",
+      { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical"], seed: -1 },
+    ],
+    [
       "a destination together with a loop",
       {
         origin: HACKATHON_VENUE,

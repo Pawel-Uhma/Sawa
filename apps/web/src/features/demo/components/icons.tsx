@@ -121,6 +121,18 @@ export function RestartIcon(props: IconProps) {
   );
 }
 
+export function ShuffleIcon(props: IconProps) {
+  return (
+    <svg aria-hidden="true" {...base} {...props}>
+      <path d="M16 3h5v5" />
+      <path d="M4 20 21 3" />
+      <path d="M21 16v5h-5" />
+      <path d="m15 15 6 6" />
+      <path d="M4 4l5 5" />
+    </svg>
+  );
+}
+
 export function ArrowRightIcon(props: IconProps) {
   return (
     <svg aria-hidden="true" {...base} strokeWidth={2.4} {...props}>

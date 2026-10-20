@@ -10,6 +10,12 @@ export const MAX_DURATION_MIN = 240;
 /** A story never runs longer than the longest window the planner gives (docs/12-plan-mvp.md §8). */
 export const MAX_STORY_SEC = 600;
 
+/** Most different routes one plan proposes (#197); without `routeCount` the planner gives 3. */
+export const MAX_ROUTE_COUNT = 5;
+export const DEFAULT_ROUTE_COUNT = 3;
+/** Most places a "Losuj inną" may ask to skip (all places of the routes shown so far). */
+export const MAX_EXCLUDED_PLACES = 200;
+
 /** Onboarding answers (keys as in apps/web `lib/onboarding.ts`). */
 export const FAMILIARITY = ["first_time", "know_a_bit", "local"] as const;
 export type Familiarity = (typeof FAMILIARITY)[number];
@@ -54,6 +60,15 @@ export const PlanRouteRequestSchema = z
       .record(z.string(), z.number().int().nonnegative())
       .refine((h) => Object.keys(h).length <= MAX_HEARD_PLACES, "heard: too many places")
       .optional(),
+    /**
+     * How many different routes to propose: the route itself plus up to `routeCount - 1`
+     * `alternatives` (#197). 1 asks for just the route. Default `DEFAULT_ROUTE_COUNT`.
+     */
+    routeCount: z.number().int().min(1).max(MAX_ROUTE_COUNT).optional(),
+    /** "Losuj inną": another seed gives other routes; the same seed gives the same ones. */
+    seed: z.number().int().nonnegative().max(2_147_483_647).optional(),
+    /** Places the routes should not pass (e.g. those of the routes already shown). */
+    excludePlaceIds: z.array(z.string()).max(MAX_EXCLUDED_PLACES).optional(),
   })
   .refine((r) => !(r.returnToStart && r.destination), {
     message: "Podaj destination albo returnToStart, nie oba",
@@ -128,7 +143,7 @@ export const RoutePlaceSchema = z.object({
 });
 export type RoutePlace = z.infer<typeof RoutePlaceSchema>;
 
-export const RouteSchema = z.object({
+const RouteBaseSchema = z.object({
   id: z.string(),
   legs: z.array(LegSchema).min(1),
   places: z.array(RoutePlaceSchema),
@@ -142,5 +157,13 @@ export const RouteSchema = z.object({
   endsAtDestination: z.boolean().optional(),
   /** Data credits that must be shown next to the route. */
   attribution: z.array(z.string()),
+});
+
+export const RouteSchema = RouteBaseSchema.extend({
+  /**
+   * Other routes for the same request, as different from this one and from each other as the
+   * planner found (`routeCount`, #197). Missing for a walk, the fastest way and older answers.
+   */
+  alternatives: z.array(RouteBaseSchema).optional(),
 });
 export type Route = z.infer<typeof RouteSchema>;

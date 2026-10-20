@@ -18,6 +18,8 @@ export type ScorePrefs = {
   heard?: ReadonlyMap<string, number>;
   /** Broad interests worth a little more for this listener, whatever they chose (`favoredFor`). */
   favored?: ReadonlySet<string>;
+  /** Places of routes already proposed (`excludePlaceIds`, #197): worth `AVOID_FACTOR`. */
+  avoid?: ReadonlySet<string>;
 };
 
 /** What a child (`audience: "kids"`, #65) enjoys most: parks, playgrounds, pitches. */
@@ -32,6 +34,12 @@ export const FAVORED_BONUS = 1.3;
 export function favoredFor(audience: Audience | undefined): ReadonlySet<string> | undefined {
   return audience === "kids" ? KIDS_FAVORED : undefined;
 }
+
+/**
+ * Value left in a place to avoid: low, so another route goes elsewhere when it can, but a
+ * route that still passes it tells about it.
+ */
+export const AVOID_FACTOR = 0.2;
 
 /**
  * Value left in a place told in full: almost none, so a ride takes any other place it can.
@@ -79,7 +87,7 @@ export function scorePlace(
   const matches = place.interests.filter((i) => interests.has(i)).length;
   const relevance = matches > 0 ? 1 + EXTRA_MATCH_BONUS * (matches - 1) : NON_MATCH_FACTOR;
   const proximity = 1 - Math.min(distanceM, VISIBLE_RADIUS_M) / (2 * VISIBLE_RADIUS_M);
-  const novelty = noveltyOf(place, prefs.heard);
+  const novelty = noveltyOf(place, prefs.heard) * (prefs.avoid?.has(place.id) ? AVOID_FACTOR : 1);
   const favored = place.interests.some((i) => prefs.favored?.has(i)) ? FAVORED_BONUS : 1;
   return place.weight ** (prefs.richnessExponent ?? 1) * relevance * proximity * novelty * favored;
 }

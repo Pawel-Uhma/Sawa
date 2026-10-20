@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { place } from "./__fixtures__/synthetic";
 import {
+  AVOID_FACTOR,
   FAVORED_BONUS,
   favoredFor,
   HEARD_FLOOR,
@@ -23,6 +24,12 @@ describe("scorePlace", () => {
     const modest = scorePlace(place("m", 0, 0, ["historical"], 2), 0, interests);
     const rich = scorePlace(place("r", 0, 0, ["cultural"], 6), 0, interests);
     expect(modest).toBeGreaterThan(rich);
+  });
+
+  it("counts a place to avoid (shown on another route) at AVOID_FACTOR", () => {
+    const p = place("m", 0, 0, ["historical"]);
+    const avoided = scorePlace(p, 0, interests, { avoid: new Set(["m"]) });
+    expect(avoided).toBeCloseTo(scorePlace(p, 0, interests) * AVOID_FACTOR, 6);
   });
 
   it("adds a little for each further matching interest", () => {
