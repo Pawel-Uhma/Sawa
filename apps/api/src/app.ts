@@ -3,6 +3,7 @@ import { cors } from "hono/cors";
 import { createFakePlacesRepository } from "./adapters/supabase/fake-places-repository";
 import { AppError, toErrorBody } from "./lib/errors";
 import type { RateLimitOpts } from "./lib/rate-limit";
+import { createBikeStationRoutes } from "./routes/bike-stations";
 import { createDebugRoutes } from "./routes/debug";
 import { createDestinationRoutes } from "./routes/destinations";
 import { createHealthRoutes } from "./routes/health";
@@ -14,7 +15,7 @@ import { createVehicleRoutes } from "./routes/vehicles";
 import type { DemoMode } from "./services/demo";
 import { createLiveStoryService } from "./services/live-story";
 import type { RoutePlanner } from "./services/plan-route";
-import type { LlmProvider, PlacesRepository } from "./services/ports";
+import type { BikeStationSource, LlmProvider, PlacesRepository } from "./services/ports";
 import type { PlaceResearch } from "./services/research-place";
 import {
   createDisabledDestinationService,
@@ -39,6 +40,8 @@ export type AppServices = {
   onLlmError?: (err: unknown, placeId: string) => void;
   /** Missing → POST /v1/vehicles/track answers `live: false` with no vehicles. */
   vehicles?: VehicleTracker;
+  /** Missing → GET /v1/bike-stations answers UPSTREAM_ERROR. */
+  bikeStations?: BikeStationSource;
   /** Replaces the story service built from `places`, `llm` and `research` (demo replay). */
   stories?: (built: StoryService) => StoryService;
 };
@@ -96,7 +99,8 @@ export function createApp(config: AppConfig) {
       "/",
       createDestinationRoutes(services.destinations ?? createDisabledDestinationService()),
     )
-    .route("/", createVehicleRoutes(services.vehicles ?? createDisabledVehicleTracker()));
+    .route("/", createVehicleRoutes(services.vehicles ?? createDisabledVehicleTracker()))
+    .route("/", createBikeStationRoutes(services.bikeStations));
 
   // Speaking any text spends ElevenLabs credits for anyone (T-92); the player uses /v1/stories/audio.
   if (config.debugPages) app.route("/", createDebugRoutes()).route("/", createSpeechRoutes(speech));
