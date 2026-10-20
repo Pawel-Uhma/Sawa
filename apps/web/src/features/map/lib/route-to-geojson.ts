@@ -256,7 +256,7 @@ function walkBefore(legs: readonly Leg[], legIndex: number): number {
 }
 
 /** The ride leg before `legIndex` on another line: the line left at this transfer. */
-function legLeft(legs: readonly Leg[], lines: readonly number[], legIndex: number): number | null {
+function legLeft(lines: readonly number[], legIndex: number): number | null {
   for (let i = legIndex - 1; i >= 0; i -= 1) {
     if (lines[i] >= 0 && lines[i] !== lines[legIndex]) return i;
   }
@@ -264,7 +264,7 @@ function legLeft(legs: readonly Leg[], lines: readonly number[], legIndex: numbe
 }
 
 function transferOf(legs: readonly Leg[], lines: readonly number[], legIndex: number) {
-  const left = legLeft(legs, lines, legIndex);
+  const left = legLeft(lines, legIndex);
   const from = left === null ? undefined : legs[left];
   return {
     legIndex,
