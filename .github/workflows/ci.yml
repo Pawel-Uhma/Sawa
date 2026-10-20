@@ -20,3 +20,34 @@ jobs:
       - run: pnpm lint
       - run: pnpm typecheck
       - run: pnpm test
+
+  # Wersja po zielonym CI na main: data i godzina commita w czasie warszawskim, np.
+  # 2026.10.20-0903 (to samo liczy build web, apps/web/src/lib/app-version.ts, i pokazuje
+  # w menu Sawy). Tag v<wersja> i wydanie z notatkami z PR-ów; drugi raz ten sam tag pomija.
+  release:
+    needs: check
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Wersja
+        id: version
+        run: |
+          version=$(TZ=Europe/Warsaw git log -1 --format=%cd --date=format-local:%Y.%m.%d-%H%M)
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "Wersja: $version ($(git rev-parse --short HEAD))" >> "$GITHUB_STEP_SUMMARY"
+      - name: Tag i wydanie
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          if git rev-parse -q --verify "refs/tags/v$VERSION" >/dev/null; then
+            echo "Tag v$VERSION już jest, pomijam"
+            exit 0
+          fi
+          gh release create "v$VERSION" --target "$GITHUB_SHA" --title "Sawa $VERSION" --generate-notes

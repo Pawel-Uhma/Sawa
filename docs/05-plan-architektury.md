@@ -61,6 +61,10 @@ git init && gh repo create <nazwa-zespolu> --public --source=. --push
 
 Potem kopiujemy `docs/` i `CLAUDE.md` do repo. Pierwszy commit to czysta instalacja z generatora.
 
+## Wersje
+
+Wersja to data i godzina commita w czasie warszawskim, np. `2026.10.20-0904`. CI (`.github/workflows/ci.yml`, job `release`) po zielonych testach na `main` zakłada tag `v<wersja>` i wydanie na GitHubie z notatkami z PR-ów. Build web liczy to samo z ostatniego commita (`apps/web/build-version.ts`, `src/lib/app-version.ts`) i pokazuje na dole menu Sawy razem z krótkim commitem. Obok jest wersja API z `GET /health` (commit z Railway), więc widać, czy web i API są z tego samego wydania. Lokalnie bez gita w kontenerze wersja to `dev`.
+
 ## Kolejność budowy (minimalna wersja najpierw)
 
 1. Proxy `/api/waw/[zasob]` + jeden zbiór na mapie, działa end to end (do 13:00)
