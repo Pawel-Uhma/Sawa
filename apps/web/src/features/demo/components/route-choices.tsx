@@ -110,7 +110,8 @@ function ChoiceCard({ route, index, isSelected, onSelect }: ChoiceCardProps) {
           layoutId="wybrana-trasa"
           transition={SPRING}
           aria-hidden="true"
-          className="absolute inset-0 rounded-[inherit] ring-2 ring-glebia"
+          // Obwódka do środka: pasek kart przewija się w poziomie i przycina wszystko poza nim.
+          className="absolute inset-0 rounded-[inherit] ring-2 ring-glebia ring-inset"
         />
       )}
       <span className="flex items-baseline justify-between gap-2">
@@ -119,7 +120,8 @@ function ChoiceCard({ route, index, isSelected, onSelect }: ChoiceCardProps) {
           {formatDuration(Math.round(route.totalMin))}
         </span>
       </span>
-      <span className="mt-1.5 flex h-5 items-center gap-1 overflow-hidden text-[12px] text-tekst-2">
+      {/* Linie, które się nie mieszczą, gasną przy krawędzi zamiast uciętej plakietki. */}
+      <span className="mt-1.5 flex h-5 items-center gap-1 overflow-hidden text-[12px] text-tekst-2 [mask-image:linear-gradient(to_right,#000_calc(100%-28px),transparent)]">
         <Journey legs={route.legs} />
       </span>
       <span className="mt-1.5 block truncate text-[12.5px] text-tekst-2">
