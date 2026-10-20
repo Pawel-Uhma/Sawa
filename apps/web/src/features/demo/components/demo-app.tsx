@@ -29,6 +29,7 @@ import {
 import { musicDucked, musicPlays } from "../lib/ride-music";
 import { useMusicOn, useRideMusic } from "../lib/ride-music-player";
 import { useGpsClockSync } from "../lib/ride-sync";
+import { useRouteChoices } from "../lib/route-choices";
 import { screenCamera } from "../lib/screen-camera";
 import { type StartStatus, startLabel, useStartPoint } from "../lib/start-point";
 import { afterStory, useAutoAdvance } from "../lib/story-advance";
@@ -39,6 +40,7 @@ import { OnboardingFlow } from "./onboarding-flow";
 import type { PlaceSelection } from "./place-card-host";
 import { ProfileModal, type ProfileStep } from "./profile-modal";
 import { RidesPanel } from "./rides-panel";
+import { RouteChoices } from "./route-choices";
 import { DESKTOP_ITINERARY_PX, RouteSheet } from "./route-sheet";
 import { type SawaMenuActions, SawaMenuProvider } from "./sawa-menu";
 import { SawaSpeaking } from "./sawa-speaking";
@@ -146,13 +148,38 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     if (fastestRoute) setDurationMin(shortestStopFor(fastestRoute.totalMin));
   }, [fastestRoute]);
 
-  const showRoute = useCallback((next: Route) => {
+  const pickRoute = useCallback((next: Route) => {
     setPlanned(next);
     setRoute(routeStops(next));
     setActiveIndex(0);
     setPickedLegs(null);
-    setStage("route");
   }, []);
+  // Kilka propozycji trasy i „Losuj inną” (#197); opowieści rozgrzewa tylko wybrana
+  const routeChoices = useRouteChoices();
+  const { offer: offerRoutes, choose: chooseRoute, shuffle: shuffleRoutes } = routeChoices;
+  // Pasek propozycji znika, gdy jazda ruszy (pierwsza opowieść albo kolejne miejsce)
+  const [rideStarted, setRideStarted] = useState(false);
+  const showRoute = useCallback(
+    (next: Route) => {
+      pickRoute(offerRoutes(next));
+      setRideStarted(false);
+      setStage("route");
+    },
+    [pickRoute, offerRoutes],
+  );
+  const pickChoice = useCallback(
+    (next: Route) => {
+      pickRoute(next);
+      chooseRoute(next);
+    },
+    [pickRoute, chooseRoute],
+  );
+  const shuffleRoute = useCallback(async () => {
+    const next = await shuffleRoutes((shuffle) =>
+      planRoute(origin, durationMin, profile, rideEnd, travel, shuffle),
+    );
+    if (next) pickRoute(next);
+  }, [shuffleRoutes, origin, durationMin, profile, rideEnd, travel, pickRoute]);
 
   const generateRoute = useCallback(async () => {
     setPlanning(true);
@@ -466,6 +493,9 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const { progress } = player;
   const { dueIndex } = clock;
   useEffect(() => {
+    if (player.isPlaying || activeIndex > 0) setRideStarted(true);
+  }, [player.isPlaying, activeIndex]);
+  useEffect(() => {
     if (progress < 100) return;
     const next = afterStory({
       activeIndex,
@@ -660,6 +690,17 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                 onNext={() => playStop(activeIndex + 1)}
                 onClose={() => setTab("map")}
                 onCoverChange={setPanelCoverPx}
+              />
+            )}
+            {isRoute && !isStage && !rideStarted && planned && (
+              <RouteChoices
+                key="route-choices"
+                choices={routeChoices.choices}
+                selectedId={planned.id}
+                onSelect={pickChoice}
+                onShuffle={shuffleRoute}
+                shuffling={routeChoices.shuffling}
+                shuffleFailed={routeChoices.shuffleFailed}
               />
             )}
             {isRoute && (

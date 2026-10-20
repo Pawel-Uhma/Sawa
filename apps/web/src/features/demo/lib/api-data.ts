@@ -54,7 +54,9 @@ export function listenerOf(profile: Profile, lang?: StoryLang): Listener {
 /**
  * Plans a ride from `origin` (lib/start-point.ts) with `POST /v1/routes/plan`. Sends what Sawa
  * already told (lib/memory.ts), so places told in full give way to new ones. Without `durationMin`
- * (only with a destination) the planner returns the fastest way there.
+ * (only with a destination) the planner returns the fastest way there. The answer may carry
+ * `alternatives` (#197); `shuffle` asks for other ones ("Losuj inną"). Stories are warmed only
+ * for the route itself; an alternative gets them when picked (`warmStories`).
  */
 export async function planRoute(
   origin: LatLng,
@@ -62,6 +64,7 @@ export async function planRoute(
   profile: Profile,
   end: RideEnd = { type: "loop" },
   travel: Travel = "transit",
+  shuffle?: { seed: number; excludePlaceIds: string[] },
 ): Promise<Route> {
   const { interests, familiarity, storyStyle, audience } = listenerOf(profile);
   const heard = heardCounts(getMemory());
@@ -76,6 +79,8 @@ export async function planRoute(
       storyStyle,
       audience,
       heard: Object.keys(heard).length > 0 ? heard : undefined,
+      seed: shuffle?.seed,
+      excludePlaceIds: shuffle?.excludePlaceIds.length ? shuffle.excludePlaceIds : undefined,
     },
   });
   if (!res.ok) throw new Error(`POST /v1/routes/plan: ${res.status}`);
@@ -88,7 +93,7 @@ export async function planRoute(
  * The API looks up stories about the route's places on the web while the rider still looks at
  * the plan, so the first story does not wait for the search. Best effort: a failure costs nothing.
  */
-function warmStories(route: Route) {
+export function warmStories(route: Route) {
   const placeIds = [...new Set(route.places.map((p) => p.placeId))].slice(0, 40);
   if (placeIds.length === 0) return;
   api.v1.stories.warm.$post({ json: { placeIds } }).catch(() => {});
