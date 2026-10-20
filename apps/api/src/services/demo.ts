@@ -235,6 +235,7 @@ export function createCachedRoutePlanner(
       r.storyStyle,
       r.travel,
       r.heard,
+      r.waypoints?.map((w) => [round(w.lat), round(w.lng), w.placeId]),
     ]);
 
   function evict() {
