@@ -43,6 +43,11 @@ export const StoryRequestSchema = z.object({
    * Sawa suggests a nearby place outside this list.
    */
   heardPlaceIds: z.array(z.string()).max(MAX_HEARD_PLACES).optional(),
+  /**
+   * The place Sawa told about just before on this ride: she opens with a short bridge from it,
+   * so the ride sounds like one conversation. Missing: first place, or no bridge (demo, "more").
+   */
+  previousPlaceName: z.string().trim().min(1).max(120).optional(),
 });
 export type StoryRequest = z.infer<typeof StoryRequestSchema>;
 /** What a client sends; the lists may be left out. */
