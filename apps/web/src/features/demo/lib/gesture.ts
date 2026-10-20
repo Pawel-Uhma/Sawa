@@ -22,6 +22,21 @@ function isOwnGesture(target: EventTarget | null) {
   return target instanceof Element && target.closest('input, textarea, [data-no-drag="true"]');
 }
 
+/** Węzeł drzewa, który wystarcza do sprawdzenia przewinięcia (Element w przeglądarce, obiekt w teście). */
+export type ScrollNode = { scrollTop: number; parentElement: ScrollNode | null };
+
+/**
+ * Czy między celem gestu a arkuszem (włącznie) jest przewinięta treść. Wtedy gest w dół
+ * najpierw przewija ją z powrotem na górę, a arkusz rusza dopiero od góry (jak w iOS).
+ */
+export function isInsideScrolledContent(target: ScrollNode | null, root: ScrollNode): boolean {
+  for (let node = target; node; node = node.parentElement) {
+    if (node.scrollTop > 0) return true;
+    if (node === root) return false;
+  }
+  return false;
+}
+
 /**
  * Pionowe przeciąganie arkusza palcem i myszą. Działa na zdarzeniach dotyku z passive: false,
  * bo tylko tak można przejąć gest od przewijania, gdy treść jest już na górze (jak w iOS).
@@ -37,6 +52,7 @@ export function useVerticalDrag(
   useEffect(() => {
     const element = ref.current;
     if (!element) return;
+    const sheet: HTMLElement = element;
 
     let startX = 0;
     let startY = 0;
@@ -58,7 +74,14 @@ export function useVerticalDrag(
       const dy = y - startY;
       if (state === "pending") {
         if (Math.abs(dx) < SLOP_PX && Math.abs(dy) < SLOP_PX) return false;
-        if (Math.abs(dx) > Math.abs(dy) || !handlersRef.current.shouldStart(dy, target)) {
+        // Gest w dół w przewiniętej treści (także zagnieżdżonej, np. zapisie opowieści) przewija ją, nie arkusz.
+        const isScrolled =
+          dy > 0 && isInsideScrolledContent(target instanceof Element ? target : null, sheet);
+        if (
+          Math.abs(dx) > Math.abs(dy) ||
+          isScrolled ||
+          !handlersRef.current.shouldStart(dy, target)
+        ) {
           state = "ignored";
           return false;
         }
