@@ -60,6 +60,8 @@ type HomePanelProps = {
   collapsed: boolean;
   onCollapsedChange: (collapsed: boolean) => void;
   onCoverChange?: (px: number) => void;
+  /** Lista przystanków po drodze (#195), pod wyborem końca trasy. */
+  stopovers?: ReactNode;
 };
 
 /** Podpisy pod suwakiem w miejscach ich wartości (suwak jest liniowy, więc 1 h nie leży w 1/4). */
@@ -104,6 +106,7 @@ export function HomePanel({
   collapsed,
   onCollapsedChange,
   onCoverChange,
+  stopovers,
 }: HomePanelProps) {
   const sawa = useAnimationControls();
   const t = useT();
@@ -281,6 +284,8 @@ export function HomePanel({
         onTypeChange={onRideEndTypeChange}
         onChange={onRideEndChange}
       />
+
+      {stopovers}
 
       <PrimaryButton
         onClick={onGenerate}

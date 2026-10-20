@@ -242,6 +242,7 @@ export function createCachedRoutePlanner(
       r.routeCount,
       r.seed,
       r.excludePlaceIds && [...r.excludePlaceIds].sort(),
+      r.waypoints?.map((w) => [round(w.lat), round(w.lng), w.placeId]),
     ]);
 
   function evict() {

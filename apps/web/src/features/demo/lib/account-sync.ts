@@ -2,7 +2,7 @@
 // (supabase/migrations/20261020120000_accounts.sql). Wszystko, co przychodzi z bazy, przechodzi
 // przez zod. IO jest w lib/account.ts.
 
-import { LatLngSchema, type Route, TRAVEL } from "@sawa/shared";
+import { LatLngSchema, MAX_WAYPOINTS, type Route, TRAVEL, WaypointSchema } from "@sawa/shared";
 import { z } from "zod";
 import type { Memory, RememberedStory } from "./memory";
 import type { Profile } from "./onboarding";
@@ -45,6 +45,8 @@ export const SavedRouteRequestSchema = z.object({
   durationMin: z.number().int().positive(),
   rideEnd: RideEndSchema,
   travel: z.enum(TRAVEL),
+  /** Przystanki po drodze (#195); starsze wpisy ich nie mają. */
+  waypoints: z.array(WaypointSchema).max(MAX_WAYPOINTS).optional(),
 });
 export type SavedRouteRequest = z.infer<typeof SavedRouteRequestSchema>;
 

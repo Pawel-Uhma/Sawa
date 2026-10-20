@@ -30,6 +30,7 @@ import {
 } from "./services/demo";
 import { createTrackerBoardingSource } from "./services/live-boarding";
 import { createRoutePlanner } from "./services/plan-route";
+import { withWaypoints } from "./services/plan-waypoints";
 import { createPlaceResearch } from "./services/research-place";
 import { createDestinationService } from "./services/search-destinations";
 import { createSpeechService } from "./services/speak";
@@ -106,15 +107,17 @@ const walkPathSources = [
 
 // The planner reads Supabase; the committed export is its fallback when Supabase fails.
 const placesFile = createFilePlacesRepository(new URL("../data/places.geojson", import.meta.url));
-const livePlanner = createRoutePlanner({
-  transit,
-  places: placesRepository ?? placesFile,
-  fallbackPlaces: placesRepository ? placesFile : undefined,
-  departures: createWawDepartureSource(env.WAW_TOKEN, wawApi),
-  live: env.WAW_TOKEN ? createTrackerBoardingSource(vehicles) : undefined,
-  walkPaths: walkPathSources.length > 0 ? firstWalkPath(walkPathSources) : undefined,
-  logger,
-});
+const livePlanner = withWaypoints(
+  createRoutePlanner({
+    transit,
+    places: placesRepository ?? placesFile,
+    fallbackPlaces: placesRepository ? placesFile : undefined,
+    departures: createWawDepartureSource(env.WAW_TOKEN, wawApi),
+    live: env.WAW_TOKEN ? createTrackerBoardingSource(vehicles) : undefined,
+    walkPaths: walkPathSources.length > 0 ? firstWalkPath(walkPathSources) : undefined,
+    logger,
+  }),
+);
 // Demo: rides from 42 Warsaw stay planned in the background, so phones in the hall do not wait.
 const cachedPlanner =
   demo === "off"
