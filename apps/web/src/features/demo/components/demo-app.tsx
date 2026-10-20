@@ -549,6 +549,9 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
               camera={camera}
               padding={padding}
               user={userDot}
+              userHeading={start.heading}
+              // Po starcie trasy kamera idzie za kropką GPS (#193); na scenie i bez GPS stoi przy punktach
+              navigate={isRoute && !isStage && start.position !== null}
               destination={isRoute || isHome ? destination?.point : undefined}
               onMapClick={
                 isHome && isPickingEnd

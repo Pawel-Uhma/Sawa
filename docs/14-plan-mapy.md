@@ -51,6 +51,13 @@ Podział R3: Antek robi mapę (`features/map`, warstwy, karta miejsca, „za okn
 - Ulice: w ciemnym podkładzie małe ulice miały `#181818` na tle `#0c0c0c`, a w jasnym szarość 88% na 95%, więc ledwo je było widać. `roadPaintOverrides` przemalowuje warstwy `highway_*` i podpisy ulic kolorami z `MapPalette.roads`: w ciemnym ulice jaśniejsze od tła, a większe jaśniejsze od mniejszych, w jasnym boczne ulice ciemniejsze od tła. Obie listy nadpisań składa `basemapPaintOverrides`.
 - Ciemny styl OpenFreeMap loguje „Image wood-pattern could not be loaded” (brak obrazka w sprite). To ostrzeżenie, mapa działa.
 
+## Widok 3D i prowadzenie po starcie trasy (20.10, #199, #193)
+
+- **2D / 3D:** okrągły przycisk nad „Pokaż moją lokalizację” (na telefonie kontrolki zoomu są ukryte, więc nie w nich). 3D pochyla kamerę do 60° (`PITCH_3D`) i dokłada warstwę `fill-extrusion` z budynków OpenMapTiles (`render_height`, `render_min_height`, źródło `openmaptiles` podkładu OpenFreeMap), pod pierwszym podpisem podkładu, więc nazwy ulic i nasze warstwy są nad bryłami. Bryły od zoomu 14,5 (`BUILDINGS_MIN_ZOOM`), wyrastają przez jeden poziom zoomu. Kolor w `MapPalette.buildings` dla jasnego, ciemnego i kontrastu. Wybór zostaje w `localStorage` (`sawa.map3d`). Powrót do 2D obraca mapę północą w górę. Przy `prefers-reduced-motion` pochylenie bez animacji.
+- **Kamera na trasie:** prop `navigate` w `SawaMap` (w `/demo`: ekran trasy z żywym GPS, nie na scenie). Po starcie kamera jedzie do kropki na zoom 16,5 (`NAV_ZOOM`) i idzie za nią, obrócona zgodnie z kursem GPS (`coords.heading` z `useStartPoint`), a bez kursu z kierunku ostatniego ruchu ≥ 8 m. Przeciągnięcie palcem kończy śledzenie, przycisk lokalizacji wraca do widoku jazdy. Przy `prefers-reduced-motion` kamera skacze zamiast lecieć.
+- **Strzałka:** stożek kierunku przy kropce i niebieska linia ze strzałką wzdłuż `Leg.lngLats` od miejsca użytkownika na trasie do następnego miejsca trasy (najwyżej 500 m, `guidePath` w `lib/navigation.ts`). Dalej niż 150 m od trasy strzałki nie ma.
+- **Nie zrobione:** wyłączanie brył przy niskim FPS; teren (`raster-dem`) dla skarpy. Źródła do porównania na później: model 3D miasta / GUGiK (LOD1/LOD2 CityGML, sprawdzić licencję i czy jest na dane.um.warszawa.pl, wymaga konwersji do 3D Tiles), Google Photorealistic 3D Tiles (płatne, przez deck.gl `Tile3DLayer`).
+
 ## 3. Przepływ danych
 
 Przeglądarka nie łączy się z Supabase (Z3). Wszystko idzie przez API.
