@@ -15,9 +15,11 @@ import { LoadingCover, StatusPill, useDelayed } from "@/components/waiting";
 import { useT } from "@/features/i18n";
 import { useHighContrast, useTheme } from "@/features/theme";
 import { useBasemapOverrides } from "../hooks/use-basemap-overrides";
+import { useBikeStations } from "../hooks/use-bike-stations";
 import { useLiveVehicles } from "../hooks/use-live-vehicles";
 import { usePlaces } from "../hooks/use-places";
 import { useSelectedPlace } from "../hooks/use-selected-place";
+import { hasBikeLeg } from "../lib/bike-stations";
 import { registerBoardingTimers } from "../lib/boarding-timers";
 import type { LngLatBounds } from "../lib/bounds";
 import {
@@ -50,6 +52,7 @@ import { placeBBoxesInView } from "../lib/place-tiles";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
 import { isStreetPlace } from "../lib/street-highlight";
 import { selectVisiblePlaces } from "../lib/visible-places";
+import { BikeStationsLayer } from "./bike-stations-layer";
 import { DestinationLayer } from "./destination-layer";
 import { LineShapesLayer } from "./line-shapes-layer";
 import { LiveVehiclesLayer } from "./live-vehicles-layer";
@@ -142,9 +145,18 @@ export function SawaMap({
   // Miejsca dociągają się kafelkami przy każdym przesunięciu; pigułka tylko, gdy trwa to dłużej
   const isFindingPlaces = useDelayed(isLoaded && places.isPending, 700);
   const vehicles = useLiveVehicles(route);
+  // Veturilo stations only on a bike route (#192)
+  const isBikeRoute = hasBikeLeg(route);
+  const bikeStations = useBikeStations(isBikeRoute);
   const attribution = useMemo(
-    () => [...(route?.attribution ?? []), ...(vehicles.data?.attribution ?? [])],
-    [route?.attribution, vehicles.data?.attribution],
+    () => [
+      ...new Set([
+        ...(route?.attribution ?? []),
+        ...(vehicles.data?.attribution ?? []),
+        ...(isBikeRoute ? (bikeStations.data?.attribution ?? []) : []),
+      ]),
+    ],
+    [route?.attribution, vehicles.data?.attribution, isBikeRoute, bikeStations.data?.attribution],
   );
   const theme = useTheme();
   // High contrast always resolves to the dark theme (features/theme) and repaints it black and yellow.
@@ -370,6 +382,13 @@ export function SawaMap({
             knownPlaces={places.data}
             theme={theme}
             stickerLook={isHighContrast ? "contrast" : theme}
+            palette={palette}
+          />
+        )}
+        {icons !== "loading" && route && isBikeRoute && (
+          <BikeStationsLayer
+            route={route}
+            stations={bikeStations.data?.stations ?? []}
             palette={palette}
           />
         )}

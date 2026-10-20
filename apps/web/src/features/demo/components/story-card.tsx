@@ -91,7 +91,7 @@ export function StoryCard({
             </span>
             <div className="min-w-0 flex-1">
               <p className="etykieta">
-                {stop.mode === "walk"
+                {stop.mode === "walk" || stop.mode === "bike"
                   ? t("Opowieść po drodze", "A story on the way")
                   : t("Opowieść z okna", "A story from the window")}
               </p>

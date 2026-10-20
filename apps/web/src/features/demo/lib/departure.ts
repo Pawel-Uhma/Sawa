@@ -1,4 +1,4 @@
-import type { Leg } from "@sawa/shared";
+import { isTransitMode, type Leg } from "@sawa/shared";
 import { type Lang, pick } from "@/features/i18n";
 
 // Rozkład ZTM jest w czasie warszawskim, niezależnie od strefy telefonu
@@ -51,7 +51,8 @@ export function rideStops(legs: readonly Leg[], legIndex: number): RideStop[] {
  */
 export function rideStartMs(legs: readonly Leg[], totalMin: number): number {
   const first = legs[0];
-  if (first?.mode === "walk") return Date.parse(first.departAt);
+  // Spacer, rower i auto ruszają od razu; linia ZTM dopiero po dojściu i czekaniu
+  if (first && !isTransitMode(first.mode)) return Date.parse(first.departAt);
   const last = legs[legs.length - 1];
   if (!last) return 0;
   return Date.parse(last.departAt) + (last.durationMin - totalMin) * 60_000;
@@ -65,7 +66,7 @@ export function stepSpan(
   const leg = legs[legIndex];
   if (!leg) return { startMs: 0, endMs: 0 };
   const startMs = Date.parse(leg.departAt);
-  if (leg.mode === "walk") return { startMs, endMs: startMs + leg.durationMin * 60_000 };
+  if (!isTransitMode(leg.mode)) return { startMs, endMs: startMs + leg.durationMin * 60_000 };
   const stops = rideStops(legs, legIndex);
   const last = stops[stops.length - 1];
   return { startMs, endMs: last ? Date.parse(last.at) : startMs };

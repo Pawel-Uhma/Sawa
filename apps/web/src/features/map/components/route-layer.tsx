@@ -1,4 +1,4 @@
-import type { PlaceSummaryFeature, Route } from "@sawa/shared";
+import { isTransitMode, type PlaceSummaryFeature, type Route } from "@sawa/shared";
 import type { ExpressionSpecification, FilterSpecification } from "maplibre-gl";
 import { useEffect, useMemo, useState } from "react";
 import { Layer, Source } from "react-map-gl/maplibre";
@@ -123,9 +123,10 @@ export function RouteLayer({
         const { color, clock, departAtMs, walkMin, boardAt, line, mode } = feature.properties;
         const { fromLine, fromMode, fromColor } = feature.properties;
         const countdown = countdownOf(departAtMs, now, walkMin);
-        const boarded = mode === "walk" ? [] : [{ line, mode, color }];
+        // Boardings are only at ZTM lines; walks, bikes and cars have no chip
+        const boarded = isTransitMode(mode) ? [{ line, mode, color }] : [];
         const left =
-          fromMode && fromMode !== "walk"
+          fromMode && isTransitMode(fromMode)
             ? [{ line: fromLine, mode: fromMode, color: fromColor }]
             : [];
         return {

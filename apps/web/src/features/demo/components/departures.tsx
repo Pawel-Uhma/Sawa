@@ -1,4 +1,4 @@
-import type { Leg } from "@sawa/shared";
+import { isTransitMode, type Leg } from "@sawa/shared";
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
 import { useLang, useT } from "@/features/i18n";
@@ -48,7 +48,8 @@ export function Itinerary({
       </div>
       <ol className="-mx-1.5 flex flex-col gap-0.5 text-[13px]">
         {steps.map((leg, step) => {
-          const walk = leg.mode === "walk";
+          // Spacer, rower i auto: bez linii, przystanków i odjazdu, tylko czas i dokąd
+          const walk = !isTransitMode(leg.mode);
           const isPast = nowMs !== null && (current === -1 || step < current);
           const isNow = step === current;
           const { time, delay, isLate } = departureLabel(leg, lang);

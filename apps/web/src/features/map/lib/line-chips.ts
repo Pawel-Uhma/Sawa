@@ -10,7 +10,7 @@ import { MAP_ICON_PIXEL_RATIO, MAP_PALETTES, type MapTheme } from "./map-style";
  */
 const CHIP_PREFIX = "sawa-chip";
 
-export type ChipLine = { line: string; mode: Exclude<Leg["mode"], "walk">; color: string };
+export type ChipLine = { line: string; mode: Extract<Leg["mode"], "tram" | "bus">; color: string };
 
 const FONT_SIZE = 12;
 const ICON_SIZE = 12;
