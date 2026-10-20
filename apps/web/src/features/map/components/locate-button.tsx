@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
-import { useEffect, useState } from "react";
+import { type ReactNode, useEffect, useState } from "react";
 import { useT } from "@/features/i18n";
 
 /** Where the phone is, as the map button sees it. */
@@ -31,12 +31,15 @@ export function LocateButton({
   bottomPx,
   rightPx,
   mapHeightPx,
+  above,
 }: LocateProps & {
   isFollowing: boolean;
   onLocate: () => void;
   bottomPx: number;
   rightPx: number;
   mapHeightPx: number;
+  /** Another round map button stacked above this one (the 2D / 3D switch). */
+  above?: ReactNode;
 }) {
   const t = useT();
   const [hint, setHint] = useState(false);
@@ -109,24 +112,27 @@ export function LocateButton({
           </motion.p>
         )}
       </AnimatePresence>
-      <button
-        type="button"
-        aria-label={label}
-        aria-pressed={status === "found" ? isFollowing : undefined}
-        tabIndex={isHidden ? -1 : 0}
-        onClick={press}
-        className={`szklo flex size-11 shrink-0 items-center justify-center rounded-full transition-transform duration-100 active:scale-[0.92] ${
-          isHidden ? "" : "pointer-events-auto"
-        } ${isMissing ? "text-koral" : "text-glebia"}`}
-      >
-        {status === "found" ? (
-          <ArrowIcon filled={isFollowing} />
-        ) : status === "locating" ? (
-          <ArrowIcon filled={false} className="animate-pulse" />
-        ) : (
-          <NoLocationIcon />
-        )}
-      </button>
+      <div className="flex flex-col items-end gap-2">
+        {above && <div inert={isHidden}>{above}</div>}
+        <button
+          type="button"
+          aria-label={label}
+          aria-pressed={status === "found" ? isFollowing : undefined}
+          tabIndex={isHidden ? -1 : 0}
+          onClick={press}
+          className={`szklo flex size-11 shrink-0 items-center justify-center rounded-full transition-transform duration-100 active:scale-[0.92] ${
+            isHidden ? "" : "pointer-events-auto"
+          } ${isMissing ? "text-koral" : "text-glebia"}`}
+        >
+          {status === "found" ? (
+            <ArrowIcon filled={isFollowing} />
+          ) : status === "locating" ? (
+            <ArrowIcon filled={false} className="animate-pulse" />
+          ) : (
+            <NoLocationIcon />
+          )}
+        </button>
+      </div>
     </motion.div>
   );
 }

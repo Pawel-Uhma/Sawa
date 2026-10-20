@@ -56,6 +56,8 @@ export type MapPalette = {
   /** Rivers and lakes; the basemaps draw them grey, we repaint them blue. */
   water: string;
   waterLabel: string;
+  /** Building blocks of the 3D view (#199): a bit darker than the ground, lit by the map's light. */
+  buildings: string;
   /** Streets drawn over the basemap's own, which are barely visible (dark: #181818 on #0c0c0c). */
   roads: RoadColors;
 };
@@ -93,6 +95,7 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     dimmedOpacity: 0.35,
     water: "#b4d7ec",
     waterLabel: "#3d6e94",
+    buildings: "#dcdfdb",
     // Darker than the positron defaults, so minor streets stand out from the #f2f3f0 ground.
     roads: {
       minor: "#d2d7d5",
@@ -127,6 +130,7 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     dimmedOpacity: 0.6,
     water: "#1f4a6b",
     waterLabel: "#7fa8cb",
+    buildings: "#34413f",
     // Lighter than the ground, bigger roads lighter still, like night mode in Apple Maps.
     roads: {
       minor: "#2f3a39",
@@ -172,6 +176,7 @@ export const MAP_CONTRAST_PALETTE: MapPalette = {
   dimmedOpacity: 0.75,
   water: "#0057b8",
   waterLabel: "#bfe0ff",
+  buildings: "#3a3a3a",
   roads: {
     minor: "#b8b8b8",
     path: "#7a7a7a",
