@@ -15,7 +15,7 @@
 | LLM | Bielik (polski model), zapasowo Claude | Plus u jurorki z Bielik.AI. **Przed wydarzeniem sprawdzić, gdzie jest hostowane API Bielika i jaki ma limit** |
 | Baza miejsc | Supabase (darmowy plan, konto zespołu) | Miejsca ze współrzędnymi z Wikipedii, `historia/` i Google Places; ustalone 17.10 |
 | Głos | ElevenLabs (ok. 0,50 zł za minutę audio, ok. 10 min miesięcznie za darmo, są polskie głosy); klucz `ELEVENLABS_KEY` w Railway | Wybrany 17.10; wystarczy na demo |
-| Głos zapasowy | Piper „gosia” (polski, open source, zbiór CC0) przez `sherpa-onnx-node`, na CPU w kontenerze `api`, mp3 przez `lamejs`; czyta, gdy nie ma `ELEVENLABS_KEY` albo ElevenLabs odmawia (kredyty, klucz, timeout), potem 5 min omija ElevenLabs. Model w obrazie (`/models`), lokalnie pobierany do katalogu tymczasowego. `LOCAL_TTS=0` wyłącza | 19.10; bez czasów znaków (podświetlenie szacowane z długości klipu), tylko po polsku |
+| Głos zapasowy | Piper „gosia” (polski, open source, zbiór CC0) i „amy” (angielski, `en_US`) przez `sherpa-onnx-node`, model wybierany po `lang` opowieści, na CPU w kontenerze `api`, mp3 przez `lamejs`; czyta, gdy nie ma `ELEVENLABS_KEY` albo ElevenLabs odmawia (kredyty, klucz, timeout), potem 5 min omija ElevenLabs. Modele w obrazie (`/models`, obok siebie), lokalnie pobierane do katalogu tymczasowego. Angielskiej opowieści nigdy nie czyta polski głos: bez modelu `en` jest tekst bez głosu. `LOCAL_TTS=0` wyłącza | 19.10, angielski 20.10 (#204); bez czasów znaków (podświetlenie szacowane z długości klipu) |
 | Deploy | Frontend na Vercel, backend na Railway | Link na pitchu pod darmową subdomeną `*.vercel.app`, bez kupowania domeny (ustalone 17.10) |
 
 ## Przepływ danych

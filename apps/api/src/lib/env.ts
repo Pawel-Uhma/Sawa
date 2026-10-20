@@ -63,14 +63,17 @@ const EnvSchema = z.object({
     .optional()
     .transform((v) => v || undefined),
   /**
-   * "0" turns off the local Polish voice (Piper via sherpa-onnx) that reads when ElevenLabs is
-   * missing or fails (no credits, timeout).
+   * "0" turns off the local voices (Piper via sherpa-onnx, Polish and English) that read when
+   * ElevenLabs is missing or fails (no credits, timeout).
    */
   LOCAL_TTS: z
     .enum(["0", "1"])
     .default("1")
     .transform((v) => v === "1"),
-  /** Unpacked Piper model; empty = a temp folder, downloaded there at start (about 70 MB). */
+  /**
+   * Unpacked Polish Piper model; the English one sits next to it. Empty = a temp folder, both
+   * downloaded there at start (about 70 MB each).
+   */
   PIPER_MODEL_DIR: z
     .string()
     .optional()

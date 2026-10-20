@@ -55,6 +55,16 @@ describe("speakStream", () => {
     return { ...fakeSynthesizer(), stream };
   }
 
+  it("tells TTS the story's language", async () => {
+    const synth = streamingSynthesizer();
+    const service = createSpeechService(synth);
+    for await (const _ of service.speakStream(pieces("Built in the 1930s."), { lang: "en" }));
+    expect(synth.stream).toHaveBeenCalledWith("Built in the nineteen thirties.", {
+      previousText: "",
+      lang: "en",
+    });
+  });
+
   it("reads sentence by sentence, telling TTS what was already said", async () => {
     const synth = streamingSynthesizer();
     const out: Uint8Array[] = [];

@@ -27,16 +27,20 @@ RUN osrm-extract -p /opt/foot.lua map.osm.pbf \
   && osrm-customize map.osrm \
   && rm map.osm.pbf
 
-# 1c. Piper "gosia" for sherpa-onnx: the voice when ElevenLabs is out of reach (about 80 MB).
+# 1c. Piper voices for sherpa-onnx, read when ElevenLabs is out of reach (about 80 MB each):
+# "gosia" (Polish) and "amy" (English), side by side in /models (piper/speech-synthesizer.ts).
 FROM debian:bookworm-slim AS voice
 RUN apt-get update \
   && apt-get install -y --no-install-recommends bzip2 ca-certificates curl \
   && rm -rf /var/lib/apt/lists/*
-ARG PIPER_MODEL=vits-piper-pl_PL-gosia-medium
+ARG PIPER_MODELS="vits-piper-pl_PL-gosia-medium vits-piper-en_US-amy-medium"
 WORKDIR /models
-RUN curl -fsSL "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/$PIPER_MODEL.tar.bz2" -o model.tar.bz2 \
-  && tar xjf model.tar.bz2 \
-  && rm model.tar.bz2
+RUN for model in $PIPER_MODELS; do \
+    curl -fsSL "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/$model.tar.bz2" -o model.tar.bz2 \
+    && tar xjf model.tar.bz2 \
+    && rm model.tar.bz2 \
+    || exit 1; \
+  done
 
 # 2. The API with its production dependencies.
 FROM node:24-slim AS api

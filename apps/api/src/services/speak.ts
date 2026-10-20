@@ -127,7 +127,7 @@ export function createSpeechService(synthesizer: SpeechSynthesizer): SpeechServi
         let done = false;
         if (timed) {
           try {
-            for await (const piece of timed(chunk.spoken, { previousText })) {
+            for await (const piece of timed(chunk.spoken, { previousText, lang: opts?.lang })) {
               if (piece.times) {
                 chars.push(...piece.times.chars);
                 starts.push(...piece.times.starts);
@@ -148,7 +148,7 @@ export function createSpeechService(synthesizer: SpeechSynthesizer): SpeechServi
           }
         }
         if (!done && stream) {
-          for await (const bytes of stream(chunk.spoken, { previousText })) {
+          for await (const bytes of stream(chunk.spoken, { previousText, lang: opts?.lang })) {
             audio.push(bytes);
             parts.push(bytes);
             yield bytes;

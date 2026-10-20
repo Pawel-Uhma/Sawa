@@ -1,4 +1,4 @@
-import type { Destination, LatLng, TrackLeg } from "@sawa/shared";
+import type { Destination, LatLng, StoryLang, TrackLeg } from "@sawa/shared";
 import type { BBox, Place, PlaceAlongLine, PlaceSummary } from "../domain/place";
 import type { Network } from "../domain/routing/types";
 import type { SpeechAudio } from "../domain/speech";
@@ -82,18 +82,20 @@ export interface LlmProvider {
 
 /** Text-to-speech provider (ElevenLabs). Throws AppError on upstream failure or timeout. */
 export interface SpeechSynthesizer {
-  synthesize(text: string): Promise<SpeechAudio>;
+  synthesize(text: string, opts?: { lang?: StoryLang }): Promise<SpeechAudio>;
   /**
    * mp3 bytes as they are made. `previousText` is what was already read, so a story said in
-   * several pieces keeps one tone.
+   * several pieces keeps one tone. `lang` (missing: "pl") picks the voice where it matters.
    */
-  stream?(text: string, opts: { previousText: string }): AsyncIterable<Uint8Array>;
+  stream?(text: string, opts: SpeakOptions): AsyncIterable<Uint8Array>;
   /**
    * Like `stream`, with when each character of `text` is said: every piece has its mp3 bytes and
    * the characters it brought (often none), timed from the start of this clip.
    */
-  streamWithTimes?(text: string, opts: { previousText: string }): AsyncIterable<TimedSpeech>;
+  streamWithTimes?(text: string, opts: SpeakOptions): AsyncIterable<TimedSpeech>;
 }
+
+export type SpeakOptions = { previousText: string; lang?: StoryLang };
 
 /** A piece of a timed TTS stream. */
 export type TimedSpeech = { audio: Uint8Array; times: CharTimes | null };

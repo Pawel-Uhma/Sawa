@@ -1,5 +1,5 @@
 import { AppError } from "../lib/errors";
-import type { SpeechSynthesizer } from "./ports";
+import type { SpeakOptions, SpeechSynthesizer } from "./ports";
 
 /** After a failure the main voice rests this long, so each sentence does not wait for it to fail. */
 export const MAIN_VOICE_REST_MS = 5 * 60_000;
@@ -31,24 +31,24 @@ export function createFallbackSynthesizer(
   async function* streamOf(
     synth: SpeechSynthesizer,
     text: string,
-    opts: { previousText: string },
+    opts: SpeakOptions,
   ): AsyncGenerator<Uint8Array> {
     if (synth.stream) yield* synth.stream(text, opts);
-    else yield (await synth.synthesize(text)).audio;
+    else yield (await synth.synthesize(text, { lang: opts.lang })).audio;
   }
 
   const timed = main.streamWithTimes?.bind(main);
 
   return {
-    async synthesize(text) {
+    async synthesize(text, opts) {
       if (!resting()) {
         try {
-          return await main.synthesize(text);
+          return await main.synthesize(text, opts);
         } catch (err) {
           failed(err);
         }
       }
-      return backup.synthesize(text);
+      return backup.synthesize(text, opts);
     },
     async *stream(text, opts) {
       if (!resting()) {

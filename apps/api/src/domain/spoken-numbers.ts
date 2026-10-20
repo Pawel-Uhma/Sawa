@@ -4,11 +4,14 @@
  * words, because ElevenLabs reads Polish digits badly. Pure and deterministic: the same text
  * always gives the same words, and the punctuation around a number stays where it was.
  *
- * Order: abbreviations, ranges, Roman numerals, hours, then years and dates (spoken-years.ts),
- * then every other number. Case: the genitive after a few prepositions („od”, „do”, „około”…),
+ * Order: abbreviations (spoken-abbreviations.ts), ranges, ordinals with a dot
+ * (spoken-ordinals.ts), Roman numerals, hours, then years and dates (spoken-years.ts), then every
+ * other number. Case: the genitive after a few prepositions („od”, „do”, „około”…),
  * otherwise the nominative.
  */
 
+import { expandWordAbbreviations } from "./spoken-abbreviations";
+import { spellDottedOrdinals } from "./spoken-ordinals";
 import { type Case, MONTHS, ordinalPl, spellYears, yearCase } from "./spoken-years";
 
 const ONES = [
@@ -354,25 +357,52 @@ function spellRulers(text: string): string {
   );
 }
 
-/** "o 13:30" → "o trzynastej trzydzieści", "13:05" → "trzynasta zero pięć". */
+/** After these the hour is "o trzynastej", "przed trzynastą"; after a form of "godzina" it agrees. */
+const HOUR_CASE: Record<string, FemCase> = {
+  o: "obl",
+  po: "obl",
+  od: "obl",
+  do: "obl",
+  około: "obl",
+  koło: "obl",
+  przy: "obl",
+  przed: "ins",
+  między: "ins",
+  nad: "ins",
+  godzina: "nom",
+  godziny: "obl",
+  godzinie: "obl",
+  godzinach: "obl",
+  godzinę: "ins",
+  godziną: "ins",
+};
+
+function hourCase(prep: string | undefined): FemCase {
+  return HOUR_CASE[prep?.toLowerCase() ?? ""] ?? "nom";
+}
+
+/**
+ * "o 13:30" → "o trzynastej trzydzieści", "13:05" → "trzynasta zero pięć", and a whole hour
+ * after "godzina" ("o godzinie 17" → "o godzinie siedemnastej").
+ */
 function spellHours(text: string): string {
-  return text.replace(
-    /(?:(?<!\p{L})(\p{L}+) )?(?<![\p{N}:])([01]?\d|2[0-3]):([0-5]\d)(?![\p{N}:])/gu,
-    (_all: string, prep: string | undefined, h: string, m: string) => {
-      const p = prep?.toLowerCase();
-      const c: FemCase =
-        p && ["o", "po", "od", "do", "około", "koło", "przy"].includes(p)
-          ? "obl"
-          : p && ["przed", "między", "nad"].includes(p)
-            ? "ins"
-            : "nom";
-      const minutes = Number(m);
-      const said = [femOrdinal(Number(h), c)];
-      if (minutes > 0 && minutes < 10) said.push(`zero ${ONES[minutes]}`);
-      else if (minutes >= 10) said.push(cardinalPl(minutes));
-      return `${prep ? `${prep} ` : ""}${said.join(" ")}`;
-    },
-  );
+  return text
+    .replace(
+      /(?<!\p{L})(godzin(?:a|y|ie|ach|ę|ą)) ([01]?\d|2[0-4])(?![\p{N}:,.]\p{N}|\p{N}|[\p{L}])/gu,
+      (_all: string, godzina: string, h: string) =>
+        `${godzina} ${femOrdinal(Number(h), hourCase(godzina))}`,
+    )
+    .replace(
+      /(?:(?<!\p{L})(\p{L}+) )?(?<![\p{N}:])([01]?\d|2[0-3]):([0-5]\d)(?![\p{N}:])/gu,
+      (_all: string, prep: string | undefined, h: string, m: string) => {
+        const c = hourCase(prep);
+        const minutes = Number(m);
+        const said = [femOrdinal(Number(h), c)];
+        if (minutes > 0 && minutes < 10) said.push(`zero ${ONES[minutes]}`);
+        else if (minutes >= 10) said.push(cardinalPl(minutes));
+        return `${prep ? `${prep} ` : ""}${said.join(" ")}`;
+      },
+    );
 }
 
 /** "w 1944 r." → "w 1944 roku", "ok. 100" → "około 100", "nr 5" → "numer 5", "XIX w." → "XIX wieku". */
@@ -388,9 +418,18 @@ function expandAbbreviations(text: string): string {
     );
 }
 
-/** "13–15 lipca" → ordinals; "1648–1650", "5-10" → "1648 do 1650", "5 do 10". */
+/**
+ * "13–15 lipca" → ordinals; "1939–1945" → "od 1939 do 1945" (years, said in the genitive);
+ * "5-10" → "5 do 10"; "27/29" (house numbers) → "27 łamane przez 29".
+ */
 function spellRanges(text: string): string {
   return text
+    .replace(
+      /(?:(?<!\p{L})(\p{L}+) )?(?<![\p{N},.])(1\d{3}|20\d{2}) ?[–—-] ?(1\d{3}|20\d{2})(?!\p{N})/gu,
+      (_all, prep: string | undefined, a: string, b: string) =>
+        `${prep ? `${prep} ` : ""}${prep?.toLowerCase() === "od" ? "" : "od "}${a} do ${b}`,
+    )
+    .replace(/(?<![\p{N}/])(\d+[a-z]?)\/(?=\d)/gu, "$1 łamane przez ")
     .replace(
       new RegExp(`(?<!\\p{N})(\\d{1,2}) ?[–—-] ?(\\d{1,2}) (${MONTHS})(?!\\p{L})`, "gu"),
       (all, a: string, b: string, month: string) => {
@@ -449,7 +488,9 @@ function spellCardinals(text: string): string {
 /** All digits in `text` as Polish words for TTS; everything else is left as it is. */
 export function spellNumbers(text: string): string {
   let out = expandAbbreviations(text);
+  out = expandWordAbbreviations(out);
   out = spellRanges(out);
+  out = spellDottedOrdinals(out);
   out = spellCenturies(out);
   out = spellFeminineRomans(out);
   out = spellRulers(out);
