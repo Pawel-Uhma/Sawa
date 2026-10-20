@@ -19,6 +19,19 @@ const EMPTY: Memory = { places: {}, contexts: [] };
 let current: Memory | null = null;
 const listeners = new Set<() => void>();
 
+export type RememberedStory = Pick<Story, "placeId" | "factIds" | "contextIds"> & {
+  placeName?: string;
+};
+// Konto (lib/account.ts) dopisuje każdą wysłuchaną opowieść do historii słuchacza.
+const storyListeners = new Set<(story: RememberedStory) => void>();
+
+export function onStoryRemembered(listener: (story: RememberedStory) => void) {
+  storyListeners.add(listener);
+  return () => {
+    storyListeners.delete(listener);
+  };
+}
+
 function read(): Memory {
   try {
     const raw = window.localStorage.getItem(KEY);
@@ -47,9 +60,7 @@ export function getMemory(): Memory {
 }
 
 /** Zapisuje wysłuchaną opowieść: jej fakty, wyjaśnione tło i nazwę miejsca (do listy „co już opowiedziała”). */
-export function rememberStory(
-  story: Pick<Story, "placeId" | "factIds" | "contextIds"> & { placeName?: string },
-) {
+export function rememberStory(story: RememberedStory) {
   const memory = getMemory();
   const previous = memory.places[story.placeId];
   const facts = [...new Set([...(previous?.facts ?? []), ...story.factIds])];
@@ -59,10 +70,16 @@ export function rememberStory(
     places: { ...memory.places, [story.placeId]: { name, facts, at: Date.now() } },
     contexts,
   });
+  for (const listener of storyListeners) listener(story);
 }
 
 export function forgetAll() {
   write(EMPTY);
+}
+
+/** Podmienia całą pamięć, np. na scaloną z kontem po zalogowaniu (lib/account.ts). */
+export function replaceMemory(next: Memory) {
+  write(next);
 }
 
 /**
