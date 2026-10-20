@@ -32,6 +32,7 @@ import { setMusicOn, useMusicOn } from "../lib/ride-music-player";
 import type { StartMode } from "../lib/start-point";
 import { setAutoAdvance, useAutoAdvance } from "../lib/story-advance";
 import { topicStyle } from "../lib/topic-style";
+import { AppVersion } from "./app-version";
 import {
   AccountIcon,
   BubbleIcon,
@@ -662,6 +663,8 @@ function MenuContent({ actions, run }: MenuContentProps) {
         <RestartIcon className="size-5" />
         {t("Zacznij od nowa", "Start over")}
       </button>
+
+      <AppVersion />
     </div>
   );
 }
