@@ -1,5 +1,6 @@
 "use client";
 
+import type { Audience } from "@sawa/shared";
 import {
   AnimatePresence,
   animate,
@@ -25,14 +26,7 @@ import { ContrastSwitch, ThemeSwitch } from "@/features/theme";
 import { haptic, project, SPRING, SPRING_FLICK, useIsDesktop } from "../lib/device";
 import { placesLabel } from "../lib/format";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
-import {
-  AUDIENCES,
-  type Choice,
-  FAMILIARITY,
-  INTERESTS,
-  type Profile,
-  STORY_STYLES,
-} from "../lib/onboarding";
+import { type Choice, FAMILIARITY, INTERESTS, type Profile, STORY_STYLES } from "../lib/onboarding";
 import { setMusicOn, useMusicOn } from "../lib/ride-music-player";
 import type { StartMode } from "../lib/start-point";
 import { setAutoAdvance, useAutoAdvance } from "../lib/story-advance";
@@ -59,6 +53,8 @@ export type SawaMenuActions = {
   profile: Profile;
   /** Otwiera modal edycji jednego pola (nie onboarding). */
   onEditProfile: (step: ProfileStep) => void;
+  /** Tryb dla dzieci (#65): przełącznik bez modalu, zapisany w profilu. */
+  onAudienceChange: (audience: Audience) => void;
   /** Liczba opowieści w ostatniej trasie; null, gdy jeszcze żadnej nie było. */
   lastRouteStops: number | null;
   onOpenLastRoute: () => void;
@@ -379,7 +375,7 @@ function MenuContent({ actions, run }: MenuContentProps) {
   const autoAdvance = useAutoAdvance();
   const familiarity = labelOf(FAMILIARITY, profile.familiarity, lang);
   const style = labelOf(STORY_STYLES, profile.storyStyle, lang);
-  const audience = labelOf(AUDIENCES, profile.audience, lang);
+  const withChild = profile.audience === "kids";
   // Nazwy w kolorach tematów: ta sama legenda co obwódki miejsc na mapie
   const interests = profile.interests.flatMap((key, i) => {
     const item = INTERESTS.find((interest) => interest.key === key);
@@ -473,9 +469,21 @@ function MenuContent({ actions, run }: MenuContentProps) {
         />
         <Row
           Icon={ListenerIcon}
-          label={t("Kto słucha", "Who's listening")}
-          value={audience ?? t("Dorośli", "Adults")}
-          onClick={() => run(() => actions.onEditProfile("audience"))}
+          label={t("Jadę z dzieckiem", "Riding with a child")}
+          value={
+            withChild
+              ? t(
+                  "Prościej, krócej, z zagadką na koniec · stuknij, żeby wyłączyć",
+                  "Simpler, shorter, a riddle at the end · tap to turn off",
+                )
+              : t("Wyłączone · stuknij, żeby włączyć", "Off · tap to turn on")
+          }
+          onClick={() => {
+            haptic();
+            actions.onAudienceChange(withChild ? "adult" : "kids");
+          }}
+          chevron={false}
+          pressed={withChild}
         />
         <Row
           Icon={SkipNextIcon}
@@ -652,14 +660,17 @@ type RowProps = {
   chevron?: boolean;
   /** Wiersz rozwijany: strzałka obraca się w dół, gdy treść jest widoczna. */
   expanded?: boolean;
+  /** Wiersz-przełącznik: czytnik ekranu słyszy, czy jest włączony. */
+  pressed?: boolean;
 };
 
-function Row({ Icon, label, value, onClick, chevron = true, expanded }: RowProps) {
+function Row({ Icon, label, value, onClick, chevron = true, expanded, pressed }: RowProps) {
   return (
     <button
       type="button"
       onClick={onClick}
       aria-expanded={expanded}
+      aria-pressed={pressed}
       className="flex min-h-14 w-full items-center gap-3 px-3 py-2.5 text-left transition-colors duration-100 active:bg-tekst/[0.06] md:hover:bg-tekst/[0.04]"
     >
       <span className="flex size-9 shrink-0 items-center justify-center rounded-[11px] bg-powierzchnia text-glebia shadow-[0_1px_2px_rgba(16,43,42,0.08)]">

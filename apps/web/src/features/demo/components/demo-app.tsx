@@ -1,6 +1,6 @@
 "use client";
 
-import { HACKATHON_VENUE, type Route, type Travel } from "@sawa/shared";
+import { type Audience, HACKATHON_VENUE, type Route, type Travel } from "@sawa/shared";
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import dynamic from "next/dynamic";
 import { type SetStateAction, useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -247,6 +247,16 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     saveProfile(next);
     setEditing(null);
   }, []);
+
+  // Tryb dla dzieci (#65) przełącza się jednym stuknięciem w menu i zostaje w profilu.
+  const changeAudience = useCallback(
+    (audience: Audience) => {
+      const next = { ...profile, audience };
+      setProfile(next);
+      saveProfile(next);
+    },
+    [profile],
+  );
 
   const restart = useCallback(() => {
     saveProfile(null);
@@ -502,6 +512,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     () => ({
       profile,
       onEditProfile: editProfile,
+      onAudienceChange: changeAudience,
       lastRouteStops: planned && route.length > 0 ? route.length : null,
       onOpenLastRoute: () => {
         setTab("map");
@@ -526,6 +537,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     [
       profile,
       editProfile,
+      changeAudience,
       planned,
       route.length,
       restart,
