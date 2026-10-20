@@ -24,10 +24,14 @@ export function useDemoDrive(
   enabled: boolean,
   stops: readonly MockStop[],
   onIndex: (index: number) => void,
+  /** Postęp jazdy (0–1) przy każdym kroku: po nim kropka jedzie po linii trasy (T-102). */
+  onProgress?: (progress: number) => void,
 ) {
   const onIndexRef = useRef(onIndex);
+  const onProgressRef = useRef(onProgress);
   useEffect(() => {
     onIndexRef.current = onIndex;
+    onProgressRef.current = onProgress;
   });
 
   useEffect(() => {
@@ -37,6 +41,7 @@ export function useDemoDrive(
     const tick = () => {
       const progress = Math.min(1, (performance.now() - startedAt) / DEMO_DRIVE_MS);
       const index = stopIndexAt(stops, progress);
+      onProgressRef.current?.(progress);
       if (index !== last) {
         last = index;
         onIndexRef.current(index);
