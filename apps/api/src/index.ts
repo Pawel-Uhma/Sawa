@@ -144,7 +144,7 @@ const elevenLabs = env.ELEVENLABS_KEY
       fallbackApiKey: env.ELEVENLABS_KEY_2,
     })
   : undefined;
-// Local Polish voice for when ElevenLabs is out of reach (no key, no credits, timeout).
+// Local voices (Polish and English) for when ElevenLabs is out of reach (no key, no credits, timeout).
 const localVoice =
   demo === "off" && env.LOCAL_TTS
     ? createPiperSynthesizer({ modelDir: env.PIPER_MODEL_DIR })

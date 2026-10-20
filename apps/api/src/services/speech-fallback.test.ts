@@ -33,6 +33,15 @@ function voice(name: string, fail = false): SpeechSynthesizer {
 }
 
 describe("createFallbackSynthesizer", () => {
+  it("tells the backup the story's language, so English is not read with the Polish voice", async () => {
+    const backup = voice("piper");
+    const synth = createFallbackSynthesizer(voice("eleven", true), backup);
+    for await (const _ of synth.stream?.("Hello", { previousText: "", lang: "en" }) ?? []);
+    expect(backup.stream).toHaveBeenCalledWith("Hello", { previousText: "", lang: "en" });
+    await synth.synthesize("Hi", { lang: "en" });
+    expect(backup.synthesize).toHaveBeenCalledWith("Hi", { lang: "en" });
+  });
+
   it("uses the main voice while it works", async () => {
     const main = voice("eleven");
     const backup = voice("piper");
