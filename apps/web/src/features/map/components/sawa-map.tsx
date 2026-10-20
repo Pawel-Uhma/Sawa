@@ -65,6 +65,7 @@ import {
 import { ROUTE_BOARDING_LAYER_IDS, ROUTE_PLACES_LAYER_ID, RouteLayer } from "./route-layer";
 import { StreetLayer } from "./street-layer";
 import { UserLayer } from "./user-layer";
+import { WaypointsLayer } from "./waypoints-layer";
 
 const INTERACTIVE_LAYERS = [
   ROUTE_PLACES_LAYER_ID,
@@ -88,6 +89,8 @@ export type SawaMapProps = {
   user?: LatLng;
   /** Where the ride should end; drawn as a pin. */
   destination?: LatLng;
+  /** Stops on the way, in order; drawn as numbered pins (issue #195). */
+  waypoints?: readonly (LatLng & { name?: string })[];
   /** Route place the story is about right now. */
   activeStopId?: string;
   /** Legs picked in the "Dojazd" list (`highlightedLegs`): drawn on top, the rest faded. */
@@ -118,6 +121,7 @@ export function SawaMap({
   padding,
   user,
   destination,
+  waypoints,
   activeStopId,
   highlightLegs = null,
   fadePlaces = false,
@@ -375,6 +379,7 @@ export function SawaMap({
         )}
         {isLoaded && route && <LiveVehiclesLayer data={vehicles.data} />}
         {destination && <DestinationLayer position={destination} ring={palette.ring} />}
+        {waypoints && waypoints.length > 0 && <WaypointsLayer points={waypoints} />}
         {user && <UserLayer position={user} ring={palette.ring} />}
       </MapLibreMap>
       <LoadingCover
