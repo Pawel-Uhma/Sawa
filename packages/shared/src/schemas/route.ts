@@ -22,6 +22,20 @@ export type Travel = (typeof TRAVEL)[number];
 export const AUDIENCES = ["adult", "kids"] as const;
 export type Audience = (typeof AUDIENCES)[number];
 
+/** Most stops on the way (issue #195); each one adds a planned part of the route. */
+export const MAX_WAYPOINTS = 5;
+
+/**
+ * A stop on the way: the route passes through it, in the order given. With `placeId` (a place
+ * from /v1/places) Sawa tells its story there, like at the other places of the route.
+ */
+export const WaypointSchema = LatLngSchema.extend({
+  placeId: z.string().optional(),
+  /** Shown on the route at the stop (the client knows the place's name). */
+  name: z.string().max(200).optional(),
+});
+export type Waypoint = z.infer<typeof WaypointSchema>;
+
 export const PlanRouteRequestSchema = z
   .object({
     origin: LatLngSchema,
@@ -35,6 +49,11 @@ export const PlanRouteRequestSchema = z
     returnToStart: z.boolean().default(false),
     /** The ride ends at a stop near this point. Not together with `returnToStart`. */
     destination: LatLngSchema.optional(),
+    /**
+     * Stops on the way, passed in this order before the end. `durationMin` includes the way
+     * through them; the time left goes to the last part (to the destination, start or anywhere).
+     */
+    waypoints: z.array(WaypointSchema).max(MAX_WAYPOINTS).optional(),
     /** How well the user knows Warsaw: first-timers get the richest places first. */
     familiarity: z.enum(FAMILIARITY).optional(),
     /** How Sawa tells stories: sets the shortest time between two places. */
@@ -59,10 +78,13 @@ export const PlanRouteRequestSchema = z
     message: "Podaj destination albo returnToStart, nie oba",
     path: ["destination"],
   })
-  .refine((r) => r.durationMin !== undefined || r.destination !== undefined, {
-    message: "Podaj durationMin albo destination (najszybsza trasa do celu)",
-    path: ["durationMin"],
-  });
+  .refine(
+    (r) => r.durationMin !== undefined || r.destination !== undefined || !!r.waypoints?.length,
+    {
+      message: "Podaj durationMin albo destination (najszybsza trasa do celu)",
+      path: ["durationMin"],
+    },
+  );
 /** What a client sends; `returnToStart` and `destination` may be left out. */
 export type PlanRouteRequest = z.input<typeof PlanRouteRequestSchema>;
 
