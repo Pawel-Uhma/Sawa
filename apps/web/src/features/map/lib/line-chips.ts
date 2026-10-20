@@ -35,21 +35,38 @@ const MODE_PATHS: Record<ChipLine["mode"], string[]> = {
   ],
 };
 
-/** Image id for the lines of one boarding; `lines` has one line, or two at a transfer. */
-export function lineChipId(theme: MapTheme, lines: readonly ChipLine[]): string {
+/**
+ * Image id for the lines of one boarding; `lines` has one line, or two at a transfer.
+ * `exit`: the stop where one gets off the line, with the word for it ("wysiądź", "get off").
+ */
+export function lineChipId(
+  theme: MapTheme,
+  lines: readonly ChipLine[],
+  exit?: { lang: "pl" | "en" },
+): string {
   const parts = lines.map(
     ({ line, mode, color }) => `${mode}.${color.slice(1)}.${encodeURIComponent(line)}`,
   );
   // encodeURIComponent turns "|" into %7C, so it never shows up inside a part
-  return `${CHIP_PREFIX}-${theme}-${parts.join("|")}`;
+  return `${CHIP_PREFIX}-${theme}-${exit ? `out${exit.lang}-` : ""}${parts.join("|")}`;
 }
 
+/** Space before the word on an exit chip, and after it to the pill's edge. */
+const WORD_GAP = 6;
+const WORD_PAD = 4;
+const WORD_FONT = () => appFont(700, 11.5);
+
+/** The word on an exit chip. */
+const EXIT_WORD = { pl: "wysiądź", en: "get off" } as const;
+
 /** Inverse of lineChipId; null for any other image id. */
-export function parseLineChipId(id: string): { theme: MapTheme; lines: ChipLine[] } | null {
-  const match = new RegExp(`^${CHIP_PREFIX}-(light|dark)-(.+)$`).exec(id);
+export function parseLineChipId(
+  id: string,
+): { theme: MapTheme; lines: ChipLine[]; exit?: { lang: "pl" | "en" } } | null {
+  const match = new RegExp(`^${CHIP_PREFIX}-(light|dark)-(?:out(pl|en)-)?(.+)$`).exec(id);
   if (!match) return null;
   const lines: ChipLine[] = [];
-  for (const part of match[2].split("|")) {
+  for (const part of match[3].split("|")) {
     const chip = /^(tram|bus)\.([0-9a-f]{6})\.(.+)$/i.exec(part);
     if (!chip) return null;
     lines.push({
@@ -58,7 +75,9 @@ export function parseLineChipId(id: string): { theme: MapTheme; lines: ChipLine[
       line: decodeURIComponent(chip[3]),
     });
   }
-  return lines.length > 0 ? { theme: match[1] as MapTheme, lines } : null;
+  if (lines.length === 0) return null;
+  const exit = match[2] ? { exit: { lang: match[2] as "pl" | "en" } } : {};
+  return { theme: match[1] as MapTheme, lines, ...exit };
 }
 
 /** MapLibre expression: the chip image id from the boarding's `chip` property. */
@@ -80,7 +99,12 @@ export function drawLineChip(id: string): ImageData | null {
   const widths = chip.lines.map(
     ({ line }) => CHIP_PAD_X * 2 + ICON_SIZE + CHIP_GAP + measure.measureText(line).width,
   );
-  const inner = widths.reduce((sum, w) => sum + w, 0) + ARROW_WIDTH * (chip.lines.length - 1);
+  // At the exit stop the word after the line: "106 wysiądź"
+  const word = chip.exit ? EXIT_WORD[chip.exit.lang] : "";
+  measure.font = WORD_FONT();
+  const wordWidth = word ? WORD_GAP + measure.measureText(word).width + WORD_PAD : 0;
+  const inner =
+    widths.reduce((sum, w) => sum + w, 0) + ARROW_WIDTH * (chip.lines.length - 1) + wordWidth;
   const widthCss = Math.ceil(inner + OUTER_PAD * 2 + SHADOW_ROOM * 2);
   const heightCss = CHIP_HEIGHT + OUTER_PAD * 2 + SHADOW_ROOM * 2;
 
@@ -141,6 +165,12 @@ export function drawLineChip(id: string): ImageData | null {
     ctx.fillText(line, x + CHIP_PAD_X + ICON_SIZE + CHIP_GAP, y + CHIP_HEIGHT / 2 + 0.5);
     x += w;
   });
+  if (word) {
+    ctx.font = WORD_FONT();
+    ctx.fillStyle = palette.label;
+    ctx.textAlign = "left";
+    ctx.fillText(word, x + WORD_GAP, y + CHIP_HEIGHT / 2 + 0.5);
+  }
   return ctx.getImageData(0, 0, canvas.width, canvas.height);
 }
 

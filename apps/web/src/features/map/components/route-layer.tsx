@@ -18,6 +18,7 @@ import {
 import {
   boardingTouchesLegs,
   type PlaceMarkers,
+  routeAlightingsToGeoJson,
   routeBoardingsToGeoJson,
   routeLegsToGeoJson,
   routePassedStopsToGeoJson,
@@ -144,6 +145,21 @@ export function RouteLayer({
   }, [route, now, theme, lang, picked]);
   const walks = useMemo(() => routeWalksToGeoJson(route), [route]);
   const passed = useMemo(() => routePassedStopsToGeoJson(route), [route]);
+  // Where to get off: a dot in the line colour and "106 wysiądź" over it
+  const alightings = useMemo(() => {
+    const collection = routeAlightingsToGeoJson(route);
+    return {
+      ...collection,
+      features: collection.features.map((feature) => {
+        const { line, mode, color } = feature.properties;
+        const chip = isTransitMode(mode)
+          ? lineChipId(theme, [{ line, mode, color }], { lang: lang === "en" ? "en" : "pl" })
+          : "";
+        return { ...feature, properties: { ...feature.properties, chip } };
+      }),
+    };
+  }, [route, theme, lang]);
+  const alightOpacity = picked === null ? 1 : legValue(picked, 1, FADED_OPACITY);
 
   return (
     <>
@@ -215,6 +231,51 @@ export function RouteLayer({
             selectedId={selectedId}
           />
         )}
+      </Source>
+      {/* Where to get off a line before a walk (or at the end): a dot and "106 wysiądź" */}
+      <Source id="route-alightings" type="geojson" data={alightings}>
+        <Layer
+          id="route-alighting-dot"
+          type="circle"
+          paint={{
+            "circle-radius": 6,
+            "circle-color": ["get", "color"],
+            "circle-stroke-color": palette.labelHalo,
+            "circle-stroke-width": 2.5,
+            "circle-opacity": alightOpacity,
+            "circle-stroke-opacity": alightOpacity,
+          }}
+        />
+        <Layer
+          id="route-alighting-chip"
+          type="symbol"
+          layout={{
+            "icon-image": LINE_CHIP_IMAGE,
+            "icon-anchor": "bottom",
+            "icon-offset": [0, -8],
+            "icon-allow-overlap": true,
+          }}
+          paint={{ "icon-opacity": alightOpacity }}
+        />
+        <Layer
+          id="route-alighting-label"
+          type="symbol"
+          layout={{
+            "text-field": ["get", "stopName"],
+            "text-font": LABEL_FONT,
+            "text-size": 11.5,
+            "text-anchor": "top",
+            "text-offset": [0, 0.9],
+            "text-max-width": 10,
+            "text-optional": true,
+          }}
+          paint={{
+            "text-color": palette.label,
+            "text-halo-color": palette.labelHalo,
+            "text-halo-width": 1.5,
+            "text-opacity": alightOpacity,
+          }}
+        />
       </Source>
       {/* Start and transfers: a countdown ring in the colour of the line boarded there, its number above;
           over the route places, the countdown matters more while walking to the stop. */}
