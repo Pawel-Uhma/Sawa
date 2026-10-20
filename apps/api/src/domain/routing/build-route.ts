@@ -22,6 +22,7 @@ import {
   selectStoryPlaces,
   storyWindowSec,
 } from "./select-stories";
+import { visibleRadiusScaleOf } from "./travel-modes";
 import type { LngLat, Network, Pattern, PatternStop, PlacePoint } from "./types";
 import { WALK_LARGE_VISIBLE_RADIUS_M, type Walk, walkVisibleRadiusM } from "./walk-tour";
 
@@ -57,7 +58,11 @@ function toStop(network: Network, stopId: string): Stop {
   return { id: stop.id, name: stop.name, position: stop.position };
 }
 
-const pointStop = (id: string, name: string, position: LatLng): Stop => ({ id, name, position });
+export const pointStop = (id: string, name: string, position: LatLng): Stop => ({
+  id,
+  name,
+  position,
+});
 
 /** A walking leg: no line, straight segments between the points. */
 function walkLeg(
@@ -81,7 +86,7 @@ function walkLeg(
 }
 
 /** Story places (spaced by `selectStoryPlaces`) with their ETA and story window. */
-function toRoutePlaces(
+export function toRoutePlaces(
   collected: CollectedPlace[],
   placesById: Map<string, PlacePoint>,
   endSec: number,
@@ -302,13 +307,15 @@ export function alongWalkPaths(
     const totalM = cumDistM[cumDistM.length - 1] ?? 0;
     const startSec = (new Date(leg.departAt).getTime() - now.getTime()) / 1000;
     const sec = leg.durationMin * 60;
-    const bbox = bboxAround(path, WALK_LARGE_VISIBLE_RADIUS_M + PATH_SLACK_M);
+    // A bike or a car leg sees farther off the road (travel-modes.ts).
+    const scale = visibleRadiusScaleOf(leg.mode);
+    const bbox = bboxAround(path, WALK_LARGE_VISIBLE_RADIUS_M * scale + PATH_SLACK_M);
     for (const place of placesById.values()) {
       if (taken.has(place.id)) continue;
       const isWaypoint = walkedTo.has(`${place.position.lng},${place.position.lat}`);
       if (!isWaypoint && !isInBbox(place.position, bbox)) continue;
       const { distanceM, alongM } = projectOnPolyline(place.position, path, cumDistM);
-      if (!isWaypoint && distanceM > walkVisibleRadiusM(place) + PATH_SLACK_M) continue;
+      if (!isWaypoint && distanceM > walkVisibleRadiusM(place) * scale + PATH_SLACK_M) continue;
       taken.add(place.id);
       kept.push({
         placeId: place.id,

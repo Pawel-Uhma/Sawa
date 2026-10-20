@@ -1,4 +1,4 @@
-import type { Destination, LatLng, TrackLeg } from "@sawa/shared";
+import type { BikeStation, Destination, LatLng, TrackLeg } from "@sawa/shared";
 import type { BBox, Place, PlaceAlongLine, PlaceSummary } from "../domain/place";
 import type { Network } from "../domain/routing/types";
 import type { SpeechAudio } from "../domain/speech";
@@ -42,6 +42,15 @@ export interface WalkPathSource {
    * and last point; undefined when unknown (router down, timeout, no path).
    */
   path(points: LatLng[]): Promise<[number, number][] | undefined>;
+}
+
+/** Veturilo stations with live bikes and docks (Nextbike GBFS, #192). */
+export interface BikeStationSource {
+  /**
+   * Every station; `stale` when the feed failed and older counts are served. Throws AppError
+   * when there is nothing to serve.
+   */
+  stations(): Promise<{ stations: BikeStation[]; stale: boolean }>;
 }
 
 /** Tram and bus network for one service day (apps/api/data/transit/YYYY-MM-DD.json.gz). */

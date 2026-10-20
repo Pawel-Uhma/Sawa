@@ -22,6 +22,7 @@ import { RICHNESS_EXPONENT, type ScorePrefs } from "../domain/routing/score";
 import { STORY_GAP_SEC, STORY_MAX_SEC } from "../domain/routing/select-stories";
 import { shiftRide } from "../domain/routing/shift-ride";
 import { toPlacePoints } from "../domain/routing/to-place-points";
+import { isWheelMode, wheelReachKm } from "../domain/routing/travel-modes";
 import type { PlaceHit, PlacePoint } from "../domain/routing/types";
 import {
   DEFAULT_WALK_OPTIONS,
@@ -40,7 +41,9 @@ import {
   type WalkInput,
 } from "../domain/routing/walk-tour";
 import { AppError } from "../lib/errors";
+import { planWheels, type WheelPathSources } from "./plan-wheels";
 import type {
+  BikeStationSource,
   DepartureSource,
   LiveBoardingSource,
   PlacesRepository,
@@ -100,9 +103,8 @@ export type PlannerLogger = {
   warn(obj: object, msg: string): void;
 };
 
-/** Around the origin and, if given, the destination. */
-function reachableBbox(points: LatLng[], durationMin: number): BBox {
-  const km = reachKm(durationMin);
+/** Around the origin and, if given, the destination, `km` far. */
+function reachableBbox(points: LatLng[], km: number): BBox {
   const dLat = (km * 1000) / M_PER_DEG_LAT;
   const lats = points.map((p) => p.lat);
   const dLng = dLat / Math.cos((Math.max(...lats.map(Math.abs)) * Math.PI) / 180);
@@ -129,6 +131,10 @@ type PlannerDeps = {
   live?: LiveBoardingSource;
   /** Walking legs follow streets and footways; without it (or when it fails) straight lines. */
   walkPaths?: WalkPathSource;
+  /** Bike and car legs follow roads (OSRM bike and car profiles); else straight lines. */
+  wheelPaths?: WheelPathSources;
+  /** Veturilo stations for bike routes (#192); without them one's own bike. */
+  bikeStations?: BikeStationSource;
   logger?: PlannerLogger;
   /** Milliseconds; for the cache TTL. */
   clock?: () => number;
@@ -405,10 +411,13 @@ function createDayPlanner(deps: PlannerDeps & { transit: TransitData }): RoutePl
 
   /** Plans with straight walking legs, then `drawn` puts them on real paths. */
   async function planRoute(request: PlanRouteRequest, now: Date): Promise<Route> {
+    const durationMin = request.durationMin ?? 0;
     const { hitsByPattern, placesById } = await prepare(
       reachableBbox(
         request.destination ? [request.origin, request.destination] : [request.origin],
-        request.durationMin ?? 0,
+        isWheelMode(request.travel)
+          ? wheelReachKm(request.travel, durationMin)
+          : reachKm(durationMin),
       ),
     );
     const interests = new Set(request.interests);
@@ -421,6 +430,21 @@ function createDayPlanner(deps: PlannerDeps & { transit: TransitData }): RoutePl
     const story = { attribution, storyGapSec, storyMaxSec, now, placesById };
     const drawn = (route: Route) =>
       withWalkPaths(route, { placesById, interests, prefs, now, storyGapSec, storyMaxSec });
+
+    // By bike or car: a tour from place to place on roads, no tram or bus (#190, #191).
+    if (isWheelMode(request.travel)) {
+      return planWheels(deps, {
+        request,
+        mode: request.travel,
+        placesById,
+        interests,
+        prefs,
+        styleGapSec: storyGapSec,
+        styleMaxSec: storyMaxSec,
+        attribution,
+        now,
+      });
+    }
 
     // The user picked a walk: no ride is planned at all. Without a duration the walk takes
     // as long as the straight line at walking speed with the detour factor.

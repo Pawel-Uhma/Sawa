@@ -54,6 +54,8 @@ export function parseValhallaPath(body: unknown, from: LatLng, to: LatLng): LngL
 export function createValhallaWalkPathSource(
   baseUrl: string,
   logger?: WalkRouterLogger,
+  /** "bicycle" and "auto" draw bike and car legs the same way (#190, #191). */
+  { costing = "pedestrian" }: { costing?: "pedestrian" | "bicycle" | "auto" } = {},
 ): WalkPathSource {
   const cache = new Map<string, Promise<LngLat[] | undefined>>();
 
@@ -73,7 +75,7 @@ export function createValhallaWalkPathSource(
           "Content-Type": "application/json",
           "User-Agent": "sawa-api (Warsaw Open Data Hackathon)",
         },
-        body: JSON.stringify({ locations, costing: "pedestrian", directions_type: "none" }),
+        body: JSON.stringify({ locations, costing, directions_type: "none" }),
         signal: AbortSignal.timeout(TIMEOUT_MS),
       })
         .then(async (res) => {
