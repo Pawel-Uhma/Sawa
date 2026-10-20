@@ -6,6 +6,7 @@ import {
   highlightedLegs,
   lineIndexes,
   lineShapesToGeoJson,
+  routeAlightingsToGeoJson,
   routeBoardingsToGeoJson,
   routeBounds,
   routeLegsToGeoJson,
@@ -339,5 +340,37 @@ describe("routeBounds", () => {
   it("returns null for a route with nothing to draw", () => {
     const empty = { ...ROUTE, legs: [{ ...ROUTE.legs[0], lngLats: [] }], places: [] };
     expect(routeBounds(empty)).toBeNull();
+  });
+});
+
+describe("transfers with a walk", () => {
+  // 10 from a to b, walk b → b2, 520 from b2 to c: a transfer between different stops
+  const [tram, bus] = ROUTE.legs as [Route["legs"][number], Route["legs"][number]];
+  const walk = {
+    ...tram,
+    line: "",
+    mode: "walk" as const,
+    headsign: "b2",
+    fromStop: stop("b", 52.24, 20.98),
+    toStop: stop("b2", 52.2405, 20.981),
+  };
+  const walked: Route = {
+    ...ROUTE,
+    legs: [tram, walk, { ...bus, fromStop: stop("b2", 52.2405, 20.981) }],
+  };
+
+  it("labels the boarding after a walk with the line boarded only, still knowing the line left", () => {
+    const [, second] = routeBoardingsToGeoJson(walked).features;
+    expect(second?.properties).toMatchObject({ label: "520", fromLine: "", fromLegIndex: 0 });
+  });
+
+  it("marks where to get off before the walk and at the end, not at a change at the same stop", () => {
+    expect(routeAlightingsToGeoJson(walked).features.map((f) => f.properties.stopName)).toEqual([
+      "b",
+      "c",
+    ]);
+    expect(routeAlightingsToGeoJson(ROUTE).features.map((f) => f.properties.stopName)).toEqual([
+      "c",
+    ]);
   });
 });

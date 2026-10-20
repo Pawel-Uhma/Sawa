@@ -265,15 +265,61 @@ function legLeft(lines: readonly number[], legIndex: number): number | null {
 
 function transferOf(legs: readonly Leg[], lines: readonly number[], legIndex: number) {
   const left = legLeft(lines, legIndex);
-  const from = left === null ? undefined : legs[left];
+  // After a walk to another stop the line left has its own exit marker (routeAlightingsToGeoJson):
+  // here only the line boarded, so the stop reads as the start of that line
+  const walked = left !== null && legs.slice(left + 1, legIndex).some((leg) => leg.mode === "walk");
+  const from = left === null || walked ? undefined : legs[left];
   return {
     legIndex,
     fromLegIndex: left ?? -1,
     label: from ? `${from.line} → ${legs[legIndex].line}` : legs[legIndex].line,
     fromLine: from?.line ?? "",
     fromMode: from?.mode ?? "",
-    fromColor: left === null ? "" : lineColor(lines[left]),
+    fromColor: left === null || walked ? "" : lineColor(lines[left]),
   } as const;
+}
+
+export type RouteAlightingFeature = {
+  type: "Feature";
+  geometry: { type: "Point"; coordinates: LngLat };
+  properties: {
+    legIndex: number;
+    line: string;
+    mode: Leg["mode"];
+    color: string;
+    /** Name with the ZTM post number, as on the stop sign. */
+    stopName: string;
+  };
+};
+
+/**
+ * Where one gets off a line: the end of a ride followed by a walk (to another stop or to the
+ * end), or the last ride of the route. A change at the same stop has no exit marker, the
+ * boarding chip there says "122 → 180".
+ */
+export function routeAlightingsToGeoJson(route: Route): FeatureCollection<RouteAlightingFeature> {
+  const lines = lineIndexes(route);
+  return {
+    type: "FeatureCollection",
+    features: route.legs.flatMap((leg, legIndex) => {
+      const next = route.legs[legIndex + 1];
+      const isTransit = leg.mode === "tram" || leg.mode === "bus";
+      if (!isTransit || (next && next.mode !== "walk")) return [];
+      return [
+        {
+          type: "Feature" as const,
+          geometry: { type: "Point" as const, coordinates: toLngLat(leg.toStop.position) },
+          properties: {
+            legIndex,
+            line: leg.line,
+            mode: leg.mode,
+            color: lineColor(lines[legIndex]),
+            stopName: [leg.toStop.name, stopPost(leg.toStop.id)].filter(Boolean).join(" "),
+          },
+        },
+      ];
+    }),
+  };
 }
 
 /** Boarding points: the first stop of the ride and every stop where the line changes. */
