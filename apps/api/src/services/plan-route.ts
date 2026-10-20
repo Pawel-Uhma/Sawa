@@ -1,4 +1,5 @@
 import {
+  DEFAULT_ROUTE_COUNT,
   fromLngLat,
   haversineM,
   type LatLng,
@@ -7,7 +8,7 @@ import {
 } from "@sawa/shared";
 import type { BBox, PlaceSummary } from "../domain/place";
 import { applyDepartures } from "../domain/routing/apply-departures";
-import { DEFAULT_SEARCH_OPTIONS, planRide, type Ride } from "../domain/routing/beam-search";
+import { DEFAULT_SEARCH_OPTIONS, planRides, type Ride } from "../domain/routing/beam-search";
 import {
   type AlongPathsInput,
   alongWalkPaths,
@@ -415,6 +416,8 @@ function createDayPlanner(deps: PlannerDeps & { transit: TransitData }): RoutePl
     const prefs = {
       richnessExponent: request.familiarity && RICHNESS_EXPONENT[request.familiarity],
       heard: request.heard && new Map(Object.entries(request.heard)),
+      // "Losuj inną" (#197): places of the routes already shown count little, so others win.
+      avoid: request.excludePlaceIds?.length ? new Set(request.excludePlaceIds) : undefined,
     };
     const storyGapSec = request.storyStyle && STORY_GAP_SEC[request.storyStyle];
     const storyMaxSec = request.storyStyle && STORY_MAX_SEC[request.storyStyle];
@@ -498,17 +501,21 @@ function createDayPlanner(deps: PlannerDeps & { transit: TransitData }): RoutePl
     }
 
     const budgetSec = request.durationMin * 60;
-    const planned = planRide({
-      network,
-      hitsByPattern,
-      placesById,
-      origin: request.origin,
-      budgetSec,
-      interests,
-      prefs,
-      returnToStart: request.returnToStart,
-      destination: request.destination,
-    });
+    const [planned, ...others] = planRides(
+      {
+        network,
+        hitsByPattern,
+        placesById,
+        origin: request.origin,
+        budgetSec,
+        interests,
+        prefs,
+        returnToStart: request.returnToStart,
+        destination: request.destination,
+      },
+      {},
+      { count: request.routeCount ?? DEFAULT_ROUTE_COUNT, seed: request.seed },
+    );
 
     const ride = planned && (await withTimes(planned, now));
 
@@ -549,21 +556,30 @@ function createDayPlanner(deps: PlannerDeps & { transit: TransitData }): RoutePl
     }
 
     // Walking legs to the first stop and from the last one to where the user ends.
-    const end = request.returnToStart
-      ? ride.endsAtStart && request.origin
-      : ride.endsAtDestination && request.destination;
-    return drawn(
-      credited(
-        buildRoute({
-          ...story,
-          ride,
-          network,
-          origin: request.origin,
-          end: end || undefined,
-          walkInPlaces: walkInPlacesOf(ride, request.origin, interests, prefs, placesById),
-        }),
-      ),
-    );
+    const rideRoute = (timed: Ride) => {
+      const end = request.returnToStart
+        ? timed.endsAtStart && request.origin
+        : timed.endsAtDestination && request.destination;
+      return drawn(
+        credited(
+          buildRoute({
+            ...story,
+            ride: timed,
+            network,
+            origin: request.origin,
+            end: end || undefined,
+            walkInPlaces: walkInPlacesOf(timed, request.origin, interests, prefs, placesById),
+          }),
+        ),
+      );
+    };
+    const [route, alternatives] = await Promise.all([
+      rideRoute(ride),
+      Promise.all(others.map(async (other) => rideRoute(await withTimes(other, now)))),
+    ]);
+    // Other routes for the user to pick from (#197); one without stories is not worth showing.
+    const shown = alternatives.filter((a) => a.places.length > 0 && a.id !== route.id);
+    return shown.length > 0 ? { ...route, alternatives: shown } : route;
   }
 
   return { plan: planRoute };

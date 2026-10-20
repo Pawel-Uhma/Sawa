@@ -1,4 +1,5 @@
 import { haversineM, type LatLng } from "@sawa/shared";
+import { pickDiverse, type RideCandidate } from "./diverse-rides";
 import { computeReturnTimes } from "./return-times";
 import { type ScorePrefs, scorePlace } from "./score";
 import type { Network, Pattern, PatternStop, PlaceHit, PlacePoint } from "./types";
@@ -553,14 +554,69 @@ function toRide(s: State, ctx: Context, input: SearchInput): Ride {
  * Each line is boarded at its stop closest to the origin, unless that leaves no ride at all.
  */
 export function planRide(input: SearchInput, options: Partial<SearchOptions> = {}): Ride | null {
-  return search(input, options, true) ?? search(input, options, false);
+  return planRides(input, options)[0] ?? null;
 }
+
+/** How many rides `planRides` proposes and how a seed reorders them (see `pickDiverse`). */
+export type RideChoice = { count: number; seed?: number };
+
+/**
+ * Like `planRide`, but up to `count` rides that differ in places and lines (#197). First the
+ * most different ones of the same search; when they are near-copies (a beam converges on one
+ * way), the search runs again avoiding the places already picked (`ScorePrefs.avoid`), once per
+ * missing ride. Without a seed the first is `planRide`'s ride. Only rides that fit the budget
+ * are proposed; when none does, the one fallback ride. Empty when no stop is near the origin.
+ */
+export function planRides(
+  input: SearchInput,
+  options: Partial<SearchOptions> = {},
+  choice: RideChoice = { count: 1 },
+): Ride[] {
+  const searchAll = (i: SearchInput) => search(i, options, true) ?? search(i, options, false);
+  const first = searchAll(input);
+  if (!first) return [];
+  if (!first.fits || (choice.count <= 1 && choice.seed === undefined)) {
+    return first.ranked.slice(0, 1).map((c) => c.item);
+  }
+  const picked = pickDiverse(first.ranked, choice);
+  for (let pass = picked.length; pass < choice.count; pass++) {
+    const avoid = new Set(input.prefs?.avoid);
+    for (const c of picked) for (const id of c.placeIds) avoid.add(id);
+    const again = searchAll({ ...input, prefs: { ...input.prefs, avoid } });
+    if (!again?.fits) break;
+    const next = pickDiverse(again.ranked, { count: 1, seed: choice.seed, picked });
+    if (next.length === 0) break;
+    picked.push(...next);
+  }
+  return picked.map((c) => c.item);
+}
+
+function candidateOf(
+  ride: Ride,
+  value: number,
+  key: string,
+  network: Network,
+): RideCandidate<Ride> {
+  return {
+    item: ride,
+    value,
+    key,
+    placeIds: ride.places.map((p) => p.placeId),
+    lines: ride.legs.map((l) => network.patterns.get(l.patternId)?.line ?? l.patternId),
+  };
+}
+
+/**
+ * Rides that fit the budget best first (`fits`), or the one fallback ride; null when no stop
+ * is near the origin.
+ */
+type Ranked = { ranked: RideCandidate<Ride>[]; fits: boolean };
 
 function search(
   input: SearchInput,
   options: Partial<SearchOptions>,
   strictOrigin: boolean,
-): Ride | null {
+): Ranked | null {
   const base = { ...DEFAULT_SEARCH_OPTIONS, ...options };
   const end = input.returnToStart ? input.origin : input.destination;
   const fixedEnd = end !== undefined;
@@ -601,7 +657,9 @@ function search(
     );
     if (!Number.isFinite(fastestSec)) {
       const free = planRide({ ...input, returnToStart: false, destination: undefined }, options);
-      return free && { ...free, endsAtDestination: false };
+      if (!free) return null;
+      const ride = { ...free, endsAtDestination: false };
+      return { ranked: [candidateOf(ride, 0, "free", network)], fits: false };
     }
     budgetSec = Math.max(budgetSec, fastestSec);
   }
@@ -637,8 +695,17 @@ function search(
     beam = selectBeam(open, cmp, ctx);
   }
 
-  const best = [...finished].sort(cmp)[0];
-  if (best) return toRide(best, ctx, input);
+  if (finished.length > 0) {
+    const value = (s: State) => objective(s, budgetSec, opts);
+    const ranked = [...finished]
+      .sort(cmp)
+      .map((s) => candidateOf(toRide(s, ctx, input), value(s), s.key, network));
+    return { ranked, fits: true };
+  }
+  const one = (s: State) => ({
+    ranked: [candidateOf(toRide(s, ctx, input), 0, s.key, network)],
+    fits: false,
+  });
 
   // Nothing fits the budget. With a fixed end prefer the longest ride that still gets there;
   // otherwise the best ride over half the budget, else the longest one.
@@ -647,11 +714,11 @@ function search(
     const longest = [...atEnd].sort(
       (a, b) => b.elapsedSec - a.elapsedSec || b.score - a.score || a.key.localeCompare(b.key),
     )[0] as State;
-    return toRide(longest, ctx, input);
+    return one(longest);
   }
   const halfway = partial.filter((s) => s.elapsedSec >= budgetSec / 2);
   const fallback = [...(halfway.length > 0 ? halfway : partial)].sort(
     (a, b) => b.score - a.score || b.elapsedSec - a.elapsedSec || a.key.localeCompare(b.key),
   )[0];
-  return fallback ? toRide(fallback, ctx, input) : null;
+  return fallback ? one(fallback) : null;
 }

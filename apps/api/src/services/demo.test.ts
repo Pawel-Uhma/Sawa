@@ -163,6 +163,18 @@ describe("createCachedRoutePlanner", () => {
     expect(real.plan).toHaveBeenCalledTimes(2);
   });
 
+  it("plans again for another seed or other places to avoid, not for the same ones", async () => {
+    const real: RoutePlanner = { plan: vi.fn(async () => ({}) as Route) };
+    const planner = createCachedRoutePlanner(real, { clock: () => 0 });
+    const now = new Date();
+    await planner.plan({ ...plan, seed: 1 } as never, now);
+    await planner.plan({ ...plan, seed: 1 } as never, now);
+    await planner.plan({ ...plan, seed: 2 } as never, now);
+    await planner.plan({ ...plan, seed: 2, excludePlaceIds: ["b", "a"] } as never, now);
+    await planner.plan({ ...plan, seed: 2, excludePlaceIds: ["a", "b"] } as never, now);
+    expect(real.plan).toHaveBeenCalledTimes(3);
+  });
+
   it("asks again after a failed plan", async () => {
     const real: RoutePlanner = {
       plan: vi

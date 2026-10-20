@@ -315,10 +315,12 @@ describe("route planner on real data", () => {
         return [toLngLat(a), [b.lng, a.lat], toLngLat(b)];
       },
     };
+    // One route, so every path asked for is on it (alternatives ask for their own).
     const request: PlanRouteRequest = {
       origin: HACKATHON_VENUE,
       durationMin: 60,
       interests: ["historical"],
+      routeCount: 1,
     };
     const straight = await planner.plan(request, NOW);
     const route = RouteSchema.parse(
@@ -452,6 +454,57 @@ describe("route planner on real data", () => {
     );
     // Half the headway is at least 1 min; with the 2-min transfer that is over 3 min.
     for (const leg of rideLegs(route).slice(1)) expect(leg.durationMin).toBeGreaterThan(3);
+  });
+
+  describe("several routes to pick from (#197)", () => {
+    const REQUEST: PlanRouteRequest = {
+      origin: HACKATHON_VENUE,
+      durationMin: 60,
+      interests: ["historical", "cultural"],
+    };
+    const placeIds = (r: Pick<Route, "places">) => r.places.map((p) => p.placeId);
+    const all = (r: Route) => [r, ...(r.alternatives ?? [])];
+
+    it("proposes up to 3 different routes, the first the same as alone", async () => {
+      const route = RouteSchema.parse(await planner.plan(REQUEST, NOW));
+      const alone = await planner.plan({ ...REQUEST, routeCount: 1 }, NOW);
+      expect(alone.alternatives).toBeUndefined();
+      expect(route.id).toBe(alone.id);
+      expect(route.alternatives?.length).toBeGreaterThan(0);
+      expect(all(route).length).toBeLessThanOrEqual(3);
+      expect(new Set(all(route).map((r) => r.id)).size).toBe(all(route).length);
+      for (const alt of route.alternatives ?? []) {
+        expect(alt.places.length).toBeGreaterThan(0);
+        expect(alt.totalMin).toBeLessThanOrEqual(60 * 1.1);
+        expect(placeIds(alt)).not.toEqual(placeIds(route));
+      }
+    });
+
+    it("gives the same routes for the same seed and others for another", async () => {
+      const ids = async (seed: number) =>
+        all(await planner.plan({ ...REQUEST, seed }, NOW)).map((r) => r.id);
+      expect(await ids(7)).toEqual(await ids(7));
+      const seeds = await Promise.all([1, 2, 3, 4, 5].map(ids));
+      expect(new Set(seeds.map((s) => s.join(";"))).size).toBeGreaterThan(1);
+    });
+
+    /** Share of `route`'s places that are in `shown`. */
+    const overlap = (route: Pick<Route, "places">, shown: readonly string[]) =>
+      placeIds(route).filter((id) => shown.includes(id)).length / route.places.length;
+
+    it("goes elsewhere when asked to avoid the places shown (Losuj inną)", async () => {
+      const shown = all(await planner.plan(REQUEST, NOW)).flatMap(placeIds);
+      const next = await planner.plan({ ...REQUEST, seed: 1, excludePlaceIds: shown }, NOW);
+      expect(overlap(next, shown)).toBeLessThan(0.5);
+    });
+
+    it("avoids the places shown on a walk too, without alternatives", async () => {
+      const walk = { ...REQUEST, durationMin: 20, travel: "walk" as const };
+      const first = await planner.plan(walk, NOW);
+      expect(first.alternatives).toBeUndefined();
+      const next = await planner.plan({ ...walk, excludePlaceIds: placeIds(first) }, NOW);
+      expect(overlap(next, placeIds(first))).toBeLessThan(0.5);
+    });
   });
 
   describe("live delay of the first vehicle", () => {
