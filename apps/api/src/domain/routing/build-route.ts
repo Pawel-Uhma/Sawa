@@ -85,6 +85,13 @@ function walkLeg(
   };
 }
 
+/** Metres to walk at a transfer: 0 when the next ride starts where the last one ended. */
+function transferWalkM(prev: Leg, next: Leg): number {
+  return prev.toStop.id === next.fromStop.id
+    ? 0
+    : haversineM(prev.toStop.position, next.fromStop.position);
+}
+
 /** Story places (spaced by `selectStoryPlaces`) with their ETA and story window. */
 export function toRoutePlaces(
   collected: CollectedPlace[],
@@ -178,7 +185,30 @@ export function buildRoute({
           now,
         )
       : undefined;
-  const legs = [...(walkIn ? [walkIn] : []), ...rideLegs, ...(walkOut ? [walkOut] : [])];
+  // Transfers between different stops get their own walk (drawn on the walking router like the
+  // walk to the first stop), so the map shows the way along the streets, not a straight line.
+  const withTransfers: Leg[] = [];
+  const rideAt: number[] = [];
+  rideLegs.forEach((leg, i) => {
+    const prev = rideLegs[i - 1];
+    const prevRide = ride.legs[i - 1];
+    if (prev && prevRide && transferWalkM(prev, leg) >= MIN_WALK_LEG_M) {
+      const metres = transferWalkM(prev, leg);
+      withTransfers.push(
+        walkLeg(
+          [prev.toStop.position, leg.fromStop.position],
+          prev.toStop,
+          leg.fromStop,
+          prevRide.alightElapsedSec,
+          ride.legs[i]?.walkBeforeSec ?? metres / WALK_SPEED_MPS,
+          now,
+        ),
+      );
+    }
+    rideAt.push((walkIn ? 1 : 0) + withTransfers.length);
+    withTransfers.push(leg);
+  });
+  const legs = [...(walkIn ? [walkIn] : []), ...withTransfers, ...(walkOut ? [walkOut] : [])];
 
   return {
     id: ride.legs.map((l) => `${l.patternId}:${l.boardIndex}-${l.alightIndex}`).join("|"),
@@ -187,7 +217,7 @@ export function buildRoute({
       [
         // Places on the walk to the first stop belong to that walking leg.
         ...(walkIn ? walkInPlaces : []),
-        ...ride.places.map((p) => ({ ...p, legIndex: p.legIndex + (walkIn ? 1 : 0) })),
+        ...ride.places.map((p) => ({ ...p, legIndex: rideAt[p.legIndex] ?? p.legIndex })),
       ],
       placesById,
       ride.elapsedSec,
