@@ -15,8 +15,10 @@ import { LoadingCover, StatusPill, useDelayed } from "@/components/waiting";
 import { useT } from "@/features/i18n";
 import { useHighContrast, useTheme } from "@/features/theme";
 import { useBasemapOverrides } from "../hooks/use-basemap-overrides";
+import { useBuildings3d } from "../hooks/use-buildings-3d";
 import { useLiveVehicles } from "../hooks/use-live-vehicles";
 import { usePlaces } from "../hooks/use-places";
+import { usePrefersReducedMotion } from "../hooks/use-prefers-reduced-motion";
 import { useSelectedPlace } from "../hooks/use-selected-place";
 import { registerBoardingTimers } from "../lib/boarding-timers";
 import type { LngLatBounds } from "../lib/bounds";
@@ -44,6 +46,15 @@ import {
   START_VIEW,
   WARSAW_MAX_BOUNDS,
 } from "../lib/map-style";
+import {
+  guidePath,
+  type HeadingState,
+  NAV_ZOOM,
+  NO_HEADING,
+  nextHeading,
+  PITCH_3D,
+} from "../lib/navigation";
+import { registerNavigationImages } from "../lib/navigation-images";
 import { isParkPlace } from "../lib/park-highlight";
 import { registerPlaceStickers } from "../lib/place-stickers";
 import { placeBBoxesInView } from "../lib/place-tiles";
@@ -65,6 +76,7 @@ import {
 import { ROUTE_BOARDING_LAYER_IDS, ROUTE_PLACES_LAYER_ID, RouteLayer } from "./route-layer";
 import { StreetLayer } from "./street-layer";
 import { UserLayer } from "./user-layer";
+import { ViewToggle } from "./view-toggle";
 
 const INTERACTIVE_LAYERS = [
   ROUTE_PLACES_LAYER_ID,
@@ -78,6 +90,9 @@ const CAMERA_DURATION_MS = 800;
 /** Zoom the "back to me" button goes to at least. */
 const LOCATE_ZOOM = 15.5;
 
+/** The 2D / 3D choice stays on this device (a convenience, so it may be missing). */
+const VIEW_3D_KEY = "sawa.map3d";
+
 export type SawaMapProps = {
   route?: Route;
   /** Requested view; without it the map fits the route (or stays where the user left it). */
@@ -86,6 +101,16 @@ export type SawaMapProps = {
   padding?: Partial<MapPadding>;
   /** User position dot. */
   user?: LatLng;
+  /** GPS course in degrees from north (`coords.heading`); without it the heading comes from movement. */
+  userHeading?: number | null;
+  /**
+   * A ride is on (#193): when it turns on with the dot known, the camera eases to the dot at
+   * NAV_ZOOM and follows it, turned the way the user moves (tilted in 3D), and an arrow along
+   * the route points to the next place. A drag ends following, the "back to me" button resumes it.
+   */
+  navigate?: boolean;
+  /** 2D / 3D switch above the "back to me" button (#199). */
+  hasViewToggle?: boolean;
   /** Where the ride should end; drawn as a pin. */
   destination?: LatLng;
   /** Route place the story is about right now. */
@@ -117,6 +142,9 @@ export function SawaMap({
   camera,
   padding,
   user,
+  userHeading,
+  navigate = false,
+  hasViewToggle = true,
   destination,
   activeStopId,
   highlightLegs = null,
@@ -186,6 +214,26 @@ export function SawaMap({
     [selectedSummary],
   );
 
+  const isReducedMotion = usePrefersReducedMotion();
+  // Reduced motion: the camera jumps instead of flying, and the 3D tilt is not animated
+  const duration = isReducedMotion ? 0 : CAMERA_DURATION_MS;
+  const [is3d, setIs3d] = useState(false);
+  useEffect(() => setIs3d(loadIs3d()), []);
+  const pitch = is3d ? PITCH_3D : 0;
+  useBuildings3d(mapRef, isLoaded, is3d, palette.buildings);
+
+  const isNavigating = navigate && Boolean(user);
+  const navigatingRef = useRef(false);
+  navigatingRef.current = isNavigating;
+  const headingRef = useRef<HeadingState>(NO_HEADING);
+  const [heading, setHeading] = useState<number | null>(null);
+  // Zoom the camera is easing to: a GPS fix mid-flight must not stop the zoom halfway
+  const targetZoomRef = useRef<number | null>(null);
+  const guide = useMemo(
+    () => (isNavigating && route && user ? guidePath(route, user) : null),
+    [isNavigating, route, user],
+  );
+
   const fullPadding = { ...DEFAULT_MAP_PADDING, ...padding };
   const isSheetOpen = Boolean(selected);
   const move = resolveCamera(camera, route);
@@ -202,16 +250,29 @@ export function SawaMap({
     return fitPadding(isSheetOpen ? paddingWithSheet(fullPadding, size) : fullPadding, size);
   }
 
-  function easeToUser(zoomAtLeast?: number) {
+  function easeToUser({
+    zoom: exactZoom,
+    zoomAtLeast,
+  }: {
+    zoom?: number;
+    zoomAtLeast?: number;
+  } = {}) {
     const map = mapRef.current;
     if (!map || !user) return;
-    const zoom = zoomAtLeast === undefined ? map.getZoom() : Math.max(map.getZoom(), zoomAtLeast);
+    const current = targetZoomRef.current ?? map.getZoom();
+    const zoom =
+      exactZoom ?? (zoomAtLeast === undefined ? current : Math.max(current, zoomAtLeast));
+    // On a ride the map turns the way the user moves; without a heading yet it keeps its bearing
+    const bearing = navigatingRef.current ? headingRef.current.heading : null;
     map.easeTo({
       center: toLngLat(user),
       zoom,
+      pitch,
+      ...(bearing === null ? {} : { bearing }),
       padding: cameraPaddingOf(map),
-      duration: CAMERA_DURATION_MS,
+      duration,
     });
+    targetZoomRef.current = duration > 0 ? zoom : null;
   }
 
   // A choice the user made on screen (a place, a stop) wins over following the dot.
@@ -223,10 +284,41 @@ export function SawaMap({
     setIsFollowing(false);
   }, [followResetKey]);
 
+  // A ride that starts (or the dot found once it has started) moves the camera to the user.
+  // Runs before the camera effect, which then only keeps following.
+  // biome-ignore lint/correctness/useExhaustiveDependencies: only the start of a ride starts following
+  useEffect(() => {
+    if (!isLoaded || !isNavigating) return;
+    followRef.current = true;
+    setIsFollowing(true);
+    easeToUser({ zoom: NAV_ZOOM });
+  }, [isNavigating, isLoaded]);
+
+  // Heading before following, so a fix turns the map the way the user just moved
+  // biome-ignore lint/correctness/useExhaustiveDependencies: by value, not by object
+  useEffect(() => {
+    headingRef.current = user
+      ? nextHeading(headingRef.current, toLngLat(user), userHeading)
+      : NO_HEADING;
+    setHeading(headingRef.current.heading);
+  }, [user?.lat, user?.lng, userHeading]);
+
   // biome-ignore lint/correctness/useExhaustiveDependencies: follows the dot by value, not by object
   useEffect(() => {
     if (isLoaded && followRef.current) easeToUser();
   }, [user?.lat, user?.lng, isLoaded]);
+
+  // The 2D / 3D switch tilts the camera; back to 2D also turns north up again (no compass on phones)
+  // biome-ignore lint/correctness/useExhaustiveDependencies: only a new choice tilts the camera
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!isLoaded || !map) return;
+    if (followRef.current) {
+      easeToUser();
+      return;
+    }
+    map.easeTo(is3d ? { pitch, duration } : { pitch, bearing: 0, duration });
+  }, [is3d, isLoaded]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -251,7 +343,8 @@ export function SawaMap({
     if (!move) return;
     // MapLibre reads an explicit `zoom: undefined` / `maxZoom: undefined` as a value (camera goes NaN),
     // so optional options are only passed when set.
-    const options = { padding: cameraPaddingOf(map), duration: CAMERA_DURATION_MS };
+    // Screen moves turn north up again: on a phone there is no compass to do it
+    const options = { padding: cameraPaddingOf(map), duration, pitch, bearing: 0 };
     if (move.type === "fit") {
       const fit = { ...options, padding: paddingOnTop(options.padding, map.getPadding()) };
       map.fitBounds(
@@ -266,6 +359,17 @@ export function SawaMap({
       );
     }
   }, [moveKey, isLoaded]);
+
+  const showLocate = Boolean(locate && (user || locate.status !== "found"));
+  const viewToggle = hasViewToggle ? (
+    <ViewToggle
+      is3d={is3d}
+      onToggle={() => {
+        setIs3d(!is3d);
+        saveIs3d(!is3d);
+      }}
+    />
+  ) : null;
 
   function handleMouseMove(event: MapLayerMouseEvent) {
     if (!window.matchMedia("(hover: hover)").matches) return;
@@ -330,9 +434,17 @@ export function SawaMap({
           registerClusterBadges(event.target);
           registerBoardingTimers(event.target);
           registerLineChips(event.target);
+          registerNavigationImages(event.target);
           loadMapIcons(event.target).then((isOk) => setIcons(isOk ? "ready" : "failed"));
         }}
-        onMoveEnd={(event) => setView(viewOf(event.target))}
+        onMoveEnd={(event) => {
+          targetZoomRef.current = null;
+          setView(viewOf(event.target));
+        }}
+        // A pinch while following keeps following, but at the zoom the user chose
+        onZoomStart={(event) => {
+          if (event.originalEvent) targetZoomRef.current = null;
+        }}
         onDragStart={() => setIsFollowing(false)}
         // The map stays flat. Two-finger pitch also hijacks a pinch that starts mid-pan and blocks the zoom.
         touchPitch={false}
@@ -375,7 +487,14 @@ export function SawaMap({
         )}
         {isLoaded && route && <LiveVehiclesLayer data={vehicles.data} />}
         {destination && <DestinationLayer position={destination} ring={palette.ring} />}
-        {user && <UserLayer position={user} ring={palette.ring} />}
+        {user && (
+          <UserLayer
+            position={user}
+            ring={palette.ring}
+            heading={heading}
+            guide={icons === "loading" ? null : guide}
+          />
+        )}
       </MapLibreMap>
       <LoadingCover
         show={!isLoaded}
@@ -407,7 +526,7 @@ export function SawaMap({
         </StatusPill>
       </div>
       {/* Bez kropki (start spod 42 Warsaw, gdy jesteś poza Warszawą) nie ma do czego wracać */}
-      {locate && (user || locate.status !== "found") && (
+      {showLocate && locate && (
         <LocateButton
           status={locate.status}
           onRetry={locate.onRetry}
@@ -415,12 +534,22 @@ export function SawaMap({
           onLocate={() => {
             followRef.current = true;
             setIsFollowing(true);
-            easeToUser(LOCATE_ZOOM);
+            // On a ride back to the riding view, otherwise just close enough to see the dot
+            easeToUser(isNavigating ? { zoom: NAV_ZOOM } : { zoomAtLeast: LOCATE_ZOOM });
           }}
           bottomPx={(locate.bottomPx ?? fullPadding.bottom) + 12}
           rightPx={Math.max(fullPadding.right, 16)}
           mapHeightPx={mapHeight}
+          above={viewToggle}
         />
+      )}
+      {!showLocate && viewToggle && (
+        <div
+          className="absolute z-[15]"
+          style={{ bottom: fullPadding.bottom + 12, right: Math.max(fullPadding.right, 16) }}
+        >
+          {viewToggle}
+        </div>
       )}
       {selected && <PlaceSheet key={selected.id} place={selected} onClose={() => select(null)} />}
     </div>
@@ -428,6 +557,22 @@ export function SawaMap({
 }
 
 type MapView = { bounds: LngLatBounds; zoom: number };
+
+function loadIs3d(): boolean {
+  try {
+    return window.localStorage.getItem(VIEW_3D_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
+function saveIs3d(is3d: boolean) {
+  try {
+    window.localStorage.setItem(VIEW_3D_KEY, is3d ? "1" : "0");
+  } catch {
+    // Private mode or blocked storage: the choice lasts until the page closes
+  }
+}
 
 /**
  * Zooms in on a cluster just far enough for it to split.

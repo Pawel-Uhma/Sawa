@@ -101,6 +101,8 @@ export function useStartPoint(enabled: boolean) {
   const [mode, setModeState] = useState<StartMode>("gps");
   const [fix, setFix] = useState<LatLng | null>(null);
   const [position, setPosition] = useState<LatLng | null>(null);
+  // Kurs z GPS w stopniach od północy; null, gdy telefon stoi albo go nie podaje (mapa liczy go wtedy z ruchu)
+  const [heading, setHeading] = useState<number | null>(null);
   const [error, setError] = useState<GeoError | null>(null);
   const [attempt, setAttempt] = useState(0);
 
@@ -133,6 +135,9 @@ export function useStartPoint(enabled: boolean) {
           lastFixAt = Date.now();
           const next = { lat: coords.latitude, lng: coords.longitude };
           setPosition(next);
+          setHeading(
+            coords.heading !== null && Number.isFinite(coords.heading) ? coords.heading : null,
+          );
           setFix((current) =>
             current && haversineM(current, next) < MIN_START_MOVE_M ? current : next,
           );
@@ -210,7 +215,7 @@ export function useStartPoint(enabled: boolean) {
   const start = useMemo(() => resolveStart(mode, fix, startError), [mode, fix, startError]);
   // Poza trasą (start spod 42 Warsaw, brak zgody, poza Warszawą) nie udajemy, że wiemy, gdzie jest telefon
   const live = start.status === "located" ? position : null;
-  return { ...start, position: live, mode, setMode, retry };
+  return { ...start, position: live, heading: live ? heading : null, mode, setMode, retry };
 }
 
 /** Stan zgody z Permissions API; null, gdy przeglądarka go nie zna. */
