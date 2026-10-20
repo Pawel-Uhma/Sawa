@@ -11,6 +11,7 @@ import {
   spokenLength,
   spokenWordCount,
   targetSecFor,
+  voiceTransition,
 } from "./story-player";
 
 describe("knownContextsWith", () => {
@@ -164,5 +165,31 @@ describe("fadeAt", () => {
 
   it("przy ukrytej stronie od razu kończy, żeby głos nie został wyciszony", () => {
     expect(fadeAt(0, 500, true)).toBe(1);
+  });
+});
+
+describe("voiceTransition", () => {
+  const base = { hasSound: true, paused: false, ended: false, nextHasVoice: true, canFade: true };
+
+  it("crossfades a topic cut short instead of a hard cut", () => {
+    expect(voiceTransition(base)).toBe("crossfade");
+  });
+
+  it("cuts on iOS, where two voices would overlap at full volume", () => {
+    expect(voiceTransition({ ...base, canFade: false })).toBe("cut");
+  });
+
+  it("takes a breath after a story that ended by itself", () => {
+    expect(voiceTransition({ ...base, ended: true, paused: true })).toBe("breath");
+  });
+
+  it("starts at once when nothing plays", () => {
+    expect(voiceTransition({ ...base, hasSound: false })).toBe("start");
+    expect(voiceTransition({ ...base, paused: true })).toBe("start");
+  });
+
+  it("only fades out while the next clip has no voice yet", () => {
+    expect(voiceTransition({ ...base, nextHasVoice: false })).toBe("fade-out");
+    expect(voiceTransition({ ...base, nextHasVoice: false, ended: true })).toBe("start");
   });
 });

@@ -31,6 +31,7 @@ import {
 import { musicDucked, musicPlays } from "../lib/ride-music";
 import { useMusicOn, useRideMusic } from "../lib/ride-music-player";
 import { useGpsClockSync } from "../lib/ride-sync";
+import { pointAtM, routeAlongOf, simulatedAlongM } from "../lib/route-progress";
 import { screenCamera } from "../lib/screen-camera";
 import { type StartStatus, startLabel, useStartPoint } from "../lib/start-point";
 import { afterStory, useAutoAdvance } from "../lib/story-advance";
@@ -133,10 +134,6 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   // Na scenie nie pytamy o lokalizację: stała pozycja pod 42 Warsaw
   const start = useStartPoint(!isStage && stage !== "onboarding");
   const origin = isStage ? HACKATHON_VENUE : start.point;
-  // Kropka „tu jesteś”: GPS na żywo; 42 Warsaw tylko, gdy to wybrany start (scena, menu).
-  // Bez lokalizacji kropki nie ma, bo pod 42 Warsaw wyglądałaby jak zamrożony GPS.
-  const userDot =
-    isStage || start.mode === "venue" ? HACKATHON_VENUE : (start.position ?? undefined);
   const fastest = useFastestRoute(origin, profile, rideEnd, travel);
   // Suwak nie schodzi poniżej najszybszej drogi do celu (#43)
   const minDurationMin =
@@ -428,9 +425,15 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   heldRef.current = held;
   const musicOn = useMusicOn();
   const voiceOwner = useVoiceOwner();
+  // Trasa w metrach i miejsca na niej: z GPS kolejny temat jest na rzeczy ok. 200 m przed
+  // punktem (także gdy miejsce stoi z boku linii), bez GPS kropka jedzie po linii z zegarem.
+  const along = useMemo(
+    () => (planned ? routeAlongOf(planned.legs, planned.places) : null),
+    [planned],
+  );
   // Z lokalizacją zegar staje przy punkcie, do którego naprawdę dojechaliśmy.
   // Ręcznie lokalizacja nie zmienia miejsca.
-  useGpsClockSync(route, autoAdvance ? start.position : null, clock);
+  useGpsClockSync(route, autoAdvance ? start.position : null, clock, along);
   const pickStop = useCallback(
     (index: number) => {
       syncTo(index);
@@ -448,7 +451,22 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     [pickStop],
   );
   // Na scenie autobus jedzie sam: aktywny punkt idzie po trasie w ok. 1,5 min (T-36)
-  useDemoDrive(isStage && isRoute, route, pickStop);
+  const [driveProgress, setDriveProgress] = useState<number | null>(null);
+  useDemoDrive(isStage && isRoute, route, pickStop, setDriveProgress);
+  // Kropka „tu jesteś”: GPS na żywo. Przy starcie spod 42 Warsaw (scena, menu) w trakcie jazdy
+  // pozycja symulowana wzdłuż linii (na scenie z jazdy demo, poza nią z zegara jazdy), przed
+  // jazdą 42 Warsaw. Bez lokalizacji kropki nie ma, bo wyglądałaby jak zamrożony GPS.
+  const isSimulated = isStage || start.mode === "venue";
+  const totalSec = planned ? planned.totalMin * 60 : 0;
+  const rideSec = isStage && driveProgress !== null ? driveProgress * totalSec : clock.rideSec;
+  const simulatedDot = useMemo(
+    () =>
+      isSimulated && isRoute && along
+        ? pointAtM(along.path, simulatedAlongM(along, route, rideSec, totalSec))
+        : null,
+    [isSimulated, isRoute, along, route, rideSec, totalSec],
+  );
+  const userDot = isSimulated ? (simulatedDot ?? HACKATHON_VENUE) : (start.position ?? undefined);
   // Sawa nie zaczyna zaraz po wyznaczeniu trasy: czeka, aż dojedziesz do pierwszego miejsca
   // (zegar jazdy albo GPS). Po wyjściu z trasy pauza, a po wejściu wznowienie.
   const waiting = clock.waitSec !== null;

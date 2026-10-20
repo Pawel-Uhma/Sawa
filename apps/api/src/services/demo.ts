@@ -70,7 +70,8 @@ export function createRecordingStoryService(
     const saved = fixtures.story(request.placeId);
     if (saved) return saved;
     llmFailed.delete(request.placeId);
-    const story = await real.tell(request);
+    // Replay finds the story by place alone, so the saved one must not bridge from one ride's last place.
+    const story = await real.tell({ ...request, previousPlaceName: undefined });
     // The facts story is not worth keeping: the next take asks the LLM again. A silent one (no
     // facts) would lose `silent` in the file and be read out as the bare name.
     if (!story.silent && !llmFailed.has(request.placeId)) fixtures.saveStory(story);
