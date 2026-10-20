@@ -23,6 +23,7 @@ import {
 import { createPortal } from "react-dom";
 import { type Lang, LangSwitch, pick, useLang, useT } from "@/features/i18n";
 import { ContrastSwitch, ThemeSwitch } from "@/features/theme";
+import { useAccount } from "../lib/account";
 import { haptic, project, SPRING, SPRING_FLICK, useIsDesktop } from "../lib/device";
 import { placesLabel } from "../lib/format";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
@@ -32,6 +33,7 @@ import type { StartMode } from "../lib/start-point";
 import { setAutoAdvance, useAutoAdvance } from "../lib/story-advance";
 import { topicStyle } from "../lib/topic-style";
 import {
+  AccountIcon,
   BubbleIcon,
   ChevronRightIcon,
   CompassIcon,
@@ -71,6 +73,8 @@ export type SawaMenuActions = {
   startMode: StartMode;
   startLabel: string;
   onStartModeChange: (mode: StartMode) => void;
+  /** Konto i „Moje trasy” (lib/account.ts); brak, gdy konta są wyłączone albo to scena. */
+  onOpenAccount?: () => void;
 };
 
 const SawaMenuContext = createContext<SawaMenuActions | null>(null);
@@ -373,6 +377,8 @@ function MenuContent({ actions, run }: MenuContentProps) {
 
   const musicOn = useMusicOn();
   const autoAdvance = useAutoAdvance();
+  const account = useAccount();
+  const { onOpenAccount } = actions;
   const familiarity = labelOf(FAMILIARITY, profile.familiarity, lang);
   const style = labelOf(STORY_STYLES, profile.storyStyle, lang);
   const withChild = profile.audience === "kids";
@@ -447,6 +453,25 @@ function MenuContent({ actions, run }: MenuContentProps) {
           onClick={() => run(actions.onOpenSawa)}
         />
       </Group>
+
+      {onOpenAccount && account.status !== "off" && (
+        <Group title={t("Konto", "Account")}>
+          <Row
+            Icon={account.status === "signedIn" ? RoutesIcon : AccountIcon}
+            label={
+              account.status === "signedIn"
+                ? t("Moje trasy", "My rides")
+                : t("Zaloguj się", "Sign in")
+            }
+            value={
+              account.status === "signedIn"
+                ? (account.email ?? t("Zalogowano", "Signed in"))
+                : t("Trasy i historia na każdym urządzeniu", "Rides and history on every device")
+            }
+            onClick={() => run(onOpenAccount)}
+          />
+        </Group>
+      )}
 
       <Group title={t("Jak opowiadam", "How I tell stories")}>
         <Row

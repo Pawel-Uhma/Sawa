@@ -4,6 +4,7 @@ import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useEffect, useId, useRef, useState } from "react";
 import { useLang, useT } from "@/features/i18n";
 import { useSelectedPlace } from "@/features/map";
+import { forgetAccountHistory } from "../lib/account";
 import { haptic, SPRING } from "../lib/device";
 import { formatWhen } from "../lib/format";
 import { forgetAll, toldNewestFirst, useMemory } from "../lib/memory";
@@ -69,6 +70,7 @@ function ToldDialog({ onClose, onShowPlace }: Omit<ToldModalProps, "open">) {
     }
     setConfirmForget(false);
     forgetAll();
+    forgetAccountHistory();
   }
 
   const fade = { opacity: 0 };

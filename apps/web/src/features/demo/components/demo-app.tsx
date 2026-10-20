@@ -12,6 +12,8 @@ import {
   type MapCamera,
   type MapPadding,
 } from "@/features/map";
+import { AUTH_ENABLED, saveAccountProfile, saveRide, startAccount } from "../lib/account";
+import type { SavedRoute } from "../lib/account-sync";
 import { listenerOf, planRoute, routeStops } from "../lib/api-data";
 import { useDemoDrive } from "../lib/demo-drive";
 import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
@@ -34,6 +36,7 @@ import { type StartStatus, startLabel, useStartPoint } from "../lib/start-point"
 import { afterStory, useAutoAdvance } from "../lib/story-advance";
 import { useStoryPlayer } from "../lib/story-player";
 import { claimVoice, isAside, ROUTE_VOICE, useVoiceOwner } from "../lib/voice";
+import { AccountModal } from "./account-modal";
 import { HomePanel } from "./home-panel";
 import { OnboardingFlow } from "./onboarding-flow";
 import type { PlaceSelection } from "./place-card-host";
@@ -96,6 +99,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   // Edycja jednego pola profilu idzie przez modal, nigdy przez onboarding.
   const [editing, setEditing] = useState<ProfileStep | null>(null);
   const [toldOpen, setToldOpen] = useState(false);
+  const [accountOpen, setAccountOpen] = useState(false);
   const [tab, setTab] = useState<Tab>("map");
   const [durationMin, setDurationMin] = useState(isStage ? DEMO_DURATION_MIN : 90);
   const [endType, setEndType] = useState<RideEndType>("loop");
@@ -161,9 +165,12 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
       // Na najkrótszym kroku to po prostu najszybsza droga, już pobrana
       if (fastest.status === "ready" && durationMin === minDurationMin) {
         showRoute(fastest.route);
+        if (!isStage) saveRide(fastest.route, { origin, durationMin, rideEnd, travel });
         return;
       }
-      showRoute(await planRoute(origin, durationMin, profile, rideEnd, travel));
+      const next = await planRoute(origin, durationMin, profile, rideEnd, travel);
+      showRoute(next);
+      if (!isStage) saveRide(next, { origin, durationMin, rideEnd, travel });
     } catch {
       setPlanError(
         start.status === "located"
@@ -182,6 +189,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
       setPlanning(false);
     }
   }, [
+    isStage,
     lang,
     origin,
     start.status,
@@ -231,9 +239,24 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     generateRoute();
   }, [isStage, generateRoute]);
 
+  // Konto (lib/account.ts): tylko z NEXT_PUBLIC_AUTH_ENABLED i nie na scenie. Po zalogowaniu
+  // profil z konta wygrywa z lokalnym, a kto go już ma, pomija onboarding.
+  useEffect(() => {
+    if (isStage || !AUTH_ENABLED) return;
+    return startAccount({
+      localProfile: loadProfile,
+      onProfile: (remote) => {
+        setProfile(remote);
+        saveProfile(remote);
+        setStage((current) => (current === "onboarding" ? "map" : current));
+      },
+    });
+  }, [isStage]);
+
   const finishOnboarding = useCallback((next: Profile) => {
     setProfile(next);
     saveProfile(next);
+    saveAccountProfile(next);
     setStage("map");
   }, []);
 
@@ -245,6 +268,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const saveEditing = useCallback((next: Profile) => {
     setProfile(next);
     saveProfile(next);
+    saveAccountProfile(next);
     setEditing(null);
   }, []);
 
@@ -254,8 +278,46 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
       const next = { ...profile, audience };
       setProfile(next);
       saveProfile(next);
+      saveAccountProfile(next);
     },
     [profile],
+  );
+
+  // „Powtórz” z „Moje trasy”: te same ustawienia na ekranie i trasa liczona od nowa ze świeżymi
+  // odjazdami (zapisane odjazdy są już nieaktualne). Nowego wpisu nie dodaje.
+  const repeatRoute = useCallback(
+    async ({ request }: SavedRoute) => {
+      setDurationMin(request.durationMin);
+      setTravel(request.travel);
+      changeRideEnd(request.rideEnd);
+      setTab("map");
+      setStage("map");
+      setPanelCollapsed(false);
+      setPlanning(true);
+      setPlanError(null);
+      try {
+        showRoute(
+          await planRoute(
+            request.origin,
+            request.durationMin,
+            profile,
+            request.rideEnd,
+            request.travel,
+          ),
+        );
+      } catch {
+        setPlanError(
+          pick(
+            lang,
+            "Nie udało się powtórzyć tej trasy. Spróbuj jeszcze raz.",
+            "Couldn't repeat this ride. Please try again.",
+          ),
+        );
+      } finally {
+        setPlanning(false);
+      }
+    },
+    [profile, lang, changeRideEnd, showRoute],
   );
 
   const restart = useCallback(() => {
@@ -533,6 +595,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
       startMode: start.mode,
       startLabel: startLabel(start.status, lang),
       onStartModeChange: start.setMode,
+      onOpenAccount: AUTH_ENABLED && !isStage ? () => setAccountOpen(true) : undefined,
     }),
     [
       profile,
@@ -546,6 +609,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
       start.status,
       start.setMode,
       lang,
+      isStage,
     ],
   );
 
@@ -654,8 +718,12 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                 }}
                 onStart={(preview) => {
                   setTab("map");
-                  if (preview) showRoute(preview);
-                  else generateRoute();
+                  if (!preview) {
+                    generateRoute();
+                    return;
+                  }
+                  showRoute(preview);
+                  saveRide(preview, { origin, durationMin, rideEnd, travel });
                 }}
               />
             )}
@@ -747,6 +815,13 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
             onSave={saveEditing}
             onClose={closeEditing}
           />
+          {AUTH_ENABLED && (
+            <AccountModal
+              open={accountOpen}
+              onClose={() => setAccountOpen(false)}
+              onRepeat={repeatRoute}
+            />
+          )}
           <ToldModal
             open={toldOpen}
             onClose={() => setToldOpen(false)}
