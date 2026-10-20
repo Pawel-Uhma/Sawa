@@ -210,7 +210,10 @@ describe("createCachedRoutePlanner", () => {
     expect(real.plan).toHaveBeenCalledTimes(1);
     t = 60 * 60_000;
     await planner.refresh();
-    await planner.plan({ ...stage, audience: "kids" } as never, new Date());
+    await planner.plan({ ...stage, audience: "adult" } as never, new Date());
     expect(real.plan).toHaveBeenCalledTimes(2);
+    // A child's ride leans to other places (#65): planned on its own.
+    await planner.plan({ ...stage, audience: "kids" } as never, new Date());
+    expect(real.plan).toHaveBeenCalledTimes(3);
   });
 });

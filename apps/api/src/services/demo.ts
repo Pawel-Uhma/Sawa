@@ -222,7 +222,8 @@ export function createCachedRoutePlanner(
   const round = (v: number) => Number(v.toFixed(ORIGIN_DECIMALS));
   const atVenue = (p: LatLng) => haversineM(p, HACKATHON_VENUE) <= VENUE_RADIUS_M;
 
-  // The audience does not change the plan (#65), and interests are a set.
+  // Interests are a set. A child's ride leans to nature and sports (#65): a plan of its own,
+  // while a missing audience and "adult" share one.
   const keyOf = (r: PlanRouteRequest) =>
     JSON.stringify([
       round(r.origin.lat),
@@ -235,6 +236,7 @@ export function createCachedRoutePlanner(
       r.storyStyle,
       r.travel,
       r.heard,
+      r.audience === "kids",
     ]);
 
   function evict() {

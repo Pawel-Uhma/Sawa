@@ -1,6 +1,8 @@
 import { describe, expect, it } from "vitest";
 import { place } from "./__fixtures__/synthetic";
 import {
+  FAVORED_BONUS,
+  favoredFor,
   HEARD_FLOOR,
   PARTLY_HEARD_CEILING,
   RICHNESS_EXPONENT,
@@ -69,6 +71,25 @@ describe("scorePlace", () => {
   it("halves the value at the edge of visibility", () => {
     const p = place("p", 0, 0, ["historical"]);
     expect(scorePlace(p, 150, interests)).toBeCloseTo(scorePlace(p, 0, interests) / 2, 6);
+  });
+
+  it("nudges a child towards nature and sports, but not past the chosen interests", () => {
+    const favored = favoredFor("kids");
+    const park = place("p", 0, 0, ["historical", "nature"]);
+    expect(scorePlace(park, 0, interests, { favored })).toBeCloseTo(
+      scorePlace(park, 0, interests) * FAVORED_BONUS,
+      6,
+    );
+    const pitch = place("s", 0, 0, ["sports"]);
+    const museum = place("m", 0, 0, ["historical"]);
+    expect(scorePlace(museum, 0, interests, { favored })).toBeGreaterThan(
+      scorePlace(pitch, 0, interests, { favored }),
+    );
+  });
+
+  it("leaves adults as they were", () => {
+    expect(favoredFor(undefined)).toBeUndefined();
+    expect(favoredFor("adult")).toBeUndefined();
   });
 
   it("scales a matching place with its weight", () => {

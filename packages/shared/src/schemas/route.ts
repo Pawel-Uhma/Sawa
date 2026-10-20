@@ -39,7 +39,7 @@ export const PlanRouteRequestSchema = z
     familiarity: z.enum(FAMILIARITY).optional(),
     /** How Sawa tells stories: sets the shortest time between two places. */
     storyStyle: z.enum(STORY_STYLES).optional(),
-    /** Who listens; missing means "adult". The planner does not use it yet (#65). */
+    /** Who listens; missing means "adult". "kids": the planner leans to nature and sports (#65). */
     audience: z.enum(AUDIENCES).optional(),
     /**
      * Walk or transit, as the user picked. Without it the planner walks only under 30 min and
