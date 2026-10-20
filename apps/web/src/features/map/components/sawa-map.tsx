@@ -48,14 +48,7 @@ import {
   START_VIEW,
   WARSAW_MAX_BOUNDS,
 } from "../lib/map-style";
-import {
-  guidePath,
-  type HeadingState,
-  NAV_ZOOM,
-  NO_HEADING,
-  nextHeading,
-  PITCH_3D,
-} from "../lib/navigation";
+import { type HeadingState, NAV_ZOOM, NO_HEADING, nextHeading, PITCH_3D } from "../lib/navigation";
 import { registerNavigationImages } from "../lib/navigation-images";
 import { isParkPlace } from "../lib/park-highlight";
 import { registerPlaceStickers } from "../lib/place-stickers";
@@ -249,10 +242,6 @@ export function SawaMap({
   const [heading, setHeading] = useState<number | null>(null);
   // Zoom the camera is easing to: a GPS fix mid-flight must not stop the zoom halfway
   const targetZoomRef = useRef<number | null>(null);
-  const guide = useMemo(
-    () => (isNavigating && route && user ? guidePath(route, user) : null),
-    [isNavigating, route, user],
-  );
 
   const fullPadding = { ...DEFAULT_MAP_PADDING, ...padding };
   const isSheetOpen = Boolean(selected);
@@ -521,14 +510,7 @@ export function SawaMap({
         {isLoaded && route && <LiveVehiclesLayer data={vehicles.data} />}
         {destination && <DestinationLayer position={destination} ring={palette.ring} />}
         {waypoints && waypoints.length > 0 && <WaypointsLayer points={waypoints} />}
-        {user && (
-          <UserLayer
-            position={user}
-            ring={palette.ring}
-            heading={heading}
-            guide={icons === "loading" ? null : guide}
-          />
-        )}
+        {user && <UserLayer position={user} ring={palette.ring} heading={heading} />}
       </MapLibreMap>
       <LoadingCover
         show={!isLoaded}
