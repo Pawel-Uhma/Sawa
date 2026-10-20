@@ -1,4 +1,4 @@
-import type { Familiarity } from "@sawa/shared";
+import type { Audience, Familiarity } from "@sawa/shared";
 import { VISIBLE_RADIUS_M } from "./place-hits";
 import type { PlacePoint } from "./types";
 
@@ -16,7 +16,22 @@ export type ScorePrefs = {
   richnessExponent?: number;
   /** Place id → facts the listener already heard there (`PlanRouteRequest.heard`). */
   heard?: ReadonlyMap<string, number>;
+  /** Broad interests worth a little more for this listener, whatever they chose (`favoredFor`). */
+  favored?: ReadonlySet<string>;
 };
+
+/** What a child (`audience: "kids"`, #65) enjoys most: parks, playgrounds, pitches. */
+export const KIDS_FAVORED: ReadonlySet<string> = new Set(["nature", "sports"]);
+/**
+ * Extra value of a favoured place: a nudge, not a new interest. A place matching the chosen
+ * interests still beats a favoured one that matches none of them.
+ */
+export const FAVORED_BONUS = 1.3;
+
+/** Interests the planner leans to for this audience; `undefined` for adults (no change). */
+export function favoredFor(audience: Audience | undefined): ReadonlySet<string> | undefined {
+  return audience === "kids" ? KIDS_FAVORED : undefined;
+}
 
 /**
  * Value left in a place told in full: almost none, so a ride takes any other place it can.
@@ -52,7 +67,8 @@ const NON_MATCH_FACTOR = 0.2;
 /**
  * Value of passing a place: matching the chosen interests matters most,
  * then richness; places farther from the line count less (half at the edge of visibility),
- * and so do places where the listener heard most of what Sawa knows.
+ * and so do places where the listener heard most of what Sawa knows. A child gets a nudge
+ * towards nature and sports (`prefs.favored`).
  */
 export function scorePlace(
   place: PlacePoint,
@@ -64,7 +80,8 @@ export function scorePlace(
   const relevance = matches > 0 ? 1 + EXTRA_MATCH_BONUS * (matches - 1) : NON_MATCH_FACTOR;
   const proximity = 1 - Math.min(distanceM, VISIBLE_RADIUS_M) / (2 * VISIBLE_RADIUS_M);
   const novelty = noveltyOf(place, prefs.heard);
-  return place.weight ** (prefs.richnessExponent ?? 1) * relevance * proximity * novelty;
+  const favored = place.interests.some((i) => prefs.favored?.has(i)) ? FAVORED_BONUS : 1;
+  return place.weight ** (prefs.richnessExponent ?? 1) * relevance * proximity * novelty * favored;
 }
 
 /** Richness (facts + trivia) to a weight with diminishing returns. */

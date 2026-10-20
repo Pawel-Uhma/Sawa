@@ -18,7 +18,7 @@ import {
 import { DEFAULT_FASTEST_OPTIONS, planFastest } from "../domain/routing/fastest";
 import { cumulativeDistancesM } from "../domain/routing/geometry";
 import { computePlaceHits } from "../domain/routing/place-hits";
-import { RICHNESS_EXPONENT, type ScorePrefs } from "../domain/routing/score";
+import { favoredFor, RICHNESS_EXPONENT, type ScorePrefs } from "../domain/routing/score";
 import { STORY_GAP_SEC, STORY_MAX_SEC } from "../domain/routing/select-stories";
 import { shiftRide } from "../domain/routing/shift-ride";
 import { toPlacePoints } from "../domain/routing/to-place-points";
@@ -415,6 +415,7 @@ function createDayPlanner(deps: PlannerDeps & { transit: TransitData }): RoutePl
     const prefs = {
       richnessExponent: request.familiarity && RICHNESS_EXPONENT[request.familiarity],
       heard: request.heard && new Map(Object.entries(request.heard)),
+      favored: favoredFor(request.audience),
     };
     const storyGapSec = request.storyStyle && STORY_GAP_SEC[request.storyStyle];
     const storyMaxSec = request.storyStyle && STORY_MAX_SEC[request.storyStyle];
