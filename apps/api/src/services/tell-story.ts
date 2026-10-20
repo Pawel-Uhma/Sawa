@@ -4,6 +4,7 @@ import type { Place } from "../domain/place";
 import {
   bandFor,
   bboxAround,
+  bridgeName,
   cleanForSpeech,
   createStoryTextReader,
   type FactPick,
@@ -140,6 +141,8 @@ export function createStoryService({ places, llm, research, onLlmError }: StoryD
   async function prepare(request: StoryRequestInput) {
     const { placeId, targetSec, storyStyle, familiarity, audience, side, lang } = request;
     const { interests = [], heardFacts = [], knownContexts = [], heardAgoSec, more } = request;
+    // After "Opowiedz więcej" Sawa stays at this place: nothing to bridge from.
+    const previousPlaceName = more ? undefined : bridgeName(request.previousPlaceName);
     const place = await places.getById(placeId);
     if (!place) throw new AppError("NOT_FOUND", `Place "${placeId}" not found`);
     const band = bandFor(targetSec);
@@ -203,6 +206,8 @@ export function createStoryService({ places, llm, research, onLlmError }: StoryD
       String(pick.recap),
       heard ?? "",
       ...knownContextsOf(place, knownContexts).map((c) => c.id),
+      // Only when asked, so keys of stories without a bridge stay as they were.
+      ...(previousPlaceName ? [`from:${previousPlaceName}`] : []),
     ]);
     const prompt = {
       system: audience === "kids" ? KIDS_STORY_SYSTEM_PROMPT : STORY_SYSTEM_PROMPT,
@@ -218,6 +223,7 @@ export function createStoryService({ places, llm, research, onLlmError }: StoryD
         context,
         knownContexts: knownContextsOf(place, knownContexts),
         heardIntro: heard,
+        previousPlaceName,
       }),
       maxTokens: band.words * TOKENS_PER_WORD,
     };

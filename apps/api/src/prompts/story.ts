@@ -124,6 +124,8 @@ export type StoryPromptOpts = {
   knownContexts: readonly StoryContext[];
   /** The listener heard about this place before: when, in Sawa's words (`heardIntro`). */
   heardIntro?: string | null;
+  /** The place Sawa told about just before on this ride (`bridgeName`): she opens with a bridge. */
+  previousPlaceName?: string;
 };
 
 /** The user turn: the place's data with source ids and the lines to tell, never `unverifiedFacts`. */
@@ -166,6 +168,9 @@ export function storyUserPrompt(
       "Słuchacz zna Warszawę: nie tłumacz ogólnej historii miasta, mów o tym miejscu.",
     opts.knownContexts.length &&
       `Słuchacz słyszał już ode mnie o: ${opts.knownContexts.map((c) => c.title).join(", ")}. Nie tłumacz tego od nowa.`,
+    // One conversation, not separate episodes: a few words from the last place to this one.
+    opts.previousPlaceName &&
+      `Przed chwilą opowiadałam słuchaczowi o miejscu: ${opts.previousPlaceName}. Zacznij od krótkiego pomostu, kilku słów, które przechodzą od tamtego miejsca do tego (np. „Zostawiamy za sobą ${opts.previousPlaceName}, a teraz…”, z nazwą odmienioną poprawnie), i w tym samym zdaniu pokaż nowe miejsce. O poprzednim miejscu nie mówisz nic więcej i nie dodajesz o nim faktów.`,
     opts.audience === "kids" &&
       isGentleForKids(place) &&
       "To miejsce wiąże się z wojną. Słuchacz jest dzieckiem: mów o tym delikatnie i bez szczegółów przemocy, tak jak mówią zasady.",

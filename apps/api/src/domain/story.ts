@@ -48,6 +48,15 @@ export function storyCacheKey(
 }
 
 /**
+ * The previous place's name as the bridge in the prompt quotes it: one line, without quote marks
+ * the model could take for the end of the quote. Undefined when nothing is left.
+ */
+export function bridgeName(name: string | undefined): string | undefined {
+  const clean = name?.replace(/["„”“«»\s]+/g, " ").trim();
+  return clean || undefined;
+}
+
+/**
  * One line Sawa can tell, with its stable id: a story found on the web (`story`, cites
  * `sourceId`), a trivia or a fact from the seed.
  */

@@ -49,6 +49,21 @@ describe("createStoryService", () => {
     expect(unknown).toContain("nie mów, po której stronie");
   });
 
+  it("opens with a bridge from the previous place, cached apart from the story without it", async () => {
+    const placeId = await anyPlace();
+    const llm = fakeLlm();
+    const service = createStoryService({ places, llm });
+    await service.tell({ placeId, targetSec: 40 });
+    await service.tell({ placeId, targetSec: 40, previousPlaceName: "Hale „Mirowskie”" });
+    await service.tell({ placeId, targetSec: 40, previousPlaceName: "Hale Mirowskie", more: true });
+
+    const [plain, bridged, more] = llm.complete.mock.calls.map(([prompt]) => prompt.user);
+    expect(plain).not.toContain("pomost");
+    expect(bridged).toContain("Przed chwilą opowiadałam słuchaczowi o miejscu: Hale Mirowskie.");
+    // "Opowiedz więcej" stays at this place: no bridge, and the story without it is cached.
+    expect(more).toBeUndefined();
+  });
+
   it("tells what the listener has not heard yet and says which facts it told", async () => {
     const placeId = await anyPlace();
     const service = createStoryService({ places });

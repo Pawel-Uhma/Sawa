@@ -7,6 +7,7 @@ import {
   agoPhrase,
   bandFor,
   bboxAround,
+  bridgeName,
   createStoryTextReader,
   factsStory,
   findingSources,
@@ -68,6 +69,18 @@ describe("storyCacheKey", () => {
     expect(storyCacheKey("a", ["nature", "historical"], band)).toBe(
       storyCacheKey("a", ["historical", "nature"], band),
     );
+  });
+});
+
+describe("bridgeName", () => {
+  it("keeps the name on one line, without quote marks", () => {
+    expect(bridgeName("Kino „Helios”")).toBe("Kino Helios");
+    expect(bridgeName(' Hale\n"Mirowskie" ')).toBe("Hale Mirowskie");
+  });
+
+  it("gives nothing for a missing or empty name", () => {
+    expect(bridgeName(undefined)).toBeUndefined();
+    expect(bridgeName(" „” ")).toBeUndefined();
   });
 });
 

@@ -82,6 +82,14 @@ describe("createRecordingStoryService", () => {
     expect(store.story("p1")?.text).toBe("Fakty p1.");
   });
 
+  it("records without the bridge from the previous place, since replay goes by place alone", async () => {
+    const real = fakeStories();
+    const service = createRecordingStoryService(real, memoryStore(), new Set());
+    await service.tell({ ...request("p1"), previousPlaceName: "Hale Mirowskie" } as never);
+    // toEqual skips undefined fields: the request goes on as if the bridge was never asked for.
+    expect(real.tell.mock.calls[0]?.[0]).toEqual(request("p1"));
+  });
+
   it("does not save a story the LLM failed on", async () => {
     const store = memoryStore();
     const failed = new Set<string>();
