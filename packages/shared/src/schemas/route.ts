@@ -28,6 +28,10 @@ export type StoryStyle = (typeof STORY_STYLES)[number];
  */
 export const TRAVEL = ["walk", "transit", "bike", "car"] as const;
 export type Travel = (typeof TRAVEL)[number];
+
+/** On a bike: one's own, or Veturilo (walk to a station, ride, leave it at a station with a dock). */
+export const BIKES = ["own", "veturilo"] as const;
+export type Bike = (typeof BIKES)[number];
 /** Who listens: "kids" (about 6–12 years) get simpler, shorter stories (issue #65). */
 export const AUDIENCES = ["adult", "kids"] as const;
 export type Audience = (typeof AUDIENCES)[number];
@@ -75,6 +79,11 @@ export const PlanRouteRequestSchema = z
      * 30 min and takes a walk when it scores better than a ride (never bike or car).
      */
     travel: z.enum(TRAVEL).optional(),
+    /**
+     * With `travel: "bike"`: "own" never goes through Veturilo; "veturilo" (and missing, as
+     * before) takes a Veturilo bike when a station with bikes is near, else one's own.
+     */
+    bike: z.enum(BIKES).optional(),
     /**
      * What the listener already heard: place id → number of its facts told (apps/web memory).
      * Places told in full count much less, so with time rides go to less obvious places.

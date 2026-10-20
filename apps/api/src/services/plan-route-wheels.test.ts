@@ -64,6 +64,29 @@ describe("route planner by bike and car", () => {
     expect(route.endsAtDestination).toBe(true);
   });
 
+  it("rides one's own bike from the start when the user picked it, even by a station", async () => {
+    const bikeStations = stationSource(STATIONS);
+    const stations = vi.spyOn(bikeStations, "stations");
+    const planner = createRoutePlanner({ transit, places, bikeStations });
+    const route = RouteSchema.parse(
+      await planner.plan(
+        {
+          origin: HACKATHON_VENUE,
+          destination: KERCELAK,
+          durationMin: 20,
+          interests: ["historical"],
+          travel: "bike",
+          bike: "own",
+        },
+        NOW,
+      ),
+    );
+    expect(route.legs.some((l) => l.mode === "bike")).toBe(true);
+    expect(route.legs[0]?.mode).toBe("bike");
+    expect(route.bikeStations).toBeUndefined();
+    expect(stations).not.toHaveBeenCalled();
+  });
+
   it("takes the quickest bike ride to a destination without a duration", async () => {
     const planner = createRoutePlanner({ transit, places });
     const route = await planner.plan(

@@ -29,9 +29,13 @@ export type WheelPlanInput = {
   now: Date;
 };
 
-/** Veturilo stations for a bike plan; without them (feed down) one's own bike. */
-async function stationsFor(deps: WheelPlanDeps, mode: WheelMode): Promise<BikeStation[]> {
-  if (mode !== "bike" || !deps.bikeStations) return [];
+/** Veturilo stations for a bike plan; without them (own bike picked, feed down) one's own bike. */
+async function stationsFor(
+  deps: WheelPlanDeps,
+  mode: WheelMode,
+  request: PlanRouteRequest,
+): Promise<BikeStation[]> {
+  if (mode !== "bike" || request.bike === "own" || !deps.bikeStations) return [];
   try {
     return (await deps.bikeStations.stations()).stations;
   } catch (err) {
@@ -58,7 +62,7 @@ export async function planWheels(deps: WheelPlanDeps, input: WheelPlanInput): Pr
     prefs: input.prefs,
     styleGapSec: input.styleGapSec,
     styleMaxSec: input.styleMaxSec,
-    stations: await stationsFor(deps, mode),
+    stations: await stationsFor(deps, mode, request),
     now: input.now,
     attribution: input.attribution,
   });
