@@ -46,6 +46,8 @@ export type MapPalette = {
   street: string;
   /** Whole park, square or garden drawn under its icon when it is selected. */
   park: string;
+  /** Bike paths (OpenMapTiles `path/cycleway`), shown while planning or riding by bike. */
+  bikePath: string;
   /** Group of places drawn as one circle with their count when zoomed out ("glass" style, 17.10). */
   clusterFill: string;
   clusterStroke: string;
@@ -88,6 +90,7 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     walk: "#52525b",
     street: "#4f6d9a",
     park: "#2f7a34",
+    bikePath: "#1f9d55",
     clusterFill: "rgba(255, 255, 255, 0.92)",
     clusterStroke: "rgba(23, 112, 111, 0.35)",
     clusterText: "#17706f",
@@ -123,6 +126,7 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     walk: "#a1a1aa",
     street: "#8fa9d4",
     park: "#93cf96",
+    bikePath: "#4fd18b",
     clusterFill: "rgba(23, 33, 32, 0.92)",
     clusterStroke: "rgba(142, 209, 181, 0.4)",
     clusterText: "#8ed1b5",
@@ -169,6 +173,7 @@ export const MAP_CONTRAST_PALETTE: MapPalette = {
   walk: "#ffffff",
   street: CONTRAST_YELLOW,
   park: "#2ef07a",
+  bikePath: "#2ef07a",
   clusterFill: "#000000",
   clusterStroke: CONTRAST_YELLOW,
   clusterText: CONTRAST_YELLOW,

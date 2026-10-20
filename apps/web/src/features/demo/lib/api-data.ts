@@ -14,6 +14,7 @@ import {
   type Waypoint,
 } from "@sawa/shared";
 import { api } from "@/lib/api";
+import { readBike } from "./bike-choice";
 import { getMemory, heardCounts } from "./memory";
 import type { LngLat, MockStop } from "./mock-data";
 import type { Profile } from "./onboarding";
@@ -79,6 +80,8 @@ export async function planRoute(
       ...rideEndRequest(end),
       ...(waypoints.length > 0 ? { waypoints: [...waypoints] } : {}),
       travel,
+      // Rowerem: własny albo Veturilo (lib/bike-choice.ts)
+      ...(travel === "bike" ? { bike: readBike() } : {}),
       familiarity,
       storyStyle,
       audience,

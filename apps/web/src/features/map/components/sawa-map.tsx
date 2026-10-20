@@ -63,6 +63,7 @@ import { placeBBoxesInView } from "../lib/place-tiles";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
 import { isStreetPlace } from "../lib/street-highlight";
 import { selectVisiblePlaces } from "../lib/visible-places";
+import { BikePathsLayer, bikePathsBeforeId } from "./bike-paths-layer";
 import { BikeStationsLayer } from "./bike-stations-layer";
 import { DestinationLayer } from "./destination-layer";
 import { LineShapesLayer } from "./line-shapes-layer";
@@ -125,6 +126,8 @@ export type SawaMapProps = {
   highlightLegs?: readonly number[] | null;
   /** The user picked a line: regular place icons fade further, so the line reads clearly. */
   fadePlaces?: boolean;
+  /** Planning or riding by bike: bike paths from the basemap are drawn. */
+  showBikePaths?: boolean;
   /** Click on a route place. When set, it replaces the built-in place card for route places. */
   onStopClick?: (placeId: string) => void;
   /** Click on a boarding ring or its line label: the leg boarded there and, at a transfer, the leg left (-1 at the start). */
@@ -156,6 +159,7 @@ export function SawaMap({
   activeStopId,
   highlightLegs = null,
   fadePlaces = false,
+  showBikePaths = false,
   onStopClick,
   onBoardingClick,
   hasPlaceSheet = true,
@@ -470,6 +474,12 @@ export function SawaMap({
         {hasZoomControls && <NavigationControl position="top-right" showCompass={false} />}
         <AttributionControl compact customAttribution={attribution} />
         {icons !== "loading" && <ParkLayer selected={selectedPark} color={palette.park} />}
+        {isLoaded && showBikePaths && (
+          <BikePathsLayer
+            color={palette.bikePath}
+            beforeId={bikePathsBeforeId(mapRef.current?.getStyle()?.layers)}
+          />
+        )}
         {icons !== "loading" && (
           <StreetLayer selected={selectedStreet} hovered={hoveredStreet} color={palette.street} />
         )}

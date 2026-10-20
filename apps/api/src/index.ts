@@ -13,6 +13,7 @@ import {
   createSupabaseClient,
   createSupabasePlacesRepository,
 } from "./adapters/supabase/places-repository";
+import { createValhallaBikeInfraScorer } from "./adapters/valhalla/bike-infra";
 import { createValhallaWalkPathSource } from "./adapters/valhalla/walk-paths";
 import { createWawDepartureSource } from "./adapters/waw/departures";
 import { createWawVehiclePositionSource } from "./adapters/waw/vehicle-positions";
@@ -21,6 +22,7 @@ import { loadEnv } from "./lib/env";
 import { createLogger } from "./lib/logger";
 import { warsawDate } from "./routes/health";
 import { DEMO_REQUEST } from "./routes/routes";
+import { createBikeFriendlyPathSource } from "./services/bike-paths";
 import {
   createCachedRoutePlanner,
   createFixedDestinationSearch,
@@ -106,6 +108,9 @@ const walkPathSources = [
     : []),
 ];
 
+/** Valhalla bike costing: 0 keeps off roads as much as it can, 1 rides them freely. */
+const BIKE_USE_ROADS = 0.15;
+
 // Bike and car legs: OSRM with that profile, then Valhalla with its costing (#190, #191).
 const wheelPathSource = (url: string | undefined, costing: "bicycle" | "auto") => {
   const sources = [
@@ -116,8 +121,23 @@ const wheelPathSource = (url: string | undefined, costing: "bicycle" | "auto") =
   ];
   return sources.length > 0 ? firstWalkPath(sources) : undefined;
 };
+// Bike legs along bike paths: OSRM's bike profile and Valhalla keeping off roads both draw the
+// leg, the one running more on bike infrastructure wins (`createBikeFriendlyPathSource`).
+const bikePaths =
+  env.BIKE_ROUTER_URL && env.WALK_ROUTER_FALLBACK_URL
+    ? createBikeFriendlyPathSource(
+        [
+          createOsrmWalkPathSource(env.BIKE_ROUTER_URL, logger),
+          createValhallaWalkPathSource(env.WALK_ROUTER_FALLBACK_URL, logger, {
+            costing: "bicycle",
+            costingOptions: { use_roads: BIKE_USE_ROADS, bicycle_type: "Hybrid" },
+          }),
+        ],
+        createValhallaBikeInfraScorer(env.WALK_ROUTER_FALLBACK_URL, logger),
+      )
+    : wheelPathSource(env.BIKE_ROUTER_URL, "bicycle");
 const wheelPaths = {
-  bike: wheelPathSource(env.BIKE_ROUTER_URL, "bicycle"),
+  bike: bikePaths,
   car: wheelPathSource(env.CAR_ROUTER_URL, "auto"),
 };
 // Veturilo stations, live bikes and docks (#192): bike routes start and end at a station.

@@ -719,6 +719,12 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
               activeStopId={isRoute ? activeStop?.id : undefined}
               highlightLegs={isRoute ? mapHighlight : null}
               fadePlaces={isRoute && pickedLegs !== null}
+              // Drogi rowerowe przy planowaniu rowerem i na trasie z odcinkiem rowerowym
+              showBikePaths={
+                isRoute
+                  ? (planned?.legs.some((leg) => leg.mode === "bike") ?? false)
+                  : travel === "bike"
+              }
               interests={profile.interests}
               onBoardingClick={isRoute ? pickBoarding : undefined}
               onStopClick={(id) => {
