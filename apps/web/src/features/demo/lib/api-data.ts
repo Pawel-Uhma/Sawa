@@ -11,6 +11,7 @@ import {
   type StoryLang,
   type StoryStyle,
   type Travel,
+  type Waypoint,
 } from "@sawa/shared";
 import { api } from "@/lib/api";
 import { getMemory, heardCounts } from "./memory";
@@ -54,7 +55,8 @@ export function listenerOf(profile: Profile, lang?: StoryLang): Listener {
 /**
  * Plans a ride from `origin` (lib/start-point.ts) with `POST /v1/routes/plan`. Sends what Sawa
  * already told (lib/memory.ts), so places told in full give way to new ones. Without `durationMin`
- * (only with a destination) the planner returns the fastest way there.
+ * (only with a destination) the planner returns the fastest way there. `waypoints`: stops on the
+ * way, passed in this order (#195).
  */
 export async function planRoute(
   origin: LatLng,
@@ -62,6 +64,7 @@ export async function planRoute(
   profile: Profile,
   end: RideEnd = { type: "loop" },
   travel: Travel = "transit",
+  waypoints: readonly Waypoint[] = [],
 ): Promise<Route> {
   const { interests, familiarity, storyStyle, audience } = listenerOf(profile);
   const heard = heardCounts(getMemory());
@@ -71,6 +74,7 @@ export async function planRoute(
       durationMin,
       interests,
       ...rideEndRequest(end),
+      ...(waypoints.length > 0 ? { waypoints: [...waypoints] } : {}),
       travel,
       familiarity,
       storyStyle,

@@ -6,6 +6,7 @@ import { useCallback, useEffect } from "react";
 import { useT } from "@/features/i18n";
 import { usePlace, useSelectedPlace } from "@/features/map";
 import type { Listener } from "../lib/api-data";
+import { canAddStopover, type Stopover } from "../lib/waypoints";
 import { CardSkeleton, CloseButton, PlaceCardShell } from "./place-card";
 import { PlaceDetails } from "./place-details";
 
@@ -19,6 +20,9 @@ type PlaceCardHostProps = {
   onCoverChange: (px: number) => void;
   /** „Jedź tutaj” w karcie: miejsce staje się celem przejażdżki. */
   onRideTo: (name: string, point: LatLng) => void;
+  /** Przystanki po drodze (#195): karta dodaje miejsce albo je zdejmuje. */
+  stopovers: readonly Stopover[];
+  onToggleStopover: (stop: Stopover) => void;
 };
 
 /** Miejsce wybrane na mapie (`?p=` z mapy Antka) i jego karta. */
@@ -28,6 +32,8 @@ export function PlaceCardHost({
   onSelectionChange,
   onCoverChange,
   onRideTo,
+  stopovers,
+  onToggleStopover,
 }: PlaceCardHostProps) {
   const t = useT();
   const { selectedId, select } = useSelectedPlace();
@@ -63,6 +69,16 @@ export function PlaceCardHost({
                   ? (name) => {
                       onRideTo(name, position);
                       close();
+                    }
+                  : undefined
+              }
+              stopover={
+                position
+                  ? {
+                      isAdded: stopovers.some((s) => s.placeId === place.id),
+                      canAdd: canAddStopover(stopovers),
+                      onToggle: (name) =>
+                        onToggleStopover({ ...position, placeId: place.id, name }),
                     }
                   : undefined
               }

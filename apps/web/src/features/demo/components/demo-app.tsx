@@ -34,6 +34,12 @@ import { type StartStatus, startLabel, useStartPoint } from "../lib/start-point"
 import { afterStory, useAutoAdvance } from "../lib/story-advance";
 import { useStoryPlayer } from "../lib/story-player";
 import { claimVoice, isAside, ROUTE_VOICE, useVoiceOwner } from "../lib/voice";
+import {
+  moveStopover,
+  type Stopover,
+  toggleStopover as toggleStopoverIn,
+  toWaypoints,
+} from "../lib/waypoints";
 import { HomePanel } from "./home-panel";
 import { OnboardingFlow } from "./onboarding-flow";
 import type { PlaceSelection } from "./place-card-host";
@@ -43,6 +49,7 @@ import { DESKTOP_ITINERARY_PX, RouteSheet } from "./route-sheet";
 import { type SawaMenuActions, SawaMenuProvider } from "./sawa-menu";
 import { SawaSpeaking } from "./sawa-speaking";
 import { SawaTab } from "./sawa-tab";
+import { StopoverList } from "./stopover-list";
 import { TopBar } from "./top-bar";
 
 // Ekrany nad mapą. Paska zakładek nie ma: Przejażdżki i Sawa są w menu pod logo,
@@ -111,6 +118,13 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     [endType, chosenDestination],
   );
   const needsDestination = endType === "destination" && chosenDestination === null;
+  // Przystanki po drodze (#195), dodane z karty miejsca; trasa mija je w tej kolejności
+  const [stopovers, setStopovers] = useState<Stopover[]>([]);
+  const waypoints = useMemo(() => toWaypoints(stopovers), [stopovers]);
+  const toggleStopover = useCallback(
+    (stop: Stopover) => setStopovers((list) => toggleStopoverIn(list, stop)),
+    [],
+  );
   const [route, setRoute] = useState<MockStop[]>([]);
   const [planned, setPlanned] = useState<Route | null>(null);
   const [planning, setPlanning] = useState(false);
@@ -133,7 +147,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   // Bez lokalizacji kropki nie ma, bo pod 42 Warsaw wyglądałaby jak zamrożony GPS.
   const userDot =
     isStage || start.mode === "venue" ? HACKATHON_VENUE : (start.position ?? undefined);
-  const fastest = useFastestRoute(origin, profile, rideEnd, travel);
+  const fastest = useFastestRoute(origin, profile, rideEnd, travel, waypoints);
   // Suwak nie schodzi poniżej najszybszej drogi do celu (#43)
   const minDurationMin =
     fastest.status === "ready" ? shortestStopFor(fastest.route.totalMin) : null;
@@ -163,7 +177,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
         showRoute(fastest.route);
         return;
       }
-      showRoute(await planRoute(origin, durationMin, profile, rideEnd, travel));
+      showRoute(await planRoute(origin, durationMin, profile, rideEnd, travel, waypoints));
     } catch {
       setPlanError(
         start.status === "located"
@@ -189,6 +203,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     profile,
     rideEnd,
     travel,
+    waypoints,
     fastest,
     minDurationMin,
     showRoute,
@@ -550,6 +565,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
               padding={padding}
               user={userDot}
               destination={isRoute || isHome ? destination?.point : undefined}
+              waypoints={isRoute || isHome ? stopovers : undefined}
               onMapClick={
                 isHome && isPickingEnd
                   ? (point) =>
@@ -622,6 +638,15 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                 planError={planError}
                 locating={!isStage && start.status === "locating"}
                 onCoverChange={setPanelCoverPx}
+                stopovers={
+                  <StopoverList
+                    stops={stopovers}
+                    onMove={(index, by) => setStopovers((list) => moveStopover(list, index, by))}
+                    onRemove={(placeId) =>
+                      setStopovers((list) => list.filter((s) => s.placeId !== placeId))
+                    }
+                  />
+                }
               />
             )}
             {stage === "map" && tab === "rides" && (
@@ -698,6 +723,8 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                 setTab("map");
                 setPanelCollapsed(false);
               }}
+              stopovers={stopovers}
+              onToggleStopover={toggleStopover}
             />
           )}
 

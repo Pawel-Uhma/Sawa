@@ -1,4 +1,4 @@
-import type { LatLng, Route, Travel } from "@sawa/shared";
+import type { LatLng, Route, Travel, Waypoint } from "@sawa/shared";
 import { useEffect, useState } from "react";
 import { planRoute } from "./api-data";
 import { DURATION_STOPS_MIN } from "./mock-data";
@@ -13,6 +13,8 @@ export function shortestStopFor(fastestMin: number): number {
   );
 }
 
+const NO_WAYPOINTS: readonly Waypoint[] = [];
+
 export type FastestRoute =
   | { status: "none" | "loading" | "failed" }
   | { status: "ready"; route: Route };
@@ -26,6 +28,8 @@ export function useFastestRoute(
   profile: Profile,
   rideEnd: RideEnd,
   travel: Travel,
+  /** Przystanki po drodze (#195): najszybsza droga też przez nie przechodzi. */
+  waypoints: readonly Waypoint[] = NO_WAYPOINTS,
 ): FastestRoute {
   const [fastest, setFastest] = useState<FastestRoute>({ status: "none" });
 
@@ -36,13 +40,13 @@ export function useFastestRoute(
     }
     let cancelled = false;
     setFastest({ status: "loading" });
-    planRoute(origin, undefined, profile, rideEnd, travel)
+    planRoute(origin, undefined, profile, rideEnd, travel, waypoints)
       .then((route) => !cancelled && setFastest({ status: "ready", route }))
       .catch(() => !cancelled && setFastest({ status: "failed" }));
     return () => {
       cancelled = true;
     };
-  }, [origin, profile, rideEnd, travel]);
+  }, [origin, profile, rideEnd, travel, waypoints]);
 
   return fastest;
 }

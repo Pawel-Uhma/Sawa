@@ -11,7 +11,7 @@ import { haptic } from "../lib/device";
 import { factPlainText, factSegments } from "../lib/fact-markup";
 import { usePlaceStory } from "../lib/place-story";
 import { topicStyle } from "../lib/topic-style";
-import { PinIcon } from "./icons";
+import { CloseIcon, PinIcon } from "./icons";
 import { CloseButton, KindLine, ListenButton, Sources, splitName, TodayNearby } from "./place-card";
 
 const FACTS_PREVIEW = 3;
@@ -22,10 +22,12 @@ type PlaceDetailsProps = {
   onClose: () => void;
   /** Ustawia miejsce jako cel przejażdżki; brak, gdy miejsce nie ma współrzędnych. */
   onRideTo?: (name: string) => void;
+  /** „Dodaj przystanek” (#195): trasa przejdzie przez to miejsce; brak bez współrzędnych. */
+  stopover?: { isAdded: boolean; canAdd: boolean; onToggle: (name: string) => void };
 };
 
 /** Treść karty miejsca, jak arkusz w Mapach Apple: nagłówek, główna akcja, pasek zdjęć, a niżej wszystko, co wiemy o miejscu. */
-export function PlaceDetails({ place, listener, onClose, onRideTo }: PlaceDetailsProps) {
+export function PlaceDetails({ place, listener, onClose, onRideTo, stopover }: PlaceDetailsProps) {
   const t = useT();
   const lang = useLang();
   const story = usePlaceStory(place.id, listener);
@@ -68,6 +70,35 @@ export function PlaceDetails({ place, listener, onClose, onRideTo }: PlaceDetail
             </button>
           )}
         </div>
+        {stopover && (stopover.isAdded || stopover.canAdd) && (
+          <button
+            type="button"
+            aria-pressed={stopover.isAdded}
+            onClick={() => {
+              haptic();
+              stopover.onToggle(title);
+            }}
+            className={`mt-2 flex h-11 w-full items-center justify-center gap-1.5 rounded-[14px] text-[15px] font-bold transition-[background-color,transform] active:scale-[0.98] ${
+              stopover.isAdded
+                ? "bg-glebia text-white"
+                : "bg-tlo-2 text-glebia hover:bg-mieta-jasna"
+            }`}
+          >
+            {stopover.isAdded ? (
+              <>
+                <CloseIcon className="size-4" />
+                {t("Usuń z przystanków", "Remove from stops")}
+              </>
+            ) : (
+              <>
+                <span aria-hidden className="text-[18px] leading-none">
+                  +
+                </span>
+                {t("Dodaj przystanek", "Add a stop")}
+              </>
+            )}
+          </button>
+        )}
         {/* Miejsce na opowieść rezerwujemy od razu, żeby karta nie podskoczyła, gdy tekst przyjdzie */}
         {story.state === "loading" && !story.text && <SkeletonLines lines={3} className="mt-4" />}
         {story.text && (
