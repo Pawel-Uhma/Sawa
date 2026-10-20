@@ -36,6 +36,7 @@ Skrypt planuje ok. 400 tras z 42 Warsaw i z Kercelaka (15–120 min, 6 zestawów
 ## Ograniczenia
 
 - Każdy słyszy tę samą opowieść o miejscu (nie zależy od zainteresowań, stylu ani tego, co już słyszał). „Więcej o tym miejscu” powtarza tę samą.
+- Bez zdania-pomostu od poprzedniego miejsca (`previousPlaceName`, #35): `record` nagrywa opowieść bez niego, bo replay szuka jej po samym miejscu, a poprzednie miejsce zależy od trasy.
 - Długość opowieści nie dopasowuje się do `windowSec`; skrypt nagrywa z najdłuższym oknem z zaplanowanych tras.
 - Miejsca spoza nagranych tras (dalej niż ok. 10 min jazdy od 42 Warsaw): tekst z faktów, bez głosu.
 - Tryb dla dzieci i angielski: ta sama (dorosła, polska) opowieść.

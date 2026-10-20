@@ -31,6 +31,8 @@ const FADE_OUT_MS = 350;
 const FADE_IN_MS = 500;
 /** Oddech Sawy między tematami, gdy poprzedni skończył się sam. */
 const BREATH_MS = 600;
+/** Przerwany temat cichnie, a nowy już wchodzi: nakładka zamiast ciszy i twardego cięcia. */
+export const CROSSFADE_MS = 1000;
 /** Po pauzie elementu tyle czekamy, zanim uznamy, że zatrzymał go ktoś z zewnątrz. */
 const PAUSE_CHECK_MS = 300;
 /** Pauza tak blisko końca głosu to koniec opowieści, a nie przerwanie. */
@@ -48,24 +50,69 @@ export function fadeAt(elapsedMs: number, ms: number, hidden: boolean): number {
   return Math.min(1, Math.max(0, elapsedMs / ms));
 }
 
+/** Bieżące przejście głośności każdego elementu: nowe przerywa poprzednie. */
+const fadeTokens = new WeakMap<HTMLAudioElement, number>();
+
+/** Przerywa przejście głośności elementu (np. przed `volume = 1` w geście stuknięcia). */
+function stopFade(audio: HTMLAudioElement): number {
+  const id = (fadeTokens.get(audio) ?? 0) + 1;
+  fadeTokens.set(audio, id);
+  return id;
+}
+
+/**
+ * Czy da się zmienić głośność elementu. Na iOS `volume` jest tylko do odczytu: tam nie ma
+ * nakładki dwóch głosów (grałyby naraz pełnym głosem), tylko zmiana tematu.
+ */
+function canSetVolume(audio: HTMLAudioElement): boolean {
+  const before = audio.volume;
+  audio.volume = before === 1 ? 0.5 : 1;
+  const can = audio.volume !== before;
+  audio.volume = before;
+  return can;
+}
+
+/**
+ * Jak przejść od głosu, który jest w elemencie, do następnego klipu:
+ * - `start`: nic nie gra, nowy temat wchodzi od razu,
+ * - `breath`: poprzedni skończył się sam, Sawa bierze oddech i zaczyna,
+ * - `crossfade`: przerwany temat cichnie, a nowy już wchodzi (ok. 1 s nakładki),
+ * - `cut`: przerwany temat staje od razu (iOS, gdzie głośności nie da się zmienić),
+ * - `fade-out`: następny klip jest bez głosu, poprzedni tylko cichnie.
+ */
+export function voiceTransition({
+  hasSound,
+  paused,
+  ended,
+  nextHasVoice,
+  canFade,
+}: {
+  hasSound: boolean;
+  paused: boolean;
+  ended: boolean;
+  nextHasVoice: boolean;
+  canFade: boolean;
+}): "start" | "breath" | "crossfade" | "cut" | "fade-out" {
+  const sounding = hasSound && !paused && !ended;
+  if (!nextHasVoice) return sounding ? "fade-out" : "start";
+  if (hasSound && ended) return "breath";
+  if (!sounding) return "start";
+  return canFade ? "crossfade" : "cut";
+}
+
 /**
  * Płynnie zmienia głośność. Na iOS `volume` jest tylko do odczytu, więc tam zostaje
- * sama pauza o tej długości, bez wyciszenia. Nowe przejście przerywa poprzednie (`token`).
+ * sama pauza o tej długości, bez wyciszenia. Nowe przejście przerywa poprzednie (`stopFade`).
  * Na timerze, nie na klatkach animacji: przy zgaszonym ekranie klatki stają i głos zostawał
  * wyciszony na całą opowieść, a następny temat nie wchodził wcale.
  */
-function fadeVolume(
-  audio: HTMLAudioElement,
-  to: number,
-  ms: number,
-  token: { current: number },
-): Promise<void> {
-  const id = ++token.current;
+function fadeVolume(audio: HTMLAudioElement, to: number, ms: number): Promise<void> {
+  const id = stopFade(audio);
   const from = audio.volume;
   const startedAt = performance.now();
   return new Promise((resolve) => {
     const step = () => {
-      if (token.current !== id) return resolve();
+      if (fadeTokens.get(audio) !== id) return resolve();
       const t = fadeAt(performance.now() - startedAt, ms, document.hidden);
       audio.volume = from + (to - from) * t;
       if (t < 1) setTimeout(step, FADE_STEP_MS);
@@ -103,6 +150,40 @@ export function pausedFromOutside(state: {
 /** Czy element gra właśnie ten klip (a nie poprzedni, który jeszcze cichnie). */
 function isLoaded(audio: HTMLAudioElement, clip: Clip | null): boolean {
   return Boolean(clip?.audioUrl) && audio.getAttribute("src") === clip?.audioUrl;
+}
+
+/** Głos, który już nic nie mówi: stoi i nie trzyma strumienia. */
+function retire(audio: HTMLAudioElement) {
+  stopFade(audio);
+  audio.pause();
+  audio.removeAttribute("src");
+}
+
+/**
+ * Zdarzenia jednego głosu. Pauzę sprawdzamy chwilę po zdarzeniu (`onPaused`): nasze pauzy mają
+ * już wtedy `speaking: false`, koniec opowieści ma `ended`, a nowy klip zdążył ruszyć.
+ * Zostaje pauza z zewnątrz.
+ */
+function watchVoice(
+  audio: HTMLAudioElement,
+  on: { onEnded: () => void; onError: () => void; onPaused: () => void; onPlaying: () => void },
+): () => void {
+  let pauseCheck: ReturnType<typeof setTimeout> | undefined;
+  const onPause = () => {
+    clearTimeout(pauseCheck);
+    pauseCheck = setTimeout(on.onPaused, PAUSE_CHECK_MS);
+  };
+  audio.addEventListener("ended", on.onEnded);
+  audio.addEventListener("error", on.onError);
+  audio.addEventListener("pause", onPause);
+  audio.addEventListener("playing", on.onPlaying);
+  return () => {
+    clearTimeout(pauseCheck);
+    audio.removeEventListener("ended", on.onEnded);
+    audio.removeEventListener("error", on.onError);
+    audio.removeEventListener("pause", onPause);
+    audio.removeEventListener("playing", on.onPlaying);
+  };
 }
 
 /**
@@ -183,7 +264,16 @@ export async function fetchClip(
   placeName?: string,
   side?: Side,
   /** „Więcej o tym miejscu”: gdy nic nowego nie zostało, Sawa poleca miejsce obok. */
-  { more = false, toldContexts = [] }: { more?: boolean; toldContexts?: Iterable<string> } = {},
+  {
+    more = false,
+    toldContexts = [],
+    previousPlaceName,
+  }: {
+    more?: boolean;
+    toldContexts?: Iterable<string>;
+    /** Miejsce, o którym Sawa mówiła tuż przed tym: zaczyna zdaniem-pomostem od niego. */
+    previousPlaceName?: string;
+  } = {},
 ): Promise<Clip> {
   const memory = getMemory();
   const heardAt = memory.places[placeId]?.at;
@@ -198,6 +288,8 @@ export async function fetchClip(
     heardAgoSec:
       heardAt === undefined ? undefined : Math.max(0, Math.floor((Date.now() - heardAt) / 1000)),
     ...(more && { more, heardPlaceIds: Object.keys(memory.places).slice(-MAX_HEARD_PLACES) }),
+    // „Więcej” zostaje przy tym miejscu, więc bez pomostu.
+    ...(!more && previousPlaceName && { previousPlaceName }),
   };
   if (!voiceOn()) {
     const res = await api.v1.stories.$post({ json });
@@ -426,62 +518,74 @@ export function useStoryPlayer(
   clipRef.current = clip;
   const speakingRef = useRef(speaking);
   speakingRef.current = speaking;
-  const fadeToken = useRef(0);
+  // Dwa głosy na zmianę: przerwany temat cichnie w jednym, a nowy już wchodzi w drugim.
+  // `audioRef` to zawsze ten z bieżącym tematem.
+  const voices = useRef<HTMLAudioElement[]>([]);
+  // Na iOS głośność jest tylko do odczytu: tam bez nakładki (`voiceTransition`).
+  const canFade = useRef(true);
 
   useEffect(() => {
-    const audio = new Audio();
-    audioRef.current = audio;
-    // Koniec starego klipu, który jeszcze cichł, nie kończy nowego tematu.
-    const onEnded = () => isLoaded(audio, clipRef.current) && setProgress(100);
-    // No voice (ElevenLabs down, quota): the card still shows the text and runs on a timer.
-    const onError = () => audio.getAttribute("src") && setVoiceFailed(true);
-    // Sprawdzamy chwilę po zdarzeniu: nasze pauzy mają już wtedy `speaking: false`, koniec
-    // opowieści ma `ended`, a nowy klip zdążył ruszyć. Zostaje pauza z zewnątrz.
-    let pauseCheck: ReturnType<typeof setTimeout> | undefined;
-    const onPause = () => {
-      clearTimeout(pauseCheck);
-      pauseCheck = setTimeout(() => {
-        const state = {
-          speaking: speakingRef.current,
-          loaded: isLoaded(audio, clipRef.current),
-          paused: audio.paused,
-          ended: audio.ended || audio.currentTime >= audio.duration - END_SLACK_SEC,
-        };
-        if (pausedFromOutside(state)) setIsPlaying(false);
-      }, PAUSE_CHECK_MS);
-    };
+    const pair = [new Audio(), new Audio()];
+    voices.current = pair;
+    audioRef.current = pair[0] ?? null;
+    canFade.current = pair[0] ? canSetVolume(pair[0]) : false;
     // iOS pozwala elementowi grać bez stuknięcia dopiero, gdy raz ruszył w stuknięciu. Pierwsza
-    // opowieść rusza z zegarem jazdy, poza stuknięciem, więc głos odblokowujemy przy pierwszym
+    // opowieść rusza z zegarem jazdy, poza stuknięciem, więc głosy odblokowujemy przy pierwszym
     // dotknięciu strony, póki element nie ma jeszcze klipu (wtedy nic nie zagra).
     const gestures = ["touchend", "click"] as const;
+    const unlocked = new Set<HTMLAudioElement>();
     const stopUnlocking = () => {
       for (const type of gestures) window.removeEventListener(type, unlock, { capture: true });
-      audio.removeEventListener("playing", stopUnlocking);
+    };
+    // Głos, który już raz zagrał, jest odblokowany.
+    const markUnlocked = (audio: HTMLAudioElement) => {
+      unlocked.add(audio);
+      if (unlocked.size === pair.length) stopUnlocking();
     };
     const unlock = () => {
-      if (audio.getAttribute("src")) return;
-      stopUnlocking();
-      audio.play().catch(() => {});
-      audio.pause();
+      for (const audio of pair) {
+        if (unlocked.has(audio) || audio.getAttribute("src")) continue;
+        audio.play().catch(() => {});
+        audio.pause();
+        markUnlocked(audio);
+      }
     };
     for (const type of gestures) {
       window.addEventListener(type, unlock, { capture: true, passive: true });
     }
-    // Głos, który już raz zagrał, jest odblokowany.
-    audio.addEventListener("playing", stopUnlocking);
-    audio.addEventListener("ended", onEnded);
-    audio.addEventListener("error", onError);
-    audio.addEventListener("pause", onPause);
+    const unwatch = pair.map((audio) =>
+      watchVoice(audio, {
+        // Koniec starego klipu, który jeszcze cichł, nie kończy nowego tematu.
+        onEnded: () => isLoaded(audio, clipRef.current) && setProgress(100),
+        // No voice (ElevenLabs down, quota): the card still shows the text and runs on a timer.
+        onError: () =>
+          audio === audioRef.current && audio.getAttribute("src") && setVoiceFailed(true),
+        onPaused: () => {
+          const state = {
+            speaking: speakingRef.current,
+            loaded: isLoaded(audio, clipRef.current),
+            paused: audio.paused,
+            ended: audio.ended || audio.currentTime >= audio.duration - END_SLACK_SEC,
+          };
+          if (pausedFromOutside(state)) setIsPlaying(false);
+        },
+        onPlaying: () => markUnlocked(audio),
+      }),
+    );
     return () => {
-      clearTimeout(pauseCheck);
       stopUnlocking();
-      audio.removeEventListener("ended", onEnded);
-      audio.removeEventListener("error", onError);
-      audio.removeEventListener("pause", onPause);
-      audio.pause();
-      audio.removeAttribute("src");
+      for (const stop of unwatch) stop();
+      for (const audio of pair) retire(audio);
     };
   }, []);
+
+  // Miejsce ostatniej opowieści na tej trasie: od niego Sawa przechodzi do następnego.
+  const lastTold = useRef<{ stops: readonly MockStop[]; placeId: string; name?: string } | null>(
+    null,
+  );
+  useEffect(() => {
+    if (clip) lastTold.current = { stops, placeId: clip.placeId, name: clip.placeName };
+  }, [clip, stops]);
 
   const load = useCallback(
     (index: number, more = false) => {
@@ -491,9 +595,15 @@ export function useStoryPlayer(
       const key = clipKey(stop.id, listener, targetSec);
       let pending = cache.current.get(key);
       if (!pending) {
+        // Pobierana z wyprzedzeniem następna opowieść idzie po bieżącej; wybrana ręcznie po tej,
+        // która grała ostatnio (na tej trasie). Pierwsza opowieść jazdy zaczyna bez pomostu.
+        const last = lastTold.current;
+        const previous =
+          last && last.stops === stops && last.placeId !== stop.id ? last.name : undefined;
         pending = fetchClip(stop.id, listener, targetSec, stop.name, stop.side, {
           more,
           toldContexts: toldContexts.current,
+          previousPlaceName: previous,
         });
         cache.current.set(key, pending);
         pending.catch(() => cache.current.delete(key));
@@ -542,41 +652,65 @@ export function useStoryPlayer(
     if (live.done) load(activeIndex + 1)?.catch(() => {});
   }, [live.done, activeIndex, load]);
 
-  // Zmiana tematu: stary klip cichnie (albo Sawa bierze oddech po jego końcu), nowy wchodzi łagodnie.
+  // Zmiana tematu (`voiceTransition`): przerwany temat cichnie, a nowy wchodzi w drugim głosie
+  // (nakładka ok. 1 s); po końcu opowieści Sawa bierze oddech. Póki następny klip się wczytuje
+  // (`clip` null), bieżący tylko cichnie, a gdy klip przyjdzie w trakcie, nakładka trwa dalej.
   useEffect(() => {
-    const audio = audioRef.current;
-    if (!audio || isLoaded(audio, clip)) return;
+    const outgoing = audioRef.current;
+    if (!outgoing || isLoaded(outgoing, clip)) return;
     setVoiceFailed(false);
     let cancelled = false;
-    const hasSound = Boolean(audio.getAttribute("src"));
-    const before = !hasSound
-      ? Promise.resolve()
-      : audio.ended
-        ? wait(BREATH_MS)
-        : audio.paused
-          ? Promise.resolve()
-          : fadeVolume(audio, 0, FADE_OUT_MS, fadeToken);
+    const url = clip?.audioUrl;
+    const kind = voiceTransition({
+      hasSound: Boolean(outgoing.getAttribute("src")),
+      paused: outgoing.paused,
+      ended: outgoing.ended,
+      nextHasVoice: Boolean(url),
+      canFade: canFade.current,
+    });
+    // Głos, który ucichł, kończy się, chyba że w międzyczasie znowu mówi bieżący temat.
+    const fadeOut = () =>
+      fadeVolume(outgoing, 0, CROSSFADE_MS).then(
+        () => outgoing !== audioRef.current && retire(outgoing),
+      );
+    if (!url) {
+      if (kind === "fade-out" && canFade.current) {
+        audioRef.current = voices.current.find((v) => v !== outgoing) ?? outgoing;
+        fadeOut();
+      } else if (!outgoing.ended) retire(outgoing);
+      return () => {
+        cancelled = true;
+      };
+    }
+    if (kind === "cut") retire(outgoing);
+    if (kind === "crossfade") fadeOut();
+    const incoming =
+      kind === "crossfade" ? (voices.current.find((v) => v !== outgoing) ?? outgoing) : outgoing;
+    audioRef.current = incoming;
+    // Poprzedni temat jeszcze cichnie (także od chwili, gdy ten klip się wczytywał): nowy wchodzi
+    // równo z nim, w czasie nakładki.
+    const fadeInMs = voices.current.some(
+      (v) => v !== incoming && v.getAttribute("src") && !v.paused && !v.ended,
+    )
+      ? CROSSFADE_MS
+      : FADE_IN_MS;
+    const before = kind === "breath" ? wait(BREATH_MS) : Promise.resolve();
     before.then(() => {
       if (cancelled) return;
-      if (!clip?.audioUrl) {
-        audio.pause();
-        audio.removeAttribute("src");
-        return;
-      }
-      fadeToken.current++;
-      audio.volume = 0;
-      audio.src = clip.audioUrl;
+      stopFade(incoming);
+      incoming.volume = 0;
+      incoming.src = url;
       if (!speakingRef.current) {
-        audio.volume = 1;
+        incoming.volume = 1;
         return;
       }
-      audio
+      incoming
         .play()
         .then(() => {
-          if (!cancelled) return fadeVolume(audio, 1, FADE_IN_MS, fadeToken);
+          if (!cancelled) return fadeVolume(incoming, 1, fadeInMs);
         })
         .catch((error) => {
-          audio.volume = 1;
+          incoming.volume = 1;
           if (playFailed(error)) setIsPlaying(false);
         });
     });
@@ -594,12 +728,13 @@ export function useStoryPlayer(
     // początku, zanim przejście go wyciszy. Nowy temat startuje efekt przejścia.
     if (speaking && clip?.placeId !== activeId.current) return;
     if (!speaking) {
+      // Temat, który jeszcze cichł po zmianie, też milknie: pauza to cisza Sawy.
+      for (const other of voices.current) {
+        if (other !== audio && other.getAttribute("src")) retire(other);
+      }
       // Dygresja wchodzi na wyciszaną trasę, pauza użytkownika zatrzymuje od razu.
       if (!aside || audio.paused) audio.pause();
-      else
-        fadeVolume(audio, 0, FADE_OUT_MS, fadeToken).then(
-          () => !speakingRef.current && audio.pause(),
-        );
+      else fadeVolume(audio, 0, FADE_OUT_MS).then(() => !speakingRef.current && audio.pause());
       return;
     }
     // The browser blocks sound before the first tap; the play button then starts it.
@@ -608,7 +743,7 @@ export function useStoryPlayer(
     audio
       .play()
       .then(() => {
-        if (fadeIn) return fadeVolume(audio, 1, FADE_IN_MS, fadeToken);
+        if (fadeIn) return fadeVolume(audio, 1, FADE_IN_MS);
       })
       .catch((error) => playFailed(error) && setIsPlaying(false));
   }, [speaking, aside, hasVoice, clip]);
@@ -657,7 +792,7 @@ export function useStoryPlayer(
     if (aside) {
       claimVoice(ROUTE_VOICE);
       if (audio && hasVoice && isLoaded(audio, clip)) {
-        fadeToken.current++;
+        stopFade(audio);
         audio.volume = 1;
         if (restart) audio.currentTime = 0;
         audio.play().catch((error) => playFailed(error) && setIsPlaying(false));
@@ -666,7 +801,7 @@ export function useStoryPlayer(
       return;
     }
     if (!isPlaying && audio && hasVoice && isLoaded(audio, clip)) {
-      fadeToken.current++;
+      stopFade(audio);
       audio.volume = 1;
       // Called inside the tap, so Safari lets the sound start.
       if (restart) audio.currentTime = 0;
@@ -682,7 +817,7 @@ export function useStoryPlayer(
       setProgress(0);
       if (keepPlaying) claimVoice(ROUTE_VOICE);
       if (audio && isLoaded(audio, clip)) {
-        fadeToken.current++;
+        stopFade(audio);
         audio.volume = 1;
         audio.currentTime = 0;
         // W geście stuknięcia, żeby Safari pozwolił na dźwięk.
@@ -714,7 +849,7 @@ export function useStoryPlayer(
         setVoiceAt({ clipId: clip.id, sec: at });
         // Głos, który już dobiegł końca, stoi; w geście stuknięcia ruszamy go znowu.
         if (!ended && speaking && audio.paused) {
-          fadeToken.current++;
+          stopFade(audio);
           audio.volume = 1;
           audio.play().catch((error) => playFailed(error) && setIsPlaying(false));
         }
