@@ -1,0 +1,69 @@
+{
+  "last_updated": 1792475033,
+  "ttl": 60,
+  "data": {
+    "stations": [
+      {
+        "station_id": "203610",
+        "name": "Koneser",
+        "short_name": "6419",
+        "lat": 52.25602,
+        "lon": 21.046219,
+        "region_id": "812",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=203610",
+          "ios": "https://app.nextbike.net/station?id=203610",
+          "web": "https://nxtb.it/p/203610"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "448565",
+        "name": "Nestle House",
+        "short_name": "6413",
+        "lat": 52.183992,
+        "lon": 21.00984,
+        "region_id": "812",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=448565",
+          "ios": "https://app.nextbike.net/station?id=448565",
+          "web": "https://nxtb.it/p/448565"
+        },
+        "is_virtual_station": false,
+        "capacity": 8
+      },
+      {
+        "station_id": "2585259",
+        "name": "UKSW",
+        "short_name": "9402",
+        "lat": 52.296226,
+        "lon": 20.958327,
+        "region_id": "812",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=2585259",
+          "ios": "https://app.nextbike.net/station?id=2585259",
+          "web": "https://nxtb.it/p/2585259"
+        },
+        "is_virtual_station": false,
+        "capacity": 10
+      },
+      {
+        "station_id": "2585263",
+        "name": "Metro Młociny",
+        "short_name": "9403",
+        "lat": 52.290974,
+        "lon": 20.929556,
+        "region_id": "812",
+        "rental_uris": {
+          "android": "https://app.nextbike.net/station?id=2585263",
+          "ios": "https://app.nextbike.net/station?id=2585263",
+          "web": "https://nxtb.it/p/2585263"
+        },
+        "is_virtual_station": false,
+        "capacity": 12
+      }
+    ]
+  },
+  "version": "2.3"
+}

@@ -107,6 +107,23 @@ const EnvSchema = z.object({
     (v) => (v === "" ? undefined : v),
     z.coerce.number().int().min(1).max(64).optional(),
   ),
+  /**
+   * OSRM servers with the bike and car profiles for bike and car legs (#190, #191; default:
+   * FOSSGIS, no key); empty = Valhalla (WALK_ROUTER_FALLBACK_URL) only, or straight lines.
+   */
+  BIKE_ROUTER_URL: z
+    .string()
+    .default("https://routing.openstreetmap.de/routed-bike")
+    .transform((v) => v || undefined),
+  CAR_ROUTER_URL: z
+    .string()
+    .default("https://routing.openstreetmap.de/routed-car")
+    .transform((v) => v || undefined),
+  /** Veturilo GBFS feeds (Nextbike, no key) for bike routes from a station (#192); empty = off. */
+  VETURILO_GBFS_URL: z
+    .string()
+    .default("https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_vw/pl")
+    .transform((v) => v || undefined),
   /** "1": poll ZTM vehicle positions all the time, not only while someone tracks a ride. */
   VEHICLES_ALWAYS_ON: z
     .string()

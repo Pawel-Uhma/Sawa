@@ -1,4 +1,4 @@
-import type { Side } from "@sawa/shared";
+import type { Leg, Side } from "@sawa/shared";
 // Dane placeholder do demo. Bez API i bez bazy. Teksty opowieści generuje później LLM z faktów (T-42),
 // więc tu nie ma żadnych tekstów Sawy. Miejsca i współrzędne pochodzą z docs/historia/sawa-historia.geojson,
 // trasa to przybliżenie po ulicach (OSRM) z makiet w docs/ui/propozycje/html, a nie prawdziwa linia ZTM.
@@ -197,15 +197,24 @@ export type MockStop = MockPlace & {
   // Z planera: sekundy od startu do punktu i ile Sawa może o nim mówić (`RoutePlace.windowSec`).
   etaSec?: number;
   windowSec?: number;
-  // Odcinek, na którym jest punkt; "walk" to spacer (wtedy `line` jest pusty).
-  mode?: "tram" | "bus" | "walk";
+  // Odcinek, na którym jest punkt; "walk" to spacer, "bike" i "car" jazda (wtedy `line` jest pusty).
+  mode?: Leg["mode"];
   // Po której stronie jazdy jest punkt (lib/side.ts); brak, gdy nie wiadomo.
   side?: Side;
 };
 
 /** Jak podpisać odcinek punktu: numer linii albo „pieszo”. */
 export function stopLineLabel(stop: Pick<MockStop, "line" | "mode">, lang: Lang = "pl"): string {
-  return stop.mode === "walk" ? pick(lang, "pieszo", "on foot") : stop.line;
+  switch (stop.mode) {
+    case "walk":
+      return pick(lang, "pieszo", "on foot");
+    case "bike":
+      return pick(lang, "rowerem", "by bike");
+    case "car":
+      return pick(lang, "autem", "by car");
+    default:
+      return stop.line;
+  }
 }
 
 // Placeholder planera: liczba punktów rośnie z czasem, preferowane są wybrane tematy,

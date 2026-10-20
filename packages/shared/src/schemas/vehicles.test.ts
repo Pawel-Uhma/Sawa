@@ -28,4 +28,10 @@ describe("trackRequestFromRoute", () => {
   it("returns undefined for a walk only", () => {
     expect(trackRequestFromRoute({ legs: [leg("walk", "")] })).toBeUndefined();
   });
+
+  it("leaves out bike and car legs", () => {
+    expect(
+      trackRequestFromRoute({ legs: [leg("walk", ""), leg("bike", ""), leg("car", "")] }),
+    ).toBeUndefined();
+  });
 });

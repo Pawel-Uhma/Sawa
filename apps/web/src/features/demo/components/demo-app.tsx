@@ -45,6 +45,7 @@ import {
   toWaypoints,
 } from "../lib/waypoints";
 import { AccountModal } from "./account-modal";
+import { DrivingCard } from "./driving-card";
 import { HomePanel } from "./home-panel";
 import { OnboardingFlow } from "./onboarding-flow";
 import type { PlaceSelection } from "./place-card-host";
@@ -136,6 +137,8 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const [planned, setPlanned] = useState<Route | null>(null);
   const [planning, setPlanning] = useState(false);
   const [planError, setPlanError] = useState<string | null>(null);
+  // Autem tylko głos (#190): arkusz trasy wraca dopiero, gdy kierowca powie, że stoi
+  const [isParked, setIsParked] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   // Odcinki wybrane w „Dojeździe” (linia albo spacer) albo na mapie (przesiadka: obie linie):
   // podświetlone i pokazane na mapie w całości
@@ -165,6 +168,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
 
   const pickRoute = useCallback((next: Route) => {
     setPlanned(next);
+    setIsParked(false);
     setRoute(routeStops(next));
     setActiveIndex(0);
     setPickedLegs(null);
@@ -379,6 +383,8 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
 
   // Mapa jest jedna pod wszystkimi ekranami. Ekrany zmieniają tylko kamerę i to, co na niej leży.
   const isRoute = stage === "route" && planned !== null && route.length > 0;
+  // W aucie, w czasie jazdy: bez listy miejsc, kart i przycisków, Sawa mówi sama
+  const isDriving = isRoute && !isParked && planned.legs.some((leg) => leg.mode === "car");
   const activeStop = route[activeIndex];
   const isHome = stage === "map" && tab === "map";
   const destination = rideEnd.type === "destination" ? rideEnd : null;
@@ -716,6 +722,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
               interests={profile.interests}
               onBoardingClick={isRoute ? pickBoarding : undefined}
               onStopClick={(id) => {
+                if (isDriving) return;
                 const index = route.findIndex((stop) => stop.id === id);
                 if (index >= 0) userPickStop(index);
               }}
@@ -836,7 +843,16 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                 shuffleFailed={routeChoices.shuffleFailed}
               />
             )}
-            {isRoute && (
+            {isDriving && (
+              <DrivingCard
+                key="jazda"
+                place={player.isPlaying ? (activeStop?.name ?? null) : null}
+                waitMin={clock.waitSec === null ? null : Math.round(clock.waitSec / 60)}
+                onParked={() => setIsParked(true)}
+                onCoverChange={setSheetCoverPx}
+              />
+            )}
+            {isRoute && !isDriving && (
               <RouteSheet
                 key="route"
                 listener={listener}
@@ -861,7 +877,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
 
           {stage !== "onboarding" && (
             <PlaceCardHost
-              isActive={isHome || isRoute}
+              isActive={isHome || (isRoute && !isDriving)}
               listener={listener}
               onSelectionChange={setSelectedPlace}
               onCoverChange={setPlaceCoverPx}

@@ -249,6 +249,25 @@ export function WalkIcon(props: IconProps) {
   );
 }
 
+export function BikeIcon(props: IconProps) {
+  return (
+    <svg aria-hidden="true" {...base} {...props}>
+      <circle cx="5.5" cy="17" r="3.5" />
+      <circle cx="18.5" cy="17" r="3.5" />
+      <path d="M5.5 17 9 9h6l3.5 8M9 9l3 8 3-8M8 6h3" />
+    </svg>
+  );
+}
+
+export function CarIcon(props: IconProps) {
+  return (
+    <svg aria-hidden="true" {...base} {...props}>
+      <path d="M5 16V11l2-5h10l2 5v5M3 11h18v5H3zM7 16v2M17 16v2" />
+      <path d="M7 13.5h.01M17 13.5h.01" />
+    </svg>
+  );
+}
+
 export function LoopIcon(props: IconProps) {
   return (
     <svg aria-hidden="true" {...base} {...props}>

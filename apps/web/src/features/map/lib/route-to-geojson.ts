@@ -1,6 +1,17 @@
-import { type Leg, type Route, type TrackVehiclesResponse, toLngLat } from "@sawa/shared";
+import {
+  isTransitMode,
+  type Leg,
+  type Route,
+  type TrackVehiclesResponse,
+  toLngLat,
+} from "@sawa/shared";
 import { boundsOf, type LngLat, type LngLatBounds } from "./bounds";
-import { lineColor } from "./map-style";
+import { lineColor, WHEEL_COLORS } from "./map-style";
+
+/** Colour of a leg drawn as a line: its ZTM line's (`lineColor`), or the bike or car colour. */
+function legColor(leg: Leg, lineIndex: number): string {
+  return leg.mode === "bike" || leg.mode === "car" ? WHEEL_COLORS[leg.mode] : lineColor(lineIndex);
+}
 
 export type RouteLegFeature = {
   type: "Feature";
@@ -107,7 +118,8 @@ export function legLineIndexes(legs: readonly Leg[]): number[] {
   let index = -1;
   let previous: Leg | undefined;
   return legs.map((leg) => {
-    if (leg.mode === "walk") return -1;
+    // Walks, bikes and cars belong to no ZTM line
+    if (!isTransitMode(leg.mode)) return -1;
     if (leg.line !== previous?.line || leg.fromStop.id !== previous.toStop.id) index += 1;
     previous = leg;
     return index;
@@ -165,7 +177,7 @@ export function routeLegsToGeoJson(route: Route): FeatureCollection<RouteLegFeat
           line: leg.line,
           mode: leg.mode,
           lineIndex: lines[legIndex],
-          color: lineColor(lines[legIndex]),
+          color: legColor(leg, lines[legIndex]),
         },
       })),
   };
@@ -178,7 +190,7 @@ export function routeLegsToGeoJson(route: Route): FeatureCollection<RouteLegFeat
 export function highlightedLegs(legs: readonly Leg[], legIndex: number): number[] {
   const leg = legs[legIndex];
   if (!leg) return [];
-  if (leg.mode === "walk") return [legIndex];
+  if (!isTransitMode(leg.mode)) return [legIndex];
   const lines = legLineIndexes(legs);
   return lines.flatMap((line, i) => (line === lines[legIndex] ? [i] : []));
 }
@@ -198,7 +210,7 @@ export function routePassedStopsToGeoJson(route: Route): FeatureCollection<Route
   return {
     type: "FeatureCollection",
     features: route.legs.flatMap((leg, legIndex) =>
-      leg.mode === "walk"
+      !isTransitMode(leg.mode)
         ? []
         : (leg.stops ?? []).map((stop) => ({
             type: "Feature" as const,

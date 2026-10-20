@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { LatLngSchema } from "./common";
-import type { Route } from "./route";
+import { isTransitMode, type Route } from "./route";
 
 /** How often a client should ask again; ZTM refreshes positions every 10 s. */
 export const VEHICLES_REFRESH_SEC = 10;
@@ -87,8 +87,9 @@ export type TrackVehiclesResponse = z.infer<typeof TrackVehiclesResponseSchema>;
 export function trackRequestFromRoute(
   route: Pick<Route, "legs">,
 ): TrackVehiclesRequest | undefined {
+  // Only tram and bus legs have vehicles; walks, bikes and cars do not.
   const legs = route.legs.flatMap((leg, legIndex) =>
-    leg.mode === "walk"
+    !isTransitMode(leg.mode)
       ? []
       : [
           {

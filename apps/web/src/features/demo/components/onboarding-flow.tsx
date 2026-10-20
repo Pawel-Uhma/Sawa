@@ -367,7 +367,10 @@ function Welcome({ onStart, onSkipIntro }: { onStart: () => void; onSkipIntro: (
 
       <ul className="hidden gap-3 md:flex" aria-label={t("Co potrafi Sawa", "What Sawa can do")}>
         {[
-          { icon: "tram", text: t("Tramwaj, autobus albo spacer", "Tram, bus or a walk") },
+          {
+            icon: "tram",
+            text: t("Komunikacja, spacer, rower albo auto", "Transit, a walk, a bike or a car"),
+          },
           {
             icon: "know_a_bit",
             text: t("Historie miejsc z danych miasta", "Stories of places from city data"),

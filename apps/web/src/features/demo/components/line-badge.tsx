@@ -1,14 +1,23 @@
-import type { Leg } from "@sawa/shared";
+import { isTransitMode, type Leg } from "@sawa/shared";
 import { useT } from "@/features/i18n";
 import { legLineIndexes, lineColor } from "@/features/map";
-import { BusIcon, TramIcon, WalkIcon } from "./icons";
+import { BikeIcon, BusIcon, CarIcon, TramIcon, WalkIcon } from "./icons";
 
 const MODE_COLOR: Record<Leg["mode"], string> = {
   tram: "#C8102E",
   bus: "#1F2A44",
   walk: "#6b7280",
+  // Jak na mapie (WHEEL_COLORS)
+  bike: "#2e8b3e",
+  car: "#475569",
 };
-const MODE_ICON = { tram: TramIcon, bus: BusIcon, walk: WalkIcon } as const;
+const MODE_ICON = {
+  tram: TramIcon,
+  bus: BusIcon,
+  walk: WalkIcon,
+  bike: BikeIcon,
+  car: CarIcon,
+} as const;
 
 /**
  * Numer linii ZTM z ikoną pojazdu (tramwaj, autobus, pieszo). `color`: barwa linii na mapie
@@ -29,12 +38,20 @@ export function LineBadge({
     mode === "tram" ? t("Tramwaj", "Tram") : mode === "bus" ? t("Autobus", "Bus") : null;
   return (
     <span
-      style={{ backgroundColor: mode === "walk" ? MODE_COLOR.walk : (color ?? MODE_COLOR[mode]) }}
+      style={{
+        backgroundColor: isTransitMode(mode) ? (color ?? MODE_COLOR[mode]) : MODE_COLOR[mode],
+      }}
       className="inline-flex h-5 min-w-[26px] shrink-0 items-center justify-center gap-1 rounded-[5px] px-1.5 text-[11.5px] font-extrabold text-white"
     >
       <Icon className="size-3.5 shrink-0" strokeWidth={2.4} />
       {label && <span className="sr-only">{label}</span>}
-      {mode === "walk" ? t("pieszo", "walk") : line}
+      {mode === "walk"
+        ? t("pieszo", "walk")
+        : mode === "bike"
+          ? t("rower", "bike")
+          : mode === "car"
+            ? t("auto", "car")
+            : line}
     </span>
   );
 }

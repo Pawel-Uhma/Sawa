@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { InterestSchema } from "../interests";
 import { MAX_HEARD_PLACES } from "../memory";
+import { BikeStationSchema } from "./bike-station";
 import { LatLngSchema } from "./common";
 
 /** Rides under 30 min may be a walk (`Leg.mode` "walk"); see docs/12-plan-mvp.md §7. */
@@ -21,8 +22,11 @@ export const FAMILIARITY = ["first_time", "know_a_bit", "local"] as const;
 export type Familiarity = (typeof FAMILIARITY)[number];
 export const STORY_STYLES = ["fun", "deep", "trivia"] as const;
 export type StoryStyle = (typeof STORY_STYLES)[number];
-/** "walk": spacer po miejscach; "transit": przejażdżka tramwajem i autobusem. */
-export const TRAVEL = ["walk", "transit"] as const;
+/**
+ * "walk": spacer po miejscach; "transit": przejażdżka tramwajem i autobusem; "bike": rowerem
+ * (Veturilo, gdy jest stacja w pobliżu, #191, #192); "car": samochodem, tylko głos (#190).
+ */
+export const TRAVEL = ["walk", "transit", "bike", "car"] as const;
 export type Travel = (typeof TRAVEL)[number];
 /** Who listens: "kids" (about 6–12 years) get simpler, shorter stories (issue #65). */
 export const AUDIENCES = ["adult", "kids"] as const;
@@ -67,8 +71,8 @@ export const PlanRouteRequestSchema = z
     /** Who listens; missing means "adult". "kids": the planner leans to nature and sports (#65). */
     audience: z.enum(AUDIENCES).optional(),
     /**
-     * Walk or transit, as the user picked. Without it the planner walks only under 30 min and
-     * takes a walk when it scores better than a ride.
+     * Walk, transit, bike or car, as the user picked. Without it the planner walks only under
+     * 30 min and takes a walk when it scores better than a ride (never bike or car).
      */
     travel: z.enum(TRAVEL).optional(),
     /**
@@ -119,9 +123,11 @@ export const LegSchema = z.object({
   line: z.string(),
   /**
    * "walk": on foot (to the first stop, from the last one, or a whole walk), along streets and
-   * footways; straight segments when the walking router is unavailable.
+   * footways; straight segments when the walking router is unavailable. "bike": by bike
+   * (a Veturilo bike between two stations, or one's own), "car": driving; both along roads
+   * from a router or straight segments.
    */
-  mode: z.enum(["tram", "bus", "walk"]),
+  mode: z.enum(["tram", "bus", "walk", "bike", "car"]),
   /** Direction of the line, or where a walk ends. */
   headsign: z.string(),
   fromStop: StopSchema,
@@ -148,6 +154,11 @@ export const LegSchema = z.object({
   lngLats: z.array(z.tuple([z.number(), z.number()])),
 });
 export type Leg = z.infer<typeof LegSchema>;
+
+/** A tram or bus leg: a ZTM line with a number, stops and departures (not a walk, bike or car). */
+export function isTransitMode(mode: Leg["mode"]): mode is "tram" | "bus" {
+  return mode === "tram" || mode === "bus";
+}
 
 export const RoutePlaceSchema = z.object({
   placeId: z.string(),
@@ -179,6 +190,13 @@ const RouteBaseSchema = z.object({
   endsAtDestination: z.boolean().optional(),
   /** Data credits that must be shown next to the route. */
   attribution: z.array(z.string()),
+  /**
+   * A bike route on Veturilo: where the bike is taken (with bikes) and left (with free docks),
+   * as counted when planned. Missing without a nearby station (one's own bike).
+   */
+  bikeStations: z
+    .object({ pickup: BikeStationSchema, dropoff: BikeStationSchema.optional() })
+    .optional(),
 });
 
 export const RouteSchema = RouteBaseSchema.extend({

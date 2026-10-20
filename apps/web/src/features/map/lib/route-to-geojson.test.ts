@@ -1,6 +1,6 @@
 import type { Route, TrackVehiclesResponse } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
-import { lineColor } from "./map-style";
+import { lineColor, WHEEL_COLORS } from "./map-style";
 import {
   boardingTouchesLegs,
   highlightedLegs,
@@ -83,6 +83,31 @@ describe("routeLegsToGeoJson", () => {
   it("skips legs without a drawable shape", () => {
     const route = { ...ROUTE, legs: [{ ...ROUTE.legs[0], lngLats: [[20.96, 52.23]] }] } as Route;
     expect(routeLegsToGeoJson(route).features).toEqual([]);
+  });
+});
+
+describe("bike and car legs", () => {
+  const wheels = (mode: "bike" | "car"): Route => ({
+    ...ROUTE,
+    legs: [
+      { ...ROUTE.legs[0], line: "", mode: "walk" },
+      { ...ROUTE.legs[1], line: "", mode, stops: undefined },
+    ],
+  });
+
+  it("draws them in the bike or car colour, outside any ZTM line", () => {
+    for (const mode of ["bike", "car"] as const) {
+      const { features } = routeLegsToGeoJson(wheels(mode));
+      expect(features.map((f) => [f.properties.mode, f.properties.color])).toEqual([
+        [mode, WHEEL_COLORS[mode]],
+      ]);
+      expect(lineIndexes(wheels(mode))).toEqual([-1, -1]);
+    }
+  });
+
+  it("has no boardings and lights up alone", () => {
+    expect(routeBoardingsToGeoJson(wheels("bike")).features).toEqual([]);
+    expect(highlightedLegs(wheels("car").legs, 1)).toEqual([1]);
   });
 });
 

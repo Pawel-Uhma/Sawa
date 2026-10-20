@@ -23,6 +23,8 @@ import type { RideEnd, RideEndType } from "../lib/ride-end";
 import { FloatingCard, Grabber } from "./floating-card";
 import {
   ArrowRightIcon,
+  BikeIcon,
+  CarIcon,
   CloseIcon,
   ForwardIcon,
   LoopIcon,
@@ -75,6 +77,8 @@ function thumbCenter(durationMin: number): string {
 const TRAVEL_OPTIONS: ChoiceOption<Travel>[] = [
   { type: "walk", label: "Pieszo", en: { label: "On foot" }, icon: <WalkIcon /> },
   { type: "transit", label: "Komunikacją", en: { label: "Transit" }, icon: <TramIcon /> },
+  { type: "bike", label: "Rowerem", en: { label: "By bike" }, icon: <BikeIcon /> },
+  { type: "car", label: "Autem", en: { label: "By car" }, icon: <CarIcon /> },
 ];
 
 const END_OPTIONS: ChoiceOption<RideEndType>[] = [
@@ -123,7 +127,11 @@ export function HomePanel({
       text:
         travel === "walk"
           ? t("Sprawdzam ulice w okolicy…", "Checking the streets nearby…")
-          : t("Sprawdzam rozkład ZTM…", "Checking the ZTM timetable…"),
+          : travel === "bike"
+            ? t("Szukam stacji Veturilo…", "Looking for Veturilo stations…")
+            : travel === "car"
+              ? t("Sprawdzam drogi w okolicy…", "Checking the roads nearby…")
+              : t("Sprawdzam rozkład ZTM…", "Checking the ZTM timetable…"),
     },
     { afterSec: 3, text: t("Wybieram miejsca z historią…", "Picking places with stories…") },
     { afterSec: 7, text: t("Układam kolejność przystanków…", "Putting the stops in order…") },
@@ -352,6 +360,8 @@ function ChoiceGroup<T extends string>({
   className = "",
 }: ChoiceGroupProps<T>) {
   const t = useT();
+  // Cztery opcje nie mieszczą się w rzędzie na telefonie 375 px: tam ikona nad podpisem
+  const isStacked = options.length > 3;
   return (
     <div className={className}>
       <p aria-hidden className="etykieta mb-1.5 px-0.5">
@@ -376,9 +386,11 @@ function ChoiceGroup<T extends string>({
                 haptic(4);
                 onChange(option.type);
               }}
-              className={`relative flex h-10 min-w-0 flex-1 items-center justify-center gap-2 rounded-[11px] text-[15px] font-bold tracking-[-0.01em] transition-colors duration-200 active:scale-[0.97] md:h-11 ${
-                isActive ? "text-tekst" : "text-tekst-2"
-              }`}
+              className={`relative flex min-w-0 flex-1 items-center justify-center rounded-[11px] font-bold tracking-[-0.01em] transition-colors duration-200 active:scale-[0.97] ${
+                isStacked
+                  ? "h-14 flex-col gap-0.5 text-[12px] md:h-11 md:flex-row md:gap-2 md:text-[15px]"
+                  : "h-10 gap-2 text-[15px] md:h-11"
+              } ${isActive ? "text-tekst" : "text-tekst-2"}`}
             >
               {isActive && (
                 <motion.span

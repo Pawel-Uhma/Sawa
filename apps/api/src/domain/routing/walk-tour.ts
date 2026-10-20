@@ -28,6 +28,11 @@ export type WalkOptions = {
   backtrackPenalty: number;
   /** Turns of a loop's square tried (see `planSquareLoop`). */
   squareDirections: number;
+  /**
+   * `walkVisibleRadiusM` times this: from a bike or a car places farther off the road still
+   * count as passed (travel-modes.ts). 1 on foot.
+   */
+  visibleRadiusScale: number;
 };
 
 export const DEFAULT_WALK_OPTIONS: WalkOptions = {
@@ -39,6 +44,7 @@ export const DEFAULT_WALK_OPTIONS: WalkOptions = {
   maxBudgetShare: 1.1,
   backtrackPenalty: 2,
   squareDirections: 16,
+  visibleRadiusScale: 1,
 };
 
 export type Walk = {
@@ -168,13 +174,20 @@ export type Segment = { from: LatLng; to: LatLng; startSec: number; sec: number 
 export function placesAlong(
   places: Iterable<PlacePoint>,
   { from, to, startSec, sec }: Segment,
-  scoring: { interests: ReadonlySet<string>; prefs?: ScorePrefs; skip?: ReadonlySet<string> },
+  scoring: {
+    interests: ReadonlySet<string>;
+    prefs?: ScorePrefs;
+    skip?: ReadonlySet<string>;
+    /** See `WalkOptions.visibleRadiusScale`; default 1. */
+    radiusScale?: number;
+  },
 ): CollectedPlace[] {
   const gained: CollectedPlace[] = [];
+  const radiusScale = scoring.radiusScale ?? 1;
   for (const place of places) {
     if (scoring.skip?.has(place.id)) continue;
     const { distanceM, t } = toSegment(place.position, from, to);
-    if (distanceM > walkVisibleRadiusM(place)) continue;
+    if (distanceM > walkVisibleRadiusM(place) * radiusScale) continue;
     const score = scorePlace(place, distanceM, scoring.interests, scoring.prefs);
     gained.push({ placeId: place.id, etaSec: startSec + t * sec, distanceM, legIndex: 0, score });
   }
@@ -537,6 +550,7 @@ export function planBeamWalk(input: WalkInput, options: Partial<WalkOptions> = {
         interests: input.interests,
         prefs: input.prefs,
         skip: state.visited,
+        radiusScale: opts.visibleRadiusScale,
       },
     ).filter((g) => sec === 0 || ((g.etaSec - state.elapsedSec) / sec) * lengthM >= backM);
     const visited = new Set(state.visited);

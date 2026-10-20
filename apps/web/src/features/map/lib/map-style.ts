@@ -469,6 +469,12 @@ export const ACTIVE_STOP_COLOR = "#17706f";
  * One colour per line of the ride, in the order the lines are boarded.
  * Kept away from the teal of the active stop and the coral of the destination.
  */
+/** Bike legs (Veturilo green) and car legs on the map and in the "Dojazd" list (#190, #191). */
+export const WHEEL_COLORS = { bike: "#2e8b3e", car: "#475569" } as const;
+
+/** Veturilo stations on the map: the station layer and the pickup and drop-off labels (#192). */
+export const BIKE_STATION_COLOR = "#2e8b3e";
+
 export const LINE_COLORS = ["#d62828", "#1d4ed8", "#7c3aed", "#e07a00", "#c2185b", "#4d7c0f"];
 
 export function lineColor(lineIndex: number): string {

@@ -4,6 +4,7 @@ import { createElevenLabsSynthesizer } from "./adapters/elevenlabs/speech-synthe
 import { createGoogleDestinationSearch } from "./adapters/google-places/destination-search";
 import { loadTransitCalendar } from "./adapters/gtfs/load-transit";
 import { createOpenRouterProvider } from "./adapters/llm/openrouter";
+import { createNextbikeStationSource } from "./adapters/nextbike/bike-stations";
 import { createOsrmWalkPathSource, firstWalkPath } from "./adapters/osrm/walk-paths";
 import { createPiperSynthesizer } from "./adapters/piper/speech-synthesizer";
 import { createFilePlacesRepository } from "./adapters/places-file/file-places-repository";
@@ -105,6 +106,25 @@ const walkPathSources = [
     : []),
 ];
 
+// Bike and car legs: OSRM with that profile, then Valhalla with its costing (#190, #191).
+const wheelPathSource = (url: string | undefined, costing: "bicycle" | "auto") => {
+  const sources = [
+    ...(url ? [createOsrmWalkPathSource(url, logger)] : []),
+    ...(env.WALK_ROUTER_FALLBACK_URL
+      ? [createValhallaWalkPathSource(env.WALK_ROUTER_FALLBACK_URL, logger, { costing })]
+      : []),
+  ];
+  return sources.length > 0 ? firstWalkPath(sources) : undefined;
+};
+const wheelPaths = {
+  bike: wheelPathSource(env.BIKE_ROUTER_URL, "bicycle"),
+  car: wheelPathSource(env.CAR_ROUTER_URL, "auto"),
+};
+// Veturilo stations, live bikes and docks (#192): bike routes start and end at a station.
+const bikeStations = env.VETURILO_GBFS_URL
+  ? createNextbikeStationSource({ baseUrl: env.VETURILO_GBFS_URL, logger })
+  : undefined;
+
 // The planner reads Supabase; the committed export is its fallback when Supabase fails.
 const placesFile = createFilePlacesRepository(new URL("../data/places.geojson", import.meta.url));
 const livePlanner = withWaypoints(
@@ -115,6 +135,8 @@ const livePlanner = withWaypoints(
     departures: createWawDepartureSource(env.WAW_TOKEN, wawApi),
     live: env.WAW_TOKEN ? createTrackerBoardingSource(vehicles) : undefined,
     walkPaths: walkPathSources.length > 0 ? firstWalkPath(walkPathSources) : undefined,
+    wheelPaths,
+    bikeStations,
     logger,
   }),
 );
@@ -202,6 +224,7 @@ const app = createApp({
     speech,
     destinations,
     vehicles,
+    bikeStations,
     stories: demoStories,
     onLlmError: (err, placeId) => {
       llmFailed.add(placeId);
@@ -218,6 +241,9 @@ serve({ fetch: app.fetch, port: env.PORT }, ({ port }) => {
       departures: Boolean(env.WAW_TOKEN),
       walkPaths: env.WALK_ROUTER_URL ?? null,
       walkPathsFallback: env.WALK_ROUTER_FALLBACK_URL ?? null,
+      bikePaths: env.BIKE_ROUTER_URL ?? null,
+      carPaths: env.CAR_ROUTER_URL ?? null,
+      veturilo: Boolean(bikeStations),
       llm: llm?.model ?? null,
       research: Boolean(research),
       speech: Boolean(speech),
