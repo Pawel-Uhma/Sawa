@@ -5,16 +5,16 @@ import { USER_COLOR } from "./map-style";
 /** Soft cone in front of the user dot, pointing where the phone is heading (#193). */
 export const HEADING_CONE_IMAGE = "sawa-heading-cone";
 
-const ARROW_PREFIX = "sawa-guide-arrow:";
+const CHEVRON_PREFIX = "sawa-route-chevron:";
 
-/** Arrow head at the end of the guide line; the outline takes the theme's ring colour. */
-export function guideArrowImageId(ring: string): string {
-  return `${ARROW_PREFIX}${ring}`;
+/** Chevron repeated along the ride lines, pointing the way the line goes; in the given colour. */
+export function routeChevronImageId(color: string): string {
+  return `${CHEVRON_PREFIX}${color}`;
 }
 
 const CONE_SIZE = 96;
 const CONE_HALF_ANGLE = (38 * Math.PI) / 180;
-const ARROW_SIZE = 26;
+const CHEVRON_SIZE = 14;
 
 function drawCone(): ImageData | null {
   const { canvas, ctx } = imageCanvas(CONE_SIZE);
@@ -33,32 +33,30 @@ function drawCone(): ImageData | null {
   return ctx.getImageData(0, 0, canvas.width, canvas.height);
 }
 
-function drawArrow(ring: string): ImageData | null {
-  const { canvas, ctx } = imageCanvas(ARROW_SIZE);
+/** "›" pointing right: a symbol placed along a line turns its right side the way the line goes. */
+function drawChevron(color: string): ImageData | null {
+  const { canvas, ctx } = imageCanvas(CHEVRON_SIZE);
   if (!ctx) return null;
-  const s = ARROW_SIZE;
+  const s = CHEVRON_SIZE;
   ctx.beginPath();
-  ctx.moveTo(s / 2, 3);
-  ctx.lineTo(s - 4, s - 5);
-  ctx.lineTo(s / 2, s - 9);
-  ctx.lineTo(4, s - 5);
-  ctx.closePath();
+  ctx.moveTo(s * 0.32, s * 0.18);
+  ctx.lineTo(s * 0.66, s / 2);
+  ctx.lineTo(s * 0.32, s * 0.82);
+  ctx.lineCap = "round";
   ctx.lineJoin = "round";
-  ctx.lineWidth = 3;
-  ctx.strokeStyle = ring;
+  ctx.lineWidth = 2.75;
+  ctx.strokeStyle = color;
   ctx.stroke();
-  ctx.fillStyle = USER_COLOR;
-  ctx.fill();
   return ctx.getImageData(0, 0, canvas.width, canvas.height);
 }
 
-/** Draws the cone and arrow heads on demand (also after a theme swaps the style). Returns the cleanup. */
+/** Draws the cone and route chevrons on demand (also after a theme swaps the style). Returns the cleanup. */
 export function registerNavigationImages(map: MapLibreMap): () => void {
   return registerCanvasImages(
     map,
     (id) => {
       if (id === HEADING_CONE_IMAGE) return drawCone();
-      if (id.startsWith(ARROW_PREFIX)) return drawArrow(id.slice(ARROW_PREFIX.length));
+      if (id.startsWith(CHEVRON_PREFIX)) return drawChevron(id.slice(CHEVRON_PREFIX.length));
       return null;
     },
     // No text in these images; the font only decides when drawn images are refreshed.

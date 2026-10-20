@@ -1,32 +1,21 @@
 import { type LatLng, toLngLat } from "@sawa/shared";
 import { useEffect, useMemo } from "react";
 import { Layer, Source, useMap } from "react-map-gl/maplibre";
-import type { LngLat } from "../lib/bounds";
 import { USER_COLOR } from "../lib/map-style";
-import { bearingDeg } from "../lib/navigation";
-import { guideArrowImageId, HEADING_CONE_IMAGE } from "../lib/navigation-images";
+import { HEADING_CONE_IMAGE } from "../lib/navigation-images";
 
 /** Bottom to top; all of them go back above the route after each render. */
-const USER_LAYERS = [
-  "user-guide-casing",
-  "user-guide-line",
-  "user-guide-arrow",
-  "user-cone",
-  "user-halo",
-  "user-dot",
-];
+const USER_LAYERS = ["user-cone", "user-halo", "user-dot"];
 
 type UserLayerProps = {
   position: LatLng;
   ring: string;
   /** Degrees from north; draws a cone in front of the dot. */
   heading?: number | null;
-  /** Way ahead along the route (`guidePath`), drawn as an arrow to the next place. */
-  guide?: LngLat[] | null;
 };
 
 /** Blue dot with a soft halo where the user is (GPS, or the fixed start in /demo). */
-export function UserLayer({ position, ring, heading = null, guide = null }: UserLayerProps) {
+export function UserLayer({ position, ring, heading = null }: UserLayerProps) {
   const { current: mapRef } = useMap();
 
   // Layers added later (route, vehicles, places after the icons) land on top and would hide
@@ -47,41 +36,8 @@ export function UserLayer({ position, ring, heading = null, guide = null }: User
     [position, heading],
   );
 
-  const guideData = useMemo(() => (guide ? guideCollection(guide) : null), [guide]);
-
   return (
     <>
-      {guideData && (
-        <Source id="user-guide" type="geojson" data={guideData}>
-          <Layer
-            id="user-guide-casing"
-            type="line"
-            filter={["==", ["geometry-type"], "LineString"]}
-            layout={{ "line-cap": "round", "line-join": "round" }}
-            paint={{ "line-color": ring, "line-width": 9 }}
-          />
-          <Layer
-            id="user-guide-line"
-            type="line"
-            filter={["==", ["geometry-type"], "LineString"]}
-            layout={{ "line-cap": "round", "line-join": "round" }}
-            paint={{ "line-color": USER_COLOR, "line-width": 5 }}
-          />
-          <Layer
-            id="user-guide-arrow"
-            type="symbol"
-            filter={["==", ["geometry-type"], "Point"]}
-            layout={{
-              "icon-image": guideArrowImageId(ring),
-              "icon-rotate": ["get", "bearing"],
-              "icon-rotation-alignment": "map",
-              "icon-pitch-alignment": "map",
-              "icon-allow-overlap": true,
-              "icon-ignore-placement": true,
-            }}
-          />
-        </Source>
-      )}
       <Source id="user" type="geojson" data={data}>
         {heading !== null && (
           <Layer
@@ -115,25 +71,4 @@ export function UserLayer({ position, ring, heading = null, guide = null }: User
       </Source>
     </>
   );
-}
-
-/** The guide line and, at its end, the arrow head turned along the last stretch. */
-function guideCollection(guide: LngLat[]) {
-  const end = guide.at(-1) as LngLat;
-  const before = guide.at(-2) ?? end;
-  return {
-    type: "FeatureCollection" as const,
-    features: [
-      {
-        type: "Feature" as const,
-        geometry: { type: "LineString" as const, coordinates: guide },
-        properties: {},
-      },
-      {
-        type: "Feature" as const,
-        geometry: { type: "Point" as const, coordinates: end },
-        properties: { bearing: bearingDeg(before, end) },
-      },
-    ],
-  };
 }

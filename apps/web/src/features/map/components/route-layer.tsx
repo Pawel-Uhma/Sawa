@@ -15,6 +15,7 @@ import {
   placeKindColorExpression,
   placeStickerExpression,
 } from "../lib/map-style";
+import { routeChevronImageId } from "../lib/navigation-images";
 import {
   boardingTouchesLegs,
   type PlaceMarkers,
@@ -59,6 +60,9 @@ type RouteLayerProps = {
   stickerLook?: MapLook;
   palette: MapPalette;
 };
+
+/** Gap between the direction chevrons along a ride line. */
+const CHEVRON_SPACING_PX = 72;
 
 /** How often the countdown at boarding stops is redrawn. */
 const COUNTDOWN_TICK_MS = 15_000;
@@ -196,6 +200,22 @@ export function RouteLayer({
             "line-width": legValue(highlightLegs, 7, 5, 5),
             "line-opacity": legValue(highlightLegs, 1, FADED_OPACITY),
           }}
+        />
+        {/* Which way the line goes: chevrons on it in the casing colour, like the line's outline */}
+        <Layer
+          id="route-direction"
+          type="symbol"
+          minzoom={13}
+          layout={{
+            "symbol-placement": "line",
+            "symbol-spacing": CHEVRON_SPACING_PX,
+            "icon-image": routeChevronImageId(palette.casing),
+            "icon-rotation-alignment": "map",
+            "icon-pitch-alignment": "map",
+            "icon-allow-overlap": true,
+            "icon-ignore-placement": true,
+          }}
+          paint={{ "icon-opacity": legValue(highlightLegs, 1, FADED_OPACITY) }}
         />
       </Source>
       {/* Stops passed on the way: dimmed white dots, to count the stops left to getting off */}
